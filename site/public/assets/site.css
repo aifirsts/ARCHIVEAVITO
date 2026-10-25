@@ -243,8 +243,10 @@ a:hover {
     row-gap: 0.4rem;
     padding-block: 0.7rem 0.4rem;
   }
+  /* keep search reachable on phones instead of hiding it behind a toggle */
   .site-header .header-search {
-    display: none;
+    order: 4;
+    width: 100%;
   }
   .site-nav {
     order: 3;

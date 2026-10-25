@@ -416,25 +416,11 @@
     });
   }
 
-  function initHeaderSearch() {
-    var input = document.getElementById("header-search-input");
-    if (!input) return;
-    var form = input.form;
-    if (!form) return;
-    form.addEventListener("submit", function (event) {
-      event.preventDefault();
-      var value = input.value.trim();
-      var target = form.getAttribute("data-action") || "index.html";
-      window.location.href = target + (value ? "?q=" + encodeURIComponent(value) : "");
-    });
-  }
-
   document.addEventListener("DOMContentLoaded", function () {
     watchImages(document);
     initGallery(document.querySelector("[data-gallery]") || document.createElement("div"));
     initLightbox();
     initCatalogue();
-    initHeaderSearch();
     if (!reduceMotion) {
       document.documentElement.classList.add("has-motion");
     }

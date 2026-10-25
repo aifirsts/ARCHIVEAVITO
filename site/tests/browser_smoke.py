@@ -110,6 +110,16 @@ def run(base: str, executable: str | None = None) -> None:
             check(page.evaluate("document.activeElement.id") == "catalogue-search",
                   "клавиша «/» переводит фокус в поиск")
 
+            # the header search is a native GET form (no JS URL assignment)
+            page.fill("#header-search-input", "omega")
+            page.press("#header-search-input", "Enter")
+            page.wait_for_url("**q=omega**")
+            page.wait_for_timeout(200)
+            check(page.locator("[data-card]:visible").count() == 1,
+                  "поиск из шапки открывает каталог с одним результатом")
+            check(page.eval_on_selector("#catalogue-search", "e => e.value") == "omega",
+                  "запрос из шапки подставлен в поиск каталога")
+
             for pid in ("8296456393", "8350792227"):
                 page.goto(f"{base}/item/{pid}.html", wait_until="networkidle")
                 check(page.locator("[data-gallery-thumb]").count() >= 1, f"{pid}: галерея отрисована")

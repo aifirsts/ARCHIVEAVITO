@@ -505,7 +505,7 @@ def header(active: str, root: str) -> str:
       <a href="{root}sources.html"{current("sources")}>Источники и статус</a>
       <a href="{STORE_URL}" rel="noopener noreferrer nofollow">Профиль на Avito ↗</a>
     </nav>
-    <form class="header-search" role="search" data-action="{root}index.html" aria-label="Поиск по каталогу">
+    <form class="header-search" role="search" action="{root}index.html" method="get" aria-label="Поиск по каталогу">
       <svg class="header-search__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 11l4 4" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
       <label class="visually-hidden" for="header-search-input">Поиск по каталогу</label>
       <input id="header-search-input" type="search" name="q" placeholder="Найти товар или бренд" autocomplete="off">

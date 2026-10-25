@@ -222,10 +222,10 @@ def build_products(feed, attachments, publisher):
                         "caption": f"Кадр {position} галереи. «{crop['note_ru']}»",
                         "source": "Кадр галереи · 25.10.2026",
                         "source_kind": "new",
-                        "evidence": (
-                            f'<a href="{{ROOT}}{badge["public_path"]}">Бейдж «{position} из 9»</a> '
-                            f"из мобильного скриншота {esc(crop['source_entry'])} (SHA-256 "
-                            f"<code>{esc(crop['source_entry_sha256'][:16])}…</code>)"
+                        "evidence_href": badge["public_path"],
+                        "evidence_label": (
+                            f"— из мобильного скриншота {crop['source_entry']} "
+                            f"(SHA-256 {crop['source_entry_sha256'][:16]}…)"
                         ),
                         "tall": True,
                     }
@@ -250,7 +250,8 @@ def build_products(feed, attachments, publisher):
                     "caption": f"Кадр {position} галереи объявления из архивного HTML-снимка.",
                     "source": "Фото объявления · архив",
                     "source_kind": "listing",
-                    "evidence": "",
+                    "evidence_href": "",
+                    "evidence_label": "",
                     "tall": True,
                 }
             )
@@ -271,7 +272,8 @@ def build_products(feed, attachments, publisher):
                     ),
                     "source": "Фото со страницы · 25.10.2026",
                     "source_kind": "new",
-                    "evidence": "",
+                    "evidence_href": "",
+                    "evidence_label": "",
                     "tall": True,
                 }
             )
@@ -758,7 +760,8 @@ def render_product(product, products, feed, css_version, js_version) -> str:
                 data-src="{esc("../" + slide["public_path"])}" data-alt="{esc(slide["alt"])}"
                 data-caption="{esc(slide["caption"])}" data-source="{esc(slide["source"])}"
                 data-source-kind="{esc(slide["source_kind"])}"
-                data-evidence="{esc(slide["evidence"].replace("{ROOT}", "../"))}"
+                data-evidence-href="{esc(("../" + slide["evidence_href"]) if slide.get("evidence_href") else "")}"
+                data-evidence-label="{esc(slide.get("evidence_label", ""))}"
                 data-tall="{1 if slide.get("tall") else 0}"
                 data-w="{slide.get("width") or 0}" data-h="{slide.get("height") or 0}"
                 aria-label="Показать кадр {position}: {esc(slide["alt"])}" aria-current="false">

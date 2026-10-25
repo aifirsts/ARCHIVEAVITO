@@ -1938,7 +1938,7 @@
   ],
   "asset_versions": {
     "site.css": "c860fa3f2d",
-    "app.js": "a7105eb576"
+    "app.js": "6f894f0f86"
   },
   "not_published": [
     "avito_audit/snapshot.json (содержит отзывы)",

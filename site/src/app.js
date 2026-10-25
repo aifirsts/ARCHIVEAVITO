@@ -22,7 +22,12 @@
     box.className = "media-error";
     box.setAttribute("role", "img");
     box.setAttribute("aria-label", label);
-    box.innerHTML = "<div><strong>Фото не загрузилось</strong>" + label + "</div>";
+    var inner = document.createElement("div");
+    var title = document.createElement("strong");
+    title.textContent = "Фото не загрузилось";
+    inner.appendChild(title);
+    inner.appendChild(document.createTextNode(label));
+    box.appendChild(inner);
     if (img.parentNode) img.parentNode.replaceChild(box, img);
   }
 
@@ -65,8 +70,8 @@
         sourceKind: thumb.getAttribute("data-source-kind") || "listing",
         missing: thumb.getAttribute("data-missing") === "1",
         missingText: thumb.getAttribute("data-missing-text") || "",
-        evidence: thumb.getAttribute("data-evidence") || "",
         evidenceHref: thumb.getAttribute("data-evidence-href") || "",
+        evidenceLabel: thumb.getAttribute("data-evidence-label") || "",
         tall: thumb.getAttribute("data-tall") === "1",
         width: Number(thumb.getAttribute("data-w")) || 0,
         height: Number(thumb.getAttribute("data-h")) || 0
@@ -77,15 +82,21 @@
       index = (nextIndex + slides.length) % slides.length;
       var slide = slides[index];
       stage.classList.toggle("is-tall", !!slide.tall);
-      stage.innerHTML = "";
+      while (stage.firstChild) stage.removeChild(stage.firstChild);
 
       if (slide.missing) {
         var empty = document.createElement("div");
         empty.className = "gallery__missing";
         empty.setAttribute("role", "img");
         empty.setAttribute("aria-label", "Позиция " + (index + 1) + ": фотографии нет в архиве");
-        empty.innerHTML = "<div><strong>Позиция " + (index + 1) + " — фото нет</strong><span>" +
-          (slide.missingText || "") + "</span></div>";
+        var emptyBox = document.createElement("div");
+        var emptyTitle = document.createElement("strong");
+        emptyTitle.textContent = "Позиция " + (index + 1) + " — фото нет";
+        var emptyNote = document.createElement("span");
+        emptyNote.textContent = slide.missingText || "";
+        emptyBox.appendChild(emptyTitle);
+        emptyBox.appendChild(emptyNote);
+        empty.appendChild(emptyBox);
         stage.appendChild(empty);
       } else {
         var img = document.createElement("img");
@@ -107,13 +118,28 @@
 
       var controls = document.createElement("div");
       controls.className = "gallery__controls";
-      controls.innerHTML =
-        '<div class="gallery__nav">' +
-        '<button type="button" class="icon-button" data-nav="prev" aria-label="Предыдущий кадр">&#8592;</button>' +
-        '<button type="button" class="icon-button" data-nav="next" aria-label="Следующий кадр">&#8594;</button>' +
-        "</div>" +
-        '<span class="gallery__counter" data-gallery-counter>' +
-        (index + 1) + " / " + slides.length + "</span>";
+      var nav = document.createElement("div");
+      nav.className = "gallery__nav";
+      var prevButton = document.createElement("button");
+      prevButton.type = "button";
+      prevButton.className = "icon-button";
+      prevButton.setAttribute("data-nav", "prev");
+      prevButton.setAttribute("aria-label", "Предыдущий кадр");
+      prevButton.textContent = "\u2190";
+      var nextButton = document.createElement("button");
+      nextButton.type = "button";
+      nextButton.className = "icon-button";
+      nextButton.setAttribute("data-nav", "next");
+      nextButton.setAttribute("aria-label", "Следующий кадр");
+      nextButton.textContent = "\u2192";
+      nav.appendChild(prevButton);
+      nav.appendChild(nextButton);
+      var counterNode = document.createElement("span");
+      counterNode.className = "gallery__counter";
+      counterNode.setAttribute("data-gallery-counter", "");
+      counterNode.textContent = (index + 1) + " / " + slides.length;
+      controls.appendChild(nav);
+      controls.appendChild(counterNode);
       stage.appendChild(controls);
       if (!slide.missing) {
         controls.querySelector('[data-nav="next"]').addEventListener("click", function () {
@@ -134,12 +160,19 @@
       }
       var meta = root.querySelector("[data-gallery-evidence]");
       if (meta) {
-        if (slide.evidence) {
-          meta.innerHTML = slide.evidence;
+        while (meta.firstChild) meta.removeChild(meta.firstChild);
+        if (slide.evidenceLabel) {
+          if (slide.evidenceHref) {
+            var evidenceLink = document.createElement("a");
+            evidenceLink.href = slide.evidenceHref;
+            evidenceLink.textContent = "Бейдж «" + (index + 1) + " из " + slides.length + "»";
+            meta.appendChild(evidenceLink);
+            meta.appendChild(document.createTextNode(" "));
+          }
+          meta.appendChild(document.createTextNode(slide.evidenceLabel));
           meta.hidden = false;
         } else {
           meta.hidden = true;
-          meta.innerHTML = "";
         }
       }
       thumbs.forEach(function (thumb, i) {

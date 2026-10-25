@@ -8,12 +8,30 @@
     "Авито 14.zip": "109ea47146104251d4a62b00319912270863cb298517b85b5adf362e3d99d93e",
     "PART1_HTMLS.zip": "c32f4ba9e5955c0e7111e31d474b99152ab28d12ac0dce6bf32f810640f69795",
     "PART_2.zip": "e33e25c5d3df1d212584b74575d21baffa261d6edf4b782419b8e3b17d4bc677",
-    "PART3.zip": "6d02edbd36bb96f4f1f68bc79543e51e520c97ccf91ec861dabce83aa2ae1477"
+    "PART3.zip": "6d02edbd36bb96f4f1f68bc79543e51e520c97ccf91ec861dabce83aa2ae1477",
+    "ДОЗАГРУЗКА.zip": "2a6904ac34d8db42e6bf9f1c07f33d2d366180f1e3fa01c0db420c69dd522a8f",
+    "Чехол_ЧАСЫ _ Авито (8102096652)_files.zip": "a9a19b6918bb18d2cdf87519b57507b93324ee701ee4ea050dd689be341e4fd5",
+    "Attachments-Avitos.zip": "7d1eca79385ba06d702f0812eca8b5ee70990295295ec2b06442a28e33b5d6d0"
   },
   "seller_profile_from_archive": {
     "id": "b2165ff5492372c90fab55f7223f9d3b",
     "display_name": "Beauty Supply",
     "url": "https://www.avito.ru/user/b2165ff5492372c90fab55f7223f9d3b/profile/items/all"
+  },
+  "supplemental_sources": {
+    "Attachments-Avitos.zip": {
+      "sha256": "7d1eca79385ba06d702f0812eca8b5ee70990295295ec2b06442a28e33b5d6d0",
+      "bytes": 16396636,
+      "source_commit": "cf1c74b4a623ad22e7cedd5180aee98571261b1b",
+      "source_commit_date": "2026-10-26T06:22:25+08:00",
+      "manifest": "avito_audit/attachments_avitos/manifest.json",
+      "entries": 10,
+      "captured_at_utc": [
+        "2026-10-25T22:15:26Z",
+        "2026-10-25T22:11:16Z"
+      ],
+      "status": "archival_research_only_not_live_inventory"
+    }
   },
   "owner_note": "Store owner confirmed ownership in conversation; inventory, prices, authenticity, and image rights not independently reverified.",
   "paths_relative_to": "repository_root",
@@ -294,8 +312,11 @@
             480,
             480
           ]
-        }
+        },
+        "mobile_gallery_crops_2026_10_25": [],
+        "page_print_photo_2026_10_25": null
       },
+      "supplemental_2026_10_25": null,
       "manufacturer_research": {
         "brand": "Hourglass",
         "name": "Ambient Lighting Blush — Mood Exposure",
@@ -566,8 +587,11 @@
             660,
             660
           ]
-        }
+        },
+        "mobile_gallery_crops_2026_10_25": [],
+        "page_print_photo_2026_10_25": null
       },
+      "supplemental_2026_10_25": null,
       "manufacturer_research": {
         "brand": "Charlotte Tilbury",
         "name": "Luxury Palette in Pillow Talk",
@@ -870,8 +894,11 @@
             480,
             480
           ]
-        }
+        },
+        "mobile_gallery_crops_2026_10_25": [],
+        "page_print_photo_2026_10_25": null
       },
+      "supplemental_2026_10_25": null,
       "manufacturer_research": {
         "brand": "Hourglass",
         "name": "Curator Eyeshadow Palette — Minimalist",
@@ -1044,8 +1071,11 @@
             1400,
             1400
           ]
-        }
+        },
+        "mobile_gallery_crops_2026_10_25": [],
+        "page_print_photo_2026_10_25": null
       },
+      "supplemental_2026_10_25": null,
       "manufacturer_research": {
         "brand": "Speck",
         "name": "Presidio2 Pro MagSafe with ClickLock — iPhone 15 Pro Max",
@@ -1262,8 +1292,11 @@
             1600,
             1600
           ]
-        }
+        },
+        "mobile_gallery_crops_2026_10_25": [],
+        "page_print_photo_2026_10_25": null
       },
+      "supplemental_2026_10_25": null,
       "manufacturer_research": {
         "brand": "IMAGE Skincare",
         "name": "VOL.U.LIFT BODY GLP-1/GIP sculpt + firm treatment complex",
@@ -1490,8 +1523,11 @@
             1600,
             1600
           ]
-        }
+        },
+        "mobile_gallery_crops_2026_10_25": [],
+        "page_print_photo_2026_10_25": null
       },
+      "supplemental_2026_10_25": null,
       "manufacturer_research": {
         "brand": "IMAGE Skincare",
         "name": "VOL.U.LIFT GLP-1 4D skin rebound complex",
@@ -1630,8 +1666,11 @@
             1600,
             1600
           ]
-        }
+        },
+        "mobile_gallery_crops_2026_10_25": [],
+        "page_print_photo_2026_10_25": null
       },
+      "supplemental_2026_10_25": null,
       "manufacturer_research": {
         "brand": "IMAGE Skincare",
         "name": "DAILY PREVENTION pure mineral hydrating moisturizer SPF 30",
@@ -1807,8 +1846,11 @@
             1200,
             1200
           ]
-        }
+        },
+        "mobile_gallery_crops_2026_10_25": [],
+        "page_print_photo_2026_10_25": null
       },
+      "supplemental_2026_10_25": null,
       "manufacturer_research": {
         "brand": "IMAGE Skincare",
         "name": "VITAL C hydrating repair crème",
@@ -1978,8 +2020,11 @@
             1600,
             1600
           ]
-        }
+        },
+        "mobile_gallery_crops_2026_10_25": [],
+        "page_print_photo_2026_10_25": null
       },
+      "supplemental_2026_10_25": null,
       "manufacturer_research": {
         "brand": "IMAGE Skincare",
         "name": "DAILY PREVENTION advanced smartblend mineral moisturizer SPF 75",
@@ -2150,8 +2195,11 @@
             1800,
             1800
           ]
-        }
+        },
+        "mobile_gallery_crops_2026_10_25": [],
+        "page_print_photo_2026_10_25": null
       },
+      "supplemental_2026_10_25": null,
       "manufacturer_research": {
         "brand": "IMAGE Skincare",
         "name": "IMAGE MD biotech longevity creme",
@@ -2455,8 +2503,11 @@
             480,
             480
           ]
-        }
+        },
+        "mobile_gallery_crops_2026_10_25": [],
+        "page_print_photo_2026_10_25": null
       },
+      "supplemental_2026_10_25": null,
       "manufacturer_research": {
         "brand": "Hourglass",
         "name": "Ambient Lighting Palette",
@@ -2680,8 +2731,11 @@
             1600,
             1600
           ]
-        }
+        },
+        "mobile_gallery_crops_2026_10_25": [],
+        "page_print_photo_2026_10_25": null
       },
+      "supplemental_2026_10_25": null,
       "manufacturer_research": {
         "brand": "IMAGE Skincare",
         "name": "IMAGE MD restoring youth serum",
@@ -2923,7 +2977,242 @@
             }
           }
         ],
-        "manufacturer_illustration": null
+        "manufacturer_illustration": null,
+        "mobile_gallery_crops_2026_10_25": [
+          {
+            "gallery_position_in_badge": 1,
+            "visually_confirmed_saved_slot": 1,
+            "note_ru": "Голубые часы в коробке: тот же кадр, что сохранённая позиция № 1",
+            "source_entry": "IMG_1178.png",
+            "source_entry_sha256": "bda624a8ba5439b0f6bb46823973b548bfe9ec537a3feeb2c721ad1c923ee80f",
+            "badge_evidence": {
+              "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_01_header.png",
+              "sha256": "55a02e022cec91cb1723103dd786bba02351025dfa6ec26a06cf537c4e76158e",
+              "bytes": 5153,
+              "dimensions": [
+                1170,
+                117
+              ]
+            },
+            "asset": null,
+            "captured_from": "mobile_screenshot_2026_10_25",
+            "not_stored_reason_ru": "в архиве уже есть крупная копия этого кадра 720×960, дубликат по содержимому не сохраняется"
+          },
+          {
+            "gallery_position_in_badge": 2,
+            "visually_confirmed_saved_slot": 2,
+            "note_ru": "Серые часы с чёрным ремешком: тот же кадр, что позиция № 2",
+            "source_entry": "IMG_1179.png",
+            "source_entry_sha256": "2baa607ff307fb5b576a3e0fd8ee7a4a7739b7c8e7d618c2f099dc528b54a20e",
+            "badge_evidence": {
+              "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_02_header.png",
+              "sha256": "fdd5b990a6d4f36050a4c30a39f7d1cfc047a533018957258e6a887bee802976",
+              "bytes": 5816,
+              "dimensions": [
+                1170,
+                117
+              ]
+            },
+            "asset": null,
+            "captured_from": "mobile_screenshot_2026_10_25",
+            "not_stored_reason_ru": "в архиве уже есть крупная копия этого кадра 720×960, дубликат по содержимому не сохраняется"
+          },
+          {
+            "gallery_position_in_badge": 3,
+            "visually_confirmed_saved_slot": 3,
+            "note_ru": "Розовые часы: тот же кадр, что позиция № 3 (в архиве была только миниатюра 150×110)",
+            "source_entry": "IMG_1180.png",
+            "source_entry_sha256": "fabe878305ca259f01f8678e4f84383948852a7e87622a7cfa0df7195fb12027",
+            "badge_evidence": {
+              "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_03_header.png",
+              "sha256": "7eb2f019d7fb3bc2002ab03abf6a6c6be30b7f90d61e38cef3557aef06d75767",
+              "bytes": 5786,
+              "dimensions": [
+                1170,
+                117
+              ]
+            },
+            "asset": {
+              "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_03.png",
+              "sha256": "ebd37c8c25f22eb11eb94ed42585d63f52fc9d5d68ccf199371223d56713efd6",
+              "bytes": 1594894,
+              "dimensions": [
+                1170,
+                1644
+              ]
+            },
+            "captured_from": "mobile_screenshot_2026_10_25"
+          },
+          {
+            "gallery_position_in_badge": 4,
+            "visually_confirmed_saved_slot": null,
+            "note_ru": "Серо-стальные часы Mission to the Moon: НОВЫЙ кадр, локального файла не было ни в одном ZIP",
+            "source_entry": "IMG_1181.png",
+            "source_entry_sha256": "0284f9733e28e3061f5440d36ded4d205c61df3f6e27a2f4d4103cc1c00a664f",
+            "badge_evidence": {
+              "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_04_header.png",
+              "sha256": "19b7fe820641c5ab27fa47d15643ba24b58c6099eba53838df3e5eecbd5572cc",
+              "bytes": 5436,
+              "dimensions": [
+                1170,
+                117
+              ]
+            },
+            "asset": {
+              "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_04.png",
+              "sha256": "6d1d1618a3cf61ed89c3a14dcfc95c45b82ae08aa3404076229cff7869d3d36e",
+              "bytes": 1431743,
+              "dimensions": [
+                1170,
+                1644
+              ]
+            },
+            "captured_from": "mobile_screenshot_2026_10_25"
+          },
+          {
+            "gallery_position_in_badge": 5,
+            "visually_confirmed_saved_slot": 5,
+            "note_ru": "Коробки 1965 и Omega × Swatch: тот же кадр, что позиция № 5",
+            "source_entry": "IMG_1182.png",
+            "source_entry_sha256": "40c53c896366103760f2243b31c5172c8c3df077f4354ea11d089b0c758ce608",
+            "badge_evidence": {
+              "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_05_header.png",
+              "sha256": "0f5e670c0bde25b5ca6956e8cc0e8c8af8abbe793e3cd3a3a3a7268dd8092760",
+              "bytes": 5721,
+              "dimensions": [
+                1170,
+                117
+              ]
+            },
+            "asset": {
+              "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_05.png",
+              "sha256": "5bd5e0f4be8c60128e21f9c80f0f044599cc6b400dff3006b476dbc4e5d4527b",
+              "bytes": 909457,
+              "dimensions": [
+                1170,
+                1644
+              ]
+            },
+            "captured_from": "mobile_screenshot_2026_10_25"
+          },
+          {
+            "gallery_position_in_badge": 6,
+            "visually_confirmed_saved_slot": 6,
+            "note_ru": "Открытая коробка 1965: тот же кадр, что позиция № 6 (в архиве была только миниатюра)",
+            "source_entry": "IMG_1183.png",
+            "source_entry_sha256": "f8ed22709032ec709e8c608d05e698b82858ef12b14100e8f6c35d29ea5b7cda",
+            "badge_evidence": {
+              "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_06_header.png",
+              "sha256": "b0658fde6592625ed71347f28c4907e3bdb1b28468f6c898f5a73d41b311ddbb",
+              "bytes": 6147,
+              "dimensions": [
+                1170,
+                117
+              ]
+            },
+            "asset": {
+              "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_06.png",
+              "sha256": "7f79ec5f331f8eaee96aee3c09d79594355ceb3df3ae0124e0d4f2bcb1ebbd7b",
+              "bytes": 595353,
+              "dimensions": [
+                1170,
+                1644
+              ]
+            },
+            "captured_from": "mobile_screenshot_2026_10_25"
+          },
+          {
+            "gallery_position_in_badge": 7,
+            "visually_confirmed_saved_slot": 7,
+            "note_ru": "Четыре коробки Mission to Venus / Mercury / Uranus / Moon: тот же кадр, что позиция № 7 (только миниатюра в архиве)",
+            "source_entry": "IMG_1184.png",
+            "source_entry_sha256": "6aa1df586de4bc644d2bb44eb73fb5d273d7255630cef08872b9b7eab828694b",
+            "badge_evidence": {
+              "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_07_header.png",
+              "sha256": "fc4d949d577709ec1b60a1676d9b9c631b0269136d30fc21095af88af5925a13",
+              "bytes": 5485,
+              "dimensions": [
+                1170,
+                117
+              ]
+            },
+            "asset": {
+              "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_07.png",
+              "sha256": "f95f98d85182846cede51f1c17d9fca960c19ccd843e9453895f9d12502ff95d",
+              "bytes": 700757,
+              "dimensions": [
+                1170,
+                1644
+              ]
+            },
+            "captured_from": "mobile_screenshot_2026_10_25"
+          },
+          {
+            "gallery_position_in_badge": 8,
+            "visually_confirmed_saved_slot": 8,
+            "note_ru": "Коробки с часами на светлом столе: тот же кадр, что позиция № 8",
+            "source_entry": "IMG_1185.png",
+            "source_entry_sha256": "19cef8fa142e9e6c65f2f8a9506060665c8b3229f1b30b9140a6cc143741d422",
+            "badge_evidence": {
+              "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_08_header.png",
+              "sha256": "c816a03f2a07710cb97908e4b7c67ca1275f21945a876e8bec794e44c730ac70",
+              "bytes": 6153,
+              "dimensions": [
+                1170,
+                117
+              ]
+            },
+            "asset": null,
+            "captured_from": "mobile_screenshot_2026_10_25",
+            "not_stored_reason_ru": "в архиве уже есть крупная копия этого кадра 720×960, дубликат по содержимому не сохраняется"
+          }
+        ],
+        "page_print_photo_2026_10_25": null
+      },
+      "supplemental_2026_10_25": {
+        "id": 8296456393,
+        "kind": "mobile_screenshot_gallery",
+        "observed_gallery_badge": "1 из 9",
+        "gallery_positions_in_archive": 8,
+        "gallery_positions_on_live_page": 9,
+        "new_file_for_position_4": {
+          "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_04.png",
+          "provenance": "кадр мобильной галереи, скриншот IMG_1181.png, бейдж «4 из 9»",
+          "note_ru": "Впервые есть настоящий файл для позиции № 4: серо-стальные часы Mission to the Moon в коробке. Ранее позиция была только внешней ссылкой. Это не подстановка похожего фото: кадр снят с той же галереи объявления и его номер подтверждён бейджем."
+        },
+        "higher_resolution_for_positions": [
+          3,
+          5,
+          6,
+          7
+        ],
+        "higher_resolution_note_ru": "В архиве для этих позиций была только миниатюра 150×110; обрезки скриншотов 1170×1644 добавлены как отдельный источник того же кадра.",
+        "still_missing_positions": [
+          {
+            "position": 9,
+            "reason_ru": "Страница показывает «N из 9», скриншоты покрывают позиции 1–8. Файла и кадра для позиции № 9 нет ни в одном из семи ZIP."
+          }
+        ],
+        "page_print_snapshot": {
+          "source": "PDF-печать страницы 8296456393, создана 2026-10-25T22:11:16Z",
+          "listing_number_text": "8 296 456 393",
+          "listing_date_text": "10 октября в 13:44",
+          "views_text": "373 просмотра",
+          "display_price_text": "33 272 ₽",
+          "old_price_text": "35 777 ₽",
+          "discount_text": "−7% на распродаже",
+          "stock_status_text": null,
+          "location_text": "Москва",
+          "differs_from_archive_views": "в архивном HTML было 371 просмотр",
+          "bonus_text": "+600 бонусов",
+          "today_views_text": null
+        },
+        "does_not_prove_ru": [
+          "что четыре коробки на фото продаются за одну указанную цену",
+          "точный SKU каждой коробки и комплектность конкретной отправки",
+          "актуальную цену и наличие после 25.10.2026",
+          "подлинность экземпляров"
+        ]
       },
       "manufacturer_research": {
         "brand": "Swatch / OMEGA x Swatch",
@@ -2996,7 +3285,76 @@
             1400,
             1400
           ]
+        },
+        "mobile_gallery_crops_2026_10_25": [],
+        "page_print_photo_2026_10_25": {
+          "path": "avito_audit/attachments_avitos/images/8350792227/page_print_photo_01.png",
+          "sha256": "d9d09009040f5fa88447aea4fbf693bd3263ec38de556d8dc58c4e0c351d87e7",
+          "bytes": 360171,
+          "dimensions": [
+            550,
+            960
+          ],
+          "source_embedded_sha256": "c16a46553331c41bc0cbc4366176f59d99e3d6345849b6391e9e887f644d4431",
+          "embedded_name": "Im6.png",
+          "reason_ru": "Основное фото лота: упаковка Speck Presidio2 Pro для iPhone 15 Pro Max"
         }
+      },
+      "supplemental_2026_10_25": {
+        "id": 8350792227,
+        "kind": "pdf_page_print",
+        "individual_html_card_still_absent": true,
+        "individual_html_note_ru": "Отдельной HTML-карточки в архиве по-прежнему нет: в ZIP лежит только PDF-печать страницы объявления, а не сохранённый HTML с ресурсами.",
+        "photo": {
+          "path": "avito_audit/attachments_avitos/images/8350792227/page_print_photo_01.png",
+          "dimensions": [
+            550,
+            960
+          ],
+          "provenance": "изображение из PDF-печати страницы объявления",
+          "note_ru": "Основное (и единственное) фото галереи: упаковка Speck Presidio2 Pro для iPhone 15 Pro Max"
+        },
+        "page_print_snapshot": {
+          "source": "PDF-печать страницы 8350792227, создана 2026-10-25T22:15:26Z",
+          "listing_number_text": "8350792227",
+          "listing_date_text": "8 октября в 22:19",
+          "views_text": "21 просмотр",
+          "today_views_text": "(+0 сегодня)",
+          "display_price_text": "1 116 ₽",
+          "old_price_text": "1 200 ₽",
+          "discount_text": "−7% на распродаже",
+          "bonus_text": "+24 бонуса",
+          "stock_status_text": "Товар зарезервирован",
+          "location_text": "с. Домодедово",
+          "breadcrumb_text": "Электроника › Телефоны › Чехлы и плёнки › Чехлы › Аксессуары",
+          "description_text": "Для Дениса",
+          "attributes_from_page": {
+            "Состояние": "Новое",
+            "Производитель чехла": "Speck",
+            "Подходит для: Производитель": "Apple",
+            "Подходит для: Модель": "iPhone 15 Pro Max"
+          },
+          "gallery_photos_on_page": 1
+        },
+        "still_missing": [
+          {
+            "what": "фотография второго чехла из лота «2 шт»",
+            "reason_ru": "На странице одна фотография — упаковка одного чехла Speck; второго предмета на снимке нет."
+          },
+          {
+            "what": "отдельная HTML-карточка с ресурсами",
+            "reason_ru": "В Attachments-Avitos.zip только PDF-печать, HTML-файла нет ни в одном из семи ZIP."
+          },
+          {
+            "what": "подтверждение комплектации «2 шт»",
+            "reason_ru": "Ни один источник не показывает оба чехла; состав лота нужно подтвердить у продавца."
+          }
+        ],
+        "do_not_merge_with": {
+          "id": "8102096652",
+          "reason_ru": "Другое объявление: один белый чехол Speck Presidio2 Pro, Москва, 557 ₽. Данные нельзя объединять."
+        },
+        "new_status_fact_ru": "Печать 25.10.2026 показывает «Товар зарезервирован» — это датированный факт того снимка, а не текущее наличие."
       },
       "manufacturer_research": {
         "brand": "Speck",

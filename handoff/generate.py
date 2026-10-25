@@ -39,18 +39,76 @@ def asset(path, sha256, expected_size=None, dimensions=None):
     return record
 
 
+def catalog_supplemental(catalog):
+    """Curated, human-written notes for the 2026-10-25 layer."""
+    for item in catalog["products"]:
+        note = item.get("supplemental_2026_10_25")
+        if note:
+            yield {"id": int(item["id"]), **note}
+
+
+def supplemental_media(attachments, listing_id):
+    """New dated layer from Attachments-Avitos.zip (mobile screenshots + page prints).
+
+    Every path/size/dimension is validated against the audit manifest, and the
+    assets themselves are re-hashed, so the layer cannot drift from the archive.
+    """
+    crops = []
+    for shot in attachments["mobile_screenshots"]:
+        if shot["listing_id"] != listing_id:
+            continue
+        crop = shot["photo_crop"]
+        entry = {
+            "gallery_position_in_badge": shot["gallery_position_in_badge"],
+            "visually_confirmed_saved_slot": shot["visually_confirmed_saved_slot"],
+            "note_ru": shot["note_ru"],
+            "source_entry": shot["entry"],
+            "source_entry_sha256": shot["entry_sha256"],
+            "badge_evidence": asset(
+                shot["header_evidence_crop"]["path"],
+                shot["header_evidence_crop"]["sha256"],
+                shot["header_evidence_crop"]["bytes"],
+                shot["header_evidence_crop"]["dimensions"],
+            ),
+            "asset": None,
+            "captured_from": "mobile_screenshot_2026_10_25",
+        }
+        if crop["stored"]:
+            entry["asset"] = asset(crop["path"], crop["derived_sha256"], crop["derived_bytes"], crop["dimensions"])
+        else:
+            entry["not_stored_reason_ru"] = crop["not_stored_reason_ru"]
+        crops.append(entry)
+    page_photo = None
+    for record in attachments["pdf_embedded_images"]:
+        if record.get("pdf_entry", "").endswith(f"({listing_id}).pdf") and record.get("stored_path"):
+            page_photo = asset(
+                record["stored_path"],
+                record["stored_sha256"],
+                record["stored_bytes"],
+                record["dimensions"],
+            )
+            page_photo["source_embedded_sha256"] = record["sha256"]
+            page_photo["embedded_name"] = record["embedded_name"]
+            page_photo["reason_ru"] = record["reason_ru"]
+    return crops, page_photo
+
+
 def build_document():
     catalog = read_json("catalog.json")
     profile = read_json("avito_audit/snapshot.json")
     profile_images = read_json("avito_audit/images_manifest.json")
     pages = read_json("avito_audit/item_pages/data.json")
     official = read_json("official_assets/manifest.json")
+    attachments = read_json("avito_audit/attachments_avitos/manifest.json")
+    annotations = read_json("avito_audit/attachments_avitos/manifest.json")
     by_page = {p["id"]: p for p in pages["items"]}
     by_profile = {p["id"]: p for p in profile["items"]}
     by_official = {p["avito_id"]: p for p in official["items"]}
     previews = defaultdict(list)
     for record in profile_images:
         previews[record["listing_id"]].append(record)
+    supplemental = {item["id"]: item for item in catalog_supplemental(catalog)}
+    require(set(supplemental) == {8296456393, 8350792227}, "Supplemental layer must cover exactly two listings")
     ids = [p["id"] for p in catalog["products"]]
     require(len(ids) == 14 and len(set(ids)) == 14, "Expected 14 unique product IDs")
     require(set(ids) == set(by_profile) == set(previews), "Profile IDs mismatch")
@@ -96,6 +154,18 @@ def build_document():
                     f"Gallery order changed: {id_}")
         else:
             require(item["avito_item_page"] is None, f"Unmatched item page in catalog: {id_}")
+        crops, page_photo = supplemental_media(attachments, int(id_))
+        if id_ == "8296456393":
+            require(len(crops) == 8, "Watches: expected eight mobile gallery frames")
+            require([c["gallery_position_in_badge"] for c in crops] == list(range(1, 9)),
+                    "Watches: screenshot order changed")
+            require(crops[3]["asset"] is not None, "Watches: frame 4 must be stored")
+            require(page_photo is None, "Watches: unexpected page-print photo")
+        elif id_ == "8350792227":
+            require(crops == [], "Case: unexpected mobile screenshots")
+            require(page_photo is not None, "Case: page-print photo missing")
+        else:
+            require(crops == [] and page_photo is None, f"Supplemental media leaked into {id_}")
         manufacturer_asset = None
         if id_ in by_official:
             entry = by_official[id_]
@@ -129,7 +199,10 @@ def build_document():
                 "listing_gallery": listing_gallery,
                 "profile_previews": profile_gallery,
                 "manufacturer_illustration": manufacturer_asset,
+                "mobile_gallery_crops_2026_10_25": crops,
+                "page_print_photo_2026_10_25": page_photo,
             },
+            "supplemental_2026_10_25": supplemental.get(int(id_)) if id_.isdigit() else supplemental.get(id_),
             "manufacturer_research": item["official"],
         })
     require(sum(len(p["media"]["listing_gallery"]) for p in products) == 75, "Gallery count changed")
@@ -143,11 +216,24 @@ def build_document():
         "source_archives_sha256": {
             profile["source"]["archive_path"]: profile["source"]["archive_sha256"],
             **pages["archive_sha256"],
+            **catalog["supplemental_zips_sha256"],
         },
         "seller_profile_from_archive": {
             "id": profile["profile"]["seller_id"],
             "display_name": profile["profile"]["display_name"],
             "url": profile["profile"]["profile_url"],
+        },
+        "supplemental_sources": {
+            "Attachments-Avitos.zip": {
+                "sha256": annotations["archive_sha256"],
+                "bytes": annotations["archive_bytes"],
+                "source_commit": annotations["source_commit"],
+                "source_commit_date": annotations["source_commit_date"],
+                "manifest": "avito_audit/attachments_avitos/manifest.json",
+                "entries": annotations["entries_count"],
+                "captured_at_utc": [item["page_print_creation_date_utc"] for item in annotations["listings"]],
+                "status": annotations["status"],
+            }
         },
         "owner_note": "Store owner confirmed ownership in conversation; inventory, prices, authenticity, and image rights not independently reverified.",
         "paths_relative_to": "repository_root",

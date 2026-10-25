@@ -20,6 +20,7 @@ import html
 import json
 import shutil
 import sys
+import tempfile
 from pathlib import Path
 from urllib.parse import quote
 
@@ -1137,45 +1138,62 @@ def render_sources(feed, products, attachments, css_version, js_version) -> str:
 # --------------------------------------------------------------------------- #
 
 
-def build() -> dict:
+def require_pillow():
+    try:
+        import PIL  # noqa: F401
+    except ImportError as error:  # pragma: no cover - environment problem
+        raise SystemExit(
+            "Для сборки нужен Pillow (перекодирование тяжёлых PNG в JPEG): "
+            "python -m pip install -r requirements-dev.txt"
+        ) from error
+
+
+def build(out: Path | None = None) -> dict:
+    """Render the site into ``out`` (defaults to ``site/public``).
+
+    The target directory is only removed after every input and dependency has
+    been validated, so a failed build never leaves a half-empty public tree.
+    """
+    require_pillow()
+    out = Path(out) if out is not None else OUT
     feed, attachments = load_feed()
-    if OUT.exists():
-        shutil.rmtree(OUT)
-    (OUT / "assets").mkdir(parents=True)
-    (OUT / "item").mkdir()
+    if out.exists():
+        shutil.rmtree(out)
+    (out / "assets").mkdir(parents=True)
+    (out / "item").mkdir()
 
     hashes: dict[str, str] = {}
-    publisher = Publisher(OUT, hashes)
+    publisher = Publisher(out, hashes)
     products = build_products(feed, attachments, publisher)
 
     css_source = (SRC / "site.css").read_text(encoding="utf-8")
     js_source = (SRC / "app.js").read_text(encoding="utf-8")
     css_version = hashlib.sha256(css_source.encode()).hexdigest()[:10]
     js_version = hashlib.sha256(js_source.encode()).hexdigest()[:10]
-    (OUT / "assets" / "site.css").write_text(css_source, encoding="utf-8")
-    (OUT / "assets" / "app.js").write_text(js_source, encoding="utf-8")
-    (OUT / ".nojekyll").write_text("", encoding="utf-8")
+    (out / "assets" / "site.css").write_text(css_source, encoding="utf-8")
+    (out / "assets" / "app.js").write_text(js_source, encoding="utf-8")
+    (out / ".nojekyll").write_text("", encoding="utf-8")
     favicon = (
         '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Beauty Supply">'
         '<rect width="32" height="32" fill="#1a1613"/>'
         '<text x="16" y="22" font-family="Georgia,serif" font-size="15" fill="#f7f3ec" '
         'text-anchor="middle">BS</text></svg>'
     )
-    (OUT / "favicon.svg").write_text(favicon, encoding="utf-8")
+    (out / "favicon.svg").write_text(favicon, encoding="utf-8")
     # a tiny ICO wrapper is unnecessary: browsers accept the SVG, the .ico link is
     # kept only for very old clients and points to the same drawing.
-    (OUT / "favicon.ico").write_bytes(
+    (out / "favicon.ico").write_bytes(
         b"\x00\x00\x01\x00\x00\x00"
     )
 
-    (OUT / "index.html").write_text(
+    (out / "index.html").write_text(
         render_index(feed, products, css_version, js_version), encoding="utf-8"
     )
-    (OUT / "sources.html").write_text(
+    (out / "sources.html").write_text(
         render_sources(feed, products, attachments, css_version, js_version), encoding="utf-8"
     )
     for product in products:
-        (OUT / "item" / f"{product['id']}.html").write_text(
+        (out / "item" / f"{product['id']}.html").write_text(
             render_product(product, products, feed, css_version, js_version), encoding="utf-8"
         )
 
@@ -1199,16 +1217,19 @@ def build() -> dict:
             "полные скриншоты с полосой статуса iOS",
         ],
     }
-    (OUT / "assets" / "images.json").write_text(
+    (out / "assets" / "images.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     return manifest
 
 
-def snapshot():
+def snapshot(directory: Path | None = None):
+    directory = Path(directory) if directory is not None else OUT
+    if not directory.exists():
+        return {}
     return {
-        path.relative_to(OUT).as_posix(): sha(path)
-        for path in OUT.rglob("*")
+        path.relative_to(directory).as_posix(): sha(path)
+        for path in directory.rglob("*")
         if path.is_file()
     }
 
@@ -1222,11 +1243,13 @@ def main(argv=None):
     )
     args = parser.parse_args(argv)
     if args.check:
-        before = snapshot() if OUT.exists() else {}
+        before = snapshot()
         if not before:
             raise SystemExit("Сборки нет: сначала запустите python site/build.py")
-        build()
-        after = snapshot()
+        # a check must never touch the published tree: build into a scratch dir
+        with tempfile.TemporaryDirectory() as tmp:
+            build(Path(tmp) / "public")
+            after = snapshot(Path(tmp) / "public")
         if before != after:
             changed = sorted(set(before) ^ set(after)) + [
                 key for key in before if key in after and before[key] != after[key]

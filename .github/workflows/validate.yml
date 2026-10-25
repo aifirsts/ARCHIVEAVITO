@@ -49,9 +49,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Install Playwright and Chromium
+      - name: Install Playwright, Chromium and build dependencies
         run: |
           python -m pip install --upgrade pip
+          python -m pip install -r requirements-dev.txt
           python -m pip install playwright
           python -m playwright install --with-deps chromium
       - name: Build the storefront

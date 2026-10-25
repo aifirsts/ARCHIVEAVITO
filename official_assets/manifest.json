@@ -7,14 +7,14 @@
       "avito_id": "7942405497",
       "local_path": "official_assets/7942405497.png",
       "official_product_page": "https://www.hourglasscosmetics.com/products/ambient-lighting-blush",
-      "official_asset_example_url": "https://www.hourglasscosmetics.com/cdn/shop/files/AmbientLightingBlush_LuminousFlush_a7042559-07ba-4834-bae0-5bc5083ae897.png?v=1755084214&width=480",
-      "source_note": "Иллюстрация оттенка Luminous Flush: оттенок лота не установлен.",
-      "sha256": "9d63a33c7df8ec6d17767deee51f4afebafbe2455f5c0713a0cd5dbe0554d0cc",
+      "official_asset_example_url": "https://www.hourglasscosmetics.com/cdn/shop/files/AmbientLightingBlush_MoodExposure_ff43a449-e75a-45ba-93ec-f74125c294d5.png?v=1723590351&width=480",
+      "source_note": "Официальное изображение варианта Mood Exposure, сопоставленного с читаемой коробкой из снимка объявления.",
+      "sha256": "696b39a4436233aedfd8c5868ec028f99bb738ae142532be712a738442c1c5d4",
       "dimensions": [
         480,
         480
       ],
-      "bytes": 167234,
+      "bytes": 115672,
       "retrieval": "image_search; file visually checked against product identity; photo may depict an illustrative variant"
     },
     {

@@ -22,17 +22,17 @@
       ],
       "official": {
         "brand": "Hourglass",
-        "name": "Ambient Lighting Blush",
+        "name": "Ambient Lighting Blush — Mood Exposure",
         "url": "https://www.hourglasscosmetics.com/products/ambient-lighting-blush",
-        "match_level": "family",
-        "summary_ru": "Румяна из серии Ambient Lighting: сочетание пудры и цвета для мягкого сияния. В линейке несколько оттенков.",
-        "verification_note_ru": "Оттенок на сохранённых фото не установлен.",
+        "match_level": "photo_variant",
+        "summary_ru": "По новой фотографии упаковки читается оттенок Mood Exposure (серия Ambient Lighting Blush); производитель описывает мягкий сливовый тон и сияющий финиш.",
+        "verification_note_ru": "Mood Exposure указан на фото упаковки из архива объявления; маркировку продаваемого экземпляра и его подлинность нужно сверить при покупке. Текст объявления дополнительно упоминает Ambient Strobe Lighting Blush — другая линейка; на показанной коробке читается Mood Exposure.",
         "details": {
           "source_url": "https://www.hourglasscosmetics.com/products/ambient-lighting-blush",
           "checked_at": "2026-10-26",
           "specifications_ru": [
             "Прессованные румяна с эффектом мягкого рассеянного света; сочетание пигмента и финишной пудры Ambient Lighting.",
-            "На сайте бренда полноразмерный формат — 4,2 г; есть мини-версии 1,3 г и несколько оттенков. Размер и оттенок лота не подтверждены."
+            "На сайте производителя полноразмерный формат — 4,2 г; существуют и мини-версии 1,3 г. На архивном фото упаковки читается Mood Exposure; размер и маркировка конкретной партии не проверены."
           ],
           "ingredients_ru": [
             "Состав зависит от оттенка: сверить INCI на упаковке и на странице выбранного варианта."
@@ -43,7 +43,86 @@
         "photos": [
           "official_assets/7942405497.png"
         ],
-        "photo_note_ru": "Иллюстрация оттенка Luminous Flush: оттенок лота не установлен."
+        "photo_note_ru": "Официальное изображение варианта Mood Exposure, сопоставленного с читаемой коробкой из снимка объявления.",
+        "visual_note_ru": "На снимке №10 отдельной карточки на коробке читается Mood Exposure."
+      },
+      "avito_item_page": {
+        "description_ru_as_seller_claim": "Представляем революционную линейку румян, которая объединяет знаменитое сияние пудры Ambient Lighting с актуальной палитрой цветов. Что она делает: Забудьте об обычных румянах! Эта коллекция использует уникальную фотолюминесцентную технологию, чтобы придать вашему лицу невероятную глубину и объем, обеспечивая при этом безупречное слияние с кожей. Каждая пудра создана вручную с использованием передовой техники смешивания, гарантируя идеальный баланс пигмента и сияния. Каждый оттенок уникален. Эти невесомые румяна идеально подходят для любого тона кожи. Оригинальные румяна Ambient® Lighting Blush сочетают универсальные пудры с яркими оттенками, создавая мягкий фокус и многомерный цвет с естественным, сияющим финишем. А новая коллекция Ambient Strobe Lighting Blush добавляет к этому сиянию современные цвета для ослепительного румянца с блестящим эффектом.",
+        "attributes_as_seller_claim": {
+          "Вид товара": "Макияж и маникюр",
+          "Тип товара": "Для лица",
+          "Тип косметики": "Румяна и контуринг",
+          "Бренд": "HOURGLASS",
+          "Цвет": "Розовый",
+          "Текстура": "Запечённая",
+          "Состояние": "Новое"
+        },
+        "date_display_snapshot": "23 октября в 17:29",
+        "display_price_rub_snapshot": 2960,
+        "old_price_display_rub_snapshot": 3700,
+        "discount_display_snapshot": "–20%",
+        "total_views_display_snapshot": "434 просмотра",
+        "stock_badge_display_snapshot": "В наличии: последний товар",
+        "source_html_entry": "Hourglass румяна купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942405497).html",
+        "gallery_count": 10,
+        "gallery_missing_count": 0,
+        "gallery": [
+          {
+            "position": 1,
+            "path": "avito_audit/item_pages/images/7942405497/01_large.jpg",
+            "resolution": "large"
+          },
+          {
+            "position": 2,
+            "path": "avito_audit/item_pages/images/7942405497/02_large.jpg",
+            "resolution": "large"
+          },
+          {
+            "position": 3,
+            "path": "avito_audit/item_pages/images/7942405497/03_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 4,
+            "path": "avito_audit/item_pages/images/7942405497/04_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 5,
+            "path": "avito_audit/item_pages/images/7942405497/05_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 6,
+            "path": "avito_audit/item_pages/images/7942405497/06_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 7,
+            "path": "avito_audit/item_pages/images/7942405497/07_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 8,
+            "path": "avito_audit/item_pages/images/7942405497/08_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 9,
+            "path": "avito_audit/item_pages/images/7942405497/09_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 10,
+            "path": "avito_audit/item_pages/images/7942405497/10_large.jpg",
+            "resolution": "large"
+          }
+        ]
+      },
+      "avito_profile_excerpt": {
+        "text": "Представляем революционную линейку румян, которая объединяет знаменитое сияние пудры Ambient Lighting с актуальной палитрой цветов.\n\nЧто она делает:\n\nЗабудьте об обычных румянах! Эта коллекция использует уникальную фотолюминесцентную технологию, чтоб...",
+        "truncated": true,
+        "source": "Авито 14.html"
       }
     },
     {
@@ -88,6 +167,73 @@
           "official_assets/7942010246.png"
         ],
         "photo_note_ru": "Pillow Talk Original; не Pillow Talk Dreams."
+      },
+      "avito_item_page": {
+        "description_ru_as_seller_claim": "Откройте для себя палетку теней для век с четырьмя гармоничными оттенками (4 x 1,3 г), которые идеально дополнят ваш образ. Включает: нежный розовый беж, сияющее розовое золото, тёплый румянец и глубокий коричневый.",
+        "attributes_as_seller_claim": {
+          "Вид товара": "Макияж и маникюр",
+          "Тип товара": "Для глаз и бровей",
+          "Тип косметики": "Тени и глиттеры",
+          "Бренд": "CHARLOTTE TILBURY",
+          "Цвет": "Коричневый",
+          "Состояние": "Новое"
+        },
+        "date_display_snapshot": "23 октября в 17:29",
+        "display_price_rub_snapshot": 6000,
+        "old_price_display_rub_snapshot": 7500,
+        "discount_display_snapshot": "–20%",
+        "total_views_display_snapshot": "40 просмотров",
+        "stock_badge_display_snapshot": null,
+        "source_html_entry": "Charlotte tilbury pillow talk тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942010246).html",
+        "gallery_count": 8,
+        "gallery_missing_count": 0,
+        "gallery": [
+          {
+            "position": 1,
+            "path": "avito_audit/item_pages/images/7942010246/01_large.jpg",
+            "resolution": "large"
+          },
+          {
+            "position": 2,
+            "path": "avito_audit/item_pages/images/7942010246/02_large.jpg",
+            "resolution": "large"
+          },
+          {
+            "position": 3,
+            "path": "avito_audit/item_pages/images/7942010246/03_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 4,
+            "path": "avito_audit/item_pages/images/7942010246/04_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 5,
+            "path": "avito_audit/item_pages/images/7942010246/05_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 6,
+            "path": "avito_audit/item_pages/images/7942010246/06_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 7,
+            "path": "avito_audit/item_pages/images/7942010246/07_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 8,
+            "path": "avito_audit/item_pages/images/7942010246/08_large.jpg",
+            "resolution": "large"
+          }
+        ]
+      },
+      "avito_profile_excerpt": {
+        "text": "Откройте для себя палетку теней для век с четырьмя гармоничными оттенками (4 x 1,3 г), которые идеально дополнят ваш образ. Включает: нежный розовый беж, сияющее розовое золото, тёплый румянец и глубокий коричневый.",
+        "truncated": false,
+        "source": "Авито 14.html"
       }
     },
     {
@@ -132,6 +278,83 @@
           "official_assets/7942160038.png"
         ],
         "photo_note_ru": "Minimalist; соответствие сделано по архивному фото, а не по коду упаковки."
+      },
+      "avito_item_page": {
+        "description_ru_as_seller_claim": "Основательница бренда считает макияж инструментом самовыражения. Линия Curator позволяет создать свою уникальную цветовую палитру благодаря широкому выбору моно-теней. Все оттенки мелкодисперсные, высокопигментированные и прекрасно смешиваются, открывая безграничные возможности для создания завораживающих образов.",
+        "attributes_as_seller_claim": {
+          "Вид товара": "Макияж и маникюр",
+          "Тип товара": "Для глаз и бровей",
+          "Тип косметики": "Тени и глиттеры",
+          "Бренд": "HOURGLASS",
+          "Цвет": "Коричневый",
+          "Состояние": "Новое"
+        },
+        "date_display_snapshot": "23 октября в 17:29",
+        "display_price_rub_snapshot": 5200,
+        "old_price_display_rub_snapshot": 6500,
+        "discount_display_snapshot": "–20%",
+        "total_views_display_snapshot": "268 просмотров",
+        "stock_badge_display_snapshot": "В наличии: последний товар",
+        "source_html_entry": "Hourglass тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942160038).html",
+        "gallery_count": 10,
+        "gallery_missing_count": 0,
+        "gallery": [
+          {
+            "position": 1,
+            "path": "avito_audit/item_pages/images/7942160038/01_large.jpg",
+            "resolution": "large"
+          },
+          {
+            "position": 2,
+            "path": "avito_audit/item_pages/images/7942160038/02_large.jpg",
+            "resolution": "large"
+          },
+          {
+            "position": 3,
+            "path": "avito_audit/item_pages/images/7942160038/03_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 4,
+            "path": "avito_audit/item_pages/images/7942160038/04_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 5,
+            "path": "avito_audit/item_pages/images/7942160038/05_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 6,
+            "path": "avito_audit/item_pages/images/7942160038/06_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 7,
+            "path": "avito_audit/item_pages/images/7942160038/07_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 8,
+            "path": "avito_audit/item_pages/images/7942160038/08_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 9,
+            "path": "avito_audit/item_pages/images/7942160038/09_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 10,
+            "path": "avito_audit/item_pages/images/7942160038/10_large.jpg",
+            "resolution": "large"
+          }
+        ]
+      },
+      "avito_profile_excerpt": {
+        "text": "Основательница бренда считает макияж инструментом самовыражения. Линия Curator позволяет создать свою уникальную цветовую палитру благодаря широкому выбору моно-теней. Все оттенки мелкодисперсные, высокопигментированные и прекрасно смешиваются, откры...",
+        "truncated": true,
+        "source": "Авито 14.html"
       }
     },
     {
@@ -173,6 +396,46 @@
           "official_assets/8102096652.jpg"
         ],
         "photo_note_ru": "Иллюстрация линейки; цвет лота не установлен."
+      },
+      "avito_item_page": {
+        "description_ru_as_seller_claim": "Speck Presidio2 Pro – это надёжный и удобный чехол, созданный по гибридной технологии. Его прочные материалы и мягкая, приятная на ощупь отделка делают его идеальным аксессуаром. Важным преимуществом является антимикробная защита MICROBAN, которая эффективно снижает количество бактерий на 99%. Кроме того, чехол обеспечивает превосходную защиту от падений благодаря инновационной технологии Armor Cloud. Эта технология действует как \"воздушная подушка\", позволяя внутренним элементам смартфона сжиматься при ударе и поглощать его энергию.",
+        "attributes_as_seller_claim": {
+          "Состояние": "Новое",
+          "Производитель чехла": "Speck",
+          "Основной материал": "Поликарбонат",
+          "Цвет": "Белый"
+        },
+        "date_display_snapshot": "23 октября в 17:29",
+        "display_price_rub_snapshot": 557,
+        "old_price_display_rub_snapshot": 599,
+        "discount_display_snapshot": "–7%",
+        "total_views_display_snapshot": "810 просмотров",
+        "stock_badge_display_snapshot": "В наличии: несколько",
+        "source_html_entry": "Чехол на iPhone 15 pro max Speck Presidio2 Pro купить в Москве по низкой цене с доставкой _ Электроника _ Авито (8102096652).html",
+        "gallery_count": 3,
+        "gallery_missing_count": 0,
+        "gallery": [
+          {
+            "position": 1,
+            "path": "avito_audit/item_pages/images/8102096652/01_large.jpg",
+            "resolution": "large"
+          },
+          {
+            "position": 2,
+            "path": "avito_audit/item_pages/images/8102096652/02_large.jpg",
+            "resolution": "large"
+          },
+          {
+            "position": 3,
+            "path": "avito_audit/item_pages/images/8102096652/03_large.jpg",
+            "resolution": "large"
+          }
+        ]
+      },
+      "avito_profile_excerpt": {
+        "text": "Speck presidio2 Pro — это надёжный и удобный чехол, созданный по гибридной технологии. Его прочные материалы и мягкая, приятная на ощупь отделка делают его идеальным аксессуаром. Важным преимуществом является антимикробная защита Microban, которая эф...",
+        "truncated": true,
+        "source": "Авито 14.html"
       }
     },
     {
@@ -218,6 +481,53 @@
           "official_assets/8165981546.jpg"
         ],
         "photo_note_ru": "На фото средство BODY, не средство для лица."
+      },
+      "avito_item_page": {
+        "description_ru_as_seller_claim": "Разработанный пластическим хирургом, этот комплекс для тела направлен на решение специфических проблем с кожей тела, которые возникают при использовании GLP-1/GIP, улучшая видимость ДРЯБЛОСТИ. МОРЩИНИСТОСТЬ. обезвоживание. тон. Наш уникальный скульптурирующий и укрепляющий комплекс, а также запатентованная технология XOSM® заметно улучшают дряблость, морщинистую текстуру кожи, изменяют распределение жира, обезвоживают и снижают тонус кожи, делая ее более рельефной и упругой.",
+        "attributes_as_seller_claim": {
+          "Подтип товара": "Кремы"
+        },
+        "date_display_snapshot": "23 октября в 17:29",
+        "display_price_rub_snapshot": 8500,
+        "old_price_display_rub_snapshot": null,
+        "discount_display_snapshot": null,
+        "total_views_display_snapshot": "72 просмотра",
+        "stock_badge_display_snapshot": null,
+        "source_html_entry": "Лифтинг крем для тела VOL.U.lift купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8165981546).html",
+        "gallery_count": 5,
+        "gallery_missing_count": 0,
+        "gallery": [
+          {
+            "position": 1,
+            "path": "avito_audit/item_pages/images/8165981546/01_large.jpg",
+            "resolution": "large"
+          },
+          {
+            "position": 2,
+            "path": "avito_audit/item_pages/images/8165981546/02_large.jpg",
+            "resolution": "large"
+          },
+          {
+            "position": 3,
+            "path": "avito_audit/item_pages/images/8165981546/03_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 4,
+            "path": "avito_audit/item_pages/images/8165981546/04_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 5,
+            "path": "avito_audit/item_pages/images/8165981546/05_large.jpg",
+            "resolution": "large"
+          }
+        ]
+      },
+      "avito_profile_excerpt": {
+        "text": "Разработанный пластическим хирургом, этот комплекс для тела направлен на решение специфических проблем с кожей тела, которые возникают при использовании Glp-1/Gip, улучшая видимость Дряблости. Морщинистость. Обезвоживание. Тон. Наш уникальный скульпт...",
+        "truncated": true,
+        "source": "Авито 14.html"
       }
     },
     {
@@ -263,6 +573,61 @@
           "official_assets/8166119490.jpg"
         ],
         "photo_note_ru": "Средство для лица, не BODY."
+      },
+      "avito_item_page": {
+        "description_ru_as_seller_claim": "IMAGE SKINCARE VOL.U.LIFT™ СРЕДСТВО ДЛЯ ВОССТАНОВЛЕНИЯ ОВАЛА ЛИЦА УСОВЕРШЕНСТВОВАННОЕ СРЕДСТВО ДЛЯ ПОДТЯЖКИ КОЖИ VOL.U.LIFT - это усовершенствованное средство для восстановления молодости лица, разработанное для устранения видимых изменений, связанных со старением, потерей веса и снижением плотности кожи. Тщательно разработанное инновационное средство помогает восстановить цвет лица, делая его более насыщенным, упругим и молодым, сохраняя при этом качество кожи на длительный срок. Средство VOL.U.LIFT, разработанное на основе усовершенствованного комплекса 4D Skin Rebound Complex™, направлено на устранение четырех видимых признаков старения кожи и уменьшения объема: провисания, глубоких морщин, обезвоживания и плотности. Кожа становится более упругой, гладкой и обновленной, улучшается объем, увлажнение и общее качество кожи. В основе формулы лежит мощный комплекс для придания объема, сочетающий гиалуроновую кислоту нового поколения, биомиметические фрагменты коллагена, бакучиол и аминокислоты. Эти передовые ингредиенты работают вместе, восстанавливая гидратацию, повышая эластичность кожи и делая ее более заметной.",
+        "attributes_as_seller_claim": {
+          "Подтип товара": "Кремы",
+          "Бренд": "Другой",
+          "Назначение": "Увлажнение, Восстановление, Упругость и эластичность",
+          "Тип кожи": "Для всех типов",
+          "Активный компонент": "Коллаген",
+          "Время нанесения": "Универсальный",
+          "Для кого": "Для всех",
+          "Возраст": "от 35 лет",
+          "SPF": "Без УФ защиты"
+        },
+        "date_display_snapshot": "23 октября в 17:29",
+        "display_price_rub_snapshot": 12900,
+        "old_price_display_rub_snapshot": null,
+        "discount_display_snapshot": null,
+        "total_views_display_snapshot": "82 просмотра",
+        "stock_badge_display_snapshot": null,
+        "source_html_entry": "Image skincare VOL.U.lift купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166119490).html",
+        "gallery_count": 5,
+        "gallery_missing_count": 0,
+        "gallery": [
+          {
+            "position": 1,
+            "path": "avito_audit/item_pages/images/8166119490/01_large.jpg",
+            "resolution": "large"
+          },
+          {
+            "position": 2,
+            "path": "avito_audit/item_pages/images/8166119490/02_large.jpg",
+            "resolution": "large"
+          },
+          {
+            "position": 3,
+            "path": "avito_audit/item_pages/images/8166119490/03_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 4,
+            "path": "avito_audit/item_pages/images/8166119490/04_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 5,
+            "path": "avito_audit/item_pages/images/8166119490/05_large.jpg",
+            "resolution": "large"
+          }
+        ]
+      },
+      "avito_profile_excerpt": {
+        "text": "Image Skincare Vol. U. Lift™.\n\nСредство Для Восстановления Овала Лица.\n\nУсовершенствованное Средство Для Подтяжки Кожи.\n\nVol. U. Lift — это усовершенствованное средство для восстановления молодости лица, разработанное для устранения видимых изменений...",
+        "truncated": true,
+        "source": "Авито 14.html"
       }
     },
     {
@@ -306,6 +671,38 @@
           "official_assets/8166255881.jpg"
         ],
         "photo_note_ru": "Pure mineral hydrating SPF 30, не tinted и не SPF 75."
+      },
+      "avito_item_page": {
+        "description_ru_as_seller_claim": "Минеральный увлажняющий крем с SPF 30 и технологией XOSM™ Ваша кожа заслуживает идеальной защиты и ухода! Этот универсальный крем — необходимая вещь для ежедневного ритуала красоты. Он не просто защищает от вредного воздействия UV-лучей, но и укрепляет естественный барьер, предотвращая преждевременное старение. Легкая текстура с сияющим финишем - увлажняет без липкости и тяжести. Невидим на коже - адаптируется к любому оттенку, не оставляя белого налета. Мощный антиоксидантный комплекс - эктоин, витамин С и астаксантин из микроводорослей борются со свободными радикалами и защищают от старения. Технология XOSM™ - уникальная формула, которая усиливает действие активных компонентов, обеспечивая коже комплексное питание и восстановление.",
+        "attributes_as_seller_claim": {
+          "Тип товара": "Загар и защита от солнца"
+        },
+        "date_display_snapshot": "23 октября в 17:29",
+        "display_price_rub_snapshot": 5900,
+        "old_price_display_rub_snapshot": null,
+        "discount_display_snapshot": null,
+        "total_views_display_snapshot": "153 просмотра",
+        "stock_badge_display_snapshot": "В наличии: последний товар",
+        "source_html_entry": "Увлажняющий дневной крем SPF 30 daily prevention купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166255881).html",
+        "gallery_count": 2,
+        "gallery_missing_count": 0,
+        "gallery": [
+          {
+            "position": 1,
+            "path": "avito_audit/item_pages/images/8166255881/01_large.jpg",
+            "resolution": "large"
+          },
+          {
+            "position": 2,
+            "path": "avito_audit/item_pages/images/8166255881/02_large.jpg",
+            "resolution": "large"
+          }
+        ]
+      },
+      "avito_profile_excerpt": {
+        "text": "Минеральный увлажняющий крем с Spf 30 и технологией Xosm™.\n\nВаша кожа заслуживает идеальной защиты и ухода! Этот универсальный крем — необходимая вещь для ежедневного ритуала красоты. Он не просто защищает от вредного воздействия UV-лучей, но и укреп...",
+        "truncated": true,
+        "source": "Авито 14.html"
       }
     },
     {
@@ -348,6 +745,47 @@
           "official_assets/8166335454.jpg"
         ],
         "photo_note_ru": "Иллюстрация крема VITAL C, объём лота не установлен."
+      },
+      "avito_item_page": {
+        "description_ru_as_seller_claim": "Ультраувлажняющий крем успокаивает кожу и помогает бороться с морщинами. Незаменимые витамины А, С, Е обеспечивают питание и спасают кожу от тусклости и сухости. Смесь гиалуроновой кислоты и керамидов помогает удержать влагу, восстановить и защитить кожу от увядания и стрессов. Показания: возрастная, сухая/обезвоженная, склонная к покраснениям кожа. Преимущества: обогащенная формула восстанавливающего крема успокаивает и питает сухую, обезвоженную кожу. Крем быстро впитывается в кожу, не оставляя ощущения тяжести и жирного блеска. Подходит для мужской кожи.",
+        "attributes_as_seller_claim": {
+          "Подтип товара": "Кремы",
+          "Бренд": "Другой",
+          "Назначение": "Увлажнение, Питание, Сияние, Восстановление",
+          "Время нанесения": "Ночной",
+          "Для кого": "Для всех"
+        },
+        "date_display_snapshot": "23 октября в 17:29",
+        "display_price_rub_snapshot": 8500,
+        "old_price_display_rub_snapshot": null,
+        "discount_display_snapshot": null,
+        "total_views_display_snapshot": "55 просмотров",
+        "stock_badge_display_snapshot": "В наличии: последний товар",
+        "source_html_entry": "Восстанавливающий ночной крем с витамином С купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166335454).html",
+        "gallery_count": 3,
+        "gallery_missing_count": 0,
+        "gallery": [
+          {
+            "position": 1,
+            "path": "avito_audit/item_pages/images/8166335454/01_large.jpg",
+            "resolution": "large"
+          },
+          {
+            "position": 2,
+            "path": "avito_audit/item_pages/images/8166335454/02_large.jpg",
+            "resolution": "large"
+          },
+          {
+            "position": 3,
+            "path": "avito_audit/item_pages/images/8166335454/03_large.jpg",
+            "resolution": "large"
+          }
+        ]
+      },
+      "avito_profile_excerpt": {
+        "text": "Ультраувлажняющий крем успокаивает кожу и помогает бороться с морщинами. Незаменимые витамины А, С, Е обеспечивают питание и спасают кожу от тусклости и сухости. Смесь гиалуроновой кислоты и керамидов помогает удержать влагу, восстановить и защитить ...",
+        "truncated": true,
+        "source": "Авито 14.html"
       }
     },
     {
@@ -391,6 +829,43 @@
           "official_assets/8166674710.jpg"
         ],
         "photo_note_ru": "Advanced smartblend SPF 75, не другое средство DAILY PREVENTION."
+      },
+      "avito_item_page": {
+        "description_ru_as_seller_claim": "Усовершенствованный минеральный увлажняющий крем с SPF 75 и тинтом (смарт-композиция подстраивается под любой тон кожи и выравнивает ее) удобная форма - с дозатором. Экстракт плодов расторопши обладает антисептическим действием. Экстракт листьев священного базилика быстро восстанавливает гомеостаз кожи и ее барьерную функцию, повышает местный иммунитет. Экстракт плодов ванили омолаживает, устраняет гиперемию и раздражение кожи, стимулирует процессы регенерации. Выравнивает тон кожи, подстраиваясь под любой фототип и придает ей легкий золотистый оттенок.",
+        "attributes_as_seller_claim": {
+          "Тип товара": "Загар и защита от солнца"
+        },
+        "date_display_snapshot": "23 октября в 17:29",
+        "display_price_rub_snapshot": 6700,
+        "old_price_display_rub_snapshot": null,
+        "discount_display_snapshot": null,
+        "total_views_display_snapshot": "73 просмотра",
+        "stock_badge_display_snapshot": "В наличии: последний товар",
+        "source_html_entry": "Усиленный смарт-крем SPF75 купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166674710).html",
+        "gallery_count": 3,
+        "gallery_missing_count": 0,
+        "gallery": [
+          {
+            "position": 1,
+            "path": "avito_audit/item_pages/images/8166674710/01_large.jpg",
+            "resolution": "large"
+          },
+          {
+            "position": 2,
+            "path": "avito_audit/item_pages/images/8166674710/02_large.jpg",
+            "resolution": "large"
+          },
+          {
+            "position": 3,
+            "path": "avito_audit/item_pages/images/8166674710/03_large.jpg",
+            "resolution": "large"
+          }
+        ]
+      },
+      "avito_profile_excerpt": {
+        "text": "Усовершенствованный минеральный увлажняющий крем с Spf 75 и тинтом (смарт-композиция подстраивается под любой тон кожи и выравнивает ее) удобная форма — с дозатором.\n\nЭкстракт плодов расторопши обладает антисептическим действием.\n\nЭкстракт листьев св...",
+        "truncated": true,
+        "source": "Авито 14.html"
       }
     },
     {
@@ -434,6 +909,43 @@
           "official_assets/8230842563.jpg"
         ],
         "photo_note_ru": "Biotech longevity crème, не restoring youth serum."
+      },
+      "avito_item_page": {
+        "description_ru_as_seller_claim": "Высокотехнологичный антивозрастной крем для поддержания молодости кожи. Геномный AI-флавоноид и Phyto NAD+ Booster борются с морщинами, дряблостью и тусклым цветом лица.",
+        "attributes_as_seller_claim": {
+          "Подтип товара": "Кремы"
+        },
+        "date_display_snapshot": "23 октября в 17:29",
+        "display_price_rub_snapshot": 12999,
+        "old_price_display_rub_snapshot": null,
+        "discount_display_snapshot": null,
+        "total_views_display_snapshot": "30 просмотров",
+        "stock_badge_display_snapshot": "В наличии: последний товар",
+        "source_html_entry": "Image MD biotech крем купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8230842563).html",
+        "gallery_count": 3,
+        "gallery_missing_count": 0,
+        "gallery": [
+          {
+            "position": 1,
+            "path": "avito_audit/item_pages/images/8230842563/01_large.jpg",
+            "resolution": "large"
+          },
+          {
+            "position": 2,
+            "path": "avito_audit/item_pages/images/8230842563/02_large.jpg",
+            "resolution": "large"
+          },
+          {
+            "position": 3,
+            "path": "avito_audit/item_pages/images/8230842563/03_large.jpg",
+            "resolution": "large"
+          }
+        ]
+      },
+      "avito_profile_excerpt": {
+        "text": "Высокотехнологичный антивозрастной крем для поддержания молодости кожи. Геномный AI-флавоноид и Phyto Nad+ Booster борются с морщинами, дряблостью и тусклым цветом лица.",
+        "truncated": false,
+        "source": "Авито 14.html"
       }
     },
     {
@@ -477,6 +989,83 @@
           "official_assets/7942108985.png"
         ],
         "photo_note_ru": "Иллюстрация Volume I; Volume лота не установлен."
+      },
+      "avito_item_page": {
+        "description_ru_as_seller_claim": "Сияние нового уровня с палитрой Hourglass Ambient Lighting Volume (9г). Эта универсальная палитра с персиковыми, золотистыми и перламутровыми оттенками, которые можно использовать как по отдельности, так и в комбинации, создаст многомерное сияние. Легко наносится и растушевывается, она идеально подходит для светлой и средне-светлой кожи, подчеркивая ее естественную красоту и фиксируя макияж. Благодаря уникальной фотолюминесцентной технологии Hourglass, палитра улавливает и отражает свет, придавая коже здоровое свечение.",
+        "attributes_as_seller_claim": {
+          "Вид товара": "Макияж и маникюр",
+          "Тип товара": "Для глаз и бровей",
+          "Тип косметики": "Тени и глиттеры",
+          "Бренд": "HOURGLASS",
+          "Цвет": "Коричневый",
+          "Состояние": "Новое"
+        },
+        "date_display_snapshot": "23 октября в 17:29",
+        "display_price_rub_snapshot": 6000,
+        "old_price_display_rub_snapshot": 7500,
+        "discount_display_snapshot": "–20%",
+        "total_views_display_snapshot": "665 просмотров",
+        "stock_badge_display_snapshot": "В наличии: последний товар",
+        "source_html_entry": "Hourglass палетка купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942108985).html",
+        "gallery_count": 10,
+        "gallery_missing_count": 0,
+        "gallery": [
+          {
+            "position": 1,
+            "path": "avito_audit/item_pages/images/7942108985/01_large.jpg",
+            "resolution": "large"
+          },
+          {
+            "position": 2,
+            "path": "avito_audit/item_pages/images/7942108985/02_large.jpg",
+            "resolution": "large"
+          },
+          {
+            "position": 3,
+            "path": "avito_audit/item_pages/images/7942108985/03_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 4,
+            "path": "avito_audit/item_pages/images/7942108985/04_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 5,
+            "path": "avito_audit/item_pages/images/7942108985/05_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 6,
+            "path": "avito_audit/item_pages/images/7942108985/06_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 7,
+            "path": "avito_audit/item_pages/images/7942108985/07_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 8,
+            "path": "avito_audit/item_pages/images/7942108985/08_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 9,
+            "path": "avito_audit/item_pages/images/7942108985/09_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 10,
+            "path": "avito_audit/item_pages/images/7942108985/10_large.jpg",
+            "resolution": "large"
+          }
+        ]
+      },
+      "avito_profile_excerpt": {
+        "text": "Сияние нового уровня с палитрой Hourglass Ambient Lighting Volume (9г). Эта универсальная палитра с персиковыми, золотистыми и перламутровыми оттенками, которые можно использовать как по отдельности, так и в комбинации, создаст многомерное сияние. Ле...",
+        "truncated": true,
+        "source": "Авито 14.html"
       }
     },
     {
@@ -521,6 +1110,60 @@
           "official_assets/8165960870.jpg"
         ],
         "photo_note_ru": "IMAGE MD restoring youth serum, не biotech longevity crème."
+      },
+      "avito_item_page": {
+        "description_ru_as_seller_claim": "Высококонцентрированная смесь пептидов, растительных стволовых клеток и стабильных форм витамина С. Корректирует и минимизирует морщины, укрепляет тургор кожи и возвращает ей упругость и эластичность. Эксклюзивная запатентованная технология доставки IMAGE Skincare позволяет активным ингредиентам эффективно проникать в более глубокие слои кожи. Показания: все типы кожи с любыми возрастными изменениями. Преимущества: не имеющая аналогов, мягкая, нежная, ежедневная сыворотка, способная вернуть коже молодость, свежесть и сияние. Применение: для получения максимального эффекта наносить на хорошо очищенную кожу утром и вечером. Закрывать Дневным кремом IMAGE MD SPF 50. Ингредиенты IMAGE Skincare стремится к тому, чтобы списки ингредиентов были максимально точными. Однако, поскольку ингредиенты могут быть изменены, мы не можем гарантировать, что эти списки являются полными, актуальными и/или безошибочными. Точный перечень ингредиентов находится на упаковке каждого препарата. Страна производитель: США",
+        "attributes_as_seller_claim": {
+          "Подтип товара": "Сыворотки и эссенции",
+          "Тип продукта": "Сыворотки",
+          "Бренд": "Другой",
+          "Активный компонент": "Витамин E, Пептиды",
+          "Тип кожи": "Зрелая",
+          "Назначение": "Сияние, Упругость и эластичность",
+          "Для кого": "Для всех",
+          "Возраст": "от 25 лет"
+        },
+        "date_display_snapshot": "23 октября в 17:29",
+        "display_price_rub_snapshot": 11999,
+        "old_price_display_rub_snapshot": null,
+        "discount_display_snapshot": null,
+        "total_views_display_snapshot": "52 просмотра",
+        "stock_badge_display_snapshot": "В наличии: последний товар",
+        "source_html_entry": "Сыворотка молодости image MD restoring youth serum купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8165960870).html",
+        "gallery_count": 5,
+        "gallery_missing_count": 0,
+        "gallery": [
+          {
+            "position": 1,
+            "path": "avito_audit/item_pages/images/8165960870/01_large.jpg",
+            "resolution": "large"
+          },
+          {
+            "position": 2,
+            "path": "avito_audit/item_pages/images/8165960870/02_large.jpg",
+            "resolution": "large"
+          },
+          {
+            "position": 3,
+            "path": "avito_audit/item_pages/images/8165960870/03_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 4,
+            "path": "avito_audit/item_pages/images/8165960870/04_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 5,
+            "path": "avito_audit/item_pages/images/8165960870/05_large.jpg",
+            "resolution": "large"
+          }
+        ]
+      },
+      "avito_profile_excerpt": {
+        "text": "Высококонцентрированная смесь пептидов, растительных стволовых клеток и стабильных форм витамина С. Корректирует и минимизирует морщины, укрепляет тургор кожи и возвращает ей упругость и эластичность. Эксклюзивная запатентованная технология доставки ...",
+        "truncated": true,
+        "source": "Авито 14.html"
       }
     },
     {
@@ -543,14 +1186,14 @@
         "name": "Bioceramic MoonSwatch Collection",
         "url": "https://www.swatch.com/en-us/bioceramic-moonswatch.html",
         "match_level": "collection",
-        "summary_ru": "Совместная коллекция хронографов Swatch и OMEGA с разными моделями; фото архива показывают голубой, тёмно-серый и розовый варианты.",
-        "verification_note_ru": "Нельзя присвоить один SKU: фото изображают несколько расцветок; подлинность и состав лота не проверены.",
+        "summary_ru": "На новом архивном снимке видны коробки Mission to the Moon, Uranus, Venus и Mercury; это демонстрация нескольких моделей, а не подтверждение состава одного лота.",
+        "verification_note_ru": "На общем фото четыре подписанные коробки, но продавец предлагает уточнить цены и модели в наличии. Нельзя выводить количество часов в продаже, точную комплектацию и подлинность из фотографии.",
         "details": {
           "source_url": "https://www.swatch.com/en-us/bioceramic-moonswatch.html",
           "checked_at": "2026-10-26",
           "specifications_ru": [
             "Bioceramic MoonSwatch — коллекция хронографов Swatch × OMEGA в разных моделях, не один подтверждённый SKU.",
-            "По архивному объявлению встречаются голубой, тёмно-серый и розовый варианты. Официальные страницы для сравнения: Mission to Uranus SO33L100, Mission to Mercury SO33A100, Mission to Venus SO33P100; это НЕ установленный состав лота.",
+            "На новом архивном снимке читаются коробки Mission to the Moon, Mission to Uranus, Mission to Venus и Mission to Mercury. Это опознавание изображённых моделей, не подтверждённый состав продаваемого лота.",
             "По описанию Swatch, материал Bioceramic состоит из 2/3 керамики и 1/3 биоматериала на основе касторового масла; свойства отдельных часов уточнять по маркировке."
           ],
           "ingredients_ru": [],
@@ -558,7 +1201,78 @@
           "claims_ru": "Официальный сайт называет коллекцию совместной работой Swatch и OMEGA; название Avito «оригинальные» не доказывает подлинность."
         },
         "photos": [],
-        "image_unavailable_note_ru": "Официальную страницу и ссылки на файлы Swatch нашли, но сохранить подтверждённый файл официального изображения в этой среде не удалось; доступны только архивные фото."
+        "image_unavailable_note_ru": "Официальную страницу и ссылки на файлы Swatch нашли, но сохранить подтверждённый файл официального изображения в этой среде не удалось; доступны только архивные фото.",
+        "visual_note_ru": "На снимке №8 видны четыре коробки: Moon, Uranus, Venus, Mercury; состав лота не подтверждён."
+      },
+      "avito_item_page": {
+        "description_ru_as_seller_claim": "Часы Omega x Swatch — это больше, чем просто прибор для измерения времени. Это история о покорении космоса, воплощенная в инновационных материалах. Почему выбирают нас: Только оригинал. Мы дорожим своей репутацией и гарантируем подлинность каждого экземпляра. Эксклюзивность. Мы привозим редкие модели, которые сложно найти в свободной продаже. Полный сервис. Поможем подобрать модель под ваш стиль и ответим на все вопросы. Порадуйте себя или близкого человека легендой, которая всегда будет в центре внимания. 💬 Напишите нам в сообщения, чтобы получить актуальный прайс и фото моделей в наличии.",
+        "attributes_as_seller_claim": {
+          "Тип часов": "Наручные или карманные",
+          "Тип товара": "Наручные часы",
+          "Состояние": "Новое",
+          "Бренд": "Omega",
+          "Цвет корпуса": "Розовый",
+          "Цвет ремешка": "Розовый",
+          "Механизм": "Кварцевые",
+          "Для кого": "Унисекс",
+          "Тип ремешка": "Нейлоновый"
+        },
+        "date_display_snapshot": "10 октября в 13:44",
+        "display_price_rub_snapshot": 33272,
+        "old_price_display_rub_snapshot": 35777,
+        "discount_display_snapshot": "–7%",
+        "total_views_display_snapshot": "371 просмотр",
+        "stock_badge_display_snapshot": null,
+        "source_html_entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8296456393).html",
+        "gallery_count": 8,
+        "gallery_missing_count": 1,
+        "gallery": [
+          {
+            "position": 1,
+            "path": "avito_audit/item_pages/images/8296456393/01_large.jpg",
+            "resolution": "large"
+          },
+          {
+            "position": 2,
+            "path": "avito_audit/item_pages/images/8296456393/02_large.jpg",
+            "resolution": "large"
+          },
+          {
+            "position": 3,
+            "path": "avito_audit/item_pages/images/8296456393/03_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 4,
+            "path": null,
+            "resolution": "missing"
+          },
+          {
+            "position": 5,
+            "path": "avito_audit/item_pages/images/8296456393/05_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 6,
+            "path": "avito_audit/item_pages/images/8296456393/06_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 7,
+            "path": "avito_audit/item_pages/images/8296456393/07_thumb.jpg",
+            "resolution": "thumbnail"
+          },
+          {
+            "position": 8,
+            "path": "avito_audit/item_pages/images/8296456393/08_large.jpg",
+            "resolution": "large"
+          }
+        ]
+      },
+      "avito_profile_excerpt": {
+        "text": "Часы Omega x Swatch — это больше, чем просто прибор для измерения времени. Это история о покорении космоса, воплощенная в инновационных материалах.\n\nПочему выбирают нас:\n\nТолько оригинал. Мы дорожим своей репутацией и гарантируем подлинность каждого ...",
+        "truncated": true,
+        "source": "Авито 14.html"
       }
     },
     {
@@ -596,8 +1310,28 @@
           "official_assets/8350792227.jpg"
         ],
         "photo_note_ru": "То же иллюстративное фото серии; второй чехол не идентифицирован."
+      },
+      "avito_item_page": null,
+      "avito_profile_excerpt": {
+        "text": "Для Дениса.",
+        "truncated": false,
+        "source": "Авито 14.html"
       }
     }
   ],
-  "official_research_checked_at": "2026-10-26"
+  "official_research_checked_at": "2026-10-26",
+  "item_page_research": {
+    "source_repository": "https://github.com/usaforyou/MANUS1",
+    "source_commit": "696ecf0594bbe0057d293b1f81d23a03d1dd76c6",
+    "source_zips": [
+      "PART1_HTMLS.zip",
+      "PART_2.zip",
+      "PART3.zip"
+    ],
+    "individual_page_count": 13,
+    "missing_individual_page_ids": [
+      "8350792227"
+    ],
+    "status": "archived seller statements and images; live availability, authenticity and pricing not verified"
+  }
 }

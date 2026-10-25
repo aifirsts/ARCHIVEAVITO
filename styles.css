@@ -11,3 +11,11 @@
 .card details .manufacturer-claim{color:#62544c;font-style:italic}
 .card details .source-date{font-size:10px;color:#78746c}
 .card details .inci-link{color:#923328;font-size:11px;font-weight:750;line-height:1.5}
+
+/* Separate, labeled galleries from the individual listing and older profile. */
+.card-source{position:absolute;bottom:42px;left:10px;max-width:calc(100% - 20px);background:#fffdf8e8;border-radius:3px;padding:5px 8px;font-size:10px;font-weight:700;line-height:1.35}
+.card-count{max-width:calc(100% - 20px);line-height:1.4}
+.thumbs{max-width:100%;overflow-x:auto;scrollbar-width:thin;padding-bottom:5px}
+.thumb{flex:0 0 32px}
+.card-info .seller-details{margin-top:0}
+.card details .seller-description{white-space:pre-line;color:#3c3a35}

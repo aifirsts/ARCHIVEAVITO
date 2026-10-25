@@ -33,34 +33,49 @@ function externalLink(label, href, className) {
 }
 function card(item) {
   const article = el("article", "card");
+  const savedPage = item.avito_item_page;
+  const gallery = savedPage ? savedPage.gallery.filter(photo => photo.path).map(photo => ({
+    path: photo.path, label: `Фото ${photo.position} отдельного объявления`,
+    quality: photo.resolution === "large" ? "крупный JPEG" : "миниатюра"
+  })) : [];
+  // Keep the earlier profile-only previews too: they can contain photos not in
+  // the separate page's saved gallery. The two archives remain distinguishable.
+  const pictures = [...gallery, ...item.photos.map((path, i) => ({
+    path, label: `Превью ${i + 1} из страницы профиля`, quality: "208×208"
+  }))];
   const imageWrap = el("div", "card-image-wrap");
   const image = el("img", "card-image");
-  image.src = item.photos[0];
-  image.alt = `Фото из объявления: ${item.title}`;
+  const sourceLabel = el("span", "card-source");
   image.loading = "lazy";
-  image.width = 208;
-  image.height = 208;
-  imageWrap.append(image, el("span", "card-category", item.category), el("span", "card-count", `${item.photos.length} фото из архива`));
+  image.width = 720;
+  image.height = 960;
+  function show(photo) {
+    image.src = photo.path;
+    image.alt = `${photo.label}: ${item.title}`;
+    sourceLabel.textContent = `${photo.label} · ${photo.quality}`;
+  }
+  show(pictures[0]);
+  const count = savedPage ? `${gallery.length}/${savedPage.gallery_count} фото карточки · ${item.photos.length} профиля` : `${item.photos.length} фото из профиля`;
+  imageWrap.append(image, el("span", "card-category", item.category), el("span", "card-count", count), sourceLabel);
   article.append(imageWrap);
   const thumbs = el("div", "thumbs");
-  if (item.photos.length > 1) {
-    item.photos.forEach((photo, index) => {
-      const button = el("button", index === 0 ? "thumb active" : "thumb");
-      button.type = "button";
-      button.setAttribute("aria-label", `Фото ${index + 1} из ${item.photos.length}: ${item.title}`);
-      const thumb = el("img");
-      thumb.src = photo;
-      thumb.alt = "";
-      thumb.loading = "lazy";
-      button.append(thumb);
-      button.addEventListener("click", () => {
-        image.src = photo;
-        thumbs.querySelectorAll("button").forEach(x => x.classList.remove("active"));
-        button.classList.add("active");
-      });
-      thumbs.append(button);
+  pictures.forEach((photo, index) => {
+    const button = el("button", index === 0 ? "thumb active" : "thumb");
+    button.type = "button";
+    button.setAttribute("aria-label", `${photo.label}: ${item.title}`);
+    button.title = photo.label;
+    const thumb = el("img");
+    thumb.src = photo.path;
+    thumb.alt = "";
+    thumb.loading = "lazy";
+    button.append(thumb);
+    button.addEventListener("click", () => {
+      show(photo);
+      thumbs.querySelectorAll("button").forEach(x => x.classList.remove("active"));
+      button.classList.add("active");
     });
-  }
+    thumbs.append(button);
+  });
   article.append(thumbs);
   // Manufacturer photography is kept separate from the archived seller photos.
   const manufacturer = el("div", "manufacturer-media");
@@ -82,8 +97,27 @@ function card(item) {
   if (item.old_price_text_snapshot) prices.append(el("del", "", item.old_price_text_snapshot));
   if (item.discount_text_snapshot) prices.append(el("span", "card-discount", item.discount_text_snapshot));
   info.append(prices, el("p", "card-location", `${item.location_snapshot} · цена из архива`));
+  const sellerDetails = el("details", "seller-details");
+  sellerDetails.append(el("summary", "", savedPage ? "Текст и параметры объявления (архив) ↗" : "Фрагмент объявления (архив профиля) ↗"));
+  if (savedPage) {
+    sellerDetails.append(el("p", "source-date", `Сохранённая HTML-карточка · видимая дата: ${savedPage.date_display_snapshot || "не указана"} · просмотры: ${savedPage.total_views_display_snapshot || "не указаны"}. Наличие и цена сегодня неизвестны.`));
+    sellerDetails.append(el("h4", "detail-heading", "Описание продавца"), el("p", "seller-description", savedPage.description_ru_as_seller_claim));
+    const attributes = Object.entries(savedPage.attributes_as_seller_claim);
+    if (attributes.length) {
+      sellerDetails.append(el("h4", "detail-heading", "Характеристики из HTML"));
+      const list = el("ul", "detail-list");
+      attributes.forEach(([key, value]) => list.append(el("li", "", `${key}: ${value}`)));
+      sellerDetails.append(list);
+    }
+    if (savedPage.gallery_missing_count) sellerDetails.append(el("p", "caution", `${savedPage.gallery_missing_count} фото есть только по внешней ссылке: файла в ZIP нет.`));
+    if (savedPage.stock_badge_display_snapshot) sellerDetails.append(el("p", "source-date", `Указатель наличия в сохранённой HTML-странице: «${savedPage.stock_badge_display_snapshot}». Не является live-остатком.`));
+  } else {
+    sellerDetails.append(el("p", "caution", "В трёх новых ZIP нет отдельной HTML-карточки этого товара. Доступен только старый снимок профиля."));
+    sellerDetails.append(el("p", "seller-description", item.avito_profile_excerpt.text + (item.avito_profile_excerpt.truncated ? "…" : "")));
+  }
+  info.append(sellerDetails);
   const details = el("details");
-  details.append(el("summary", "", "Характеристики, состав и применение ↗"));
+  details.append(el("summary", "", "Данные производителя: характеристики и состав ↗"));
   const facts = item.official.details;
   details.append(el("p", "", `${item.official.name}. ${item.official.summary_ru}`));
   function section(title, entries) {
@@ -115,7 +149,7 @@ function card(item) {
 function render() {
   const q = search.value.trim().toLocaleLowerCase("ru");
   const visible = items.filter(item => (selectedCategory === "Все" || item.category === selectedCategory) &&
-    `${item.title} ${item.official.name} ${item.official.brand} ${item.official.details.specifications_ru.join(" ")} ${item.official.details.ingredients_ru.join(" ")}`.toLocaleLowerCase("ru").includes(q));
+    `${item.title} ${item.official.name} ${item.official.brand} ${item.official.details.specifications_ru.join(" ")} ${item.official.details.ingredients_ru.join(" ")} ${item.avito_item_page?.description_ru_as_seller_claim || item.avito_profile_excerpt?.text || ""}`.toLocaleLowerCase("ru").includes(q));
   grid.replaceChildren(...visible.map(card));
   resultLine.textContent = `Показано ${visible.length} из ${items.length} товаров`;
   document.querySelector("#empty").hidden = visible.length !== 0;

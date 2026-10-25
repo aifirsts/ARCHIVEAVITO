@@ -1,0 +1,816 @@
+{
+  "source": {
+    "repository": "https://github.com/usaforyou/MANUS1",
+    "archive_path": "Авито 14.zip",
+    "archive_sha256": "109ea47146104251d4a62b00319912270863cb298517b85b5adf362e3d99d93e",
+    "archive_repo_commit": "16d12f520cce29bdb2339c2bf6538a194c17624d",
+    "archive_repo_uploaded_utc": "2026-10-25T18:29:08Z",
+    "html_snapshots": [
+      {
+        "filename": "Авито.html",
+        "zip_entry_timestamp_unzoned": "(2026, 10, 26, 0, 45, 54)",
+        "sha256": "b26a8d67bd10a1bfb01d8efba22dd4cd02507142a12efb9e37fe6dd2f7c9b51e",
+        "card_count": 12
+      },
+      {
+        "filename": "Авито 14.html",
+        "zip_entry_timestamp_unzoned": "(2026, 10, 26, 2, 4, 12)",
+        "sha256": "be85f37900abad0ce9666b9551a009799c168b5feb414600c7b1ff54fe40102c",
+        "card_count": 14
+      }
+    ],
+    "caveat": "Offline archive snapshots, not live Avito verification. ZIP timestamps contain no timezone; date labels in listings may be relative or omit year. Profile and listing claims are seller-provided; descriptions are list excerpts (many truncated). Image URLs are previews and may expire. Reviewer display names intentionally omitted."
+  },
+  "profile": {
+    "profile_url": "https://www.avito.ru/user/b2165ff5492372c90fab55f7223f9d3b/profile/items/all",
+    "seller_id": "b2165ff5492372c90fab55f7223f9d3b",
+    "display_name": "Beauty Supply",
+    "rating_display": "5,0",
+    "ratings_display": "34 отзыва",
+    "followers_display": "20 подписчиков, 0 подписок",
+    "registered_display": "На Авито с ноября 2011",
+    "active_display": "Активные 14",
+    "closed_display": "Завершённые 72",
+    "badges": [
+      "Надёжный продавец",
+      "Данные подтверждены",
+      "26 продаж с Авито Доставкой"
+    ],
+    "description": "Приветствуем в вашем новом источнике американских товаров! 🇺🇸.\nЗабудьте об ограничениях — наш онлайн-магазин открывает двери к лучшему из США.\nУстали от скудного ассортимента и переплат? Мы собрали для вас эксклюзивные и качественные товары прямиком из Америки:\n👗Мода и стиль: От последних трендов до вечной классики от ведущих мировых брендов.\n💄Красота и уход: Элитная косметика, парфюмерия, средства для кожи и волос.\n📱Техника и гаджеты: Инновации для вашего комфорта и современного образа жизни.\n🏠Товары для дома: Стильные решения и практичные аксессуары для уюта.\n🍼Детские товары: Безопасная и качественная одежда, развивающие игрушки.\nНаши преимущества:\n💯Гарантия подлинности: Только оригинальная продукция.\n📤Огромный ассортимент: Найдите все, что нужно, и откройте для себя новое.\n🪄Простота заказа: Легкое оформление покупки.\n🚗💨Оперативная доставка: Ваши товары прибудут быстро.\n💆🏻‍♀️Забота о клиентах: Мы всегда на связи и готовы помочь.\nНе упустите шанс! ❤️.\nПогрузитесь в мир американского шопинга🛍️. В честь запуска — специальные подарки! 🎁."
+  },
+  "items": [
+    {
+      "id": "7942405497",
+      "title": "Hourglass румяна",
+      "url": "https://www.avito.ru/moskva/krasota_i_zdorove/hourglass_rumyana_7942405497",
+      "category_path": "krasota_i_zdorove",
+      "price_rub": 2960,
+      "old_price_text": "3 700 ₽",
+      "discount_text": "−20%",
+      "location": "Москва",
+      "date_display": "14 марта 23:55",
+      "description_excerpt": "Представляем революционную линейку румян, которая объединяет знаменитое сияние пудры Ambient Lighting с актуальной палитрой цветов.\n\nЧто она делает:\n\nЗабудьте об обычных румянах! Эта коллекция использует уникальную фотолюминесцентную технологию, чтоб...",
+      "description_truncated": true,
+      "delivery_badge_in_snapshot": false,
+      "visible_photo_previews": [
+        {
+          "thumbnail_url": "https://c80.img.avito.st/image/1/1.zh_8P7aAYvbqn8D37Bj9f8ifYPJOiGb2Tu8D8k48Y1RJnGbs6p_A90o.Q1aVVdFRrRSq2NX5xwpfRC20y2AZCdi-tHlZDUg5NMI",
+          "archive_entry": "Авито 14_files/1.zh_8P7aAYvbqn8D37Bj9f8ifYPJOiGb2Tu8D8k48Y1RJnGbs6p_A90o.Q1aVVdFRrRSq2NX5xwpfRC20y2AZCdi-tHlZDUg5NMI"
+        },
+        {
+          "thumbnail_url": "https://c80.img.avito.st/image/1/1.dUpHNLaA2aNRlHuiISljLXOU26f1g92j9eS4p_U32AHyl925UZR7ovE.4tpdRCF25lgMYfYBPMxrL1eIM-082bTV6-lICPQ3pt0",
+          "archive_entry": "Авито 14_files/1.dUpHNLaA2aNRlHuiISljLXOU26f1g92j9eS4p_U32AHyl925UZR7ovE.4tpdRCF25lgMYfYBPMxrL1eIM-082bTV6-lICPQ3pt0"
+        },
+        {
+          "thumbnail_url": "https://c80.img.avito.st/image/1/1.eZGUm7aA1XiCO3d56o498aA713wmLNF4Jku0fCaY1NohONFigjt3eSI.agRF8PNPFB_l4oi4c0V7tg4Qg-dP0Dl0QY8886BMl9g",
+          "archive_entry": "Авито 14_files/1.eZGUm7aA1XiCO3d56o498aA713wmLNF4Jku0fCaY1NohONFigjt3eSI.agRF8PNPFB_l4oi4c0V7tg4Qg-dP0Dl0QY8886BMl9g"
+        },
+        {
+          "thumbnail_url": "https://c80.img.avito.st/image/1/1.CBagPLaApP-2nAb-vBQ8d5ScpvsSi6D_EuzF-xI_pV0Vn6DltpwG_hY.h0AB7hQVhVrufPoUY8G90t6Q76vv2C97dYAzgMbRlH4",
+          "archive_entry": "Авито 14_files/1.CBagPLaApP-2nAb-vBQ8d5ScpvsSi6D_EuzF-xI_pV0Vn6DltpwG_hY.h0AB7hQVhVrufPoUY8G90t6Q76vv2C97dYAzgMbRlH4"
+        },
+        {
+          "thumbnail_url": "https://b50.img.avito.st/image/1/1.eqT1XLaA1k3j_HRMjVliw8H81ElH69JNR4y3SUdf1-9A_9JX4_x0TEM.K_bHwdklq5-qUMvTuIaHnS4YgjqsVmQGVe_yNMPn-UU",
+          "archive_entry": "Авито 14_files/1.eqT1XLaA1k3j_HRMjVliw8H81ElH69JNR4y3SUdf1-9A_9JX4_x0TEM.K_bHwdklq5-qUMvTuIaHnS4YgjqsVmQGVe_yNMPn-UU"
+        }
+      ],
+      "photo_counter_display": "Ещё 5 фото",
+      "schema_availability": "https://schema.org/LimitedAvailability",
+      "source_html": "Авито 14.html"
+    },
+    {
+      "id": "7942010246",
+      "title": "Charlotte tilbury pillow talk тени",
+      "url": "https://www.avito.ru/moskva/krasota_i_zdorove/charlotte_tilbury_pillow_talk_teni_7942010246",
+      "category_path": "krasota_i_zdorove",
+      "price_rub": 6000,
+      "old_price_text": "7 500 ₽",
+      "discount_text": "−20%",
+      "location": "Москва",
+      "date_display": "15 марта 22:47",
+      "description_excerpt": "Откройте для себя палетку теней для век с четырьмя гармоничными оттенками (4 x 1,3 г), которые идеально дополнят ваш образ. Включает: нежный розовый беж, сияющее розовое золото, тёплый румянец и глубокий коричневый.",
+      "description_truncated": false,
+      "delivery_badge_in_snapshot": false,
+      "visible_photo_previews": [
+        {
+          "thumbnail_url": "https://b40.img.avito.st/image/1/1.HDmdd7aAsNCL1xLRqQtfTqnXstQvwLTQL6fR1C90sXIo1LTKi9cS0Ss.jjJ8Gs5e3EV4OYEgpbFIDeh9O2_K9RdjF9pW4sGj2Ro",
+          "archive_entry": "Авито 14_files/1.HDmdd7aAsNCL1xLRqQtfTqnXstQvwLTQL6fR1C90sXIo1LTKi9cS0Ss.jjJ8Gs5e3EV4OYEgpbFIDeh9O2_K9RdjF9pW4sGj2Ro"
+        },
+        {
+          "thumbnail_url": "https://b10.img.avito.st/image/1/1.PwHfdLaAk-jJ1DHprQx_duvUkextw5fobaTy7G13kkpq15fyydQx6Wk.elX7EN9t4qSoDVODWT3IqXavDpF9TjWz_c6GSXlZVdw?cqp=2.2LhnDdKx1gU5sZ7QAbwhSdJoeYt5K_KL9JwGcCXpGrDVbBxJ1yJf9Jn7hY3rGWaiHtSha9zz1w==",
+          "archive_entry": "Авито 14_files/1.PwHfdLaAk-jJ1DHprQx_duvUkextw5fobaTy7G13kkpq15fyydQx6Wk.elX7EN9t4qSoDVODWT3IqXavDpF9TjWz_c6GSXlZVdw"
+        },
+        {
+          "thumbnail_url": "https://c80.img.avito.st/image/1/1.PwEh7LaAk-g3TDHpU6QFcRVMkeyTW5fokzzy7JPvkkqUT5fyN0wx6Zc.hIqhKjcxUA9Cohmk_93PoQQtKMXQB6jeAVG5SIcf07E",
+          "archive_entry": "Авито 14_files/1.PwEh7LaAk-g3TDHpU6QFcRVMkeyTW5fokzzy7JPvkkqUT5fyN0wx6Zc.hIqhKjcxUA9Cohmk_93PoQQtKMXQB6jeAVG5SIcf07E"
+        },
+        {
+          "thumbnail_url": "https://40.img.avito.st/image/1/1.pUr5CraACaPvqquiv3jjPc2qC6dLvQ2jS9pop0sJCAFMqQ2576qrok8.a5wRs0s2tZvtdRgFF_0ir_HrpjD4tjOBs2BMGBROeoM",
+          "archive_entry": "Авито 14_files/1.pUr5CraACaPvqquiv3jjPc2qC6dLvQ2jS9pop0sJCAFMqQ2576qrok8.a5wRs0s2tZvtdRgFF_0ir_HrpjD4tjOBs2BMGBROeoM"
+        },
+        {
+          "thumbnail_url": "https://30.img.avito.st/image/1/1.k9eIBLaAPz6epJ0_ola7oLykPTo6szs-OtReOjoHPpw9pzsknqSdPz4.aQRirqyp9HiEZQRSIYR9-SwCiWqkp3HAGH-XJFNLahM?cqp=2.2LhnDdKx1gU5sZ7QAbwhSdJoeYt5K_KL9JwGcCXpGrDVbBxJ1yJf9Jn7hY3rGWaiHtSha9zz1w==",
+          "archive_entry": "Авито 14_files/1.k9eIBLaAPz6epJ0_ola7oLykPTo6szs-OtReOjoHPpw9pzsknqSdPz4.aQRirqyp9HiEZQRSIYR9-SwCiWqkp3HAGH-XJFNLahM"
+        }
+      ],
+      "photo_counter_display": "Ещё 3 фото",
+      "schema_availability": "https://schema.org/LimitedAvailability",
+      "source_html": "Авито 14.html"
+    },
+    {
+      "id": "7942160038",
+      "title": "Hourglass тени",
+      "url": "https://www.avito.ru/moskva/krasota_i_zdorove/hourglass_teni_7942160038",
+      "category_path": "krasota_i_zdorove",
+      "price_rub": 5200,
+      "old_price_text": "6 500 ₽",
+      "discount_text": "−20%",
+      "location": "Москва",
+      "date_display": "14 марта 23:44",
+      "description_excerpt": "Основательница бренда считает макияж инструментом самовыражения. Линия Curator позволяет создать свою уникальную цветовую палитру благодаря широкому выбору моно-теней. Все оттенки мелкодисперсные, высокопигментированные и прекрасно смешиваются, откры...",
+      "description_truncated": true,
+      "delivery_badge_in_snapshot": false,
+      "visible_photo_previews": [
+        {
+          "thumbnail_url": "https://b50.img.avito.st/image/1/1.nDqmQLaAMNOw4JLSknbaWpLgMtcU9zTTFJBR1xRDMXET4zTJsOCS0hA.eVtJtoD9ZH7TYJHEwy2yjkB8TIk7TcYj-oWgbT-qVX4",
+          "archive_entry": "Авито 14_files/1.nDqmQLaAMNOw4JLSknbaWpLgMtcU9zTTFJBR1xRDMXET4zTJsOCS0hA.eVtJtoD9ZH7TYJHEwy2yjkB8TIk7TcYj-oWgbT-qVX4"
+        },
+        {
+          "thumbnail_url": "https://c70.img.avito.st/image/1/1.6kTzDLaARq3lrOSsqzPaJcesRKlBu0KtQdwnqUEPRw9Gr0K35azkrEU.f3eWMptuPvGOr0dPXQpFNt97AfwIbRG4HRDJL0Tc6Bw",
+          "archive_entry": "Авито 14_files/1.6kTzDLaARq3lrOSsqzPaJcesRKlBu0KtQdwnqUEPRw9Gr0K35azkrEU.f3eWMptuPvGOr0dPXQpFNt97AfwIbRG4HRDJL0Tc6Bw"
+        },
+        {
+          "thumbnail_url": "https://c90.img.avito.st/image/1/1.zwMzkraAY-olMsHrIaW8YwcyYe6BJWfqgUIC7oGRYkiGMWfwJTLB64U.cYkAGbfJLMqC4mm6wefDzriHkAIUVvf0XjBpY2T9aNE",
+          "archive_entry": "Авито 14_files/1.zwMzkraAY-olMsHrIaW8YwcyYe6BJWfqgUIC7oGRYkiGMWfwJTLB64U.cYkAGbfJLMqC4mm6wefDzriHkAIUVvf0XjBpY2T9aNE"
+        },
+        {
+          "thumbnail_url": "https://b00.img.avito.st/image/1/1.tUpKTLaAGaNc7LuiLG6uLX7sG6f4-x2j-Jx4p_hPGAH_7x25XOy7ovw.k2KXqsqB3hOyQqM8cB8BMbVK89tbEZv-93FIKtV4jqY?cqp=2.2LhnDdKx1gU5sZ7QAbwhSdJoeYt5K_KL9JwGcCXpGrDVbBxJ1yJf9Jn7hY3rGWaiHtSha9zz1w==",
+          "archive_entry": "Авито 14_files/1.tUpKTLaAGaNc7LuiLG6uLX7sG6f4-x2j-Jx4p_hPGAH_7x25XOy7ovw.k2KXqsqB3hOyQqM8cB8BMbVK89tbEZv-93FIKtV4jqY"
+        },
+        {
+          "thumbnail_url": "https://90.img.avito.st/image/1/1.U8KoLbaA_yu-jV0qglg-oZyN_S8amvsrGv2eLxou_okdjvsxvo1dKh4._ndmMmEvQHgxk3vp98ZLl7m1tzThAn8ugXNc6-3NRvM",
+          "archive_entry": "Авито 14_files/1.U8KoLbaA_yu-jV0qglg-oZyN_S8amvsrGv2eLxou_okdjvsxvo1dKh4._ndmMmEvQHgxk3vp98ZLl7m1tzThAn8ugXNc6-3NRvM"
+        }
+      ],
+      "photo_counter_display": "Ещё 5 фото",
+      "schema_availability": "https://schema.org/LimitedAvailability",
+      "source_html": "Авито 14.html"
+    },
+    {
+      "id": "8102096652",
+      "title": "Чехол на iPhone 15 pro max Speck Presidio2 Pro",
+      "url": "https://www.avito.ru/moskva/telefony/chehol_na_iphone_15_pro_max_speck_presidio2_pro_8102096652",
+      "category_path": "telefony",
+      "price_rub": 557,
+      "old_price_text": "599 ₽",
+      "discount_text": "−7%",
+      "location": "Москва",
+      "date_display": "11 июня 18:05",
+      "description_excerpt": "Speck presidio2 Pro — это надёжный и удобный чехол, созданный по гибридной технологии. Его прочные материалы и мягкая, приятная на ощупь отделка делают его идеальным аксессуаром. Важным преимуществом является антимикробная защита Microban, которая эф...",
+      "description_truncated": true,
+      "delivery_badge_in_snapshot": false,
+      "visible_photo_previews": [
+        {
+          "thumbnail_url": "https://10.img.avito.st/image/1/1.6Uqn7LaARaOxTOei-ceaTIVMR6cVW0GjFTwkpxXvRAEST0G5sUznohE.OqBExuIzCA-_u3T-yla6gktsWc0yZU1Vs6ST20DkxV8?cqp=2.2LhnDdKx1gU5sZ7QAbwhSdJoeYt5K_KL9JwGcCXpGrDVbBxJ1yJf9Jn7hY3rGWaiHtSha9zz1w==",
+          "archive_entry": "Авито 14_files/1.6Uqn7LaARaOxTOei-ceaTIVMR6cVW0GjFTwkpxXvRAEST0G5sUznohE.OqBExuIzCA-_u3T-yla6gktsWc0yZU1Vs6ST20DkxV8"
+        },
+        {
+          "thumbnail_url": "https://c80.img.avito.st/image/1/1.68PwK7aARyrmi-UrqniuxNKLRS5CnEMqQvsmLkIoRohFiEMw5ovlK0Y.LO9JMbdhGKv_dGaYgoJYqKskmvWe07TPSvq-fAynQys",
+          "archive_entry": "Авито 14_files/1.68PwK7aARyrmi-UrqniuxNKLRS5CnEMqQvsmLkIoRohFiEMw5ovlK0Y.LO9JMbdhGKv_dGaYgoJYqKskmvWe07TPSvq-fAynQys"
+        },
+        {
+          "thumbnail_url": "https://c60.img.avito.st/image/1/1.5OKsPraASAu6nuoK6HW24o6eSg8eiUwLHu4pDx49SakZnUwRup7qCho.7alMtvhXM59P44DKpWk-EWTA36uu3S75AOmJujM1Vr4",
+          "archive_entry": "Авито 14_files/1.5OKsPraASAu6nuoK6HW24o6eSg8eiUwLHu4pDx49SakZnUwRup7qCho.7alMtvhXM59P44DKpWk-EWTA36uu3S75AOmJujM1Vr4"
+        }
+      ],
+      "photo_counter_display": null,
+      "schema_availability": "https://schema.org/LimitedAvailability",
+      "source_html": "Авито 14.html"
+    },
+    {
+      "id": "8165981546",
+      "title": "Лифтинг крем для тела VOL.U.lift",
+      "url": "https://www.avito.ru/moskva/krasota_i_zdorove/lifting_krem_dlya_tela_vol.u.lift_8165981546",
+      "category_path": "krasota_i_zdorove",
+      "price_rub": 8500,
+      "old_price_text": null,
+      "discount_text": null,
+      "location": "Москва",
+      "date_display": "13 июля 22:25",
+      "description_excerpt": "Разработанный пластическим хирургом, этот комплекс для тела направлен на решение специфических проблем с кожей тела, которые возникают при использовании Glp-1/Gip, улучшая видимость Дряблости. Морщинистость. Обезвоживание. Тон. Наш уникальный скульпт...",
+      "description_truncated": true,
+      "delivery_badge_in_snapshot": false,
+      "visible_photo_previews": [
+        {
+          "thumbnail_url": "https://70.img.avito.st/image/1/1.V9FYrbaA-zhODVk5eqRbhHIN-TzqGv846n2aPOqu-prtDv8iTg1ZOe4.FAm0FTMZmS_6cbSbdxpyQYIVcvPciu7snDFTSoj4oCg",
+          "archive_entry": "Авито 14_files/1.V9FYrbaA-zhODVk5eqRbhHIN-TzqGv846n2aPOqu-prtDv8iTg1ZOe4.FAm0FTMZmS_6cbSbdxpyQYIVcvPciu7snDFTSoj4oCg"
+        },
+        {
+          "thumbnail_url": "https://00.img.avito.st/image/1/1.JIDiJbaAiGn0hSpophlP9vKFim1QkoxpUPXpbVAmictXhoxz9IUqaFQ.2Htaf9UIDCvru4E7x8Zo4grHxu5YkTRaZ8X5JDxzFVI?cqp=2.2LhnDdKx1gU5sZ7QAbwhSdJoeYt5K_KL9JwGcCXpGrDVbBxJ1yJf9Jn7hY3rGWaiHtSha9zz1w==",
+          "archive_entry": "Авито 14_files/1.JIDiJbaAiGn0hSpophlP9vKFim1QkoxpUPXpbVAmictXhoxz9IUqaFQ.2Htaf9UIDCvru4E7x8Zo4grHxu5YkTRaZ8X5JDxzFVI"
+        },
+        {
+          "thumbnail_url": "https://b00.img.avito.st/image/1/1.dutX-baA2gJBWXgDN8QbwX1Z2AblTt4C5Sm7BuX626DiWt4YQVl4A-E.aRnf8TbDrDLN79w-XPEgiopqQ4B9425wusIppTWgld0?cqp=2.2LhnDdKx1gU5sZ7QAbwhSdJoeYt5K_KL9JwGcCXpGrDVbBxJ1yJf9Jn7hY3rGWaiHtSha9zz1w==",
+          "archive_entry": "Авито 14_files/1.dutX-baA2gJBWXgDN8QbwX1Z2AblTt4C5Sm7BuX626DiWt4YQVl4A-E.aRnf8TbDrDLN79w-XPEgiopqQ4B9425wusIppTWgld0"
+        },
+        {
+          "thumbnail_url": "https://40.img.avito.st/image/1/1.K8sWv7aAhyIAHyUjTP9E4TwfhSakCIMipG_mJqS8hoCjHIM4AB8lI6A.EDNoeLzlGo8G73QitkxG4lItZg6nvwD2tSfWiEUoWgg",
+          "archive_entry": "Авито 14_files/1.K8sWv7aAhyIAHyUjTP9E4TwfhSakCIMipG_mJqS8hoCjHIM4AB8lI6A.EDNoeLzlGo8G73QitkxG4lItZg6nvwD2tSfWiEUoWgg"
+        },
+        {
+          "thumbnail_url": "https://c80.img.avito.st/image/1/1.gevGKraALQLQio8DyDTuweyKLwZ0nSkCdPpMBnQpLKBziSkY0IqPA3A.3UyhzzF2EvatAt4uo9FT8MzahVMTkJscUZbt9hIEeyQ",
+          "archive_entry": "Авито 14_files/1.gevGKraALQLQio8DyDTuweyKLwZ0nSkCdPpMBnQpLKBziSkY0IqPA3A.3UyhzzF2EvatAt4uo9FT8MzahVMTkJscUZbt9hIEeyQ"
+        }
+      ],
+      "photo_counter_display": null,
+      "schema_availability": "https://schema.org/LimitedAvailability",
+      "source_html": "Авито 14.html"
+    },
+    {
+      "id": "8166119490",
+      "title": "Image skincare VOL.U.lift",
+      "url": "https://www.avito.ru/moskva/krasota_i_zdorove/image_skincare_vol.u.lift_8166119490",
+      "category_path": "krasota_i_zdorove",
+      "price_rub": 12900,
+      "old_price_text": null,
+      "discount_text": null,
+      "location": "Москва",
+      "date_display": "13 июля 22:19",
+      "description_excerpt": "Image Skincare Vol. U. Lift™.\n\nСредство Для Восстановления Овала Лица.\n\nУсовершенствованное Средство Для Подтяжки Кожи.\n\nVol. U. Lift — это усовершенствованное средство для восстановления молодости лица, разработанное для устранения видимых изменений...",
+      "description_truncated": true,
+      "delivery_badge_in_snapshot": true,
+      "visible_photo_previews": [
+        {
+          "thumbnail_url": "https://c70.img.avito.st/image/1/1.BdOQa7aAqTqGyws7lltEh7rLqz4i3K06IrvIPiJoqJglyK0ghssLOyY.iOss30NhuFBI0YnweHig4zYcrVgPZBAq9oTjLqbBiXI",
+          "archive_entry": "Авито 14_files/1.BdOQa7aAqTqGyws7lltEh7rLqz4i3K06IrvIPiJoqJglyK0ghssLOyY.iOss30NhuFBI0YnweHig4zYcrVgPZBAq9oTjLqbBiXI"
+        },
+        {
+          "thumbnail_url": "https://b40.img.avito.st/image/1/1.4_Z4g7aATx9uI-0eMpD33FIjTRvKNEsfylMuG8qATr3NIEsFbiPtHs4.gLWysZhobc7rn8r8YYuNVeRQeQJW2SFaCUCArnB0MOg",
+          "archive_entry": "Авито 14_files/1.4_Z4g7aATx9uI-0eMpD33FIjTRvKNEsfylMuG8qATr3NIEsFbiPtHs4.gLWysZhobc7rn8r8YYuNVeRQeQJW2SFaCUCArnB0MOg"
+        },
+        {
+          "thumbnail_url": "https://b30.img.avito.st/image/1/1.9fOOmLaAWRqYOPsb6MOpp6Q4Wx48L10aPEg4HjybWLg7O10AmDj7Gzg.DlVh50H_DMy9-WYXd6syDVw-OXsqyvaZTi38UPtLrGU?cqp=2.2LhnDdKx1gU5sZ7QAbwhSdJoeYt5K_KL9JwGcCXpGrDVbBxJ1yJf9Jn7hY3rGWaiHtSha9zz1w==",
+          "archive_entry": "Авито 14_files/1.9fOOmLaAWRqYOPsb6MOpp6Q4Wx48L10aPEg4HjybWLg7O10AmDj7Gzg.DlVh50H_DMy9-WYXd6syDVw-OXsqyvaZTi38UPtLrGU"
+        },
+        {
+          "thumbnail_url": "https://70.img.avito.st/image/1/1.CWvM_7aApYLaXweD0s9LQOZfp4Z-SKGCfi_Ehn78pCB5XKGY2l8Hg3o.USTTtTBDho5oZ3sSWNIP4FNqTERpx-ztnclfSFpBEOI",
+          "archive_entry": "Авито 14_files/1.CWvM_7aApYLaXweD0s9LQOZfp4Z-SKGCfi_Ehn78pCB5XKGY2l8Hg3o.USTTtTBDho5oZ3sSWNIP4FNqTERpx-ztnclfSFpBEOI"
+        },
+        {
+          "thumbnail_url": "https://40.img.avito.st/image/1/1.aCl-4raAxMBoQmbBIrNWfVRCxsTMVcDAzDKlxMzhxWLLQcDaaEJmwcg.--Cjx4kjW7JL82X60SP1amA-cSPu-37eOtG8GHuUM50",
+          "archive_entry": "Авито 14_files/1.aCl-4raAxMBoQmbBIrNWfVRCxsTMVcDAzDKlxMzhxWLLQcDaaEJmwcg.--Cjx4kjW7JL82X60SP1amA-cSPu-37eOtG8GHuUM50"
+        }
+      ],
+      "photo_counter_display": null,
+      "schema_availability": "https://schema.org/LimitedAvailability",
+      "source_html": "Авито 14.html"
+    },
+    {
+      "id": "8166255881",
+      "title": "Увлажняющий дневной крем SPF 30 daily prevention",
+      "url": "https://www.avito.ru/moskva/krasota_i_zdorove/uvlazhnyayuschiy_dnevnoy_krem_spf_30_daily_prevention_8166255881",
+      "category_path": "krasota_i_zdorove",
+      "price_rub": 5900,
+      "old_price_text": null,
+      "discount_text": null,
+      "location": "Москва",
+      "date_display": "13 июля 21:57",
+      "description_excerpt": "Минеральный увлажняющий крем с Spf 30 и технологией Xosm™.\n\nВаша кожа заслуживает идеальной защиты и ухода! Этот универсальный крем — необходимая вещь для ежедневного ритуала красоты. Он не просто защищает от вредного воздействия UV-лучей, но и укреп...",
+      "description_truncated": true,
+      "delivery_badge_in_snapshot": false,
+      "visible_photo_previews": [
+        {
+          "thumbnail_url": "https://70.img.avito.st/image/1/1.u-tWDbaAFwJArbUDLBv3v3ytFQbkuhMC5N12BuQOFqDjrhMYQK21A-A.0tJyczIyg2B_a3iMwTWm7L41WSKnhjWjMmFCcJGKnbA",
+          "archive_entry": "Авито 14_files/1.u-tWDbaAFwJArbUDLBv3v3ytFQbkuhMC5N12BuQOFqDjrhMYQK21A-A.0tJyczIyg2B_a3iMwTWm7L41WSKnhjWjMmFCcJGKnbA"
+        },
+        {
+          "thumbnail_url": "https://b20.img.avito.st/image/1/1.yWCUILaAZYmCgMeIimOcNb6AZ40ml2GJJvAEjSYjZCshg2GTgoDHiCI.mm4jWPeMvlqAWQ5ue4Oyu-Ivsz0HqPX4vTrumtFH_fw?cqp=2.2LhnDdKx1gU5sZ7QAbwhSdJoeYt5K_KL9JwGcCXpGrDVbBxJ1yJf9Jn7hY3rGWaiHtSha9zz1w==",
+          "archive_entry": "Авито 14_files/1.yWCUILaAZYmCgMeIimOcNb6AZ40ml2GJJvAEjSYjZCshg2GTgoDHiCI.mm4jWPeMvlqAWQ5ue4Oyu-Ivsz0HqPX4vTrumtFH_fw"
+        }
+      ],
+      "photo_counter_display": null,
+      "schema_availability": "https://schema.org/LimitedAvailability",
+      "source_html": "Авито 14.html"
+    },
+    {
+      "id": "8166335454",
+      "title": "Восстанавливающий ночной крем с витамином С",
+      "url": "https://www.avito.ru/moskva/krasota_i_zdorove/vosstanavlivayuschiy_nochnoy_krem_s_vitaminom_s_8166335454",
+      "category_path": "krasota_i_zdorove",
+      "price_rub": 8500,
+      "old_price_text": null,
+      "discount_text": null,
+      "location": "Москва",
+      "date_display": "13 июля 22:08",
+      "description_excerpt": "Ультраувлажняющий крем успокаивает кожу и помогает бороться с морщинами. Незаменимые витамины А, С, Е обеспечивают питание и спасают кожу от тусклости и сухости. Смесь гиалуроновой кислоты и керамидов помогает удержать влагу, восстановить и защитить ...",
+      "description_truncated": true,
+      "delivery_badge_in_snapshot": true,
+      "visible_photo_previews": [
+        {
+          "thumbnail_url": "https://b20.img.avito.st/image/1/1.luPCpLaAOgrUBJgL4qKyt-gEOA5wEz4KcHRbDnCnO6h3Bz4Q1ASYC3Q.2TsFtz7mGkeHghzKSj-lfahDKmV24yH3raA84hbQu6I?cqp=2.2LhnDdKx1gU5sZ7QAbwhSdJoeYt5K_KL9JwGcCXpGrDVbBxJ1yJf9Jn7hY3rGWaiHtSha9zz1w==",
+          "archive_entry": "Авито 14_files/1.luPCpLaAOgrUBJgL4qKyt-gEOA5wEz4KcHRbDnCnO6h3Bz4Q1ASYC3Q.2TsFtz7mGkeHghzKSj-lfahDKmV24yH3raA84hbQu6I"
+        },
+        {
+          "thumbnail_url": "https://b40.img.avito.st/image/1/1.YncW07aAzp4Ac2yfXq5LIzxzzJqkZMqepAOvmqTQzzyjcMqEAHNsn6A.J8gLZjjGuXKxfbrEDdeUEnG6Sk9BVAJpGsJMxya9pHc",
+          "archive_entry": "Авито 14_files/1.YncW07aAzp4Ac2yfXq5LIzxzzJqkZMqepAOvmqTQzzyjcMqEAHNsn6A.J8gLZjjGuXKxfbrEDdeUEnG6Sk9BVAJpGsJMxya9pHc"
+        },
+        {
+          "thumbnail_url": "https://00.img.avito.st/image/1/1.FHuqyLaAuJK8aBqTjowkLoBoupYYf7ySGBjZlhjLuTAfa7yIvGgakxw.u9tgys22eQ0b5M8ckciuExVDCFCQzuB2bjmv70BLpxo?cqp=2.2LhnDdKx1gU5sZ7QAbwhSdJoeYt5K_KL9JwGcCXpGrDVbBxJ1yJf9Jn7hY3rGWaiHtSha9zz1w==",
+          "archive_entry": "Авито 14_files/1.FHuqyLaAuJK8aBqTjowkLoBoupYYf7ySGBjZlhjLuTAfa7yIvGgakxw.u9tgys22eQ0b5M8ckciuExVDCFCQzuB2bjmv70BLpxo"
+        }
+      ],
+      "photo_counter_display": null,
+      "schema_availability": "https://schema.org/LimitedAvailability",
+      "source_html": "Авито 14.html"
+    },
+    {
+      "id": "8166674710",
+      "title": "Усиленный смарт-крем SPF75",
+      "url": "https://www.avito.ru/moskva/krasota_i_zdorove/usilennyy_smart-krem_spf75_8166674710",
+      "category_path": "krasota_i_zdorove",
+      "price_rub": 6700,
+      "old_price_text": null,
+      "discount_text": null,
+      "location": "Москва",
+      "date_display": "13 июля 21:53",
+      "description_excerpt": "Усовершенствованный минеральный увлажняющий крем с Spf 75 и тинтом (смарт-композиция подстраивается под любой тон кожи и выравнивает ее) удобная форма — с дозатором.\n\nЭкстракт плодов расторопши обладает антисептическим действием.\n\nЭкстракт листьев св...",
+      "description_truncated": true,
+      "delivery_badge_in_snapshot": true,
+      "visible_photo_previews": [
+        {
+          "thumbnail_url": "https://c90.img.avito.st/image/1/1.2CpzILaAdMNlgNbCT0uPf1mAdsfBl3DDwfAVx8EjdWHGg3DZZYDWwsU.lyX4Ky3y91TSOqwFdwuzTH33PXqvi_GY71AU83m4NW8",
+          "archive_entry": "Авито 14_files/1.2CpzILaAdMNlgNbCT0uPf1mAdsfBl3DDwfAVx8EjdWHGg3DZZYDWwsU.lyX4Ky3y91TSOqwFdwuzTH33PXqvi_GY71AU83m4NW8"
+        },
+        {
+          "thumbnail_url": "https://b50.img.avito.st/image/1/1.HcLOm7aAsSvYOxMq-PNTluQ7sy98LLUrfEvQL3yYsIl7OLUx2DsTKng.uPAV2yyEcoiEIjPQP0AozGMcyGqDKBPt81fP7Y9ytXA",
+          "archive_entry": "Авито 14_files/1.HcLOm7aAsSvYOxMq-PNTluQ7sy98LLUrfEvQL3yYsIl7OLUx2DsTKng.uPAV2yyEcoiEIjPQP0AozGMcyGqDKBPt81fP7Y9ytXA"
+        },
+        {
+          "thumbnail_url": "https://c90.img.avito.st/image/1/1.0NclY7aAfD4zw94_CQil_A_DfjqX1Hg-l7MdOpdgfZyQwHgkM8PeP5M.zX5dUkyyIiDeDsFFSX5rOWqpFER2dI3kEfqI4cevIBI",
+          "archive_entry": "Авито 14_files/1.0NclY7aAfD4zw94_CQil_A_DfjqX1Hg-l7MdOpdgfZyQwHgkM8PeP5M.zX5dUkyyIiDeDsFFSX5rOWqpFER2dI3kEfqI4cevIBI"
+        }
+      ],
+      "photo_counter_display": null,
+      "schema_availability": "https://schema.org/LimitedAvailability",
+      "source_html": "Авито 14.html"
+    },
+    {
+      "id": "8230842563",
+      "title": "Image MD biotech крем",
+      "url": "https://www.avito.ru/moskva/krasota_i_zdorove/image_md_biotech_krem_8230842563",
+      "category_path": "krasota_i_zdorove",
+      "price_rub": 12999,
+      "old_price_text": null,
+      "discount_text": null,
+      "location": "Москва",
+      "date_display": "11 августа 21:35",
+      "description_excerpt": "Высокотехнологичный антивозрастной крем для поддержания молодости кожи. Геномный AI-флавоноид и Phyto Nad+ Booster борются с морщинами, дряблостью и тусклым цветом лица.",
+      "description_truncated": false,
+      "delivery_badge_in_snapshot": true,
+      "visible_photo_previews": [
+        {
+          "thumbnail_url": "https://b30.img.avito.st/image/1/1.OmV57LaAloxvTDSNAeg6T2xMlIjLW5KMyzz3iMvvly7MT5KWb0w0jc8.LjT0xwplU5yu3i8d3JDGfpF5H2nzjF_O_miYzqEInF8?cqp=2.2LhnDdKx1gU5sZ7QAbwhSdJoeYt5K_KL9JwGcCXpGrDVbBxJ1yJf9Jn7hY3rGWaiHtSha9zz1w==",
+          "archive_entry": "Авито 14_files/1.OmV57LaAloxvTDSNAeg6T2xMlIjLW5KMyzz3iMvvly7MT5KWb0w0jc8.LjT0xwplU5yu3i8d3JDGfpF5H2nzjF_O_miYzqEInF8"
+        },
+        {
+          "thumbnail_url": "https://c80.img.avito.st/image/1/1._hWwW7aAUvym-_D9wBTpPqX7UPgC7Fb8Aosz-AJYU14F-Fbmpvvw_QY.Il1_2bfSHYH3NIg14EvRzya-muVGbwy-xqsl63FM-a4",
+          "archive_entry": "Авито 14_files/1._hWwW7aAUvym-_D9wBTpPqX7UPgC7Fb8Aosz-AJYU14F-Fbmpvvw_QY.Il1_2bfSHYH3NIg14EvRzya-muVGbwy-xqsl63FM-a4"
+        },
+        {
+          "thumbnail_url": "https://50.img.avito.st/image/1/1.elRGmLaA1r1QOHS8PqEAAFM41Ln0L9K99Ei3ufSb1x_zO9KnUDh0vPA.HXbN4jpgYsXm6ovT_thEUPrRVQzU_OpAxvaYbHuMFDE",
+          "archive_entry": "Авито 14_files/1.elRGmLaA1r1QOHS8PqEAAFM41Ln0L9K99Ei3ufSb1x_zO9KnUDh0vPA.HXbN4jpgYsXm6ovT_thEUPrRVQzU_OpAxvaYbHuMFDE"
+        }
+      ],
+      "photo_counter_display": null,
+      "schema_availability": "https://schema.org/LimitedAvailability",
+      "source_html": "Авито 14.html"
+    },
+    {
+      "id": "7942108985",
+      "title": "Hourglass палетка",
+      "url": "https://www.avito.ru/moskva/krasota_i_zdorove/hourglass_paletka_7942108985",
+      "category_path": "krasota_i_zdorove",
+      "price_rub": 6000,
+      "old_price_text": "7 500 ₽",
+      "discount_text": "−20%",
+      "location": "Москва",
+      "date_display": "14 марта 23:13",
+      "description_excerpt": "Сияние нового уровня с палитрой Hourglass Ambient Lighting Volume (9г). Эта универсальная палитра с персиковыми, золотистыми и перламутровыми оттенками, которые можно использовать как по отдельности, так и в комбинации, создаст многомерное сияние. Ле...",
+      "description_truncated": true,
+      "delivery_badge_in_snapshot": false,
+      "visible_photo_previews": [
+        {
+          "thumbnail_url": "https://40.img.avito.st/image/1/1.sfQJWbaAHR0f-b8cZ3Otkz35Hxm77hkdu4l8GbtaHL-8-hkHH_m_HL8.btX45DHCMo7CPv36d-5--lgCIClGq5vhoWhqjBFtZgs",
+          "archive_entry": "Авито 14_files/1.sfQJWbaAHR0f-b8cZ3Otkz35Hxm77hkdu4l8GbtaHL-8-hkHH_m_HL8.btX45DHCMo7CPv36d-5--lgCIClGq5vhoWhqjBFtZgs"
+        },
+        {
+          "thumbnail_url": "https://c80.img.avito.st/image/1/1.cc5zWbaA3Sdl-X8mHSBKrkf53yPB7tknwYm8I8Fa3IXG-tk9Zfl_JsU._hphEiJd7ZPfTZuUdKq_-iVFX4gbKgTY3BuPi0bDtsc",
+          "archive_entry": "Авито 14_files/1.cc5zWbaA3Sdl-X8mHSBKrkf53yPB7tknwYm8I8Fa3IXG-tk9Zfl_JsU._hphEiJd7ZPfTZuUdKq_-iVFX4gbKgTY3BuPi0bDtsc"
+        },
+        {
+          "thumbnail_url": "https://40.img.avito.st/image/1/1.oWxMhraADYVaJq-EAuyeDHgmD4H-MQmF_lZsgf6FDCf5JQmfWiavhPo.kT9yYaVSsNqc2EO0259ZD5sNl89NMwL14PmKzAqSJqI",
+          "archive_entry": "Авито 14_files/1.oWxMhraADYVaJq-EAuyeDHgmD4H-MQmF_lZsgf6FDCf5JQmfWiavhPo.kT9yYaVSsNqc2EO0259ZD5sNl89NMwL14PmKzAqSJqI"
+        },
+        {
+          "thumbnail_url": "https://b20.img.avito.st/image/1/1.p2GhS7aAC4i366mJ4zHoAZXrCYwT_A-IE5tqjBNICioU6A-St-upiRc._eWaozXl7i3HCaGYH2Go9gDoJk5RpLHwNTQ0WBm9iYY?cqp=2.2LhnDdKx1gU5sZ7QAbwhSdJoeYt5K_KL9JwGcCXpGrDVbBxJ1yJf9Jn7hY3rGWaiHtSha9zz1w==",
+          "archive_entry": "Авито 14_files/1.p2GhS7aAC4i366mJ4zHoAZXrCYwT_A-IE5tqjBNICioU6A-St-upiRc._eWaozXl7i3HCaGYH2Go9gDoJk5RpLHwNTQ0WBm9iYY"
+        },
+        {
+          "thumbnail_url": "https://70.img.avito.st/image/1/1.JJxngLaAiHVxICp0I6AF_FMginHVN4x11VDpcdWDidfSI4xvcSAqdNE.6_a9V-w8IV0-BWGVgd-a_wA_k_ukrbsYk8qfarmVig8",
+          "archive_entry": "Авито 14_files/1.JJxngLaAiHVxICp0I6AF_FMginHVN4x11VDpcdWDidfSI4xvcSAqdNE.6_a9V-w8IV0-BWGVgd-a_wA_k_ukrbsYk8qfarmVig8"
+        }
+      ],
+      "photo_counter_display": "Ещё 5 фото",
+      "schema_availability": "https://schema.org/LimitedAvailability",
+      "source_html": "Авито 14.html"
+    },
+    {
+      "id": "8165960870",
+      "title": "Сыворотка молодости image MD restoring youth serum",
+      "url": "https://www.avito.ru/moskva/krasota_i_zdorove/syvorotka_molodosti_image_md_restoring_youth_serum_8165960870",
+      "category_path": "krasota_i_zdorove",
+      "price_rub": 11999,
+      "old_price_text": null,
+      "discount_text": null,
+      "location": "Москва",
+      "date_display": "13 июля 21:30",
+      "description_excerpt": "Высококонцентрированная смесь пептидов, растительных стволовых клеток и стабильных форм витамина С. Корректирует и минимизирует морщины, укрепляет тургор кожи и возвращает ей упругость и эластичность. Эксклюзивная запатентованная технология доставки ...",
+      "description_truncated": true,
+      "delivery_badge_in_snapshot": true,
+      "visible_photo_previews": [
+        {
+          "thumbnail_url": "https://b30.img.avito.st/image/1/1.I-tVkraAjwJDMi0DH-YIvn8yjQbnJYsC50LuBueRjqDgMYsYQzItA-M.pDup3jGYRzCT_l9tyPUxX8iDTm2Cr0qb2gNsfQ1Bil8?cqp=2.2LhnDdKx1gU5sZ7QAbwhSdJoeYt5K_KL9JwGcCXpGrDVbBxJ1yJf9Jn7hY3rGWaiHtSha9zz1w==",
+          "archive_entry": "Авито 14_files/1.I-tVkraAjwJDMi0DH-YIvn8yjQbnJYsC50LuBueRjqDgMYsYQzItA-M.pDup3jGYRzCT_l9tyPUxX8iDTm2Cr0qb2gNsfQ1Bil8"
+        },
+        {
+          "thumbnail_url": "https://b50.img.avito.st/image/1/1.dutcVraA2gJK9ngDPFdGwXb22Abu4d4C7oa7Bu5V26Dp9d4YSvZ4A-o.iIW9qJPaD8ThNE2F61b09i8ncsJ4nvdlRSkW4RgqmMo",
+          "archive_entry": "Авито 14_files/1.dutcVraA2gJK9ngDPFdGwXb22Abu4d4C7oa7Bu5V26Dp9d4YSvZ4A-o.iIW9qJPaD8ThNE2F61b09i8ncsJ4nvdlRSkW4RgqmMo"
+        },
+        {
+          "thumbnail_url": "https://70.img.avito.st/image/1/1.dutb5baA2gJNRXgDO6h7wXFF2AbpUt4C6TW7Bunm26DuRt4YTUV4A-0.SUurGg1JGewjtvMuga5gBIWCS_U7CQHmSFQLofWLN2w",
+          "archive_entry": "Авито 14_files/1.dutb5baA2gJNRXgDO6h7wXFF2AbpUt4C6TW7Bunm26DuRt4YTUV4A-0.SUurGg1JGewjtvMuga5gBIWCS_U7CQHmSFQLofWLN2w"
+        },
+        {
+          "thumbnail_url": "https://90.img.avito.st/image/1/1.r-WY0baAAwyOcaENyuPxsLJxAQgqZgcMKgFiCCrSAq4tcgcWjnGhDS4.VOACMWQbshJXPZou3RHSnt8NZ_HyBvGXGzKg9sL0BJg",
+          "archive_entry": "Авито 14_files/1.r-WY0baAAwyOcaENyuPxsLJxAQgqZgcMKgFiCCrSAq4tcgcWjnGhDS4.VOACMWQbshJXPZou3RHSnt8NZ_HyBvGXGzKg9sL0BJg"
+        },
+        {
+          "thumbnail_url": "https://c90.img.avito.st/image/1/1.Lw2soraAg-S6AiHl_sJQJoYCgeAeFYfkHnLi4B6hgkYZAYf-ugIh5Ro.clXJCqjsZmS4Qxv9XiHT_F1eqYl2RIdg_Sy2nh281HI",
+          "archive_entry": "Авито 14_files/1.Lw2soraAg-S6AiHl_sJQJoYCgeAeFYfkHnLi4B6hgkYZAYf-ugIh5Ro.clXJCqjsZmS4Qxv9XiHT_F1eqYl2RIdg_Sy2nh281HI"
+        }
+      ],
+      "photo_counter_display": null,
+      "schema_availability": "https://schema.org/LimitedAvailability",
+      "source_html": "Авито 14.html"
+    },
+    {
+      "id": "8296456393",
+      "title": "Оригинальные часы Omega x Swatch MoonSwatch",
+      "url": "https://www.avito.ru/moskva/chasy_i_ukrasheniya/originalnye_chasy_omega_x_swatch_moonswatch_8296456393",
+      "category_path": "chasy_i_ukrasheniya",
+      "price_rub": 33272,
+      "old_price_text": "35 777 ₽",
+      "discount_text": "−7%",
+      "location": "Москва",
+      "date_display": "2 недели назад",
+      "description_excerpt": "Часы Omega x Swatch — это больше, чем просто прибор для измерения времени. Это история о покорении космоса, воплощенная в инновационных материалах.\n\nПочему выбирают нас:\n\nТолько оригинал. Мы дорожим своей репутацией и гарантируем подлинность каждого ...",
+      "description_truncated": true,
+      "delivery_badge_in_snapshot": true,
+      "visible_photo_previews": [
+        {
+          "thumbnail_url": "https://b10.img.avito.st/image/1/1.Crxr9raAplV9VgRUc_ZHxW5WpFHZQaJV2SbHUdn1p_feVaJPfVYEVN0._3stNGa6MtmdNEVJvNNl-Ft5LS8PFmp7WdHeM5FfD0o?cqp=2.2LhnDdKx1gU5sZ7QAbwhSdJoeYt5K_KL9JwGcCXpGrDVbBxJ1yJf9Jn7hY3rGWaiHtSha9zz1w==",
+          "archive_entry": "Авито 14_files/1.Crxr9raAplV9VgRUc_ZHxW5WpFHZQaJV2SbHUdn1p_feVaJPfVYEVN0._3stNGa6MtmdNEVJvNNl-Ft5LS8PFmp7WdHeM5FfD0o"
+        },
+        {
+          "thumbnail_url": "https://c90.img.avito.st/image/1/1.FG5BPLaAuIdXnBqGZWxMFEScuoPzi7yH8-zZg_M_uSX0n7ydV5wahvc.RGAydIWTxVO_bjcyeMp71UYWsdYJrBEAkLOcFdokgvI",
+          "archive_entry": "Авито 14_files/1.FG5BPLaAuIdXnBqGZWxMFEScuoPzi7yH8-zZg_M_uSX0n7ydV5wahvc.RGAydIWTxVO_bjcyeMp71UYWsdYJrBEAkLOcFdokgvI"
+        },
+        {
+          "thumbnail_url": "https://70.img.avito.st/image/1/1.PQSB8LaAke2XUDPs94xtfoRQk-kzR5XtMyDw6TPzkE80U5X3l1Az7Dc.hmTau3UPfhEXXGfZufwcqoeCWvKuDav_b9Xy21ScA1I",
+          "archive_entry": "Авито 14_files/1.PQSB8LaAke2XUDPs94xtfoRQk-kzR5XtMyDw6TPzkE80U5X3l1Az7Dc.hmTau3UPfhEXXGfZufwcqoeCWvKuDav_b9Xy21ScA1I"
+        },
+        {
+          "thumbnail_url": "https://90.img.avito.st/image/1/1.N5WuWLaAm3y4-Dl9zDwo6qv4mXgc7598HIj6eBxbmt4b-59muPg5fRg.R0RlcMciamKSxmUf72W1VO5prbl-7ACl4hzmzS3jINQ",
+          "archive_entry": null
+        },
+        {
+          "thumbnail_url": "https://b50.img.avito.st/image/1/1._EZfVLaAUK9J9PKuK2vAPFr0Uqvt41Sv7YQxq-1XUQ3q91S1SfTyruk.AMOod_jrUR5J4LzsCNRbsV-T0uMdpAo3ETejlXow_iw",
+          "archive_entry": null
+        }
+      ],
+      "photo_counter_display": "Ещё 3 фото",
+      "schema_availability": "https://schema.org/LimitedAvailability",
+      "source_html": "Авито 14.html"
+    },
+    {
+      "id": "8350792227",
+      "title": "Чехол на iPhone 15 pro max 2 шт",
+      "url": "https://www.avito.ru/domodedovo/telefony/chehol_na_iphone_15_pro_max_2_sht_8350792227",
+      "category_path": "telefony",
+      "price_rub": 1116,
+      "old_price_text": "1 200 ₽",
+      "discount_text": "−7%",
+      "location": "Московская обл., г.о. Домодедово, с. Домодедово",
+      "date_display": "2 недели назад",
+      "description_excerpt": "Для Дениса.",
+      "description_truncated": false,
+      "delivery_badge_in_snapshot": false,
+      "visible_photo_previews": [
+        {
+          "thumbnail_url": "https://c90.img.avito.st/image/1/1.o8p4_7aADyNuX60iMpHMwHxfDSfKSAsjyi9uJ8r8DoHNXAs5bl-tIs4.i5_Jeh78ZNYWFOIRAVi6rSOgtoApn5Uvh15nO_tAT_M",
+          "archive_entry": "Авито 14_files/1.o8p4_7aADyNuX60iMpHMwHxfDSfKSAsjyi9uJ8r8DoHNXAs5bl-tIs4.i5_Jeh78ZNYWFOIRAVi6rSOgtoApn5Uvh15nO_tAT_M"
+        }
+      ],
+      "photo_counter_display": null,
+      "schema_availability": "https://schema.org/LimitedAvailability",
+      "source_html": "Авито 14.html"
+    }
+  ],
+  "review_summary": {
+    "rated_5_stars": 34,
+    "unrated": 1,
+    "visible_entries": 35
+  },
+  "reviews_without_reviewer_names": [
+    {
+      "index_in_snapshot": 0,
+      "date_display": "29 августа · Покупатель",
+      "rating": 5,
+      "item_title": "Чехол на iPhone 15 pro max Speck Presidio2 Pro",
+      "text": "Чехол шикарный, очень довольна! Продавец вежливый, всегда на связи,  рекомендую продавца и товар:)",
+      "context_display": "Сделка состоялась · Чехол на iPhone 15 pro max Speck Presidio2 Pro Заказано с Авито Доставкой Чехол шикарный, очень довольна! Продавец вежливый, всегда на связи,  рекомендую продав"
+    },
+    {
+      "index_in_snapshot": 1,
+      "date_display": "29 июля · Покупатель",
+      "rating": 5,
+      "item_title": "Чехол на iPhone 15 pro max Speck Presidio2 Pro",
+      "text": "Потрясающе! Замечательно!",
+      "context_display": "Сделка состоялась · Чехол на iPhone 15 pro max Speck Presidio2 Pro Потрясающе! Замечательно!"
+    },
+    {
+      "index_in_snapshot": 2,
+      "date_display": "2 мая · Покупатель",
+      "rating": 5,
+      "item_title": "Gisou маска для волос 230",
+      "text": "Спасибо!⚘️⚘️⚘️\nШтрих-код пробивается, оригинальное средство!",
+      "context_display": "Сделка состоялась · Gisou маска для волос 230 Заказано с Авито Доставкой Спасибо!⚘️⚘️⚘️\nШтрих-код пробивается, оригинальное средство!"
+    },
+    {
+      "index_in_snapshot": 3,
+      "date_display": "22 апреля · Покупатель",
+      "rating": 5,
+      "item_title": "Gisou масло для губ",
+      "text": "Все отлично) Спасибо большое ☺️",
+      "context_display": "Сделка состоялась · Gisou масло для губ Заказано с Авито Доставкой Все отлично) Спасибо большое ☺️"
+    },
+    {
+      "index_in_snapshot": 4,
+      "date_display": "9 января · Покупатель",
+      "rating": 5,
+      "item_title": "iMac 24 M4 16/512 Silver",
+      "text": "Все отлично !  Первый раз приобретали на Авито iMac и конечно очень волновались, сомневались, переживали. Большое спасибо Степану, все рассказал, показал, помог установить. Очень доброжелательный и клиентоориентированный продавец. Обращусь снова 🫶",
+      "context_display": "Сделка состоялась · iMac 24 M4 16/512 Silver Все отлично !  Первый раз приобретали на Авито iMac и конечно очень волновались, сомневались, переживали. Большое спасибо Степану, все "
+    },
+    {
+      "index_in_snapshot": 5,
+      "date_display": "27 декабря 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "Apple Mac Mini M4 16GB/256GB",
+      "text": "Отличный продавец! Вежливый, быстро отвечает — полная лояльность) Однозначно рекомендую 🔥",
+      "context_display": "Сделка состоялась · Apple Mac Mini M4 16GB/256GB Отличный продавец! Вежливый, быстро отвечает — полная лояльность) Однозначно рекомендую 🔥"
+    },
+    {
+      "index_in_snapshot": 6,
+      "date_display": "23 декабря 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "Apple Macbook Air 13 M4 16GB/512GB Midnight",
+      "text": "Отличны и порядочный продавец. Приятно иметь дело! Все честно и четко. Спасибо.",
+      "context_display": "Сделка состоялась · Apple Macbook Air 13 M4 16GB/512GB Midnight Отличны и порядочный продавец. Приятно иметь дело! Все честно и четко. Спасибо."
+    },
+    {
+      "index_in_snapshot": 7,
+      "date_display": "10 декабря 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "Apple Mac Studio M3 Ultra 96GB/1TB",
+      "text": "Очень рекомендую, отзывчивый парень, отвечал на все вопросы помогал со всем, даже когда это было не удобно ему, все пришло быстро и четко, покупал Mac Studio m3 ultra, очень переживал сумма не маленькая но не разочаровался, все классно теперь буду покупать только у них все",
+      "context_display": "Сделка состоялась · Apple Mac Studio M3 Ultra 96GB/1TB Очень рекомендую, отзывчивый парень, отвечал на все вопросы помогал со всем, даже когда это было не удобно ему, все пришло бы"
+    },
+    {
+      "index_in_snapshot": 8,
+      "date_display": "8 декабря 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "iMac 24 M4 16/512 Silver",
+      "text": "Отлично",
+      "context_display": "Сделка состоялась · iMac 24 M4 16/512 Silver Отлично"
+    },
+    {
+      "index_in_snapshot": 9,
+      "date_display": "7 декабря 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "Apple AirPods 4 ANC",
+      "text": "Изначально было желание почтавить низкую оценку, так как  вместо ANC прислали обычные.Надо было на пункте возврат сделать, но я продукцей Apple не пользуюсь, только жена. И только дома понял что это не ANC. Но после переписки с продавцом, договорились о возврате части денег. Наушники оригинал.",
+      "context_display": "Сделка состоялась · Apple AirPods 4 ANC Заказано с Авито Доставкой Изначально было желание почтавить низкую оценку, так как  вместо ANC прислали обычные.Надо было на пункте возврат"
+    },
+    {
+      "index_in_snapshot": 10,
+      "date_display": "10 ноября 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "iPhone 17 Pro, 256 ГБ, eSIM",
+      "text": "Невероятно клиентоориентированный продавец, пообщавшись с которым уже не было сомнений, где приобрести телефон. Доставили домой, помогли с настройками. Очень благодарна за честность и  порядочность!🙏🏻 Удачи Вам!",
+      "context_display": "Сделка состоялась · iPhone 17 Pro, 256 ГБ, eSIM Невероятно клиентоориентированный продавец, пообщавшись с которым уже не было сомнений, где приобрести телефон. Доставили домой, пом"
+    },
+    {
+      "index_in_snapshot": 11,
+      "date_display": "11 октября 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "Apple Mac Studio M2 Ultra 64GB/1TB Гарантия",
+      "text": "Все как и было заявлено в объявлении, культурный продавец.",
+      "context_display": "Сделка состоялась · Apple Mac Studio M2 Ultra 64GB/1TB Гарантия Все как и было заявлено в объявлении, культурный продавец."
+    },
+    {
+      "index_in_snapshot": 12,
+      "date_display": "8 октября 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "Apple Mac Studio M4 Max 36GB/512GB гарантия",
+      "text": "Все отлично",
+      "context_display": "Сделка состоялась · Apple Mac Studio M4 Max 36GB/512GB гарантия Все отлично"
+    },
+    {
+      "index_in_snapshot": 13,
+      "date_display": "21 сентября 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "MacBook Air M2 8/256GB Starlight + Гарантия",
+      "text": "Отличный продавец! Быстрая отправка, покупкой остался доволен, также бонусом в комплект положили переходник для розетки!",
+      "context_display": "Сделка состоялась · MacBook Air M2 8/256GB Starlight + Гарантия Заказано с Авито Доставкой Отличный продавец! Быстрая отправка, покупкой остался доволен, также бонусом в комплект п"
+    },
+    {
+      "index_in_snapshot": 14,
+      "date_display": "13 сентября 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "Polaroid go generation 2 + гарантия",
+      "text": "Всё отлично! Вежливое общение, очень быстрая отправка) отдельное спасибо, что пошли на встречу и отправили курьером. Рекомендую продавца)",
+      "context_display": "Сделка состоялась · Polaroid go generation 2 + гарантия Заказано с Авито Доставкой Всё отлично! Вежливое общение, очень быстрая отправка) отдельное спасибо, что пошли на встречу и "
+    },
+    {
+      "index_in_snapshot": 15,
+      "date_display": "11 сентября 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "iPhone 12 mini, 64 ГБ",
+      "text": "Все отлично",
+      "context_display": "Сделка состоялась · iPhone 12 mini, 64 ГБ Заказано с Авито Доставкой Все отлично"
+    },
+    {
+      "index_in_snapshot": 16,
+      "date_display": "6 сентября 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "MacBook Air 13\" M3 256GB 8Gb Starlight + Гарантия",
+      "text": "Все отлично , быстро списались приехали с другого города и встретились довольно в позднее время в тц (21:00 ) все прошло гладко и быстро , рекомендую",
+      "context_display": "Сделка состоялась · MacBook Air 13\" M3 256GB 8Gb Starlight + Гарантия Все отлично , быстро списались приехали с другого города и встретились довольно в позднее время в тц (21:00 ) "
+    },
+    {
+      "index_in_snapshot": 17,
+      "date_display": "24 августа 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "Macbook Air 13 m2 8 256 silver",
+      "text": "Всё супер, спасибо продавцу! Оформила заказ нового MacBook через авито-доставку. Продавец заранее скинул серийный номер по моему запросу, оперативно сдал товар в СДЭК, все пришло отлично упаковано! Продавец добавил в комплект переходник для адаптера и гарантийный талон от магазина. Всё получила, ноутбук в заводской упаковке. Единственное, был полностью разряжен, проверить в пункте выдачи не удалось. Дома зарядила, всё проверила, все отлично работает! Спасибо за макбук!",
+      "context_display": "Сделка состоялась · Macbook Air 13 m2 8 256 silver Заказано с Авито Доставкой Всё супер, спасибо продавцу! Оформила заказ нового MacBook через авито-доставку. Продавец заранее скин"
+    },
+    {
+      "index_in_snapshot": 18,
+      "date_display": "19 августа 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "iPhone 12 mini, 64 ГБ",
+      "text": "Отличный продавец. На все интересующие вопросы ответил. Уступил в цене на доставку. Отменил заказ я, по причине того что передумал покупать. Продавца советую и ещё раз приношу ему свои извинения",
+      "context_display": "Сделка сорвалась · iPhone 12 mini, 64 ГБ Отличный продавец. На все интересующие вопросы ответил. Уступил в цене на доставку. Отменил заказ я, по причине того что передумал покупать"
+    },
+    {
+      "index_in_snapshot": 19,
+      "date_display": "15 августа 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "Canon eos r8 + Объектив + бесплатная доставка",
+      "text": "Купил Canon EOS R8 через доставку Авито. Доставили, через боксберри, упаковка аккуратная, всё пришло в целости и сохранности. Комплект полный и соответствует описанию в объявлении: Рекомендую продавца.",
+      "context_display": "Сделка состоялась · Canon eos r8 + Объектив + бесплатная доставка Заказано с Авито Доставкой Купил Canon EOS R8 через доставку Авито. Доставили, через боксберри, упаковка аккуратна"
+    },
+    {
+      "index_in_snapshot": 20,
+      "date_display": "1 августа 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "iPhone 8 Plus, 256 ГБ",
+      "text": "Отличный телефон, спасибо огромное!\nЕще и доставку сделали😇👍🏼❤️",
+      "context_display": "Сделка состоялась · iPhone 8 Plus, 256 ГБ Отличный телефон, спасибо огромное!\nЕще и доставку сделали😇👍🏼❤️"
+    },
+    {
+      "index_in_snapshot": 21,
+      "date_display": "24 июля 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "Apple Mac Studio M3 Ultra 96GB/1TB",
+      "text": "Все отлично. Товаром доволен",
+      "context_display": "Сделка состоялась · Apple Mac Studio M3 Ultra 96GB/1TB Все отлично. Товаром доволен"
+    },
+    {
+      "index_in_snapshot": 22,
+      "date_display": "7 июля 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "Чехол для MacBook Air 13.6\" — противоударный бампе",
+      "text": "Отличный продавец, качество как заявлено. Покупкой доволен, договорились о самовывозе, к моему приезду было уже все собрано. Рекомендую 👍",
+      "context_display": "Сделка состоялась · Чехол для MacBook Air 13.6\" — противоударный бампе Отличный продавец, качество как заявлено. Покупкой доволен, договорились о самовывозе, к моему приезду было у"
+    },
+    {
+      "index_in_snapshot": 23,
+      "date_display": "6 июля 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "Чехол для MacBook Air 13.6\" — противоударный бампе",
+      "text": "Всё отлично! Товар соответствует описанию, продавец  вежливый и быстро отвечает. Рекомендую на всё 100%",
+      "context_display": "Сделка состоялась · Чехол для MacBook Air 13.6\" — противоударный бампе Всё отлично! Товар соответствует описанию, продавец  вежливый и быстро отвечает. Рекомендую на всё 100%"
+    },
+    {
+      "index_in_snapshot": 24,
+      "date_display": "4 июля 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "Чехол-книжка для iPad Pro 13 M4 + гарантия",
+      "text": "Попался очень пунктуальный и приятный продавец, к нужному времени без опозданий встретились в указанном месте, товар соответсвует описанию, покупкой доволен, еще раз спасибо за такой сервис.",
+      "context_display": "Сделка состоялась · Чехол-книжка для iPad Pro 13 M4 + гарантия Попался очень пунктуальный и приятный продавец, к нужному времени без опозданий встретились в указанном месте, товар "
+    },
+    {
+      "index_in_snapshot": 25,
+      "date_display": "4 июля 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "Чехол для MacBook Air 13.6\" — противоударный бампе",
+      "text": "Хороший и пунктуальный продавец, быстро договорились о встрече, товар соответствует описанию, все на высшем уровне, спасибо!",
+      "context_display": "Сделка состоялась · Чехол для MacBook Air 13.6\" — противоударный бампе Хороший и пунктуальный продавец, быстро договорились о встрече, товар соответствует описанию, все на высшем у"
+    },
+    {
+      "index_in_snapshot": 26,
+      "date_display": "3 июля 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "Чехол-книжка для iPad Pro 13 M4 + гарантия",
+      "text": "Все четко встретились день в день не опоздал,товар хороший",
+      "context_display": "Сделка состоялась · Чехол-книжка для iPad Pro 13 M4 + гарантия Все четко встретились день в день не опоздал,товар хороший"
+    },
+    {
+      "index_in_snapshot": 27,
+      "date_display": "3 июля 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "Чехол-книжка для iPad Pro 13 M4 + гарантия",
+      "text": "Все хорошо, надежный продавец",
+      "context_display": "Сделка состоялась · Чехол-книжка для iPad Pro 13 M4 + гарантия Все хорошо, надежный продавец"
+    },
+    {
+      "index_in_snapshot": 28,
+      "date_display": "3 июля 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "Чехол-книжка для iPad Pro 13 M4 + гарантия",
+      "text": "Товар соответствует описанию. Качество отличное. Доставка оперативная. Продавец отличный, рекомендую!",
+      "context_display": "Сделка состоялась · Чехол-книжка для iPad Pro 13 M4 + гарантия Товар соответствует описанию. Качество отличное. Доставка оперативная. Продавец отличный, рекомендую!"
+    },
+    {
+      "index_in_snapshot": 29,
+      "date_display": "2 июля 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "Чехол-книжка для iPad Pro 13 M4 + гарантия",
+      "text": "чехол отличного качества, продавец приятный в общении все максимально быстро обсудили, в этот же день встретились. спасибо вам за вашу работу",
+      "context_display": "Сделка состоялась · Чехол-книжка для iPad Pro 13 M4 + гарантия чехол отличного качества, продавец приятный в общении все максимально быстро обсудили, в этот же день встретились. сп"
+    },
+    {
+      "index_in_snapshot": 30,
+      "date_display": "1 июля 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "Чехол-книжка для iPad Pro 13 M4 + гарантия",
+      "text": "Продавец пунктуальный, быстро отвечает на сообщения. Договорились о сделке и в тот же день встретились",
+      "context_display": "Сделка состоялась · Чехол-книжка для iPad Pro 13 M4 + гарантия Продавец пунктуальный, быстро отвечает на сообщения. Договорились о сделке и в тот же день встретились"
+    },
+    {
+      "index_in_snapshot": 31,
+      "date_display": "19 февраля 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "Компрессор metabo 250 24",
+      "text": "Отзывчивый, пунктуальный продавец.\nУпаковал, погрузил и смог отправить не габаритный товар. Присылал промежуточные фото. Рекомендую 👍",
+      "context_display": "Сделка состоялась · Компрессор metabo 250 24 Отзывчивый, пунктуальный продавец.\nУпаковал, погрузил и смог отправить не габаритный товар. Присылал промежуточные фото. Рекомендую 👍"
+    },
+    {
+      "index_in_snapshot": 32,
+      "date_display": "19 февраля 2025 · Покупатель",
+      "rating": 5,
+      "item_title": "iPhone 12 mini, 64 ГБ",
+      "text": "Все ок",
+      "context_display": "Сделка состоялась · iPhone 12 mini, 64 ГБ Все ок"
+    },
+    {
+      "index_in_snapshot": 33,
+      "date_display": "23 декабря 2024 · Покупатель",
+      "rating": 5,
+      "item_title": "Решетка радиатора mercedes w213 diamond оригинал",
+      "text": "Все отлично. Товар соответствует описанию и фото. \nПродавца рекомендую.",
+      "context_display": "Сделка состоялась · Решетка радиатора mercedes w213 diamond оригинал Заказано с Авито Доставкой Все отлично. Товар соответствует описанию и фото. \nПродавца рекомендую."
+    },
+    {
+      "index_in_snapshot": 34,
+      "date_display": "15 ноября 2025 · Покупатель",
+      "rating": null,
+      "item_title": "Apple AirPods 4 ANC",
+      "text": "Оплатил. Три дня прождал. Продавец на сообщения не отвечал. А потом взял продавец и отменил.",
+      "context_display": "Не общались · Apple AirPods 4 ANC Оплатил. Три дня прождал. Продавец на сообщения не отвечал. А потом взял продавец и отменил."
+    }
+  ]
+}

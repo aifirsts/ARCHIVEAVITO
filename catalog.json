@@ -1,0 +1,354 @@
+{
+  "as_of": "2026-10-26",
+  "source": "Offline HTML snapshots from usaforyou/MANUS1/Авито 14.zip; live Avito pages blocked",
+  "price_status": "snapshot_only_unverified_live",
+  "products": [
+    {
+      "id": "7942405497",
+      "title": "Hourglass румяна",
+      "category": "Красота и уход",
+      "price_rub_snapshot": 2960,
+      "old_price_text_snapshot": "3 700 ₽",
+      "discount_text_snapshot": "−20%",
+      "location_snapshot": "Москва",
+      "date_display_snapshot": "14 марта 23:55",
+      "avito_url": "https://www.avito.ru/moskva/krasota_i_zdorove/hourglass_rumyana_7942405497",
+      "photos": [
+        "avito_audit/images/7942405497/01.jpg",
+        "avito_audit/images/7942405497/02.jpg",
+        "avito_audit/images/7942405497/03.jpg",
+        "avito_audit/images/7942405497/04.jpg",
+        "avito_audit/images/7942405497/05.jpg"
+      ],
+      "official": {
+        "brand": "Hourglass",
+        "name": "Ambient Lighting Blush",
+        "url": "https://www.hourglasscosmetics.com/products/ambient-lighting-blush",
+        "match_level": "family",
+        "summary_ru": "Румяна из серии Ambient Lighting: сочетание пудры и цвета для мягкого сияния. В линейке несколько оттенков.",
+        "verification_note_ru": "Оттенок на сохранённых фото не установлен."
+      }
+    },
+    {
+      "id": "7942010246",
+      "title": "Charlotte tilbury pillow talk тени",
+      "category": "Красота и уход",
+      "price_rub_snapshot": 6000,
+      "old_price_text_snapshot": "7 500 ₽",
+      "discount_text_snapshot": "−20%",
+      "location_snapshot": "Москва",
+      "date_display_snapshot": "15 марта 22:47",
+      "avito_url": "https://www.avito.ru/moskva/krasota_i_zdorove/charlotte_tilbury_pillow_talk_teni_7942010246",
+      "photos": [
+        "avito_audit/images/7942010246/01.jpg",
+        "avito_audit/images/7942010246/02.jpg",
+        "avito_audit/images/7942010246/03.jpg",
+        "avito_audit/images/7942010246/04.jpg",
+        "avito_audit/images/7942010246/05.jpg"
+      ],
+      "official": {
+        "brand": "Charlotte Tilbury",
+        "name": "Luxury Palette in Pillow Talk",
+        "url": "https://www.charlottetilbury.com/us/product/luxury-palette-pillow-talk",
+        "match_level": "product",
+        "summary_ru": "Палетка из четырёх розово-коричневых оттенков; бренд описывает два матовых и два сатиновых/сияющих покрытия.",
+        "verification_note_ru": "Проверить маркировку и комплектность конкретного экземпляра."
+      }
+    },
+    {
+      "id": "7942160038",
+      "title": "Hourglass тени",
+      "category": "Красота и уход",
+      "price_rub_snapshot": 5200,
+      "old_price_text_snapshot": "6 500 ₽",
+      "discount_text_snapshot": "−20%",
+      "location_snapshot": "Москва",
+      "date_display_snapshot": "14 марта 23:44",
+      "avito_url": "https://www.avito.ru/moskva/krasota_i_zdorove/hourglass_teni_7942160038",
+      "photos": [
+        "avito_audit/images/7942160038/01.jpg",
+        "avito_audit/images/7942160038/02.jpg",
+        "avito_audit/images/7942160038/03.jpg",
+        "avito_audit/images/7942160038/04.jpg",
+        "avito_audit/images/7942160038/05.jpg"
+      ],
+      "official": {
+        "brand": "Hourglass",
+        "name": "Curator Eyeshadow Palette — Minimalist",
+        "url": "https://www.hourglasscosmetics.com/products/curator-eyeshadow-palette",
+        "match_level": "photo_variant",
+        "summary_ru": "Вариант Minimalist указан на сохранённом изображении; производитель перечисляет четыре матовых оттенка от нейтрального бежевого до глубокого коричневого.",
+        "verification_note_ru": "Вариант установлен по фото, код на упаковке не проверен."
+      }
+    },
+    {
+      "id": "8102096652",
+      "title": "Чехол на iPhone 15 pro max Speck Presidio2 Pro",
+      "category": "Аксессуары",
+      "price_rub_snapshot": 557,
+      "old_price_text_snapshot": "599 ₽",
+      "discount_text_snapshot": "−7%",
+      "location_snapshot": "Москва",
+      "date_display_snapshot": "11 июня 18:05",
+      "avito_url": "https://www.avito.ru/moskva/telefony/chehol_na_iphone_15_pro_max_speck_presidio2_pro_8102096652",
+      "photos": [
+        "avito_audit/images/8102096652/01.jpg",
+        "avito_audit/images/8102096652/02.jpg",
+        "avito_audit/images/8102096652/03.jpg"
+      ],
+      "official": {
+        "brand": "Speck",
+        "name": "Presidio2 Pro MagSafe with ClickLock — iPhone 15 Pro Max",
+        "url": "https://speckproducts.com/products/presidio2-pro-magsafe-with-clicklock-iphone-15-pro-max-cases",
+        "match_level": "photo_variant",
+        "summary_ru": "Чехол с магнитной совместимостью MagSafe и креплением ClickLock; производитель указывает технологию Armor Cloud и тестирование падений до 13 футов.",
+        "verification_note_ru": "Цвет/артикул конкретного экземпляра не проверен; не путать с моделью без ClickLock."
+      }
+    },
+    {
+      "id": "8165981546",
+      "title": "Лифтинг крем для тела VOL.U.lift",
+      "category": "Красота и уход",
+      "price_rub_snapshot": 8500,
+      "old_price_text_snapshot": null,
+      "discount_text_snapshot": null,
+      "location_snapshot": "Москва",
+      "date_display_snapshot": "13 июля 22:25",
+      "avito_url": "https://www.avito.ru/moskva/krasota_i_zdorove/lifting_krem_dlya_tela_vol.u.lift_8165981546",
+      "photos": [
+        "avito_audit/images/8165981546/01.jpg",
+        "avito_audit/images/8165981546/02.jpg",
+        "avito_audit/images/8165981546/03.jpg",
+        "avito_audit/images/8165981546/04.jpg",
+        "avito_audit/images/8165981546/05.jpg"
+      ],
+      "official": {
+        "brand": "IMAGE Skincare",
+        "name": "VOL.U.LIFT BODY GLP-1/GIP sculpt + firm treatment complex",
+        "url": "https://imageskincare.com/products/vol-u-lift-body",
+        "match_level": "product",
+        "summary_ru": "Косметическое средство для тела. Производитель описывает уход для увлажнения и более гладкого, подтянутого вида кожи.",
+        "verification_note_ru": "Не представлять косметические обещания как доказанный медицинский эффект."
+      }
+    },
+    {
+      "id": "8166119490",
+      "title": "Image skincare VOL.U.lift",
+      "category": "Красота и уход",
+      "price_rub_snapshot": 12900,
+      "old_price_text_snapshot": null,
+      "discount_text_snapshot": null,
+      "location_snapshot": "Москва",
+      "date_display_snapshot": "13 июля 22:19",
+      "avito_url": "https://www.avito.ru/moskva/krasota_i_zdorove/image_skincare_vol.u.lift_8166119490",
+      "photos": [
+        "avito_audit/images/8166119490/01.jpg",
+        "avito_audit/images/8166119490/02.jpg",
+        "avito_audit/images/8166119490/03.jpg",
+        "avito_audit/images/8166119490/04.jpg",
+        "avito_audit/images/8166119490/05.jpg"
+      ],
+      "official": {
+        "brand": "IMAGE Skincare",
+        "name": "VOL.U.LIFT GLP-1 4D skin rebound complex",
+        "url": "https://imageskincare.com/products/vol-u-lift-glp-1-4d-skin-rebound-complex",
+        "match_level": "product",
+        "summary_ru": "Косметическое средство для лица, шеи и линии подбородка; производитель перечисляет гиалуроновую кислоту, бакучиол и комплекс антиоксидантов.",
+        "verification_note_ru": "Размер и версия упаковки конкретного экземпляра не проверены."
+      }
+    },
+    {
+      "id": "8166255881",
+      "title": "Увлажняющий дневной крем SPF 30 daily prevention",
+      "category": "Красота и уход",
+      "price_rub_snapshot": 5900,
+      "old_price_text_snapshot": null,
+      "discount_text_snapshot": null,
+      "location_snapshot": "Москва",
+      "date_display_snapshot": "13 июля 21:57",
+      "avito_url": "https://www.avito.ru/moskva/krasota_i_zdorove/uvlazhnyayuschiy_dnevnoy_krem_spf_30_daily_prevention_8166255881",
+      "photos": [
+        "avito_audit/images/8166255881/01.jpg",
+        "avito_audit/images/8166255881/02.jpg"
+      ],
+      "official": {
+        "brand": "IMAGE Skincare",
+        "name": "DAILY PREVENTION pure mineral hydrating moisturizer SPF 30",
+        "url": "https://imageskincare.com/products/daily-prevention-pure-mineral-hydrating-moisturizer-spf-30",
+        "match_level": "product",
+        "summary_ru": "Минеральный увлажняющий крем с SPF 30; в описании производителя — гиалуроновая кислота, XOSM и широкоспектральная защита.",
+        "verification_note_ru": "Перед публикацией проверить маркировку, срок годности и местные требования к солнцезащитным средствам."
+      }
+    },
+    {
+      "id": "8166335454",
+      "title": "Восстанавливающий ночной крем с витамином С",
+      "category": "Красота и уход",
+      "price_rub_snapshot": 8500,
+      "old_price_text_snapshot": null,
+      "discount_text_snapshot": null,
+      "location_snapshot": "Москва",
+      "date_display_snapshot": "13 июля 22:08",
+      "avito_url": "https://www.avito.ru/moskva/krasota_i_zdorove/vosstanavlivayuschiy_nochnoy_krem_s_vitaminom_s_8166335454",
+      "photos": [
+        "avito_audit/images/8166335454/01.jpg",
+        "avito_audit/images/8166335454/02.jpg",
+        "avito_audit/images/8166335454/03.jpg"
+      ],
+      "official": {
+        "brand": "IMAGE Skincare",
+        "name": "VITAL C hydrating repair crème",
+        "url": "https://imageskincare.com/products/hydrating-repair-cr-me",
+        "match_level": "product",
+        "summary_ru": "Вечерний увлажняющий крем; производитель перечисляет витамины C и E, гиалуроновую кислоту и церамиды.",
+        "verification_note_ru": "Производитель предлагает несколько объёмов; объём экземпляра из архива не подтверждён."
+      }
+    },
+    {
+      "id": "8166674710",
+      "title": "Усиленный смарт-крем SPF75",
+      "category": "Красота и уход",
+      "price_rub_snapshot": 6700,
+      "old_price_text_snapshot": null,
+      "discount_text_snapshot": null,
+      "location_snapshot": "Москва",
+      "date_display_snapshot": "13 июля 21:53",
+      "avito_url": "https://www.avito.ru/moskva/krasota_i_zdorove/usilennyy_smart-krem_spf75_8166674710",
+      "photos": [
+        "avito_audit/images/8166674710/01.jpg",
+        "avito_audit/images/8166674710/02.jpg",
+        "avito_audit/images/8166674710/03.jpg"
+      ],
+      "official": {
+        "brand": "IMAGE Skincare",
+        "name": "DAILY PREVENTION advanced smartblend mineral moisturizer SPF 75",
+        "url": "https://imageskincare.com/products/daily-prevention-advanced-smartblend-mineral-moisturizer-spf-75",
+        "match_level": "product",
+        "summary_ru": "Минеральный крем с SPF 75 и корректирующим оттенком; производитель описывает широкоспектральную защиту, увлажнение и технологию XOSM.",
+        "verification_note_ru": "Проверить срок годности, маркировку SPF и допустимость продажи в РФ."
+      }
+    },
+    {
+      "id": "8230842563",
+      "title": "Image MD biotech крем",
+      "category": "Красота и уход",
+      "price_rub_snapshot": 12999,
+      "old_price_text_snapshot": null,
+      "discount_text_snapshot": null,
+      "location_snapshot": "Москва",
+      "date_display_snapshot": "11 августа 21:35",
+      "avito_url": "https://www.avito.ru/moskva/krasota_i_zdorove/image_md_biotech_krem_8230842563",
+      "photos": [
+        "avito_audit/images/8230842563/01.jpg",
+        "avito_audit/images/8230842563/02.jpg",
+        "avito_audit/images/8230842563/03.jpg"
+      ],
+      "official": {
+        "brand": "IMAGE Skincare",
+        "name": "IMAGE MD biotech longevity creme",
+        "url": "https://imageskincare.com/products/image-md-biotech-longevity-creme",
+        "match_level": "product",
+        "summary_ru": "Косметический крем с Phyto NAD+ Booster и XOSM; производитель описывает увлажнение и поддержку упругого вида кожи.",
+        "verification_note_ru": "Размер конкретной банки и состав партии требуют проверки по этикетке."
+      }
+    },
+    {
+      "id": "7942108985",
+      "title": "Hourglass палетка",
+      "category": "Красота и уход",
+      "price_rub_snapshot": 6000,
+      "old_price_text_snapshot": "7 500 ₽",
+      "discount_text_snapshot": "−20%",
+      "location_snapshot": "Москва",
+      "date_display_snapshot": "14 марта 23:13",
+      "avito_url": "https://www.avito.ru/moskva/krasota_i_zdorove/hourglass_paletka_7942108985",
+      "photos": [
+        "avito_audit/images/7942108985/01.jpg",
+        "avito_audit/images/7942108985/02.jpg",
+        "avito_audit/images/7942108985/03.jpg",
+        "avito_audit/images/7942108985/04.jpg",
+        "avito_audit/images/7942108985/05.jpg"
+      ],
+      "official": {
+        "brand": "Hourglass",
+        "name": "Ambient Lighting Palette",
+        "url": "https://www.hourglasscosmetics.com/products/ambient-lighting-palette",
+        "match_level": "family",
+        "summary_ru": "Палетка из трёх финишных пудр по 3 г; официальный сайт предлагает варианты Volume I, II и III.",
+        "verification_note_ru": "На фото и в названии Avito не удалось надёжно установить Volume."
+      }
+    },
+    {
+      "id": "8165960870",
+      "title": "Сыворотка молодости image MD restoring youth serum",
+      "category": "Красота и уход",
+      "price_rub_snapshot": 11999,
+      "old_price_text_snapshot": null,
+      "discount_text_snapshot": null,
+      "location_snapshot": "Москва",
+      "date_display_snapshot": "13 июля 21:30",
+      "avito_url": "https://www.avito.ru/moskva/krasota_i_zdorove/syvorotka_molodosti_image_md_restoring_youth_serum_8165960870",
+      "photos": [
+        "avito_audit/images/8165960870/01.jpg",
+        "avito_audit/images/8165960870/02.jpg",
+        "avito_audit/images/8165960870/03.jpg",
+        "avito_audit/images/8165960870/04.jpg",
+        "avito_audit/images/8165960870/05.jpg"
+      ],
+      "official": {
+        "brand": "IMAGE Skincare",
+        "name": "IMAGE MD restoring youth serum",
+        "url": "https://imageskincare.com/products/image-md-restoring-youth-serum-1",
+        "match_level": "product",
+        "summary_ru": "Сыворотка с пептидами, растительными экстрактами и стабилизированной формой витамина C; назначение по бренду — уход за кожей с видимыми признаками старения.",
+        "verification_note_ru": "Объём, срок годности и состав конкретного флакона требуют проверки."
+      }
+    },
+    {
+      "id": "8296456393",
+      "title": "Оригинальные часы Omega x Swatch MoonSwatch",
+      "category": "Часы",
+      "price_rub_snapshot": 33272,
+      "old_price_text_snapshot": "35 777 ₽",
+      "discount_text_snapshot": "−7%",
+      "location_snapshot": "Москва",
+      "date_display_snapshot": "2 недели назад",
+      "avito_url": "https://www.avito.ru/moskva/chasy_i_ukrasheniya/originalnye_chasy_omega_x_swatch_moonswatch_8296456393",
+      "photos": [
+        "avito_audit/images/8296456393/01.jpg",
+        "avito_audit/images/8296456393/02.jpg",
+        "avito_audit/images/8296456393/03.jpg"
+      ],
+      "official": {
+        "brand": "Swatch / OMEGA x Swatch",
+        "name": "Bioceramic MoonSwatch Collection",
+        "url": "https://www.swatch.com/en-us/bioceramic-moonswatch.html",
+        "match_level": "collection",
+        "summary_ru": "Совместная коллекция хронографов Swatch и OMEGA с разными моделями; фото архива показывают голубой, тёмно-серый и розовый варианты.",
+        "verification_note_ru": "Нельзя присвоить один SKU: фото изображают несколько расцветок; подлинность и состав лота не проверены."
+      }
+    },
+    {
+      "id": "8350792227",
+      "title": "Чехол на iPhone 15 pro max 2 шт",
+      "category": "Аксессуары",
+      "price_rub_snapshot": 1116,
+      "old_price_text_snapshot": "1 200 ₽",
+      "discount_text_snapshot": "−7%",
+      "location_snapshot": "Московская обл., г.о. Домодедово, с. Домодедово",
+      "date_display_snapshot": "2 недели назад",
+      "avito_url": "https://www.avito.ru/domodedovo/telefony/chehol_na_iphone_15_pro_max_2_sht_8350792227",
+      "photos": [
+        "avito_audit/images/8350792227/01.jpg"
+      ],
+      "official": {
+        "brand": "Speck",
+        "name": "Presidio2 Pro MagSafe with ClickLock — iPhone 15 Pro Max",
+        "url": "https://speckproducts.com/products/presidio2-pro-magsafe-with-clicklock-iphone-15-pro-max-cases",
+        "match_level": "family_bundle",
+        "summary_ru": "На фото видна упаковка серии с MagSafe и ClickLock. Официальная модель — чехол для iPhone 15 Pro Max с магнитным креплением.",
+        "verification_note_ru": "Лот «2 шт» и текст «Для Дениса.»: количество и модели обоих чехлов не подтверждены; возможно персональное объявление."
+      }
+    }
+  ]
+}

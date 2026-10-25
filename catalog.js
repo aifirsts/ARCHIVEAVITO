@@ -62,6 +62,19 @@ function card(item) {
     });
   }
   article.append(thumbs);
+  // Manufacturer photography is kept separate from the archived seller photos.
+  const manufacturer = el("div", "manufacturer-media");
+  if (item.official.photos.length) {
+    const label = el("span", "manufacturer-label", "ФОТО ПРОИЗВОДИТЕЛЯ · ПРИМЕР ЛИНЕЙКИ");
+    const officialImage = el("img", "manufacturer-image");
+    officialImage.src = item.official.photos[0];
+    officialImage.alt = `Официальное иллюстративное фото: ${item.official.name}. ${item.official.photo_note_ru}`;
+    officialImage.loading = "lazy";
+    manufacturer.append(label, officialImage, el("p", "manufacturer-note", item.official.photo_note_ru));
+  } else {
+    manufacturer.append(el("p", "manufacturer-note", item.official.image_unavailable_note_ru));
+  }
+  article.append(manufacturer);
   const info = el("div", "card-info");
   info.append(el("span", "card-brand", item.official.brand), el("h3", "", item.title));
   const prices = el("div", "card-price");
@@ -70,9 +83,27 @@ function card(item) {
   if (item.discount_text_snapshot) prices.append(el("span", "card-discount", item.discount_text_snapshot));
   info.append(prices, el("p", "card-location", `${item.location_snapshot} · цена из архива`));
   const details = el("details");
-  details.append(el("summary", "", "О товаре и соответствии ↗"));
+  details.append(el("summary", "", "Характеристики, состав и применение ↗"));
+  const facts = item.official.details;
   details.append(el("p", "", `${item.official.name}. ${item.official.summary_ru}`));
+  function section(title, entries) {
+    if (!entries || !entries.length) return;
+    details.append(el("h4", "detail-heading", title));
+    const list = el("ul", "detail-list");
+    entries.forEach(text => list.append(el("li", "", text)));
+    details.append(list);
+  }
+  section("Свойства и параметры линейки", facts.specifications_ru);
+  section("Состав / компоненты", facts.ingredients_ru);
+  if (facts.use_ru) details.append(el("h4", "detail-heading", "Применение"), el("p", "", facts.use_ru));
+  if (facts.claims_ru) details.append(el("p", "manufacturer-claim", `По данным производителя: ${facts.claims_ru}`));
   details.append(el("p", "caution", `Важно: ${item.official.verification_note_ru}`));
+  details.append(el("p", "source-date", `Источник: официальная страница бренда, проверена ${facts.checked_at}. Актуальные сведения — по ссылке ниже.`));
+  if (facts.inci_local_path) {
+    const inci = el("a", "inci-link", "Списки INCI с сайтов производителей ↗");
+    inci.href = facts.inci_local_path;
+    details.append(inci);
+  }
   info.append(details);
   const actions = el("div", "card-actions");
   actions.append(externalLink("На Авито ↗", item.avito_url, "avito"));
@@ -84,7 +115,7 @@ function card(item) {
 function render() {
   const q = search.value.trim().toLocaleLowerCase("ru");
   const visible = items.filter(item => (selectedCategory === "Все" || item.category === selectedCategory) &&
-    `${item.title} ${item.official.name} ${item.official.brand}`.toLocaleLowerCase("ru").includes(q));
+    `${item.title} ${item.official.name} ${item.official.brand} ${item.official.details.specifications_ru.join(" ")} ${item.official.details.ingredients_ru.join(" ")}`.toLocaleLowerCase("ru").includes(q));
   grid.replaceChildren(...visible.map(card));
   resultLine.textContent = `Показано ${visible.length} из ${items.length} товаров`;
   document.querySelector("#empty").hidden = visible.length !== 0;

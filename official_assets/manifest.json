@@ -1,0 +1,189 @@
+{
+  "checked_at": "2026-10-26",
+  "method": "Локальные файлы предоставлены поиском изображений на официальных товарных страницах; размеры и хеши относятся к сохранённым файлам. URL актива — соответствующий элемент официальной страницы, не обязательно прямой URL загрузки поискового файла (его CDN-параметры могли отличаться).",
+  "license_notice": "Изображения принадлежат правообладателям; добавлены по запросу для идентификации, права на повторную коммерческую публикацию не предоставляются.",
+  "items": [
+    {
+      "avito_id": "7942405497",
+      "local_path": "official_assets/7942405497.png",
+      "official_product_page": "https://www.hourglasscosmetics.com/products/ambient-lighting-blush",
+      "official_asset_example_url": "https://www.hourglasscosmetics.com/cdn/shop/files/AmbientLightingBlush_MoodExposure_ff43a449-e75a-45ba-93ec-f74125c294d5.png?v=1723590351&width=480",
+      "source_note": "Официальное изображение варианта Mood Exposure, сопоставленного с читаемой коробкой из снимка объявления.",
+      "sha256": "696b39a4436233aedfd8c5868ec028f99bb738ae142532be712a738442c1c5d4",
+      "dimensions": [
+        480,
+        480
+      ],
+      "bytes": 115672,
+      "retrieval": "image_search; file visually checked against product identity; photo may depict an illustrative variant"
+    },
+    {
+      "avito_id": "7942010246",
+      "local_path": "official_assets/7942010246.png",
+      "official_product_page": "https://www.charlottetilbury.com/us/product/luxury-palette-pillow-talk",
+      "official_asset_example_url": "https://images.ctfassets.net/wlke2cbybljx/AsVqDlt8VJEgNYQgGKFcx/2d9d309ef480f681b94889d760c87686/luxury-palette-pillow-talk-packshot.png?q=80&w=660&h=660&fit=fill&fm=png",
+      "source_note": "Pillow Talk Original; не Pillow Talk Dreams.",
+      "sha256": "89e3cf403561f29e1c873a7da0cb5f355681975109aa85d066c4b183cd07db09",
+      "dimensions": [
+        660,
+        660
+      ],
+      "bytes": 330250,
+      "retrieval": "image_search; file visually checked against product identity; photo may depict an illustrative variant"
+    },
+    {
+      "avito_id": "7942160038",
+      "local_path": "official_assets/7942160038.png",
+      "official_product_page": "https://www.hourglasscosmetics.com/products/curator-eyeshadow-palette",
+      "official_asset_example_url": "https://www.hourglasscosmetics.com/cdn/shop/files/HG.COM_2025_FALL_CURATOR_EYESHADOW_QUADS_RETAIL_ASSET_PACK_CURATOR_QUAD_ECOMM_PACKSHOT_MINIMALIST_PARENT_2000x2000_eb0b27d7-f960-40d5-9360-2cb2dddbd86f.png?v=1755090255&width=480",
+      "source_note": "Minimalist; соответствие сделано по архивному фото, а не по коду упаковки.",
+      "sha256": "f85f426e5e2605641019ab703f5239fa81f5b274581cd01673217877b6c735ae",
+      "dimensions": [
+        480,
+        480
+      ],
+      "bytes": 102588,
+      "retrieval": "image_search; file visually checked against product identity; photo may depict an illustrative variant"
+    },
+    {
+      "avito_id": "8102096652",
+      "local_path": "official_assets/8102096652.jpg",
+      "official_product_page": "https://speckproducts.com/products/presidio2-pro-magsafe-with-clicklock-iphone-15-pro-max-cases",
+      "official_asset_example_url": "https://speckproducts.com/cdn/shop/files/speck-presidio2-pro-magsafe-with-clicklock-iphone-15-pro-max-cases-iphone-15-pro-max-phone-case-39514522943619_1400x.jpg?v=1742948196",
+      "source_note": "Иллюстрация линейки; цвет лота не установлен.",
+      "sha256": "647a95fd8d36d78b995156abea3cf7e2b48d1cec173f8d4241c1b68bcc3a411c",
+      "dimensions": [
+        1400,
+        1400
+      ],
+      "bytes": 70441,
+      "retrieval": "image_search; file visually checked against product identity; photo may depict an illustrative variant"
+    },
+    {
+      "avito_id": "8165981546",
+      "local_path": "official_assets/8165981546.jpg",
+      "official_product_page": "https://imageskincare.com/products/vol-u-lift-body",
+      "official_asset_example_url": "https://imageskincare.com/cdn/shop/files/VOLULIFTbody_5.5oz_PDP_Benefits2.jpg?v=1781536638&width=1600",
+      "source_note": "На фото средство BODY, не средство для лица.",
+      "sha256": "c542ea87bb00501d65b685c876b123cb33d6774ca2c5c06d71b635ea3b7f00f3",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 203067,
+      "retrieval": "image_search; file visually checked against product identity; photo may depict an illustrative variant"
+    },
+    {
+      "avito_id": "8166119490",
+      "local_path": "official_assets/8166119490.jpg",
+      "official_product_page": "https://imageskincare.com/products/vol-u-lift-glp-1-4d-skin-rebound-complex",
+      "official_asset_example_url": "https://imageskincare.com/cdn/shop/files/VOLULIFT_PDP_58314c07-4537-4ba8-935c-b6999a829dad.jpg?v=1775054458&width=1600",
+      "source_note": "Средство для лица, не BODY.",
+      "sha256": "12d9f5fa25b057976f154292a26f3a201ec3f4b97af2e8ee1337112dba6fc472",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 105141,
+      "retrieval": "image_search; file visually checked against product identity; photo may depict an illustrative variant"
+    },
+    {
+      "avito_id": "8166255881",
+      "local_path": "official_assets/8166255881.jpg",
+      "official_product_page": "https://imageskincare.com/products/daily-prevention-pure-mineral-hydrating-moisturizer-spf-30",
+      "official_asset_example_url": "https://imageskincare.com/cdn/shop/files/DP_hydrating_SPF_30_retail.webp?v=1762198758&width=1600",
+      "source_note": "Pure mineral hydrating SPF 30, не tinted и не SPF 75.",
+      "sha256": "3b8cc9e3819a53c0206e9d7f39e4e0ce867aa7747081324a9fd90bde6133ce80",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 78474,
+      "retrieval": "image_search; file visually checked against product identity; photo may depict an illustrative variant"
+    },
+    {
+      "avito_id": "8166335454",
+      "local_path": "official_assets/8166335454.jpg",
+      "official_product_page": "https://imageskincare.com/products/hydrating-repair-cr-me",
+      "official_asset_example_url": "https://imageskincare.com/cdn/shop/products/VITAL_C_hydrating_repair_creme_PDP_R02.jpg?v=1719853657&width=1200",
+      "source_note": "Иллюстрация крема VITAL C, объём лота не установлен.",
+      "sha256": "f81ace5c20094b083f83d2bd98cb2737e86a9b7b8ff24e4e0f63c85231b7df62",
+      "dimensions": [
+        1200,
+        1200
+      ],
+      "bytes": 74767,
+      "retrieval": "image_search; file visually checked against product identity; photo may depict an illustrative variant"
+    },
+    {
+      "avito_id": "8166674710",
+      "local_path": "official_assets/8166674710.jpg",
+      "official_product_page": "https://imageskincare.com/products/daily-prevention-advanced-smartblend-mineral-moisturizer-spf-75",
+      "official_asset_example_url": "https://imageskincare.com/cdn/shop/files/DP_smartblend_SPF_75_retail.webp?v=1762198756&width=1600",
+      "source_note": "Advanced smartblend SPF 75, не другое средство DAILY PREVENTION.",
+      "sha256": "4ce2b8abfb48e097a3cdeb5ed10b4f6a0be9d12258d3587757a4f094e26438b7",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 81595,
+      "retrieval": "image_search; file visually checked against product identity; photo may depict an illustrative variant"
+    },
+    {
+      "avito_id": "8230842563",
+      "local_path": "official_assets/8230842563.jpg",
+      "official_product_page": "https://imageskincare.com/products/image-md-biotech-longevity-creme",
+      "official_asset_example_url": "https://imageskincare.com/cdn/shop/files/01_PDP_MDbiotechlongevitycreme_Retail_Product.jpg?v=1774290534&width=1800",
+      "source_note": "Biotech longevity crème, не restoring youth serum.",
+      "sha256": "f35ee3fe84b044d65be13d747310a0cfac3621c01ba8bd0686782d02419bf969",
+      "dimensions": [
+        1800,
+        1800
+      ],
+      "bytes": 54831,
+      "retrieval": "image_search; file visually checked against product identity; photo may depict an illustrative variant"
+    },
+    {
+      "avito_id": "7942108985",
+      "local_path": "official_assets/7942108985.png",
+      "official_product_page": "https://www.hourglasscosmetics.com/products/ambient-lighting-palette",
+      "official_asset_example_url": "https://www.hourglasscosmetics.com/cdn/shop/files/Cheeks-Main-Product-PDP---Ambient-Lighting-Palette_0002_AmbientLightingPalette_Open_1_edb7e939-b890-4367-a1a1-27f863a2504d.png?v=1754510484&width=480",
+      "source_note": "Иллюстрация Volume I; Volume лота не установлен.",
+      "sha256": "e04305a11706b9041f924ae893f3b5fb193d09d36a9ded395c426aec601f42be",
+      "dimensions": [
+        480,
+        480
+      ],
+      "bytes": 123869,
+      "retrieval": "image_search; file visually checked against product identity; photo may depict an illustrative variant"
+    },
+    {
+      "avito_id": "8165960870",
+      "local_path": "official_assets/8165960870.jpg",
+      "official_product_page": "https://imageskincare.com/products/image-md-restoring-youth-serum-1",
+      "official_asset_example_url": "https://imageskincare.com/cdn/shop/products/IMAGE_MD_restoring_youth_serum_PDP_R01a.jpg?v=1762198470&width=1600",
+      "source_note": "IMAGE MD restoring youth serum, не biotech longevity crème.",
+      "sha256": "c22efd2f93506b1fa35c9f24e816296dec5c30b5342d6fc793cf9d4767dd3a8e",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 54187,
+      "retrieval": "image_search; file visually checked against product identity; photo may depict an illustrative variant"
+    },
+    {
+      "avito_id": "8350792227",
+      "local_path": "official_assets/8350792227.jpg",
+      "official_product_page": "https://speckproducts.com/products/presidio2-pro-magsafe-with-clicklock-iphone-15-pro-max-cases",
+      "official_asset_example_url": "https://speckproducts.com/cdn/shop/files/speck-presidio2-pro-magsafe-with-clicklock-iphone-15-pro-max-cases-iphone-15-pro-max-phone-case-39514522943619_1400x.jpg?v=1742948196",
+      "source_note": "То же иллюстративное фото серии; второй чехол не идентифицирован.",
+      "sha256": "647a95fd8d36d78b995156abea3cf7e2b48d1cec173f8d4241c1b68bcc3a411c",
+      "dimensions": [
+        1400,
+        1400
+      ],
+      "bytes": 70441,
+      "retrieval": "image_search; file visually checked against product identity; photo may depict an illustrative variant"
+    }
+  ]
+}

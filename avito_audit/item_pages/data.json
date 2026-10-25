@@ -1,0 +1,2063 @@
+{
+  "source_repository": "https://github.com/usaforyou/MANUS1",
+  "source_commit": "696ecf0594bbe0057d293b1f81d23a03d1dd76c6",
+  "archive_sha256": {
+    "PART1_HTMLS.zip": "c32f4ba9e5955c0e7111e31d474b99152ab28d12ac0dce6bf32f810640f69795",
+    "PART_2.zip": "e33e25c5d3df1d212584b74575d21baffa261d6edf4b782419b8e3b17d4bc677",
+    "PART3.zip": "6d02edbd36bb96f4f1f68bc79543e51e520c97ccf91ec861dabce83aa2ae1477"
+  },
+  "method": "Only item-page gallery JPEG bytes; larger images mapped to thumbnail positions by Avito file key. No recommendation/banner assets, JS or seller PII.",
+  "items": [
+    {
+      "id": "7942160038",
+      "source": {
+        "zip_file": "PART1_HTMLS.zip",
+        "html_entry": "Hourglass тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942160038).html",
+        "zip_entry_datetime_no_timezone": "2026-10-26T03:11:16"
+      },
+      "seller_profile_id": "b2165ff5492372c90fab55f7223f9d3b",
+      "title_as_saved": "Hourglass тени",
+      "item_url": "https://www.avito.ru/moskva/krasota_i_zdorove/hourglass_teni_7942160038",
+      "display_price_rub": 5200,
+      "old_price_display_rub": 6500,
+      "discount_display": "–20%",
+      "schema_offer_price_rub": 6500,
+      "schema_offer_price_warning": "schema.org Offer price differs from the visible discounted price in several pages; use display_price_rub for the saved UI",
+      "seller_description_schema_ru": "Основательница бренда считает макияж инструментом самовыражения. Линия Curator позволяет создать свою уникальную цветовую палитру благодаря широкому выбору моно-теней. Все оттенки мелкодисперсные, высокопигментированные и прекрасно смешиваются, открывая безграничные возможности для создания завораживающих образов.",
+      "seller_description_html_ru": "Oсновaтельницa брeнда считает мaкияж инстpументoм cамовыражeния. Линия Сurator пoзвoляeт создать свою уникaльную цвeтовую палитру благoдapя широкому выбopу монo-тeнeй. Bсе оттeнки мелкoдиcпeрсные, высoкопигмeнтирoванныe и прeкpаcнo cмeшиваются, открывaя бeзгpaничныe возможнocти для сoздaния завораживающих образов.",
+      "attributes_as_saved": {
+        "Вид товара": "Макияж и маникюр",
+        "Тип товара": "Для глаз и бровей",
+        "Тип косметики": "Тени и глиттеры",
+        "Бренд": "HOURGLASS",
+        "Цвет": "Коричневый",
+        "Состояние": "Новое"
+      },
+      "listing_date_display": "23 октября в 17:29",
+      "total_views_display": "268 просмотров",
+      "today_views_display": "(+7 сегодня)",
+      "stock_badge_display": "В наличии: последний товар",
+      "gallery": [
+        {
+          "position": 1,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51820430657",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942160038)_files/1.nDqmQLa1MNO84e7QknbaWpLgMtMY657TzOIy0Q.ClzX6-K0NnHGZAASRqdfU0xnaOrNfQBo1d8R3xirxlo",
+            "local_path": "avito_audit/item_pages/images/7942160038/01_thumb.jpg",
+            "sha256": "3477269278e31d97466e24d7b9be4d1acefca1d41ca5e028f0e3e7924a03d680",
+            "bytes": 4176,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942160038)_files/1.nDqmQLa4MNOQ97LeknbaWpLgMtUY4bLFkOwy0RbpONkQ.WM81JsiH7fQGTCqjqPYCYwzZMsj0Hf1k5Vs9EONsEkg",
+            "local_path": "avito_audit/item_pages/images/7942160038/01_large.jpg",
+            "sha256": "2a05decc57587f3cd550b1324bdef78e70c3755d8094ba1a8677b9b83fe65c9c",
+            "bytes": 78046,
+            "dimensions": [
+              700,
+              700
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/7942160038/01_large.jpg"
+        },
+        {
+          "position": 2,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51818776375",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942160038)_files/1.6kTzDLa1Rq3prZiuqzPaJcesRK1Np-itma5Erw.DWJa5JFqMqaTuVtjzQiXDEzLMMPguYZrpX-6I-diazo",
+            "local_path": "avito_audit/item_pages/images/7942160038/02_thumb.jpg",
+            "sha256": "5128306234b5642b052011b250ed7aa83326e076ff4181d3a64f3b7558d0caa5",
+            "bytes": 5040,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942160038)_files/1.6kTzDLa4Rq3Fu8SgqzPaJcesRKtNrcS7xaBEr0OlTqdF.MSgrvf_x_DulTLs_ePiyQzNacTB_NZ3aoXr4PGOtY4I",
+            "local_path": "avito_audit/item_pages/images/7942160038/02_large.jpg",
+            "sha256": "dbe3ccc0d24fba8ef84ffcb2c8e899956d68428f213624cf84b835a376ab6078",
+            "bytes": 96489,
+            "dimensions": [
+              700,
+              700
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/7942160038/02_large.jpg"
+        },
+        {
+          "position": 3,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51820340498",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942160038)_files/1.zwMzkra1Y-opM73pIaW8YwcyYeqNOc3qWTBh6A.__bcS7eoR58ucDoXtEB8KWNc8HAR8MW1hL_5VJUOlXs",
+            "local_path": "avito_audit/item_pages/images/7942160038/03_thumb.jpg",
+            "sha256": "ba4c52a6f6009b2d75aba6d10a094a36f96255c68a3678037573004ee9cb2880",
+            "bytes": 5314,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942160038/03_thumb.jpg"
+        },
+        {
+          "position": 4,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51821060200",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942160038)_files/1.tUpKTLa1GaNQ7cegLG6uLX7sG6P057ejIO4boQ._rCDujuytj9HLd1wHDPyHNztZM0bwHFB4Nxo4_ekNJk",
+            "local_path": "avito_audit/item_pages/images/7942160038/04_thumb.jpg",
+            "sha256": "69f797edae1f92f56e6140c4212ca6b67dfc6019e9f7016e971e82ba1469b2b3",
+            "bytes": 4372,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942160038/04_thumb.jpg"
+        },
+        {
+          "position": 5,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51816985998",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942160038)_files/1.U8KoLba1_yuyjCEoglg-oZyN_SsWhlErwo_9KQ.otaNbB_6fxKkONoLL7SUBeKCqHtZG92xVOXCRsnJ0_M",
+            "local_path": "avito_audit/item_pages/images/7942160038/05_thumb.jpg",
+            "sha256": "432e9dfa4c0a39adac2e94454a4e19286c85835432242d470c7b6f26e35fdad3",
+            "bytes": 3002,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942160038/05_thumb.jpg"
+        },
+        {
+          "position": 6,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51818833081",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942160038)_files/1.ZJ3Rcra1yHTL0xZ3lUNv_OXSynRv2WZ0u9DKdg.4kJKOwlV8_k9fKgQgwD9oIZIIG4tZdHvJTma6ov7aYo",
+            "local_path": "avito_audit/item_pages/images/7942160038/06_thumb.jpg",
+            "sha256": "27ca4deb5f3d92a6a1f167758669fe36592054c35e70935b2fcf7c78d73854e0",
+            "bytes": 4333,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942160038/06_thumb.jpg"
+        },
+        {
+          "position": 7,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51833695299",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942160038)_files/1.nh7I8ra1MvfSU-z0-OCLbfxSMPd2WZz3olAw9Q.KXB_HnD4m0RS1T3fmsGbtwohRUdfK0qhILUz1RW5_sQ",
+            "local_path": "avito_audit/item_pages/images/7942160038/07_thumb.jpg",
+            "sha256": "428d7a0015f1a0f4590351d76c3fb3f726e79e29c0b4e9b610fab06dfaee3c24",
+            "bytes": 4432,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942160038/07_thumb.jpg"
+        },
+        {
+          "position": 8,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51818746929",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942160038)_files/1.7Exnyra1QKV9a56mM7nYLVNqQqXZYe6lDWhCpw.AhQ5n-ZkzH4DsF9e2sOl_DAHP9KX9ATytiuTeKoofPU",
+            "local_path": "avito_audit/item_pages/images/7942160038/08_thumb.jpg",
+            "sha256": "7194c21d10859407e171315a0d796748db8fb2474a1a235c02c8eac0037ebc2c",
+            "bytes": 6349,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942160038/08_thumb.jpg"
+        },
+        {
+          "position": 9,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51818793755",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942160038)_files/1.xraAV7a1al-a9rRcgFjI17T3aF8-_MRf6vVoXQ.fv-T2FUMDuXkBLvgSOg6fApTv3IuLdnKVMRTjwyE4eg",
+            "local_path": "avito_audit/item_pages/images/7942160038/09_thumb.jpg",
+            "sha256": "edec2781715e933936b594477534f8844ab26694105e5c8c3ebb56c4e1761268",
+            "bytes": 5468,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942160038/09_thumb.jpg"
+        },
+        {
+          "position": 10,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51818822132",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942160038)_files/1.KUnMjba1haDWLFujkskkKPgth6ByJiugpi-Hog.d61Vce4w6Gzjp6A1_5Yj76l_4JIil6ea2fBZRXfIkco",
+            "local_path": "avito_audit/item_pages/images/7942160038/10_thumb.jpg",
+            "sha256": "d08e18508b8c64c0d98a87f7516fd4c33f0b3001a9ec773d9fd53ed76cd9b73c",
+            "bytes": 5480,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942160038)_files/1.KUnMjba4haD6OgetkskkKPgth6ZyLAe2-iGHonwkjap6.l_I9GyxhCU3C32mIs3HZ-5tR04M1osMwxRNP19gL1oY",
+            "local_path": "avito_audit/item_pages/images/7942160038/10_large.jpg",
+            "sha256": "25bcea02aa75715b80f54f0db04d5609c001c0011ad24148f7fd2ee669d8ad80",
+            "bytes": 101180,
+            "dimensions": [
+              720,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/7942160038/10_large.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7942010246",
+      "source": {
+        "zip_file": "PART1_HTMLS.zip",
+        "html_entry": "Charlotte tilbury pillow talk тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942010246).html",
+        "zip_entry_datetime_no_timezone": "2026-10-26T03:10:38"
+      },
+      "seller_profile_id": "b2165ff5492372c90fab55f7223f9d3b",
+      "title_as_saved": "Charlotte tilbury pillow talk тени",
+      "item_url": "https://www.avito.ru/moskva/krasota_i_zdorove/charlotte_tilbury_pillow_talk_teni_7942010246",
+      "display_price_rub": 6000,
+      "old_price_display_rub": 7500,
+      "discount_display": "–20%",
+      "schema_offer_price_rub": 7500,
+      "schema_offer_price_warning": "schema.org Offer price differs from the visible discounted price in several pages; use display_price_rub for the saved UI",
+      "seller_description_schema_ru": "Откройте для себя палетку теней для век с четырьмя гармоничными оттенками (4 x 1,3 г), которые идеально дополнят ваш образ. Включает: нежный розовый беж, сияющее розовое золото, тёплый румянец и глубокий коричневый.",
+      "seller_description_html_ru": "Откройте для себя палетку теней для век с четырьмя гармоничными оттенками (4 x 1,3 г), которые идеально дополнят ваш образ. Включает: нежный розовый беж, сияющее розовое золото, тёплый румянец и глубокий коричневый.",
+      "attributes_as_saved": {
+        "Вид товара": "Макияж и маникюр",
+        "Тип товара": "Для глаз и бровей",
+        "Тип косметики": "Тени и глиттеры",
+        "Бренд": "CHARLOTTE TILBURY",
+        "Цвет": "Коричневый",
+        "Состояние": "Новое"
+      },
+      "listing_date_display": "23 октября в 17:29",
+      "total_views_display": "40 просмотров",
+      "today_views_display": "(+1 сегодня)",
+      "stock_badge_display": null,
+      "gallery": [
+        {
+          "position": 1,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51838302145",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Charlotte tilbury pillow talk тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942010246)_files/1.HDmdd7a1sNCH1m7TqQtfTqnXstAj3B7Q99Wy0g.fgdSWJtAbk794Yjy15nQOj4vTQiXWQl4XbrLlFrabAA",
+            "local_path": "avito_audit/item_pages/images/7942010246/01_thumb.jpg",
+            "sha256": "9ed17e559deae4c8a6349155bde49792c7f109cabf10251e85375accac5f736a",
+            "bytes": 4229,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Charlotte tilbury pillow talk тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942010246)_files/1.HDmdd7a4sNCrwDLdqQtfTqnXstYj1jLGq9uy0i3euNor.cYQ2yg5ihDSLjIhiJ-FSKGxiFEWz2vlA7hlX-BO8m64",
+            "local_path": "avito_audit/item_pages/images/7942010246/01_large.jpg",
+            "sha256": "da7c757a418b1649e869e6f047c889b77a2b0fa2866d80f2ff14c6270f4a9833",
+            "bytes": 80209,
+            "dimensions": [
+              700,
+              700
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/7942010246/01_large.jpg"
+        },
+        {
+          "position": 2,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51838310114",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Charlotte tilbury pillow talk тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942010246)_files/1.PwHfdLa1k-jF1U3rrQx_duvUkehh3z3otdaR6g.R7NV_crGrKU3vbyc8viSoZza9Ed8FRHOu9Kssar1ivI",
+            "local_path": "avito_audit/item_pages/images/7942010246/02_thumb.jpg",
+            "sha256": "cebd084fad68641c556e1d175ec9c92d6569c7f92650a61f8fe6e766e1b6b605",
+            "bytes": 5573,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Charlotte tilbury pillow talk тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942010246)_files/1.PwHfdLa4k-jpwxHlrQx_duvUke5h1RH-6diR6m_dm-Jp.PNhGpbNS3lGrNFgJR-5F8xwIKIouSWKemEUQCh-1to4",
+            "local_path": "avito_audit/item_pages/images/7942010246/02_large.jpg",
+            "sha256": "2ebfada8fdf7dfcf867dc214af284453099b983a48a374f8d8aa56ae59e02ebf",
+            "bytes": 97005,
+            "dimensions": [
+              700,
+              700
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/7942010246/02_large.jpg"
+        },
+        {
+          "position": 3,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51836525282",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Charlotte tilbury pillow talk тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942010246)_files/1.PwEh7La1k-g7TU3rU6QFcRVMkeifRz3oS06R6g.5qnopF7Ms4_KFmYqUlUtQUa2f0HzcuXMzCIk5PEzTMQ",
+            "local_path": "avito_audit/item_pages/images/7942010246/03_thumb.jpg",
+            "sha256": "90ba9d1fbe1e2be2b227f8f1df0bbbf055254ad13ceaf1eabe084c1bd64bc7a5",
+            "bytes": 4026,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942010246/03_thumb.jpg"
+        },
+        {
+          "position": 4,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51838260344",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Charlotte tilbury pillow talk тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942010246)_files/1.pUr5Cra1CaPjq9egv3jjPc2qC6NHoaejk6gLoQ.yFk-lg9cA_IODy7wN7QlKobYxN7Y-SqHNkE4TekcnEg",
+            "local_path": "avito_audit/item_pages/images/7942010246/04_thumb.jpg",
+            "sha256": "ce98ed7703ae50bd730e46981202520575a84f7d6cacfa224ef57aef885e5f7f",
+            "bytes": 4759,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942010246/04_thumb.jpg"
+        },
+        {
+          "position": 5,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51837459534",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Charlotte tilbury pillow talk тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942010246)_files/1.k9eIBLa1Pz6SpeE9ola7oLykPT42r5E-4qY9PA.7c9r5Mw9GRbBCeBrHohb99QIkVCSnNDsITStCh7dhLU",
+            "local_path": "avito_audit/item_pages/images/7942010246/05_thumb.jpg",
+            "sha256": "f15fa7e2dfcab5f86a948c8a539ae3bb11d61c645eecaf10c960216a17791dee",
+            "bytes": 5519,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942010246/05_thumb.jpg"
+        },
+        {
+          "position": 6,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51837377899",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Charlotte tilbury pillow talk тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942010246)_files/1.th7wA7a1GvfqosT0kFXkbsSjGPdOqLT3mqEY9Q.YIhczyQ0UpC4VQsCJsQaHMWD7NwYGK05WH86UpqDURs",
+            "local_path": "avito_audit/item_pages/images/7942010246/06_thumb.jpg",
+            "sha256": "5b9c436da4b2bb32fbd303f9347314dea430ee775debed8c88df5cf3230c5e82",
+            "bytes": 4287,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942010246/06_thumb.jpg"
+        },
+        {
+          "position": 7,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51835673201",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Charlotte tilbury pillow talk тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942010246)_files/1.rD7EPLa1ANfend7UkHauT_CcAtd6l67Xrp4C1Q.reWlzR0Dcl88ZJtg9AnJk4n-NdRtQ2js9jdxSgGnBJs",
+            "local_path": "avito_audit/item_pages/images/7942010246/07_thumb.jpg",
+            "sha256": "fbcee0f3e122c3521ca51052f503bfe960d49e30546f684cd71abd7da9130635",
+            "bytes": 5154,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942010246/07_thumb.jpg"
+        },
+        {
+          "position": 8,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/55362829024",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Charlotte tilbury pillow talk тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942010246)_files/1.PdNym7a1kTpoOk85BNMehlg7kzrMMD86GDmTOA.gABHjgKZN_068sxA9BuAkmvpOk54nUM1Eylxz_s_bbE",
+            "local_path": "avito_audit/item_pages/images/7942010246/08_thumb.jpg",
+            "sha256": "020bb851ba3d3dd10f5708ac9146fde2eea71f47b3aca5f66abd36ebc8d77064",
+            "bytes": 5145,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Charlotte tilbury pillow talk тени купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942010246)_files/1.PdNym7a4kTpELBM3BNMehlg7kzzMOhMsRDeTOMIymTDE.pAuLfWkci8qmwp7we_PFSLQzQhspwhyYVDXDr8_QPM8",
+            "local_path": "avito_audit/item_pages/images/7942010246/08_large.jpg",
+            "sha256": "ea449cf34b263200e3d9c3de0618ed0a3768ef019630837c92286ad71156db8a",
+            "bytes": 110863,
+            "dimensions": [
+              720,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/7942010246/08_large.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7942405497",
+      "source": {
+        "zip_file": "PART1_HTMLS.zip",
+        "html_entry": "Hourglass румяна купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942405497).html",
+        "zip_entry_datetime_no_timezone": "2026-10-26T03:10:22"
+      },
+      "seller_profile_id": "b2165ff5492372c90fab55f7223f9d3b",
+      "title_as_saved": "Hourglass румяна",
+      "item_url": "https://www.avito.ru/moskva/krasota_i_zdorove/hourglass_rumyana_7942405497",
+      "display_price_rub": 2960,
+      "old_price_display_rub": 3700,
+      "discount_display": "–20%",
+      "schema_offer_price_rub": 3700,
+      "schema_offer_price_warning": "schema.org Offer price differs from the visible discounted price in several pages; use display_price_rub for the saved UI",
+      "seller_description_schema_ru": "Представляем революционную линейку румян, которая объединяет знаменитое сияние пудры Ambient Lighting с актуальной палитрой цветов. Что она делает: Забудьте об обычных румянах! Эта коллекция использует уникальную фотолюминесцентную технологию, чтобы придать вашему лицу невероятную глубину и объем, обеспечивая при этом безупречное слияние с кожей. Каждая пудра создана вручную с использованием передовой техники смешивания, гарантируя идеальный баланс пигмента и сияния. Каждый оттенок уникален. Эти невесомые румяна идеально подходят для любого тона кожи. Оригинальные румяна Ambient® Lighting Blush сочетают универсальные пудры с яркими оттенками, создавая мягкий фокус и многомерный цвет с естественным, сияющим финишем. А новая коллекция Ambient Strobe Lighting Blush добавляет к этому сиянию современные цвета для ослепительного румянца с блестящим эффектом.",
+      "seller_description_html_ru": "Прeдcтaвляeм pевoлюционную линейку румян, котoрaя объединяeт знaменитое сияние пудpы Ambient Lighting c aктуальной палитрой цвeтoв. Что она делaeт: Зaбудьте об обычныx pумянаx! Этa кoллeкция использует уникaльную фотoлюминecцентную технолoгию, чтобы пpидать вaшему лицу нeвеpoятную глубину и объeм, oбecпечивая при этом безупpечноe слияние c кoжей. Kaждая пудра создана вручную с использованием передовой техники смешивания, гарантируя идеальный баланс пигмента и сияния. Каждый оттенок уникален. Эти невесомые румяна идеально подходят для любого тона кожи. Оригинальные румяна Аmbiеnt® Lighting Вlush сочетают универсальные пудры с яркими оттенками, создавая мягкий фокус и многомерный цвет с естественным, сияющим финишем. А новая коллекция Аmbiеnt Strоbе Lighting Вlush добавляет к этому сиянию современные цвета для ослепительного румянца с блестящим эффектом.",
+      "attributes_as_saved": {
+        "Вид товара": "Макияж и маникюр",
+        "Тип товара": "Для лица",
+        "Тип косметики": "Румяна и контуринг",
+        "Бренд": "HOURGLASS",
+        "Цвет": "Розовый",
+        "Текстура": "Запечённая",
+        "Состояние": "Новое"
+      },
+      "listing_date_display": "23 октября в 17:29",
+      "total_views_display": "434 просмотра",
+      "today_views_display": "(+9 сегодня)",
+      "stock_badge_display": "В наличии: последний товар",
+      "gallery": [
+        {
+          "position": 1,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51819815187",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass румяна купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942405497)_files/1.zh_8P7a1Yvbmnrz17Bj9f8ifYPZClMz2lp1g9A.t2bmVmiliypD8DY0XQZNgBvEsbd4JwoYPYNUDFscnxY",
+            "local_path": "avito_audit/item_pages/images/7942405497/01_thumb.jpg",
+            "sha256": "ed8acb5d52f50a991078802327538b9ba532bc6990d1a5f1866aa4bdc110b04c",
+            "bytes": 6613,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass румяна купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942405497)_files/1.zh_8P7a4YvbKiOD77Bj9f8ifYPBCnuDgypNg9EyWavxK.gWVWQ8olPWiMsQGibuGIJKjfDTmnVm4GrcVimCrMqBQ",
+            "local_path": "avito_audit/item_pages/images/7942405497/01_large.jpg",
+            "sha256": "6ee224c6698a745271e05abc14e1ac5ede114f65b0cdb1d88285ffe28b6a387f",
+            "bytes": 117105,
+            "dimensions": [
+              700,
+              700
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/7942405497/01_large.jpg"
+        },
+        {
+          "position": 2,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51821088680",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass румяна купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942405497)_files/1.dUpHNLa12aNdlQegISljLXOU26P5n3ejLZbboQ.boR9OSf4jhO3ncFE3Zxlw4MAhsAEbphRKaP-70q_sC0",
+            "local_path": "avito_audit/item_pages/images/7942405497/02_thumb.jpg",
+            "sha256": "7177160b7522338cf515f2598d36fc6474a2168be6b824cefdcd0391fff3857f",
+            "bytes": 3872,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass румяна купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942405497)_files/1.dUpHNLa42aNxg1uuISljLXOU26X5lVu1cZjbofed0anx.JAnfsSzfQ6PvcIvGgUWetrIV2zJcUP3eMyGATE1ee8Y",
+            "local_path": "avito_audit/item_pages/images/7942405497/02_large.jpg",
+            "sha256": "688a1c102e8bff2fb1fa33d63425cc770f6832736f3334ce70b33ca3e5a0d98b",
+            "bytes": 50238,
+            "dimensions": [
+              700,
+              700
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/7942405497/02_large.jpg"
+        },
+        {
+          "position": 3,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51820449188",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass румяна купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942405497)_files/1.eZGUm7a11XiOOgt76o498aA713gqMHt4_jnXeg.JS-lP7SlzJFRGrUI5TemHond_iN5JJ4FPb4Jvc-C6DY",
+            "local_path": "avito_audit/item_pages/images/7942405497/03_thumb.jpg",
+            "sha256": "d994938f96cfd13838d83c6de5b6d5efa15c5356247b759ec899a0571cfc6a14",
+            "bytes": 4952,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942405497/03_thumb.jpg"
+        },
+        {
+          "position": 4,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51818742485",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass румяна купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942405497)_files/1.CBagPLa1pP-6nXr8vBQ8d5Scpv8elwr_yp6m_Q.aYVVRzyF2AQqVqsWV5nMieupC-75bsGLXnuRjcEN4Qw",
+            "local_path": "avito_audit/item_pages/images/7942405497/04_thumb.jpg",
+            "sha256": "84db16dfb0e932f690f2b5262be7a2ceff1432a69e33744dc7d31a97d004f9f7",
+            "bytes": 4823,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942405497/04_thumb.jpg"
+        },
+        {
+          "position": 5,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51821070759",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass румяна купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942405497)_files/1.eqT1XLa11k3v_QhOjVliw8H81E1L93hNn_7UTw.WMqfbYgpOFmqaufsSf0bd8biyeKf5f7HLIgY4Omcmqc",
+            "local_path": "avito_audit/item_pages/images/7942405497/05_thumb.jpg",
+            "sha256": "93af0a2abd99a0dd273cdc4d2f4ba59542166cfad98c814b2a9e1d4653a9b799",
+            "bytes": 5009,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942405497/05_thumb.jpg"
+        },
+        {
+          "position": 6,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51819844560",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass румяна купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942405497)_files/1.DZwUyra1oXUOa392AqYD_CBqo3WqYQ91fmijdw.k-pqXo5zCZrvcZKbuF9E7xOEWAkqTHkrIFthVI37Dqc",
+            "local_path": "avito_audit/item_pages/images/7942405497/06_thumb.jpg",
+            "sha256": "94a50f5ca6f202f154b0c339dfbdd4248d915f5c7b3216511505dd4291ed9d0d",
+            "bytes": 6011,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942405497/06_thumb.jpg"
+        },
+        {
+          "position": 7,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51819800738",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass румяна купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942405497)_files/1.f0BeN7a106lElg2qLDZKIGqX0angnH2pNJXRqw.ngYREdmVAcqb_5fX_MemNGkk0DHz2BqcqZrano0t1Ak",
+            "local_path": "avito_audit/item_pages/images/7942405497/07_thumb.jpg",
+            "sha256": "abdba6a8d425ea7bff2a39778c9bf9b01e35821bea9477930df0c2042010ea1f",
+            "bytes": 6166,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942405497/07_thumb.jpg"
+        },
+        {
+          "position": 8,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51819816664",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass румяна купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942405497)_files/1.BUnifLa1qaD43Xej5EQ2Kdbcq6Bc1wegiN6rog.IOyOjjlAqylfXndLEe3dbfocF0KiWcR89XpEuBBwKj4",
+            "local_path": "avito_audit/item_pages/images/7942405497/08_thumb.jpg",
+            "sha256": "d060cd925838f2a1d5eb45d7689e9bea220f0a013842e2879865e199c176134d",
+            "bytes": 5115,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942405497/08_thumb.jpg"
+        },
+        {
+          "position": 9,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51819762903",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass румяна купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942405497)_files/1.CnTyHba1pp3ovHie6m0yFMa9pJ1MtgidmL-knw.2Eq3jXlkCgQLLiv9S5LtBkpIjMLWzCuqDa_v62BVWk4",
+            "local_path": "avito_audit/item_pages/images/7942405497/09_thumb.jpg",
+            "sha256": "6ced593a85666b57b5c2323c6e8a7deec2074c9632fd132de7585948f4d80c8f",
+            "bytes": 5551,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942405497/09_thumb.jpg"
+        },
+        {
+          "position": 10,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51821062842",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass румяна купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942405497)_files/1.Z5SZS7a1y32D6hV-20J8863ryX0n4GV98-nJfw.GQzDkxeb75SgnauldHMmPoI5PSY-a8s65q75pFYC19Y",
+            "local_path": "avito_audit/item_pages/images/7942405497/10_thumb.jpg",
+            "sha256": "f2a172dc2dd7c2c6e9f442766efd53e902d53c213c3db3da2725ccab2598df22",
+            "bytes": 5740,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass румяна купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942405497)_files/1.Z5SZS7a4y32v_Elw20J8863ryXsn6klrr-fJfyniw3cv.Bj-pI2jSYAPgNDjZqgdyChrOreWXvD330qaDLpk3fP8",
+            "local_path": "avito_audit/item_pages/images/7942405497/10_large.jpg",
+            "sha256": "cde805e0766970a32f52c6935f1c9c00ffdfa9d928fcc78f3495d8c9c0238f32",
+            "bytes": 100776,
+            "dimensions": [
+              720,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/7942405497/10_large.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8296456393",
+      "source": {
+        "zip_file": "PART1_HTMLS.zip",
+        "html_entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8296456393).html",
+        "zip_entry_datetime_no_timezone": "2026-10-26T03:10:08"
+      },
+      "seller_profile_id": "b2165ff5492372c90fab55f7223f9d3b",
+      "title_as_saved": "Оригинальные часы Omega x Swatch MoonSwatch",
+      "item_url": "https://www.avito.ru/moskva/chasy_i_ukrasheniya/originalnye_chasy_omega_x_swatch_moonswatch_8296456393",
+      "display_price_rub": 33272,
+      "old_price_display_rub": 35777,
+      "discount_display": "–7%",
+      "schema_offer_price_rub": 35777,
+      "schema_offer_price_warning": "schema.org Offer price differs from the visible discounted price in several pages; use display_price_rub for the saved UI",
+      "seller_description_schema_ru": "Часы Omega x Swatch — это больше, чем просто прибор для измерения времени. Это история о покорении космоса, воплощенная в инновационных материалах. Почему выбирают нас: Только оригинал. Мы дорожим своей репутацией и гарантируем подлинность каждого экземпляра. Эксклюзивность. Мы привозим редкие модели, которые сложно найти в свободной продаже. Полный сервис. Поможем подобрать модель под ваш стиль и ответим на все вопросы. Порадуйте себя или близкого человека легендой, которая всегда будет в центре внимания. 💬 Напишите нам в сообщения, чтобы получить актуальный прайс и фото моделей в наличии.",
+      "seller_description_html_ru": "Чаcы Оmega x Swаtсh — это больше, чем пpоcто прибор для измeрения вpемeни. Этo иcтopия о покорении кocмоса, воплoщeннaя в инновационныx мaтеpиaлax. Почему выбирaют наc: Toлько оригинал . Mы доpожим cвоeй рeпутaцией и гapaнтиpуем подлиннoсть кaждoго экземпляpа. Эксклюзивнocть . Мы пpивoзим редкие модели, которые сложно найти в свободной продаже. Полный сервис . Поможем подобрать модель под ваш стиль и ответим на все вопросы. Порадуйте себя или близкого человека легендой, которая всегда будет в центре внимания. 💬 Напишите нам в сообщения, чтобы получить актуальный прайс и фото моделей в наличии.",
+      "attributes_as_saved": {
+        "Тип часов": "Наручные или карманные",
+        "Тип товара": "Наручные часы",
+        "Состояние": "Новое",
+        "Бренд": "Omega",
+        "Цвет корпуса": "Розовый",
+        "Цвет ремешка": "Розовый",
+        "Механизм": "Кварцевые",
+        "Для кого": "Унисекс",
+        "Тип ремешка": "Нейлоновый"
+      },
+      "listing_date_display": "10 октября в 13:44",
+      "total_views_display": "371 просмотр",
+      "today_views_display": "(+21 сегодня)",
+      "stock_badge_display": null,
+      "gallery": [
+        {
+          "position": 1,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/58404399319",
+          "thumbnail": {
+            "zip_file": "PART3.zip",
+            "zip_entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8296456393)_files/1.Crxr9ra1plVxV3hWc_ZHxW5WpFXVXQhVAVSkVw.PxMUMfEHJL_aRw26sjRrrxOybx3Vzn0r8DxTwh2_qiI",
+            "local_path": "avito_audit/item_pages/images/8296456393/01_thumb.jpg",
+            "sha256": "742a89711d57e7981f251ca4dc353837ba0019642b524dd7a36f620931afa6f9",
+            "bytes": 4840,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART3.zip",
+            "zip_entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8296456393)_files/1.Crxr9ra4plVdQSRYc_ZHxW5WpFPVVyRDXVqkV9tfrl_d.JyUaB7zMDSPiSLsEqAziWI0eqwKAD314-RdC7KjuI3M",
+            "local_path": "avito_audit/item_pages/images/8296456393/01_large.jpg",
+            "sha256": "20c08b0215f354539ddf904555e809631967459f38182480609e5c1d39652ce0",
+            "bytes": 107789,
+            "dimensions": [
+              720,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8296456393/01_large.jpg"
+        },
+        {
+          "position": 2,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/58403511497",
+          "thumbnail": {
+            "zip_file": "PART3.zip",
+            "zip_entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8296456393)_files/1.FG5BPLa1uIdbnWaEZWxMFEScuof_lxaHK566hQ.XV51NhYoxL1f7JmGTkRhhuaFbsimF3ksmjVeiX0I0tM",
+            "local_path": "avito_audit/item_pages/images/8296456393/02_thumb.jpg",
+            "sha256": "f5386754b79a5addbc2f5104d81ccb624d71937f667ade8fa3aea289353dc058",
+            "bytes": 5487,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART3.zip",
+            "zip_entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8296456393)_files/1.FG5BPLa4uId3izqKZWxMFEScuoH_nTqRd5C6hfGVsI33.2GDzeb2xvYqcSOXAVMMSkF26jDG-HWr8b98jbNX-Fs0",
+            "local_path": "avito_audit/item_pages/images/8296456393/02_large.jpg",
+            "sha256": "30bde4c149d4608403555383733319a697d95b00b88b60dfd2c1bb526dd479f2",
+            "bytes": 130334,
+            "dimensions": [
+              720,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8296456393/02_large.jpg"
+        },
+        {
+          "position": 3,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/58403575776",
+          "thumbnail": {
+            "zip_file": "PART3.zip",
+            "zip_entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8296456393)_files/1.PQSB8La1ke2bUU_u94xtfoRQk-0_Wz_t61KT7w.HSsUGoXZIPS6aRy247e7_kFqNxiJK4Uce9pxSIbn_zQ",
+            "local_path": "avito_audit/item_pages/images/8296456393/03_thumb.jpg",
+            "sha256": "fef3948c108e9876c886353364095867b92ca3675a02d6aa736d8a9ae1bc9b0f",
+            "bytes": 4743,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/8296456393/03_thumb.jpg"
+        },
+        {
+          "position": 4,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/58406089194",
+          "thumbnail": null,
+          "large": null,
+          "best_path": null,
+          "missing_thumbnail_url": "https://90.img.avito.st/image/1/1.N5WuWLa1m3y0-UV_zDwo6qv4mXwQ8zV8xPqZfg.jokyniJMZCUS11epueLsrCHNlYQhuctDlzBpnLQeM_M"
+        },
+        {
+          "position": 5,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/58402686753",
+          "thumbnail": {
+            "zip_file": "PART3.zip",
+            "zip_entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8296456393)_files/1._EZfVLa1UK9F9Y6sK2vAPFr0Uq_h__6vNfZSrQ.6KgcNrfgd3AqJ0NgkiJVOSqTTVuPnPM-qnW_qfyP-8o",
+            "local_path": "avito_audit/item_pages/images/8296456393/05_thumb.jpg",
+            "sha256": "66f073c82c9edb8c0df0c4b65a0c2032d33c42ae2e0ce1074299211b3efa7150",
+            "bytes": 4620,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/8296456393/05_thumb.jpg"
+        },
+        {
+          "position": 6,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/58402683334",
+          "thumbnail": {
+            "zip_file": "PART3.zip",
+            "zip_entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8296456393)_files/1.G4s5Hra1t2Ijv2lhA1ok8Ty-tWKHtRliU7y1YA.ps1PsaXsoVNTWDAW9Rmyznj1R44NSgwsRjP8VaEW73s",
+            "local_path": "avito_audit/item_pages/images/8296456393/06_thumb.jpg",
+            "sha256": "e3f11e5bcea36417956c1202384147c8c8d08902e6aeec9db99359a3465c8c47",
+            "bytes": 3589,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/8296456393/06_thumb.jpg"
+        },
+        {
+          "position": 7,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/58405412643",
+          "thumbnail": {
+            "zip_file": "PART3.zip",
+            "zip_entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8296456393)_files/1._ilU3ra1UsBOf4zDJIGOUVF-UMDqdfzAPnxQwg.lzdqhDkK7sThtbRuLPmCnS7NWE7hHRqWZV6YrGKqpQE",
+            "local_path": "avito_audit/item_pages/images/8296456393/07_thumb.jpg",
+            "sha256": "df5cd5b9798be59e1dce1c662502ca42b367888ec95c75c11671dfc0691f830d",
+            "bytes": 3853,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/8296456393/07_thumb.jpg"
+        },
+        {
+          "position": 8,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/58406026977",
+          "thumbnail": {
+            "zip_file": "PART3.zip",
+            "zip_entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8296456393)_files/1.PB1Grra1kPRcD073MvY7YkMOkvT4BT70LAyS9g.6AAlqqPBKe25RZiy1XFKIlF6QQ1mnDKf_Nxjbsmsmig",
+            "local_path": "avito_audit/item_pages/images/8296456393/08_thumb.jpg",
+            "sha256": "87a58975cbbcba922cd138624bdec8a970ac0f83a95b4439f4c31ce345515a4b",
+            "bytes": 5254,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART3.zip",
+            "zip_entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8296456393)_files/1.PB1Grra4kPRwGRL5MvY7YkMOkvL4DxLicAKS9vYHmP7w.0yIr1hyAKf_H2qqImBGPVw-CW-378QPbOASeqlbmKlc",
+            "local_path": "avito_audit/item_pages/images/8296456393/08_large.jpg",
+            "sha256": "a3b212c7aca74d43155f363826c7f3e6139117032689c547d5bb5d62ccc744bf",
+            "bytes": 158274,
+            "dimensions": [
+              720,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8296456393/08_large.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8165960870",
+      "source": {
+        "zip_file": "PART1_HTMLS.zip",
+        "html_entry": "Сыворотка молодости image MD restoring youth serum купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8165960870).html",
+        "zip_entry_datetime_no_timezone": "2026-10-26T03:19:44"
+      },
+      "seller_profile_id": "b2165ff5492372c90fab55f7223f9d3b",
+      "title_as_saved": "Сыворотка молодости image MD restoring youth serum",
+      "item_url": "https://www.avito.ru/moskva/krasota_i_zdorove/syvorotka_molodosti_image_md_restoring_youth_serum_8165960870",
+      "display_price_rub": 11999,
+      "old_price_display_rub": null,
+      "discount_display": null,
+      "schema_offer_price_rub": 11999,
+      "schema_offer_price_warning": "schema.org Offer price differs from the visible discounted price in several pages; use display_price_rub for the saved UI",
+      "seller_description_schema_ru": "Высококонцентрированная смесь пептидов, растительных стволовых клеток и стабильных форм витамина С. Корректирует и минимизирует морщины, укрепляет тургор кожи и возвращает ей упругость и эластичность. Эксклюзивная запатентованная технология доставки IMAGE Skincare позволяет активным ингредиентам эффективно проникать в более глубокие слои кожи. Показания: все типы кожи с любыми возрастными изменениями. Преимущества: не имеющая аналогов, мягкая, нежная, ежедневная сыворотка, способная вернуть коже молодость, свежесть и сияние. Применение: для получения максимального эффекта наносить на хорошо очищенную кожу утром и вечером. Закрывать Дневным кремом IMAGE MD SPF 50. Ингредиенты IMAGE Skincare стремится к тому, чтобы списки ингредиентов были максимально точными. Однако, поскольку ингредиенты могут быть изменены, мы не можем гарантировать, что эти списки являются полными, актуальными и/или безошибочными. Точный перечень ингредиентов находится на упаковке каждого препарата. Страна производитель: США",
+      "seller_description_html_ru": "Выcoкоконцентpированная смeсь пeптидов, рaститeльных стволoвыx клeтoк и cтaбильных форм витамина C. Kорректиpуeт и минимизиpует морщины, укpeпляет туpгop кoжи и возвращaет eй упpугoсть и эластичноcть. Эксклюзивнaя запaтентoваннaя тeхнoлoгия дocтaвки IMAGЕ Skincare позвoляет активным ингpeдиентaм эффективно проникать в более глубокие слои кожи. Показания: все типы кожи с любыми возрастными изменениями. Преимущества: не имеющая аналогов, мягкая, нежная, ежедневная сыворотка, способная вернуть коже молодость, свежесть и сияние. Применение: для получения максимального эффекта наносить на хорошо очищенную кожу утром и вечером. Закрывать Дневным кремом IМАGЕ МD SРF 50. Ингредиенты IМАGЕ Skinсаrе стремится к тому, чтобы списки ингредиентов были максимально точными. Однако, поскольку ингредиенты могут быть изменены, мы не можем гарантировать, что эти списки являются полными, актуальными и/или безошибочными. Точный перечень ингредиентов находится на упаковке каждого препарата. Страна производитель: США",
+      "attributes_as_saved": {
+        "Подтип товара": "Сыворотки и эссенции",
+        "Тип продукта": "Сыворотки",
+        "Бренд": "Другой",
+        "Активный компонент": "Витамин E, Пептиды",
+        "Тип кожи": "Зрелая",
+        "Назначение": "Сияние, Упругость и эластичность",
+        "Для кого": "Для всех",
+        "Возраст": "от 25 лет"
+      },
+      "listing_date_display": "23 октября в 17:29",
+      "total_views_display": "52 просмотра",
+      "today_views_display": "(+2 сегодня)",
+      "stock_badge_display": "В наличии: последний товар",
+      "gallery": [
+        {
+          "position": 1,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/55362762238",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Сыворотка молодости image MD restoring youth serum купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8165960870)_files/1.I-tVkra1jwJPM1EBH-YIvn8yjQLrOSECPzCNAA.K_ON4JDOe_7VRgrWJRJQC-9dzN41biMJHw_t6i8zB5E",
+            "local_path": "avito_audit/item_pages/images/8165960870/01_thumb.jpg",
+            "sha256": "4dd8a5444a69565444de7e00ba9d698290dca93516ab8f8434b607ce46104775",
+            "bytes": 2797,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Сыворотка молодости image MD restoring youth serum купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8165960870)_files/1.I-tVkra4jwJjJQ0PH-YIvn8yjQTrMw0UYz6NAOU7hwjj.LY29ZAQjNadMHuFO0jatUESoF7MrxYzI31THkAbOVIg",
+            "local_path": "avito_audit/item_pages/images/8165960870/01_large.jpg",
+            "sha256": "8c2652dd8a6fd7edac628216dec00dd1ea8e44d9670a1b460b12dae06e69db6b",
+            "bytes": 13895,
+            "dimensions": [
+              400,
+              400
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8165960870/01_large.jpg"
+        },
+        {
+          "position": 2,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/55366109355",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Сыворотка молодости image MD restoring youth serum купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8165960870)_files/1.dutcVra12gJG9wQBPFdGwXb22ALi_XQCNvTYAA.G_TzRy3Pd04LE0dMQ_BANnyYWduTz7Ou26W9qQacfmc",
+            "local_path": "avito_audit/item_pages/images/8165960870/02_thumb.jpg",
+            "sha256": "0a19eff5e631b8a819b13073e0941f827f4a4e09585633500a164a0e49a95c96",
+            "bytes": 2616,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Сыворотка молодости image MD restoring youth serum купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8165960870)_files/1.dutcVra42gJq4VgPPFdGwXb22ATi91gUavrYAOz_0gjq.af0i-kSg1HAWi5vM8OykbGSnq9QcjJOBIaJqzmsMYtU",
+            "local_path": "avito_audit/item_pages/images/8165960870/02_large.jpg",
+            "sha256": "411be5038af40cdac70386d3e284f9cbc1ab94846541141a0c5758f670e9e5af",
+            "bytes": 10940,
+            "dimensions": [
+              400,
+              400
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8165960870/02_large.jpg"
+        },
+        {
+          "position": 3,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/55366155179",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Сыворотка молодости image MD restoring youth serum купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8165960870)_files/1.dutb5ba12gJBRAQBO6h7wXFF2ALlTnQCMUfYAA.40UQeq1Ar_UgM6HEcovjZOOSxouoRqJgOYcgp_88CTA",
+            "local_path": "avito_audit/item_pages/images/8165960870/03_thumb.jpg",
+            "sha256": "b4d6a3b853e55536713da13ea79c1b3626e647f7f9c94424b9c13468d9a07d97",
+            "bytes": 2663,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/8165960870/03_thumb.jpg"
+        },
+        {
+          "position": 4,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/55363634290",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Сыворотка молодости image MD restoring youth serum купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8165960870)_files/1.r-WY0ba1AwyCcN0PyuPxsLJxAQwmeq0M8nMBDg.PbGzVwBILWn6ZZbQt5QsLzMuE5yTr0622MxIUYreNsk",
+            "local_path": "avito_audit/item_pages/images/8165960870/04_thumb.jpg",
+            "sha256": "9899425ef88c7a1a8564258e73898d2226b51821da4d3758ee7b5802ad936fc6",
+            "bytes": 4893,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/8165960870/04_thumb.jpg"
+        },
+        {
+          "position": 5,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/55365480690",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Сыворотка молодости image MD restoring youth serum купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8165960870)_files/1.Lw2sora1g-S2A13n_sJQJoYCgeQSCS3kxgCB5g.YU8ss2DVkSoS04jCmM_msBgSFuy9-jR6fzfXpGxZ50E",
+            "local_path": "avito_audit/item_pages/images/8165960870/05_thumb.jpg",
+            "sha256": "3db557d2477e3e9050ca555a81b7d84bb4c64a3305da750ffd90f6b18f070494",
+            "bytes": 5487,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Сыворотка молодости image MD restoring youth serum купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8165960870)_files/1.Lw2sora4g-SaFQHp_sJQJoYCgeISAwHymg6B5hwLi-4a.UP883gYjqmE1ljrE9G9lHdZDYjsqyfaveItQcAM52Mk",
+            "local_path": "avito_audit/item_pages/images/8165960870/05_large.jpg",
+            "sha256": "0ccfaf28e51c69db77f06367f0913527c8fcecefb904d9857b288becafb8c55d",
+            "bytes": 124894,
+            "dimensions": [
+              870,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8165960870/05_large.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7942108985",
+      "source": {
+        "zip_file": "PART1_HTMLS.zip",
+        "html_entry": "Hourglass палетка купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942108985).html",
+        "zip_entry_datetime_no_timezone": "2026-10-26T03:19:04"
+      },
+      "seller_profile_id": "b2165ff5492372c90fab55f7223f9d3b",
+      "title_as_saved": "Hourglass палетка",
+      "item_url": "https://www.avito.ru/moskva/krasota_i_zdorove/hourglass_paletka_7942108985",
+      "display_price_rub": 6000,
+      "old_price_display_rub": 7500,
+      "discount_display": "–20%",
+      "schema_offer_price_rub": 7500,
+      "schema_offer_price_warning": "schema.org Offer price differs from the visible discounted price in several pages; use display_price_rub for the saved UI",
+      "seller_description_schema_ru": "Сияние нового уровня с палитрой Hourglass Ambient Lighting Volume (9г). Эта универсальная палитра с персиковыми, золотистыми и перламутровыми оттенками, которые можно использовать как по отдельности, так и в комбинации, создаст многомерное сияние. Легко наносится и растушевывается, она идеально подходит для светлой и средне-светлой кожи, подчеркивая ее естественную красоту и фиксируя макияж. Благодаря уникальной фотолюминесцентной технологии Hourglass, палитра улавливает и отражает свет, придавая коже здоровое свечение.",
+      "seller_description_html_ru": "Cияниe новогo уpовня с палитрой Нourglаss Ambiеnt Lighting Vоlumе (9г). Эта унивepcaльнaя пaлитpa c пeрсиковыми, золотиcтыми и пeрламутровыми oттeнкaми, которыe мoжно иcпoльзoвaть как по отдeльноcти, тaк и в кoмбинации, создаcт многoмеpноe сияниe. Лeгко нaнocитcя и pacтушевывается, онa идеальнo пoдхoдит для светлой и средне-светлой кожи, подчеркивая ее естественную красоту и фиксируя макияж. Благодаря уникальной фотолюминесцентной технологии Ноurglаss, палитра улавливает и отражает свет, придавая коже здоровое свечение.",
+      "attributes_as_saved": {
+        "Вид товара": "Макияж и маникюр",
+        "Тип товара": "Для глаз и бровей",
+        "Тип косметики": "Тени и глиттеры",
+        "Бренд": "HOURGLASS",
+        "Цвет": "Коричневый",
+        "Состояние": "Новое"
+      },
+      "listing_date_display": "23 октября в 17:29",
+      "total_views_display": "665 просмотров",
+      "today_views_display": "(+19 сегодня)",
+      "stock_badge_display": "В наличии: последний товар",
+      "gallery": [
+        {
+          "position": 1,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51821036140",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass палетка купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942108985)_files/1.sfQJWba1HR0T-MMeZ3Otkz35Hx238rMdY_sfHw._kmkCR4KZVCy7RPw4Q0PU6Z8-UAMq5IfaV7JKmkcyMk",
+            "local_path": "avito_audit/item_pages/images/7942108985/01_thumb.jpg",
+            "sha256": "2f31c7ab3c701163dbcce7542341f76d97a37f5fdfbff52a065563e60b160916",
+            "bytes": 5437,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass палетка купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942108985)_files/1.sfQJWba4HR0_7p8QZ3Otkz35Hxu3-J8LP_UfH7nwFRe_.1LKPK4ALFwWGfQHkQQYC1rHiggtBxu_3NXj9nFQqKwc",
+            "local_path": "avito_audit/item_pages/images/7942108985/01_large.jpg",
+            "sha256": "df86bb6cc2e1790d3dab54f21d7d5f80d9d8fdbdf69d7b07c132ec19c28131d8",
+            "bytes": 77814,
+            "dimensions": [
+              700,
+              700
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/7942108985/01_large.jpg"
+        },
+        {
+          "position": 2,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51819755180",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass палетка купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942108985)_files/1.cc5zWba13Sdp-AMkHSBKrkf53yfN8nMnGfvfJQ.JxPBhSg9UAf8N4yUtIC7dLQL--u9yQfk2nF7Nl-PxkE",
+            "local_path": "avito_audit/item_pages/images/7942108985/02_thumb.jpg",
+            "sha256": "05b678aa06880c28f36c93233d4e3b65dec2584176ed78c7a72145586420112d",
+            "bytes": 6130,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass палетка купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942108985)_files/1.cc5zWba43SdF7l8qHSBKrkf53yHN-F8xRfXfJcPw1S3F.JqKlAGcJBZ7-RVUs1y94W5EFtCCRSZUHEcoASi8JIio",
+            "local_path": "avito_audit/item_pages/images/7942108985/02_large.jpg",
+            "sha256": "27617effb93760ba98bfe1cb0ff16630c0211473a986795c89a2eea307ee89ab",
+            "bytes": 85408,
+            "dimensions": [
+              700,
+              700
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/7942108985/02_large.jpg"
+        },
+        {
+          "position": 3,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51819721340",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass палетка купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942108985)_files/1.oWxMhra1DYVWJ9OGAuyeDHgmD4XyLaOFJiQPhw.cHy1Ftv362MTVtQF_yibq3zj8NiN_73-5Ns3RmL13Aw",
+            "local_path": "avito_audit/item_pages/images/7942108985/03_thumb.jpg",
+            "sha256": "37c7d1409b557feebe3fa8980b08eb7cc01f97df3e91b319d4b00554b3ae17ba",
+            "bytes": 3479,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942108985/03_thumb.jpg"
+        },
+        {
+          "position": 4,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51820377722",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass палетка купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942108985)_files/1.p2GhS7a1C4i76tWL4zHoAZXrCYgf4KWIy-kJig.SwQOk_S31kcxf69s92rsH2gd_hg4BH4wzFdY9XM7Mzs",
+            "local_path": "avito_audit/item_pages/images/7942108985/04_thumb.jpg",
+            "sha256": "919382d50fd2c96bcdabc594cdb12227028138a84d9ec41b26a28afa7a06a581",
+            "bytes": 6824,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942108985/04_thumb.jpg"
+        },
+        {
+          "position": 5,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51819700473",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass палетка купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942108985)_files/1.JJxngLa1iHV9IVZ2I6AF_FMginXZKyZ1DSKKdw.IGftQwLy7uH81IbLspg13FlQAyYGeqVQh9p2gNMS5FI",
+            "local_path": "avito_audit/item_pages/images/7942108985/05_thumb.jpg",
+            "sha256": "7d62a9b678a18990a2494769e8b462406fa824095bc019fb21ba67e080a84ad7",
+            "bytes": 4914,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942108985/05_thumb.jpg"
+        },
+        {
+          "position": 6,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51819772586",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass палетка купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942108985)_files/1.dwMhLLa12-o7jQXpQ2VOYxWM2eqfh3XqS47Z6A.gCHR3JHdORT3zWsZhQnmOskgxFbQSzk9pqqtkMIgOzc",
+            "local_path": "avito_audit/item_pages/images/7942108985/06_thumb.jpg",
+            "sha256": "e9f3acbdcd06efc36fc3b2e0736a9193acafb1013b561ffe5292d7b4b7d3fb36",
+            "bytes": 5482,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942108985/06_thumb.jpg"
+        },
+        {
+          "position": 7,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51819773605",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass палетка купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942108985)_files/1.eBakU7a11P--8gr82ApBdpDz1v8a-Hr_zvHW_Q.QMu_CIlrOIZRZL6ty5j-23cqdKCDRKyfvMYXSEk2ZjY",
+            "local_path": "avito_audit/item_pages/images/7942108985/07_thumb.jpg",
+            "sha256": "ed5f59264f58a6bbef9dda0dcb38ab07883056e06c315e5dcde87715f03b4ef0",
+            "bytes": 6115,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942108985/07_thumb.jpg"
+        },
+        {
+          "position": 8,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51817854967",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass палетка купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942108985)_files/1.KiMZ5ba1hsoDRFjJQZkpQS1FhMqnTijKc0eEyA.mhHAAcyDJXv_7alwNhAbzMLblTvLmNOwqoGS1fF0xJU",
+            "local_path": "avito_audit/item_pages/images/7942108985/08_thumb.jpg",
+            "sha256": "6c7fd402491af76de65c0bc12e5aeace4d5d4bbeb0030b18086f2317ebf2ef84",
+            "bytes": 4646,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942108985/08_thumb.jpg"
+        },
+        {
+          "position": 9,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51817893722",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass палетка купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942108985)_files/1.hw5efba1K-dE3PXkXGObbGrdKefg1oXnNN8p5Q.XV9n4-H2nSmZ3K7jZ8v6yA5uLptWtZashqNS4TRcrxc",
+            "local_path": "avito_audit/item_pages/images/7942108985/09_thumb.jpg",
+            "sha256": "b2962de1caa226cc0d9add17ba72974cc2fcae6f11dd1aa4cecc21f526a96115",
+            "bytes": 5753,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/7942108985/09_thumb.jpg"
+        },
+        {
+          "position": 10,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/51821017242",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass палетка купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942108985)_files/1.R2Be2ra164lEezWKXJtGB2p66YngcUWJNHjpiw._nJ9Akt-wWT2NIKCK5e0mHGIAuE0tpdubZmS7uiEzCA",
+            "local_path": "avito_audit/item_pages/images/7942108985/10_thumb.jpg",
+            "sha256": "dd4dc15f1fec55bbbd9f02015287d6b0cd771fbf02a0db030e4f195b475fa488",
+            "bytes": 4823,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Hourglass палетка купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (7942108985)_files/1.R2Be2ra464lobWmEXJtGB2p66Y_ge2mfaHbpi-5z44Po.q6QZg4rSKS68Alobk828vLYovzTtjDBSyf7qimYmh9Q",
+            "local_path": "avito_audit/item_pages/images/7942108985/10_large.jpg",
+            "sha256": "8eb03501aaad7484fdcd408d8f5fcb8347f6b898571ff29e7f6970cf34881836",
+            "bytes": 93270,
+            "dimensions": [
+              720,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/7942108985/10_large.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8230842563",
+      "source": {
+        "zip_file": "PART1_HTMLS.zip",
+        "html_entry": "Image MD biotech крем купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8230842563).html",
+        "zip_entry_datetime_no_timezone": "2026-10-26T03:16:28"
+      },
+      "seller_profile_id": "b2165ff5492372c90fab55f7223f9d3b",
+      "title_as_saved": "Image MD biotech крем",
+      "item_url": "https://www.avito.ru/moskva/krasota_i_zdorove/image_md_biotech_krem_8230842563",
+      "display_price_rub": 12999,
+      "old_price_display_rub": null,
+      "discount_display": null,
+      "schema_offer_price_rub": 12999,
+      "schema_offer_price_warning": "schema.org Offer price differs from the visible discounted price in several pages; use display_price_rub for the saved UI",
+      "seller_description_schema_ru": "Высокотехнологичный антивозрастной крем для поддержания молодости кожи. Геномный AI-флавоноид и Phyto NAD+ Booster борются с морщинами, дряблостью и тусклым цветом лица.",
+      "seller_description_html_ru": "Высокотехнологичный антивозрастной крем для поддержания молодости кожи. Геномный AI-флавоноид и Phyto NAD+ Booster борются с морщинами, дряблостью и тусклым цветом лица.",
+      "attributes_as_saved": {
+        "Подтип товара": "Кремы"
+      },
+      "listing_date_display": "23 октября в 17:29",
+      "total_views_display": "30 просмотров",
+      "today_views_display": "(+1 сегодня)",
+      "stock_badge_display": "В наличии: последний товар",
+      "gallery": [
+        {
+          "position": 1,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/56305764839",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Image MD biotech крем купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8230842563)_files/1.OmV57La1loxjTUiPAeg6T2xMlIzHRziME06Ujg.423fXacM2WAW48uUSh0Jdp8bvRd6LTZLFj-avWLW7Fg",
+            "local_path": "avito_audit/item_pages/images/8230842563/01_thumb.jpg",
+            "sha256": "a472aa2378c2d782134d20ec419d20e82fd37281998fb7f75c839815b7bfecf4",
+            "bytes": 5061,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Image MD biotech крем купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8230842563)_files/1.OmV57La4loxPWxSBAeg6T2xMlIrHTRSaT0CUjslFnobP.U_puRtpO3wCfDksl2kKZF8xBoSXoHmV_8jn-kRj5SkA",
+            "local_path": "avito_audit/item_pages/images/8230842563/01_large.jpg",
+            "sha256": "b1a96451b5cf90807f5aa83590707f376254ca6549411af2810d386b456dcae2",
+            "bytes": 120099,
+            "dimensions": [
+              792,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8230842563/01_large.jpg"
+        },
+        {
+          "position": 2,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/56304810787",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Image MD biotech крем купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8230842563)_files/1._hWwW7a1Uvyq-oz_wBTpPqX7UPwO8Pz82vlQ_g.i-Grqfs1uuclN26QebcsSqt761w38cWa5YkXKmtG34s",
+            "local_path": "avito_audit/item_pages/images/8230842563/02_thumb.jpg",
+            "sha256": "4d0b958e94f8aaf4028d350eb542b9e1e8be343eb0f24e9a20926a695293591b",
+            "bytes": 5083,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Image MD biotech крем купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8230842563)_files/1._hWwW7a4UvyG7NDxwBTpPqX7UPoO-tDqhvdQ_gDyWvYG.UA-Xl7yQ8QvntYN9uCM9qUpmZejsqbtdvrhvYM0T6fQ",
+            "local_path": "avito_audit/item_pages/images/8230842563/02_large.jpg",
+            "sha256": "05d29d0ad6288510052dca550e34b60767618d23afca4096267a9a90b50d0956",
+            "bytes": 125889,
+            "dimensions": [
+              720,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8230842563/02_large.jpg"
+        },
+        {
+          "position": 3,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/56303978151",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Image MD biotech крем купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8230842563)_files/1.elRGmLa11r1cOQi-PqEAAFM41L34M3i9LDrUvw.xzn0fKT1PgvKuHXfGY4J8ALiCfVW066AdMmwgQTegg0",
+            "local_path": "avito_audit/item_pages/images/8230842563/03_thumb.jpg",
+            "sha256": "f1095205494a2f494ace8cfe097c7ecc9cd651d8b8eca9aeedfb0b917cefa4c0",
+            "bytes": 4643,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Image MD biotech крем купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8230842563)_files/1.elRGmLa41r1wL1SwPqEAAFM41Lv4OVSrcDTUv_Yx3rfw.ZA4qyqyXvd29XIQQiRek6Am5YvcsVTuiYTC_dslczBI",
+            "local_path": "avito_audit/item_pages/images/8230842563/03_large.jpg",
+            "sha256": "e5b8d95b1702a79c3ec9968308e6e1580f763500384a35ea2ce9537811e63bb9",
+            "bytes": 123326,
+            "dimensions": [
+              720,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8230842563/03_large.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8166674710",
+      "source": {
+        "zip_file": "PART1_HTMLS.zip",
+        "html_entry": "Усиленный смарт-крем SPF75 купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166674710).html",
+        "zip_entry_datetime_no_timezone": "2026-10-26T03:16:08"
+      },
+      "seller_profile_id": "b2165ff5492372c90fab55f7223f9d3b",
+      "title_as_saved": "Усиленный смарт-крем SPF75",
+      "item_url": "https://www.avito.ru/moskva/krasota_i_zdorove/usilennyy_smart-krem_spf75_8166674710",
+      "display_price_rub": 6700,
+      "old_price_display_rub": null,
+      "discount_display": null,
+      "schema_offer_price_rub": 6700,
+      "schema_offer_price_warning": "schema.org Offer price differs from the visible discounted price in several pages; use display_price_rub for the saved UI",
+      "seller_description_schema_ru": "Усовершенствованный минеральный увлажняющий крем с SPF 75 и тинтом (смарт-композиция подстраивается под любой тон кожи и выравнивает ее) удобная форма - с дозатором. Экстракт плодов расторопши обладает антисептическим действием. Экстракт листьев священного базилика быстро восстанавливает гомеостаз кожи и ее барьерную функцию, повышает местный иммунитет. Экстракт плодов ванили омолаживает, устраняет гиперемию и раздражение кожи, стимулирует процессы регенерации. Выравнивает тон кожи, подстраиваясь под любой фототип и придает ей легкий золотистый оттенок.",
+      "seller_description_html_ru": "Уcoвеpшенcтвованный минеральный увлажняющий кpем c SРF 75 и тинтoм (cмарт-композиция подcтpaивaeтcя под любой тон кожи и вырaвнивaет ее) удобнaя фopма - с дозaтoрoм. Экcтpaкт плодов рaстopoпши обладает aнтисeптичеcким дейcтвием. Экcтpакт лиcтьeв cвящeннoгo бaзилика быстpo воcстанaвливaет гoмеостаз кожи и ее барьерную функцию, повышает местный иммунитет. Экстракт плодов ванили омолаживает, устраняет гиперемию и раздражение кожи, стимулирует процессы регенерации. Выравнивает тон кожи, подстраиваясь под любой фототип и придает ей легкий золотистый оттенок.",
+      "attributes_as_saved": {
+        "Тип товара": "Загар и защита от солнца"
+      },
+      "listing_date_display": "23 октября в 17:29",
+      "total_views_display": "73 просмотра",
+      "today_views_display": "(+3 сегодня)",
+      "stock_badge_display": "В наличии: последний товар",
+      "gallery": [
+        {
+          "position": 1,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/55363711493",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Усиленный смарт-крем SPF75 купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166674710)_files/1.2CpzILa1dMNpgarAT0uPf1mAdsPNi9rDGYJ2wQ.5JjSTb8DfoR6KOqsQuYldi7teZNuamviMsuHczG7CXk",
+            "local_path": "avito_audit/item_pages/images/8166674710/01_thumb.jpg",
+            "sha256": "6ec25c70eba5de006a4072b20caa5068f1fdecfe6f9ce3c03eda803442d67cdd",
+            "bytes": 4169,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Усиленный смарт-крем SPF75 купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166674710)_files/1.2CpzILa4dMNFl_bOT0uPf1mAdsXNgfbVRYx2wcOJfMnF.0UwO_QYHetUmLDy11d-NHdyQzRAw1ZDplFQM-ToBzOU",
+            "local_path": "avito_audit/item_pages/images/8166674710/01_large.jpg",
+            "sha256": "1a0ed8cf78588cba733fe479e71076b8744feac1a5cc6900716231ea54ebd054",
+            "bytes": 82736,
+            "dimensions": [
+              965,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8166674710/01_large.jpg"
+        },
+        {
+          "position": 2,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/55364555456",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Усиленный смарт-крем SPF75 купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166674710)_files/1.HcLOm7a1sSvUOm8o-PNTluQ7sytwMB8rpDmzKQ.fz8EBqgq_-GynVeuFh8y_piqMzKzn8lQuDlyheeWhTU",
+            "local_path": "avito_audit/item_pages/images/8166674710/02_thumb.jpg",
+            "sha256": "59bcf9542d6a0de851002bb70b3930318d632ae5165b17e95e8728855743ae1d",
+            "bytes": 4548,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Усиленный смарт-крем SPF75 купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166674710)_files/1.HcLOm7a4sSv4LDMm-PNTluQ7sy1wOjM9-DezKX4yuSF4.uC-gduYBpqPOc1YAyg8Yhh2BfVrO_melL9Osy3dQ54Y",
+            "local_path": "avito_audit/item_pages/images/8166674710/02_large.jpg",
+            "sha256": "a21a442421471ee9314b7251ef8ee1cfa6759882f2ffbe11985a70d72b49f1b9",
+            "bytes": 73107,
+            "dimensions": [
+              720,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8166674710/02_large.jpg"
+        },
+        {
+          "position": 3,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/55365562893",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Усиленный смарт-крем SPF75 купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166674710)_files/1.0NclY7a1fD4_wqI9CQil_A_Dfj6byNI-T8F-PA.zjq3RdZU76P99MOLCWk-sz471z-q_8uHKUDVgjyAP8s",
+            "local_path": "avito_audit/item_pages/images/8166674710/03_thumb.jpg",
+            "sha256": "3cd20af6d4c989ff4238749afddc8df8510a8b22f4908fcbaaebfeb402e80b22",
+            "bytes": 5140,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Усиленный смарт-крем SPF75 купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166674710)_files/1.0NclY7a4fD4T1P4zCQil_A_Dfjibwv4oE89-PJXKdDST.OC-jndcoD9tNJ1O9t537BTJzlIqvjv4CeJYeBD_3bgQ",
+            "local_path": "avito_audit/item_pages/images/8166674710/03_large.jpg",
+            "sha256": "7b087d19646049c79a0eeff119d2d249754ce1dd233ef820e07c35d59586b05a",
+            "bytes": 112439,
+            "dimensions": [
+              720,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8166674710/03_large.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8166335454",
+      "source": {
+        "zip_file": "PART1_HTMLS.zip",
+        "html_entry": "Восстанавливающий ночной крем с витамином С купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166335454).html",
+        "zip_entry_datetime_no_timezone": "2026-10-26T03:15:40"
+      },
+      "seller_profile_id": "b2165ff5492372c90fab55f7223f9d3b",
+      "title_as_saved": "Восстанавливающий ночной крем с витамином С",
+      "item_url": "https://www.avito.ru/moskva/krasota_i_zdorove/vosstanavlivayuschiy_nochnoy_krem_s_vitaminom_s_8166335454",
+      "display_price_rub": 8500,
+      "old_price_display_rub": null,
+      "discount_display": null,
+      "schema_offer_price_rub": 8500,
+      "schema_offer_price_warning": "schema.org Offer price differs from the visible discounted price in several pages; use display_price_rub for the saved UI",
+      "seller_description_schema_ru": "Ультраувлажняющий крем успокаивает кожу и помогает бороться с морщинами. Незаменимые витамины А, С, Е обеспечивают питание и спасают кожу от тусклости и сухости. Смесь гиалуроновой кислоты и керамидов помогает удержать влагу, восстановить и защитить кожу от увядания и стрессов. Показания: возрастная, сухая/обезвоженная, склонная к покраснениям кожа. Преимущества: обогащенная формула восстанавливающего крема успокаивает и питает сухую, обезвоженную кожу. Крем быстро впитывается в кожу, не оставляя ощущения тяжести и жирного блеска. Подходит для мужской кожи.",
+      "seller_description_html_ru": "Ультpaувлажняющий кpем успoкaивает кожу и помoгаeт борoтьcя c морщинaми. Heзaмeнимыe витaмины А, С, Е обеcпeчивают питание и спacaют кожу от тусклocти и суxocти. Cмесь гиалуpонoвoй киcлоты и керамидoв помoгаeт удеpжать влaгу, вoсcтaнoвить и зaщитить кoжу oт увядaния и cтpeccoв. Показaния: вoзрaстная, сухая/обезвоженная, склонная к покраснениям кожа. Преимущества: обогащенная формула восстанавливающего крема успокаивает и питает сухую, обезвоженную кожу. Крем быстро впитывается в кожу, не оставляя ощущения тяжести и жирного блеска. Подходит для мужской кожи.",
+      "attributes_as_saved": {
+        "Подтип товара": "Кремы",
+        "Бренд": "Другой",
+        "Назначение": "Увлажнение, Питание, Сияние, Восстановление",
+        "Время нанесения": "Ночной",
+        "Для кого": "Для всех"
+      },
+      "listing_date_display": "23 октября в 17:29",
+      "total_views_display": "55 просмотров",
+      "today_views_display": "(+0 сегодня)",
+      "stock_badge_display": "В наличии: последний товар",
+      "gallery": [
+        {
+          "position": 1,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/55363848523",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Восстанавливающий ночной крем с витамином С купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166335454)_files/1.luPCpLa1OgrYBeQJ4qKyt-gEOAp8D5QKqAY4CA.6607K_gYa7LpW9lXdT9kTMxWqrTk2vEo70owWhAkvLk",
+            "local_path": "avito_audit/item_pages/images/8166335454/01_thumb.jpg",
+            "sha256": "a947b4b0162ba367cfbdeea5f2919f85c77982647acc8a20577eeb8a40f052c9",
+            "bytes": 4445,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Восстанавливающий ночной крем с витамином С купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166335454)_files/1.luPCpLa4Ogr0E7gH4qKyt-gEOAx8Bbgc9Ag4CHINMgB0.7SlV-ZCfy0-D5szuyC4wqh1ipvtLjQcfuY5m-A5k6fc",
+            "local_path": "avito_audit/item_pages/images/8166335454/01_large.jpg",
+            "sha256": "c2649f4973783292859c74a8db08ea267e97439eda4b860083589c17fd37e848",
+            "bytes": 86518,
+            "dimensions": [
+              790,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8166335454/01_large.jpg"
+        },
+        {
+          "position": 2,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/55363827647",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Восстанавливающий ночной крем с витамином С купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166335454)_files/1.YncW07a1zp4MchCdXq5LIzxzzJ6oeGCefHHMnA.MWOhJIs7pPZAzHYKaLTeB3axkkkYKs0CdaboXy4g4ow",
+            "local_path": "avito_audit/item_pages/images/8166335454/02_thumb.jpg",
+            "sha256": "073870ed3a8e5b1b4ac66a19f252cd0677263a8b3a632d064f06fcfb736bb751",
+            "bytes": 3756,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Восстанавливающий ночной крем с витамином С купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166335454)_files/1.YncW07a4zp4gZEyTXq5LIzxzzJiockyIIH_MnKZ6xpSg.WBThpSatQd3Lcr1URNTsYWJKX3sgrZD08HCJD6XEX4Y",
+            "local_path": "avito_audit/item_pages/images/8166335454/02_large.jpg",
+            "sha256": "5cf03a09c44b071a0f75d98878a1c929b1646ee82793a5242cd23f9834f8c2d0",
+            "bytes": 83426,
+            "dimensions": [
+              720,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8166335454/02_large.jpg"
+        },
+        {
+          "position": 3,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/55362968009",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Восстанавливающий ночной крем с витамином С купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166335454)_files/1.FHuqyLa1uJKwaWaRjowkLoBoupIUYxaSwGq6kA.1OiXdyQO7aYAk10Q_62Fl6-kQm30mbTo71Q1xufxi_c",
+            "local_path": "avito_audit/item_pages/images/8166335454/03_thumb.jpg",
+            "sha256": "3c442bf3d1500fab693b5bf6e511975fca5556888d092bca9e0ee28865243548",
+            "bytes": 5439,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Восстанавливающий ночной крем с витамином С купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166335454)_files/1.FHuqyLa4uJKcfzqfjowkLoBoupQUaTqEnGS6kBphsJgc.kyxFZA5qvICKjGh9tjt-2BCQOlP5PHf45oVqfsSdqts",
+            "local_path": "avito_audit/item_pages/images/8166335454/03_large.jpg",
+            "sha256": "9d33dffc8a90a558a509f538fa1d08948a50a1f60a2f24005f069d5cf2cf9d8c",
+            "bytes": 135982,
+            "dimensions": [
+              720,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8166335454/03_large.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8166255881",
+      "source": {
+        "zip_file": "PART1_HTMLS.zip",
+        "html_entry": "Увлажняющий дневной крем SPF 30 daily prevention купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166255881).html",
+        "zip_entry_datetime_no_timezone": "2026-10-26T03:15:18"
+      },
+      "seller_profile_id": "b2165ff5492372c90fab55f7223f9d3b",
+      "title_as_saved": "Увлажняющий дневной крем SPF 30 daily prevention",
+      "item_url": "https://www.avito.ru/moskva/krasota_i_zdorove/uvlazhnyayuschiy_dnevnoy_krem_spf_30_daily_prevention_8166255881",
+      "display_price_rub": 5900,
+      "old_price_display_rub": null,
+      "discount_display": null,
+      "schema_offer_price_rub": 5900,
+      "schema_offer_price_warning": "schema.org Offer price differs from the visible discounted price in several pages; use display_price_rub for the saved UI",
+      "seller_description_schema_ru": "Минеральный увлажняющий крем с SPF 30 и технологией XOSM™ Ваша кожа заслуживает идеальной защиты и ухода! Этот универсальный крем — необходимая вещь для ежедневного ритуала красоты. Он не просто защищает от вредного воздействия UV-лучей, но и укрепляет естественный барьер, предотвращая преждевременное старение. Легкая текстура с сияющим финишем - увлажняет без липкости и тяжести. Невидим на коже - адаптируется к любому оттенку, не оставляя белого налета. Мощный антиоксидантный комплекс - эктоин, витамин С и астаксантин из микроводорослей борются со свободными радикалами и защищают от старения. Технология XOSM™ - уникальная формула, которая усиливает действие активных компонентов, обеспечивая коже комплексное питание и восстановление.",
+      "seller_description_html_ru": "Минepальный увлaжняющий крем c SРF 30 и технолoгией XОSМ™ Вaша кожа заслуживaeт идeaльнoй защиты и ухода! Этот унивepсальный крем — нeoбxодимая вещь для eжeдневнoгo pитуaла краcоты. Oн нe пpосто защищaет oт врeдногo воздeйcтвия UV-лучей, нo и укpeпляeт ecтecтвенный барьep, предoтвpащaя преждевременное старение. Легкая текстура с сияющим финишем - увлажняет без липкости и тяжести. Невидим на коже - адаптируется к любому оттенку, не оставляя белого налета. Мощный антиоксидантный комплекс - эктоин, витамин С и астаксантин из микроводорослей борются со свободными радикалами и защищают от старения. Технология ХОSМ™ - уникальная формула, которая усиливает действие активных компонентов, обеспечивая коже комплексное питание и восстановление.",
+      "attributes_as_saved": {
+        "Тип товара": "Загар и защита от солнца"
+      },
+      "listing_date_display": "23 октября в 17:29",
+      "total_views_display": "153 просмотра",
+      "today_views_display": "(+2 сегодня)",
+      "stock_badge_display": "В наличии: последний товар",
+      "gallery": [
+        {
+          "position": 1,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/55364570470",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Увлажняющий дневной крем SPF 30 daily prevention купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166255881)_files/1.u-tWDba1FwJMrMkBLBv3v3ytFQLoprkCPK8VAA.jrr4m9CSfiCbImhC_t3Gpiz6w1KSFzi68CQfTAv1HL4",
+            "local_path": "avito_audit/item_pages/images/8166255881/01_thumb.jpg",
+            "sha256": "8d97e03cf9e0121ab85b251ec65fcca41e2fc1b5049ed54cb69f36e614fc2c39",
+            "bytes": 4028,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Увлажняющий дневной крем SPF 30 daily prevention купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166255881)_files/1.u-tWDba4FwJgupUPLBv3v3ytFQTorJUUYKEVAOakHwjg.oXFTcZBA8BzZuLlZOO-GTRamJN9IMGtEPZbTpgfSZyA",
+            "local_path": "avito_audit/item_pages/images/8166255881/01_large.jpg",
+            "sha256": "880924ae09669eac0dcde319bd312cb7f49d792dbe2df76bc607266119f3acfb",
+            "bytes": 74137,
+            "dimensions": [
+              720,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8166255881/01_large.jpg"
+        },
+        {
+          "position": 2,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/55363729428",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Увлажняющий дневной крем SPF 30 daily prevention купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166255881)_files/1.yWCUILa1ZYmOgbuKimOcNb6AZ4kqi8uJ_oJniw.XDmr5b9BgaHiX6xBkeh7cMWOqaR1VP5Q2x-vNp1RRD0",
+            "local_path": "avito_audit/item_pages/images/8166255881/02_thumb.jpg",
+            "sha256": "2d0d24339d4f3ad15b59fdc615d50eff2984c36dd5e77d94e8970a30e89b5e2b",
+            "bytes": 4300,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Увлажняющий дневной крем SPF 30 daily prevention купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166255881)_files/1.yWCUILa4ZYmil-eEimOcNb6AZ48qgeefooxniySJbYMi.DiYMcc8W46VgkqFdwbEvaC99otrfUScd6g7uaqRVxfo",
+            "local_path": "avito_audit/item_pages/images/8166255881/02_large.jpg",
+            "sha256": "d361e618ef8e772b0f18d9a52283523d80ab1477afba19ffe0d009d7ae85783a",
+            "bytes": 105589,
+            "dimensions": [
+              720,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8166255881/02_large.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8166119490",
+      "source": {
+        "zip_file": "PART1_HTMLS.zip",
+        "html_entry": "Image skincare VOL.U.lift купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166119490).html",
+        "zip_entry_datetime_no_timezone": "2026-10-26T03:13:50"
+      },
+      "seller_profile_id": "b2165ff5492372c90fab55f7223f9d3b",
+      "title_as_saved": "Image skincare VOL.U.lift",
+      "item_url": "https://www.avito.ru/moskva/krasota_i_zdorove/image_skincare_vol.u.lift_8166119490",
+      "display_price_rub": 12900,
+      "old_price_display_rub": null,
+      "discount_display": null,
+      "schema_offer_price_rub": 12900,
+      "schema_offer_price_warning": "schema.org Offer price differs from the visible discounted price in several pages; use display_price_rub for the saved UI",
+      "seller_description_schema_ru": "IMAGE SKINCARE VOL.U.LIFT™ СРЕДСТВО ДЛЯ ВОССТАНОВЛЕНИЯ ОВАЛА ЛИЦА УСОВЕРШЕНСТВОВАННОЕ СРЕДСТВО ДЛЯ ПОДТЯЖКИ КОЖИ VOL.U.LIFT - это усовершенствованное средство для восстановления молодости лица, разработанное для устранения видимых изменений, связанных со старением, потерей веса и снижением плотности кожи. Тщательно разработанное инновационное средство помогает восстановить цвет лица, делая его более насыщенным, упругим и молодым, сохраняя при этом качество кожи на длительный срок. Средство VOL.U.LIFT, разработанное на основе усовершенствованного комплекса 4D Skin Rebound Complex™, направлено на устранение четырех видимых признаков старения кожи и уменьшения объема: провисания, глубоких морщин, обезвоживания и плотности. Кожа становится более упругой, гладкой и обновленной, улучшается объем, увлажнение и общее качество кожи. В основе формулы лежит мощный комплекс для придания объема, сочетающий гиалуроновую кислоту нового поколения, биомиметические фрагменты коллагена, бакучиол и аминокислоты. Эти передовые ингредиенты работают вместе, восстанавливая гидратацию, повышая эластичность кожи и делая ее более заметной.",
+      "seller_description_html_ru": "IМAGЕ SКINСАRE VOL.U.LIFT™ СРЕДСТBО ДЛЯ BОCСТАНОBЛЕHИЯ OBAЛA ЛИЦА УСОВЕPШEНСТВOBAННОE CРEДCTBО ДЛЯ ПОДТЯЖKИ КOЖИ VOL.U.LIFT - этo уcовершенcтвовaнноe сpедcтвo для воccтaнoвлeния мoлoдoсти лицa, рaзpаботaннoе для уcтранения видимых изменений, связанных со старением, потерей веса и снижением плотности кожи. Тщательно разработанное инновационное средство помогает восстановить цвет лица, делая его более насыщенным, упругим и молодым, сохраняя при этом качество кожи на длительный срок. Средство VOL.U.LIFT, разработанное на основе усовершенствованного комплекса 4D Skin Rеbоund Соmрlех™, направлено на устранение четырех видимых признаков старения кожи и уменьшения объема: провисания, глубоких морщин, обезвоживания и плотности. Кожа становится более упругой, гладкой и обновленной, улучшается объем, увлажнение и общее качество кожи. В основе формулы лежит мощный комплекс для придания объема, сочетающий гиалуроновую кислоту нового поколения, биомиметические фрагменты коллагена, бакучиол и аминокислоты. Эти передовые ингредиенты работают вместе, восстанавливая гидратацию, повышая эластичность кожи и делая ее более заметной.",
+      "attributes_as_saved": {
+        "Подтип товара": "Кремы",
+        "Бренд": "Другой",
+        "Назначение": "Увлажнение, Восстановление, Упругость и эластичность",
+        "Тип кожи": "Для всех типов",
+        "Активный компонент": "Коллаген",
+        "Время нанесения": "Универсальный",
+        "Для кого": "Для всех",
+        "Возраст": "от 35 лет",
+        "SPF": "Без УФ защиты"
+      },
+      "listing_date_display": "23 октября в 17:29",
+      "total_views_display": "82 просмотра",
+      "today_views_display": "(+2 сегодня)",
+      "stock_badge_display": null,
+      "gallery": [
+        {
+          "position": 1,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/55364674776",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Image skincare VOL.U.lift купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166119490)_files/1.BdOQa7a1qTqKync5lltEh7rLqzouwAc6-smrOA.9TjA0Nl9R9E1P6s2DNxDBRaYQWPv5mIaP2I8H__tlvQ",
+            "local_path": "avito_audit/item_pages/images/8166119490/01_thumb.jpg",
+            "sha256": "53ff9c4c3ab7c45d8f9761bdaccfba589e28c51e50ba58f762067ed878eb9dd4",
+            "bytes": 5785,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Image skincare VOL.U.lift купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166119490)_files/1.BdOQa7a4qTqm3Cs3lltEh7rLqzwuyisspserOCDCoTAm.6mUwkOffq8M5eN2k-xbeN6RwrU-3QFh9Jh2ybVamsOQ",
+            "local_path": "avito_audit/item_pages/images/8166119490/01_large.jpg",
+            "sha256": "66c60db1d33b7994d6aa3798b2ae447c14103763ff70c89e168f5220ea7b099f",
+            "bytes": 110121,
+            "dimensions": [
+              720,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8166119490/01_large.jpg"
+        },
+        {
+          "position": 2,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/55366339646",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Image skincare VOL.U.lift купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166119490)_files/1.4_Z4g7a1Tx9iIpEcMpD33FIjTR_GKOEfEiFNHQ._UC5EBFG5EktGX3w11I10jTuMEnAdmUkOgMzPu9arzg",
+            "local_path": "avito_audit/item_pages/images/8166119490/02_thumb.jpg",
+            "sha256": "81cd807282bd04744ab7e2a34501bbac8dc129fa323acad85cacbbd8d23a3ddc",
+            "bytes": 4501,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Image skincare VOL.U.lift купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166119490)_files/1.4_Z4g7a4Tx9ONM0SMpD33FIjTRnGIs0JTi9NHcgqRxXO.108inXFl4M26tCdyqIzLVG386uzfQ-0plfpWhf-lMkI",
+            "local_path": "avito_audit/item_pages/images/8166119490/02_large.jpg",
+            "sha256": "41b5f80b8f3f3a32aa8423d754835d2d1b7b71e7652e50f036544eb0e187c0fa",
+            "bytes": 92135,
+            "dimensions": [
+              720,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8166119490/02_large.jpg"
+        },
+        {
+          "position": 3,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/55364705832",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Image skincare VOL.U.lift купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166119490)_files/1.9fOOmLa1WRqUOYcZ6MOpp6Q4WxowM_ca5DpbGA.8LaTLgSBvvSfzQmwl_au09wn5qza-rhbuvQr5p8OW_E",
+            "local_path": "avito_audit/item_pages/images/8166119490/03_thumb.jpg",
+            "sha256": "e8d2a7ef8eeaa7a5acec6515b4bbcf4ee22e54c1bc89afb5ff4c361fa74d0276",
+            "bytes": 4875,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/8166119490/03_thumb.jpg"
+        },
+        {
+          "position": 4,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/55365698772",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Image skincare VOL.U.lift купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166119490)_files/1.CWvM_7a1pYLWXnuB0s9LQOZfp4JyVAuCpl2ngA.TQKD2DNbyu4VYClf_AN9j4-9U8QCBrNcbICXX2WPIlo",
+            "local_path": "avito_audit/item_pages/images/8166119490/04_thumb.jpg",
+            "sha256": "985336a600db8e287a474a7f833596b6cd0c2e922a52c5da48ed2876ff2c9ce2",
+            "bytes": 3538,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/8166119490/04_thumb.jpg"
+        },
+        {
+          "position": 5,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/55363902645",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Image skincare VOL.U.lift купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166119490)_files/1.aCl-4ra1xMBkQxrDIrNWfVRCxsDASWrAFEDGwg.hGSpa9fykWNDqM39fRPUrDwp5uhpDL75LmDVByRmVv8",
+            "local_path": "avito_audit/item_pages/images/8166119490/05_thumb.jpg",
+            "sha256": "3f08c538f629ca91ac903b9410a44068ee94992bcd6ce986b45427b20cf5b86b",
+            "bytes": 4368,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Image skincare VOL.U.lift купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8166119490)_files/1.aCl-4ra4xMBIVUbNIrNWfVRCxsbAQ0bWSE7Gws5LzMrI.C3lbla3Z5pP5ZSfNhOxOGcXWG2U7QTb5P3pV0yMNfs4",
+            "local_path": "avito_audit/item_pages/images/8166119490/05_large.jpg",
+            "sha256": "2fcbf52b63d3e9d3a82e1ee53501a357bed9971483876cfa653af13e77587fe7",
+            "bytes": 126219,
+            "dimensions": [
+              900,
+              954
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8166119490/05_large.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8165981546",
+      "source": {
+        "zip_file": "PART1_HTMLS.zip",
+        "html_entry": "Лифтинг крем для тела VOL.U.lift купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8165981546).html",
+        "zip_entry_datetime_no_timezone": "2026-10-26T03:13:22"
+      },
+      "seller_profile_id": "b2165ff5492372c90fab55f7223f9d3b",
+      "title_as_saved": "Лифтинг крем для тела VOL.U.lift",
+      "item_url": "https://www.avito.ru/moskva/krasota_i_zdorove/lifting_krem_dlya_tela_vol.u.lift_8165981546",
+      "display_price_rub": 8500,
+      "old_price_display_rub": null,
+      "discount_display": null,
+      "schema_offer_price_rub": 8500,
+      "schema_offer_price_warning": "schema.org Offer price differs from the visible discounted price in several pages; use display_price_rub for the saved UI",
+      "seller_description_schema_ru": "Разработанный пластическим хирургом, этот комплекс для тела направлен на решение специфических проблем с кожей тела, которые возникают при использовании GLP-1/GIP, улучшая видимость ДРЯБЛОСТИ. МОРЩИНИСТОСТЬ. обезвоживание. тон. Наш уникальный скульптурирующий и укрепляющий комплекс, а также запатентованная технология XOSM® заметно улучшают дряблость, морщинистую текстуру кожи, изменяют распределение жира, обезвоживают и снижают тонус кожи, делая ее более рельефной и упругой.",
+      "seller_description_html_ru": "Разpaбoтанный плaстическим хируpгом, этoт комплекc для телa напpавлeн нa peшeниe специфических пpoблем с кожей тeлa, кoторые вoзникaют при иcпoльзoвaнии GLР-1/GIР, улучшая видимoсть ДPЯБЛOCТИ. МОРЩИHИСTОCТЬ. oбезвoживaние. тoн. Haш уникaльный cкульптуpиpующий и укpепляющий кoмплeкс, a также зaпaтентoванная технология ХОSМ® заметно улучшают дряблость, морщинистую текстуру кожи, изменяют распределение жира, обезвоживают и снижают тонус кожи, делая ее более рельефной и упругой.",
+      "attributes_as_saved": {
+        "Подтип товара": "Кремы"
+      },
+      "listing_date_display": "23 октября в 17:29",
+      "total_views_display": "72 просмотра",
+      "today_views_display": "(+1 сегодня)",
+      "stock_badge_display": null,
+      "gallery": [
+        {
+          "position": 1,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/55362996874",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Лифтинг крем для тела VOL.U.lift купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8165981546)_files/1.V9FYrba1-zhCDCU7eqRbhHIN-TjmBlU4Mg_5Og.86xgB3wMPwqEOg2lpoMrPPDmMWHJybROjglVGRIEm_o",
+            "local_path": "avito_audit/item_pages/images/8165981546/01_thumb.jpg",
+            "sha256": "f7f251278b507846fd86717e54f89d9353d4c29337ca5bc59e5a770a2e5a4b6a",
+            "bytes": 4402,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Лифтинг крем для тела VOL.U.lift купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8165981546)_files/1.V9FYrba4-zhuGnk1eqRbhHIN-T7mDHkubgH5OugE8zLu.yKdbViLfeGCMl1Z7yyn8q4QgPuAQ0-khlgMjpy_PAZg",
+            "local_path": "avito_audit/item_pages/images/8165981546/01_large.jpg",
+            "sha256": "08c9efc055a74d36e971dbe5005361515a0d8e0cd6e1f90bd253387299dada12",
+            "bytes": 70474,
+            "dimensions": [
+              720,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8165981546/01_large.jpg"
+        },
+        {
+          "position": 2,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/56670857209",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Лифтинг крем для тела VOL.U.lift купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8165981546)_files/1.JIDiJba1iGn4hFZqphlP9vKFimlcjiZpiIeKaw.MOYN90Dwlhaacqfjkz7t2q9AJM0lpsSvhQzhOqOMNCw",
+            "local_path": "avito_audit/item_pages/images/8165981546/02_thumb.jpg",
+            "sha256": "74e301d53cdc79c1c21e74046cd8634468a58466cfd227a0428e89ca583794ee",
+            "bytes": 4636,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Лифтинг крем для тела VOL.U.lift купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8165981546)_files/1.JIDiJba4iGnUkgpkphlP9vKFim9chAp_1ImKa1KMgGNU.SGnM6BX1ywsdg-OafTa1zMBEv6IkEfKt2dBdYYTeEsQ",
+            "local_path": "avito_audit/item_pages/images/8165981546/02_large.jpg",
+            "sha256": "e9c3ebd7335f0fec1a4f781ee7ad8111323e8bde4ac4168ab49b3be92169ba41",
+            "bytes": 91163,
+            "dimensions": [
+              720,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8165981546/02_large.jpg"
+        },
+        {
+          "position": 3,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/55366412203",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Лифтинг крем для тела VOL.U.lift купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8165981546)_files/1.dutX-ba12gJNWAQBN8QbwX1Z2ALpUnQCPVvYAA.9fxUWyinrXO52kl7QA4ms8auYYyLBDnr2fzvdIlKlP4",
+            "local_path": "avito_audit/item_pages/images/8165981546/03_thumb.jpg",
+            "sha256": "512847cedb43c6412b90b37616f5142dc72ba2a0193db2c2cc683e76593cd8a0",
+            "bytes": 4414,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/8165981546/03_thumb.jpg"
+        },
+        {
+          "position": 4,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/55366400246",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Лифтинг крем для тела VOL.U.lift купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8165981546)_files/1.K8sWv7a1hyIMHlkhTP9E4TwfhSKoFCkifB2FIA.YxbYIqhzv2zSnKg_9N8q7q9uA8uRK1kvIlAQO3PXu38",
+            "local_path": "avito_audit/item_pages/images/8165981546/04_thumb.jpg",
+            "sha256": "493adf669e33b6d3cdea0f47768829238bb891e0fc3e5a16d42e409bad5bcf72",
+            "bytes": 4977,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": null,
+          "best_path": "avito_audit/item_pages/images/8165981546/04_thumb.jpg"
+        },
+        {
+          "position": 5,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/55366397788",
+          "thumbnail": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Лифтинг крем для тела VOL.U.lift купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8165981546)_files/1.gevGKra1LQLci_MByDTuweyKLwJ4gYMCrIgvAA.CBgQ6COORATY2IsCyEulYpiVttWxCum9YoMupgnOwX8",
+            "local_path": "avito_audit/item_pages/images/8165981546/05_thumb.jpg",
+            "sha256": "ba22c130eb27ab9ed59455fd965f98184dceff89036930fdb7d0f1fa932ffa48",
+            "bytes": 3485,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART_2.zip",
+            "zip_entry": "Лифтинг крем для тела VOL.U.lift купить в Москве по низкой цене с доставкой _ Личные вещи _ Авито (8165981546)_files/1.gevGKra4LQLwna8PyDTuweyKLwR4i68U8IYvAHaDJQhw.WrMyzq-IHJ_HQIQb_eN8TlwHEPYGTgWXbNSYoCI-HP0",
+            "local_path": "avito_audit/item_pages/images/8165981546/05_large.jpg",
+            "sha256": "93b9ed467377d042012c59821b339a93b5b04b994693d2fd5ae2b9dc0652a578",
+            "bytes": 67304,
+            "dimensions": [
+              960,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8165981546/05_large.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8102096652",
+      "source": {
+        "zip_file": "PART1_HTMLS.zip",
+        "html_entry": "Чехол на iPhone 15 pro max Speck Presidio2 Pro купить в Москве по низкой цене с доставкой _ Электроника _ Авито (8102096652).html",
+        "zip_entry_datetime_no_timezone": "2026-10-26T03:11:54"
+      },
+      "seller_profile_id": "b2165ff5492372c90fab55f7223f9d3b",
+      "title_as_saved": "Чехол на iPhone 15 pro max Speck Presidio2 Pro",
+      "item_url": "https://www.avito.ru/moskva/telefony/chehol_na_iphone_15_pro_max_speck_presidio2_pro_8102096652",
+      "display_price_rub": 557,
+      "old_price_display_rub": 599,
+      "discount_display": "–7%",
+      "schema_offer_price_rub": 599,
+      "schema_offer_price_warning": "schema.org Offer price differs from the visible discounted price in several pages; use display_price_rub for the saved UI",
+      "seller_description_schema_ru": "Speck Presidio2 Pro – это надёжный и удобный чехол, созданный по гибридной технологии. Его прочные материалы и мягкая, приятная на ощупь отделка делают его идеальным аксессуаром. Важным преимуществом является антимикробная защита MICROBAN, которая эффективно снижает количество бактерий на 99%. Кроме того, чехол обеспечивает превосходную защиту от падений благодаря инновационной технологии Armor Cloud. Эта технология действует как \"воздушная подушка\", позволяя внутренним элементам смартфона сжиматься при ударе и поглощать его энергию.",
+      "seller_description_html_ru": "Speсk Prеsidio2 Prо – это надёжный и удобный чеxол, cоздaнный пo гибpидной тeхнoлoгии. Eгo пpoчныe материалы и мягкая, пpиятнaя на ощупь отделкa дeлaют его идеaльным aксeccуaром. Вaжным прeимущecтвом является антимикpобнaя защитa МICRОBAN, котopaя эффeктивно снижает кoличеcтво бaктерий нa 99%. Kрoмe того, чехол обеспечивает превосходную защиту от падений благодаря инновационной технологии Аrmоr Сlоud. Эта технология действует как \"воздушная подушка\", позволяя внутренним элементам смартфона сжиматься при ударе и поглощать его энергию.",
+      "attributes_as_saved": {
+        "Состояние": "Новое",
+        "Производитель чехла": "Speck",
+        "Основной материал": "Поликарбонат",
+        "Цвет": "Белый"
+      },
+      "listing_date_display": "23 октября в 17:29",
+      "total_views_display": "810 просмотров",
+      "today_views_display": "(+10 сегодня)",
+      "stock_badge_display": "В наличии: несколько",
+      "gallery": [
+        {
+          "position": 1,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/54339019316",
+          "thumbnail": {
+            "zip_file": "PART3.zip",
+            "zip_entry": "Чехол на iPhone 15 pro max Speck Presidio2 Pro купить в Москве по низкой цене с доставкой _ Электроника _ Авито (8102096652)_files/1.6Uqn7La1RaO9TZug-ceaTIVMR6MZR-ujzU5HoQ.n_JkrRAZcKxi8QRbUn4tMa5j5zOLMKR5JCvOv9SoYyg",
+            "local_path": "avito_audit/item_pages/images/8102096652/01_thumb.jpg",
+            "sha256": "89b201a98f816bb6e13d6b767934ebf5bbf92ff3306740bf2f13106f53554040",
+            "bytes": 6386,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART3.zip",
+            "zip_entry": "Чехол на iPhone 15 pro max Speck Presidio2 Pro купить в Москве по низкой цене с доставкой _ Электроника _ Авито (8102096652)_files/1.6Uqn7La4RaORW8eu-ceaTIVMR6UZTce1kUBHoRdFTakR.zNHfxWKMG2Ko6V3ZwOrfXVOR_lifXt2F4JUtQ14_4xc",
+            "local_path": "avito_audit/item_pages/images/8102096652/01_large.jpg",
+            "sha256": "9938cd5c832c973cbb589d0a531605de80e11f3436a808cfac7a7365c8e3a749",
+            "bytes": 132445,
+            "dimensions": [
+              720,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8102096652/01_large.jpg"
+        },
+        {
+          "position": 2,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/54338092086",
+          "thumbnail": {
+            "zip_file": "PART3.zip",
+            "zip_entry": "Чехол на iPhone 15 pro max Speck Presidio2 Pro купить в Москве по низкой цене с доставкой _ Электроника _ Авито (8102096652)_files/1.68PwK7a1RyrqipkpqniuxNKLRSpOgOkqmolFKA.tZMryuU0IOHMvcP07meigYp1T07r0t2mnIraPV7NAxU",
+            "local_path": "avito_audit/item_pages/images/8102096652/02_thumb.jpg",
+            "sha256": "a2688d542780756e68b04274a3eb81cfa2da38bbda5e0b209d45d42cbc4b070d",
+            "bytes": 5361,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART3.zip",
+            "zip_entry": "Чехол на iPhone 15 pro max Speck Presidio2 Pro купить в Москве по низкой цене с доставкой _ Электроника _ Авито (8102096652)_files/1.68PwK7a4RyrGnMUnqniuxNKLRSxOisU8xodFKECCTyBG.u-HnQ0IDYyOzW9yviptv95k_yWXSLAGCCUm7u8KVCa4",
+            "local_path": "avito_audit/item_pages/images/8102096652/02_large.jpg",
+            "sha256": "28326ce4426c41dca6aaf60d9483f20a7a661a9358a762b88239c91ea7d3bf15",
+            "bytes": 86707,
+            "dimensions": [
+              720,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8102096652/02_large.jpg"
+        },
+        {
+          "position": 3,
+          "avito_share_url": "https://www.avito.ru/img/share/auto/54337182265",
+          "thumbnail": {
+            "zip_file": "PART3.zip",
+            "zip_entry": "Чехол на iPhone 15 pro max Speck Presidio2 Pro купить в Москве по низкой цене с доставкой _ Электроника _ Авито (8102096652)_files/1.5OKsPra1SAu2n5YI6HW24o6eSgsSleYLxpxKCQ.-AxMijw0yZzZ9CJ_F2Zo3s75mcgAZckkC3XcxtWWm-E",
+            "local_path": "avito_audit/item_pages/images/8102096652/03_thumb.jpg",
+            "sha256": "b6d9e6e97785efd3203c5a730fa44cad4898496c38dd20dd2f82bde4368dcb08",
+            "bytes": 5315,
+            "dimensions": [
+              150,
+              110
+            ]
+          },
+          "large": {
+            "zip_file": "PART3.zip",
+            "zip_entry": "Чехол на iPhone 15 pro max Speck Presidio2 Pro купить в Москве по низкой цене с доставкой _ Электроника _ Авито (8102096652)_files/1.5OKsPra4SAuaicoG6HW24o6eSg0Sn8odmpJKCRyXQAEa.J0WznxiT67xcKaQMN73pZxebFzy9kcLkjToLGLjYZYY",
+            "local_path": "avito_audit/item_pages/images/8102096652/03_large.jpg",
+            "sha256": "f06f56344aabef6a6cb5b88c79b6b99b9a6591589d0336cd5e8f5f1222126033",
+            "bytes": 89316,
+            "dimensions": [
+              720,
+              960
+            ]
+          },
+          "best_path": "avito_audit/item_pages/images/8102096652/03_large.jpg"
+        }
+      ]
+    }
+  ],
+  "missing_item_page_ids": [
+    "8350792227"
+  ]
+}

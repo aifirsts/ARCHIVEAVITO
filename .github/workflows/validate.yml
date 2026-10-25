@@ -1,4 +1,4 @@
-name: Archive and handoff integrity
+name: Archive, handoff, site
 
 on:
   push:
@@ -18,13 +18,43 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Validate archive, assets, links and handoff feed
+      - name: Install test dependencies
+        run: python -m pip install --upgrade pip && python -m pip install -r requirements-dev.txt
+      - name: Validate archive, assets, links, handoff feed and site
         run: python -m unittest discover -s tests -v
       - name: Check source syntax
         run: |
-          python -m compileall -q avito_audit handoff tests
+          python -m compileall -q avito_audit handoff site tests
           node --check catalog.js
-      - name: Verify deterministic generated handoff
+          node --check site/src/app.js
+      - name: Verify deterministic handoff package
         run: |
           python handoff/generate.py
           git diff --exit-code -- handoff/storefront.json
+      - name: Verify the public site is up to date with its sources
+        run: |
+          python site/build.py
+          git diff --exit-code -- site/public
+      - name: Upload the built storefront
+        uses: actions/upload-artifact@v4
+        with:
+          name: beauty-supply-site
+          path: site/public
+          if-no-files-found: error
+
+  browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Playwright and Chromium
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install playwright
+          python -m playwright install --with-deps chromium
+      - name: Build the storefront
+        run: python site/build.py
+      - name: Desktop and mobile smoke test in Chromium
+        run: python site/tests/browser_smoke.py

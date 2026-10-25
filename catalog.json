@@ -1,6 +1,11 @@
 {
   "as_of": "2026-10-26",
-  "source": "Offline profile snapshot from Авито 14.zip plus 13 individual HTML pages from PART1_HTMLS.zip and gallery JPEGs from PART_2.zip/PART3.zip in usaforyou/MANUS1; two supplementary ZIPs checked for duplicates; no live Avito verification",
+  "source": "Offline profile snapshot from Авито 14.zip plus 13 individual HTML pages from PART1_HTMLS.zip and gallery JPEGs from PART_2.zip/PART3.zip in usaforyou/MANUS1; two supplementary ZIPs checked for duplicates; Attachments-Avitos.zip (commit cf1c74b) checked on 2026-10-26 and added as a separate dated layer; no live Avito verification",
+  "supplemental_zips_sha256": {
+    "ДОЗАГРУЗКА.zip": "2a6904ac34d8db42e6bf9f1c07f33d2d366180f1e3fa01c0db420c69dd522a8f",
+    "Чехол_ЧАСЫ _ Авито (8102096652)_files.zip": "a9a19b6918bb18d2cdf87519b57507b93324ee701ee4ea050dd689be341e4fd5",
+    "Attachments-Avitos.zip": "7d1eca79385ba06d702f0812eca8b5ee70990295295ec2b06442a28e33b5d6d0"
+  },
   "price_status": "snapshot_only_unverified_live",
   "products": [
     {
@@ -1273,6 +1278,50 @@
         "text": "Часы Omega x Swatch — это больше, чем просто прибор для измерения времени. Это история о покорении космоса, воплощенная в инновационных материалах.\n\nПочему выбирают нас:\n\nТолько оригинал. Мы дорожим своей репутацией и гарантируем подлинность каждого ...",
         "truncated": true,
         "source": "Авито 14.html"
+      },
+      "supplemental_2026_10_25": {
+        "kind": "mobile_screenshot_gallery",
+        "observed_gallery_badge": "1 из 9",
+        "gallery_positions_in_archive": 8,
+        "gallery_positions_on_live_page": 9,
+        "new_file_for_position_4": {
+          "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_04.png",
+          "provenance": "кадр мобильной галереи, скриншот IMG_1181.png, бейдж «4 из 9»",
+          "note_ru": "Впервые есть настоящий файл для позиции № 4: серо-стальные часы Mission to the Moon в коробке. Ранее позиция была только внешней ссылкой. Это не подстановка похожего фото: кадр снят с той же галереи объявления и его номер подтверждён бейджем."
+        },
+        "higher_resolution_for_positions": [
+          3,
+          5,
+          6,
+          7
+        ],
+        "higher_resolution_note_ru": "В архиве для этих позиций была только миниатюра 150×110; обрезки скриншотов 1170×1644 добавлены как отдельный источник того же кадра.",
+        "still_missing_positions": [
+          {
+            "position": 9,
+            "reason_ru": "Страница показывает «N из 9», скриншоты покрывают позиции 1–8. Файла и кадра для позиции № 9 нет ни в одном из семи ZIP."
+          }
+        ],
+        "page_print_snapshot": {
+          "source": "PDF-печать страницы 8296456393, создана 2026-10-25T22:11:16Z",
+          "listing_number_text": "8 296 456 393",
+          "listing_date_text": "10 октября в 13:44",
+          "views_text": "373 просмотра",
+          "display_price_text": "33 272 ₽",
+          "old_price_text": "35 777 ₽",
+          "discount_text": "−7% на распродаже",
+          "stock_status_text": null,
+          "location_text": "Москва",
+          "differs_from_archive_views": "в архивном HTML было 371 просмотр",
+          "bonus_text": "+600 бонусов",
+          "today_views_text": null
+        },
+        "does_not_prove_ru": [
+          "что четыре коробки на фото продаются за одну указанную цену",
+          "точный SKU каждой коробки и комплектность конкретной отправки",
+          "актуальную цену и наличие после 25.10.2026",
+          "подлинность экземпляров"
+        ]
       }
     },
     {
@@ -1316,6 +1365,61 @@
         "text": "Для Дениса.",
         "truncated": false,
         "source": "Авито 14.html"
+      },
+      "supplemental_2026_10_25": {
+        "kind": "pdf_page_print",
+        "individual_html_card_still_absent": true,
+        "individual_html_note_ru": "Отдельной HTML-карточки в архиве по-прежнему нет: в ZIP лежит только PDF-печать страницы объявления, а не сохранённый HTML с ресурсами.",
+        "photo": {
+          "path": "avito_audit/attachments_avitos/images/8350792227/page_print_photo_01.png",
+          "dimensions": [
+            550,
+            960
+          ],
+          "provenance": "изображение из PDF-печати страницы объявления",
+          "note_ru": "Основное (и единственное) фото галереи: упаковка Speck Presidio2 Pro для iPhone 15 Pro Max"
+        },
+        "page_print_snapshot": {
+          "source": "PDF-печать страницы 8350792227, создана 2026-10-25T22:15:26Z",
+          "listing_number_text": "8350792227",
+          "listing_date_text": "8 октября в 22:19",
+          "views_text": "21 просмотр",
+          "today_views_text": "(+0 сегодня)",
+          "display_price_text": "1 116 ₽",
+          "old_price_text": "1 200 ₽",
+          "discount_text": "−7% на распродаже",
+          "bonus_text": "+24 бонуса",
+          "stock_status_text": "Товар зарезервирован",
+          "location_text": "с. Домодедово",
+          "breadcrumb_text": "Электроника › Телефоны › Чехлы и плёнки › Чехлы › Аксессуары",
+          "description_text": "Для Дениса",
+          "attributes_from_page": {
+            "Состояние": "Новое",
+            "Производитель чехла": "Speck",
+            "Подходит для: Производитель": "Apple",
+            "Подходит для: Модель": "iPhone 15 Pro Max"
+          },
+          "gallery_photos_on_page": 1
+        },
+        "still_missing": [
+          {
+            "what": "фотография второго чехла из лота «2 шт»",
+            "reason_ru": "На странице одна фотография — упаковка одного чехла Speck; второго предмета на снимке нет."
+          },
+          {
+            "what": "отдельная HTML-карточка с ресурсами",
+            "reason_ru": "В Attachments-Avitos.zip только PDF-печать, HTML-файла нет ни в одном из семи ZIP."
+          },
+          {
+            "what": "подтверждение комплектации «2 шт»",
+            "reason_ru": "Ни один источник не показывает оба чехла; состав лота нужно подтвердить у продавца."
+          }
+        ],
+        "do_not_merge_with": {
+          "id": "8102096652",
+          "reason_ru": "Другое объявление: один белый чехол Speck Presidio2 Pro, Москва, 557 ₽. Данные нельзя объединять."
+        },
+        "new_status_fact_ru": "Печать 25.10.2026 показывает «Товар зарезервирован» — это датированный факт того снимка, а не текущее наличие."
       }
     }
   ],
@@ -1333,5 +1437,17 @@
       "8350792227"
     ],
     "status": "archived seller statements and images; live availability, authenticity and pricing not verified"
+  },
+  "attachments_archive_2026_10_25": {
+    "source_repository": "https://github.com/usaforyou/MANUS1",
+    "source_commit": "cf1c74b4a623ad22e7cedd5180aee98571261b1b",
+    "source_commit_date": "2026-10-26T06:22:25+08:00",
+    "archive_file": "Attachments-Avitos.zip",
+    "archive_bytes": 16396636,
+    "archive_sha256": "7d1eca79385ba06d702f0812eca8b5ee70990295295ec2b06442a28e33b5d6d0",
+    "entries": 10,
+    "content": "8 мобильных скриншотов галереи объявления 8296456393 и 2 печати страниц в PDF (8296456393, 8350792227)",
+    "manifest": "avito_audit/attachments_avitos/manifest.json",
+    "provenance_note_ru": "Отдельный датированный слой: файлы получены 25.10.2026 22:11–22:15 UTC с мобильной версии Avito (скриншоты) и печатью страниц объявлений в PDF. Это новый источник, а не замена архивного HTML от 26.10.2026; значения архивных полей не перезаписаны."
   }
 }

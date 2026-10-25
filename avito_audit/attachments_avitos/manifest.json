@@ -1,0 +1,1187 @@
+{
+  "schema_version": 1,
+  "status": "archival_research_only_not_live_inventory",
+  "source_repository": "https://github.com/usaforyou/MANUS1",
+  "source_commit": "cf1c74b4a623ad22e7cedd5180aee98571261b1b",
+  "source_commit_date": "2026-10-26T06:22:25+08:00",
+  "archive_file": "Attachments-Avitos.zip",
+  "archive_sha256": "7d1eca79385ba06d702f0812eca8b5ee70990295295ec2b06442a28e33b5d6d0",
+  "archive_sha256_pinned": "7d1eca79385ba06d702f0812eca8b5ee70990295295ec2b06442a28e33b5d6d0",
+  "archive_bytes": 16396636,
+  "archive_bytes_pinned": 16396636,
+  "entries_count": 10,
+  "entries_uncompressed_bytes": 16394070,
+  "entries": [
+    {
+      "name": "IMG_1184.png",
+      "bytes": 938160,
+      "compressed_bytes": 938160,
+      "sha256": "6aa1df586de4bc644d2bb44eb73fb5d273d7255630cef08872b9b7eab828694b",
+      "zip_datetime": "2026-10-25T22:20:30",
+      "kind": "image"
+    },
+    {
+      "name": "IMG_1178.png",
+      "bytes": 1650679,
+      "compressed_bytes": 1650679,
+      "sha256": "bda624a8ba5439b0f6bb46823973b548bfe9ec537a3feeb2c721ad1c923ee80f",
+      "zip_datetime": "2026-10-25T22:20:30",
+      "kind": "image"
+    },
+    {
+      "name": "IMG_1179.png",
+      "bytes": 2147412,
+      "compressed_bytes": 2147412,
+      "sha256": "2baa607ff307fb5b576a3e0fd8ee7a4a7739b7c8e7d618c2f099dc528b54a20e",
+      "zip_datetime": "2026-10-25T22:20:30",
+      "kind": "image"
+    },
+    {
+      "name": "IMG_1185.png",
+      "bytes": 2132296,
+      "compressed_bytes": 2132296,
+      "sha256": "19cef8fa142e9e6c65f2f8a9506060665c8b3229f1b30b9140a6cc143741d422",
+      "zip_datetime": "2026-10-25T22:20:30",
+      "kind": "image"
+    },
+    {
+      "name": "IMG_1182.png",
+      "bytes": 1223799,
+      "compressed_bytes": 1223799,
+      "sha256": "40c53c896366103760f2243b31c5172c8c3df077f4354ea11d089b0c758ce608",
+      "zip_datetime": "2026-10-25T22:20:30",
+      "kind": "image"
+    },
+    {
+      "name": "IMG_1183.png",
+      "bytes": 837627,
+      "compressed_bytes": 837627,
+      "sha256": "f8ed22709032ec709e8c608d05e698b82858ef12b14100e8f6c35d29ea5b7cda",
+      "zip_datetime": "2026-10-25T22:20:30",
+      "kind": "image"
+    },
+    {
+      "name": "IMG_1181.png",
+      "bytes": 1751787,
+      "compressed_bytes": 1751787,
+      "sha256": "0284f9733e28e3061f5440d36ded4d205c61df3f6e27a2f4d4103cc1c00a664f",
+      "zip_datetime": "2026-10-25T22:20:30",
+      "kind": "image"
+    },
+    {
+      "name": "IMG_1180.png",
+      "bytes": 1989810,
+      "compressed_bytes": 1989810,
+      "sha256": "fabe878305ca259f01f8678e4f84383948852a7e87622a7cfa0df7195fb12027",
+      "zip_datetime": "2026-10-25T22:20:30",
+      "kind": "image"
+    },
+    {
+      "name": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой | Личные вещи | Авито (8296456393).pdf",
+      "bytes": 1761268,
+      "compressed_bytes": 1761268,
+      "sha256": "8a7685c95fbc1ede60357938386456b5481e846d084e9ff1c35ff8f7220ba95b",
+      "zip_datetime": "2026-10-25T22:20:30",
+      "kind": "pdf"
+    },
+    {
+      "name": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+      "bytes": 1961232,
+      "compressed_bytes": 1961232,
+      "sha256": "4afcce29f59d180709569d6278fdffe13f9116be1d23e385db0ff80756b8fe6b",
+      "zip_datetime": "2026-10-25T22:20:30",
+      "kind": "pdf"
+    }
+  ],
+  "safety": {
+    "path_traversal": false,
+    "nested_archives": [],
+    "html_or_js_entries": [],
+    "pdf_javascript": false,
+    "pdf_embedded_files": false,
+    "pdf_open_actions": false,
+    "pdf_external_links": "только аннотации /URI на страницы avito.ru, ничего не открывается и не исполняется",
+    "nothing_executed": true,
+    "problems": []
+  },
+  "expected_entries_missing": [],
+  "unexpected_entries": [],
+  "mobile_screenshots": [
+    {
+      "entry": "IMG_1178.png",
+      "entry_sha256": "bda624a8ba5439b0f6bb46823973b548bfe9ec537a3feeb2c721ad1c923ee80f",
+      "entry_bytes": 1650679,
+      "gallery_position_in_badge": 1,
+      "listing_id": 8296456393,
+      "visually_confirmed_saved_slot": 1,
+      "note_ru": "Голубые часы в коробке: тот же кадр, что сохранённая позиция № 1",
+      "photo_crop": {
+        "box": [
+          0,
+          258,
+          1170,
+          1902
+        ],
+        "why": "кадр галереи без статус-бара, заголовка, кнопок и адресной строки",
+        "stored": false,
+        "path": null,
+        "derived_sha256": "b9901f479aa68f90cd1bf93461c816701e3da9b2d5267107f3760f8eaf30aeee",
+        "derived_bytes": 1298492,
+        "dimensions": [
+          1170,
+          1644
+        ],
+        "not_stored_reason_ru": "в архиве уже есть крупная копия этого кадра 720×960, дубликат по содержимому не сохраняется"
+      },
+      "header_evidence_crop": {
+        "box": [
+          0,
+          141,
+          1170,
+          258
+        ],
+        "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_01_header.png",
+        "sha256": "55a02e022cec91cb1723103dd786bba02351025dfa6ec26a06cf537c4e76158e",
+        "bytes": 5153,
+        "dimensions": [
+          1170,
+          117
+        ]
+      },
+      "weak_similarity_signal": {
+        "method": "корреляция 24×24 по яркости; слабый сигнал, не доказательство",
+        "best": [
+          {
+            "path": "avito_audit/item_pages/images/8296456393/01_large.jpg",
+            "similarity": 0.718,
+            "same_bytes": false
+          },
+          {
+            "path": "avito_audit/item_pages/images/8296456393/02_large.jpg",
+            "similarity": 0.618,
+            "same_bytes": false
+          },
+          {
+            "path": "avito_audit/item_pages/images/8296456393/01_thumb.jpg",
+            "similarity": 0.255,
+            "same_bytes": false
+          }
+        ]
+      }
+    },
+    {
+      "entry": "IMG_1179.png",
+      "entry_sha256": "2baa607ff307fb5b576a3e0fd8ee7a4a7739b7c8e7d618c2f099dc528b54a20e",
+      "entry_bytes": 2147412,
+      "gallery_position_in_badge": 2,
+      "listing_id": 8296456393,
+      "visually_confirmed_saved_slot": 2,
+      "note_ru": "Серые часы с чёрным ремешком: тот же кадр, что позиция № 2",
+      "photo_crop": {
+        "box": [
+          0,
+          258,
+          1170,
+          1902
+        ],
+        "why": "кадр галереи без статус-бара, заголовка, кнопок и адресной строки",
+        "stored": false,
+        "path": null,
+        "derived_sha256": "c4277aefd9b2959ea38a56848b55f2cbd74c9ca2da9d323b53889a8bc888d5c1",
+        "derived_bytes": 1766307,
+        "dimensions": [
+          1170,
+          1644
+        ],
+        "not_stored_reason_ru": "в архиве уже есть крупная копия этого кадра 720×960, дубликат по содержимому не сохраняется"
+      },
+      "header_evidence_crop": {
+        "box": [
+          0,
+          141,
+          1170,
+          258
+        ],
+        "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_02_header.png",
+        "sha256": "fdd5b990a6d4f36050a4c30a39f7d1cfc047a533018957258e6a887bee802976",
+        "bytes": 5816,
+        "dimensions": [
+          1170,
+          117
+        ]
+      },
+      "weak_similarity_signal": {
+        "method": "корреляция 24×24 по яркости; слабый сигнал, не доказательство",
+        "best": [
+          {
+            "path": "avito_audit/item_pages/images/8296456393/02_large.jpg",
+            "similarity": 0.701,
+            "same_bytes": false
+          },
+          {
+            "path": "avito_audit/item_pages/images/8296456393/01_large.jpg",
+            "similarity": 0.294,
+            "same_bytes": false
+          },
+          {
+            "path": "avito_audit/item_pages/images/8296456393/08_thumb.jpg",
+            "similarity": 0.198,
+            "same_bytes": false
+          }
+        ]
+      }
+    },
+    {
+      "entry": "IMG_1180.png",
+      "entry_sha256": "fabe878305ca259f01f8678e4f84383948852a7e87622a7cfa0df7195fb12027",
+      "entry_bytes": 1989810,
+      "gallery_position_in_badge": 3,
+      "listing_id": 8296456393,
+      "visually_confirmed_saved_slot": 3,
+      "note_ru": "Розовые часы: тот же кадр, что позиция № 3 (в архиве была только миниатюра 150×110)",
+      "photo_crop": {
+        "box": [
+          0,
+          258,
+          1170,
+          1902
+        ],
+        "why": "кадр галереи без статус-бара, заголовка, кнопок и адресной строки",
+        "stored": true,
+        "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_03.png",
+        "derived_sha256": "ebd37c8c25f22eb11eb94ed42585d63f52fc9d5d68ccf199371223d56713efd6",
+        "derived_bytes": 1594894,
+        "dimensions": [
+          1170,
+          1644
+        ],
+        "not_stored_reason_ru": null
+      },
+      "header_evidence_crop": {
+        "box": [
+          0,
+          141,
+          1170,
+          258
+        ],
+        "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_03_header.png",
+        "sha256": "7eb2f019d7fb3bc2002ab03abf6a6c6be30b7f90d61e38cef3557aef06d75767",
+        "bytes": 5786,
+        "dimensions": [
+          1170,
+          117
+        ]
+      },
+      "weak_similarity_signal": {
+        "method": "корреляция 24×24 по яркости; слабый сигнал, не доказательство",
+        "best": [
+          {
+            "path": "avito_audit/item_pages/images/8296456393/02_large.jpg",
+            "similarity": 0.516,
+            "same_bytes": false
+          },
+          {
+            "path": "avito_audit/item_pages/images/8296456393/01_thumb.jpg",
+            "similarity": 0.329,
+            "same_bytes": false
+          },
+          {
+            "path": "avito_audit/item_pages/images/8296456393/03_thumb.jpg",
+            "similarity": 0.301,
+            "same_bytes": false
+          }
+        ]
+      }
+    },
+    {
+      "entry": "IMG_1181.png",
+      "entry_sha256": "0284f9733e28e3061f5440d36ded4d205c61df3f6e27a2f4d4103cc1c00a664f",
+      "entry_bytes": 1751787,
+      "gallery_position_in_badge": 4,
+      "listing_id": 8296456393,
+      "visually_confirmed_saved_slot": null,
+      "note_ru": "Серо-стальные часы Mission to the Moon: НОВЫЙ кадр, локального файла не было ни в одном ZIP",
+      "photo_crop": {
+        "box": [
+          0,
+          258,
+          1170,
+          1902
+        ],
+        "why": "кадр галереи без статус-бара, заголовка, кнопок и адресной строки",
+        "stored": true,
+        "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_04.png",
+        "derived_sha256": "6d1d1618a3cf61ed89c3a14dcfc95c45b82ae08aa3404076229cff7869d3d36e",
+        "derived_bytes": 1431743,
+        "dimensions": [
+          1170,
+          1644
+        ],
+        "not_stored_reason_ru": null
+      },
+      "header_evidence_crop": {
+        "box": [
+          0,
+          141,
+          1170,
+          258
+        ],
+        "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_04_header.png",
+        "sha256": "19b7fe820641c5ab27fa47d15643ba24b58c6099eba53838df3e5eecbd5572cc",
+        "bytes": 5436,
+        "dimensions": [
+          1170,
+          117
+        ]
+      },
+      "weak_similarity_signal": {
+        "method": "корреляция 24×24 по яркости; слабый сигнал, не доказательство",
+        "best": [
+          {
+            "path": "avito_audit/item_pages/images/8296456393/02_large.jpg",
+            "similarity": 0.51,
+            "same_bytes": false
+          },
+          {
+            "path": "avito_audit/item_pages/images/8296456393/01_large.jpg",
+            "similarity": 0.384,
+            "same_bytes": false
+          },
+          {
+            "path": "avito_audit/item_pages/images/8296456393/08_thumb.jpg",
+            "similarity": 0.19,
+            "same_bytes": false
+          }
+        ]
+      }
+    },
+    {
+      "entry": "IMG_1182.png",
+      "entry_sha256": "40c53c896366103760f2243b31c5172c8c3df077f4354ea11d089b0c758ce608",
+      "entry_bytes": 1223799,
+      "gallery_position_in_badge": 5,
+      "listing_id": 8296456393,
+      "visually_confirmed_saved_slot": 5,
+      "note_ru": "Коробки 1965 и Omega × Swatch: тот же кадр, что позиция № 5",
+      "photo_crop": {
+        "box": [
+          0,
+          258,
+          1170,
+          1902
+        ],
+        "why": "кадр галереи без статус-бара, заголовка, кнопок и адресной строки",
+        "stored": true,
+        "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_05.png",
+        "derived_sha256": "5bd5e0f4be8c60128e21f9c80f0f044599cc6b400dff3006b476dbc4e5d4527b",
+        "derived_bytes": 909457,
+        "dimensions": [
+          1170,
+          1644
+        ],
+        "not_stored_reason_ru": null
+      },
+      "header_evidence_crop": {
+        "box": [
+          0,
+          141,
+          1170,
+          258
+        ],
+        "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_05_header.png",
+        "sha256": "0f5e670c0bde25b5ca6956e8cc0e8c8af8abbe793e3cd3a3a3a7268dd8092760",
+        "bytes": 5721,
+        "dimensions": [
+          1170,
+          117
+        ]
+      },
+      "weak_similarity_signal": {
+        "method": "корреляция 24×24 по яркости; слабый сигнал, не доказательство",
+        "best": [
+          {
+            "path": "avito_audit/item_pages/images/8296456393/05_thumb.jpg",
+            "similarity": 0.468,
+            "same_bytes": false
+          },
+          {
+            "path": "avito_audit/item_pages/images/8296456393/07_thumb.jpg",
+            "similarity": 0.279,
+            "same_bytes": false
+          },
+          {
+            "path": "avito_audit/item_pages/images/8296456393/06_thumb.jpg",
+            "similarity": 0.231,
+            "same_bytes": false
+          }
+        ]
+      }
+    },
+    {
+      "entry": "IMG_1183.png",
+      "entry_sha256": "f8ed22709032ec709e8c608d05e698b82858ef12b14100e8f6c35d29ea5b7cda",
+      "entry_bytes": 837627,
+      "gallery_position_in_badge": 6,
+      "listing_id": 8296456393,
+      "visually_confirmed_saved_slot": 6,
+      "note_ru": "Открытая коробка 1965: тот же кадр, что позиция № 6 (в архиве была только миниатюра)",
+      "photo_crop": {
+        "box": [
+          0,
+          258,
+          1170,
+          1902
+        ],
+        "why": "кадр галереи без статус-бара, заголовка, кнопок и адресной строки",
+        "stored": true,
+        "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_06.png",
+        "derived_sha256": "7f79ec5f331f8eaee96aee3c09d79594355ceb3df3ae0124e0d4f2bcb1ebbd7b",
+        "derived_bytes": 595353,
+        "dimensions": [
+          1170,
+          1644
+        ],
+        "not_stored_reason_ru": null
+      },
+      "header_evidence_crop": {
+        "box": [
+          0,
+          141,
+          1170,
+          258
+        ],
+        "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_06_header.png",
+        "sha256": "b0658fde6592625ed71347f28c4907e3bdb1b28468f6c898f5a73d41b311ddbb",
+        "bytes": 6147,
+        "dimensions": [
+          1170,
+          117
+        ]
+      },
+      "weak_similarity_signal": {
+        "method": "корреляция 24×24 по яркости; слабый сигнал, не доказательство",
+        "best": [
+          {
+            "path": "avito_audit/item_pages/images/8296456393/06_thumb.jpg",
+            "similarity": 0.525,
+            "same_bytes": false
+          },
+          {
+            "path": "avito_audit/images/8296456393/03.jpg",
+            "similarity": 0.338,
+            "same_bytes": false
+          },
+          {
+            "path": "avito_audit/item_pages/images/8296456393/05_thumb.jpg",
+            "similarity": 0.253,
+            "same_bytes": false
+          }
+        ]
+      }
+    },
+    {
+      "entry": "IMG_1184.png",
+      "entry_sha256": "6aa1df586de4bc644d2bb44eb73fb5d273d7255630cef08872b9b7eab828694b",
+      "entry_bytes": 938160,
+      "gallery_position_in_badge": 7,
+      "listing_id": 8296456393,
+      "visually_confirmed_saved_slot": 7,
+      "note_ru": "Четыре коробки Mission to Venus / Mercury / Uranus / Moon: тот же кадр, что позиция № 7 (только миниатюра в архиве)",
+      "photo_crop": {
+        "box": [
+          0,
+          258,
+          1170,
+          1902
+        ],
+        "why": "кадр галереи без статус-бара, заголовка, кнопок и адресной строки",
+        "stored": true,
+        "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_07.png",
+        "derived_sha256": "f95f98d85182846cede51f1c17d9fca960c19ccd843e9453895f9d12502ff95d",
+        "derived_bytes": 700757,
+        "dimensions": [
+          1170,
+          1644
+        ],
+        "not_stored_reason_ru": null
+      },
+      "header_evidence_crop": {
+        "box": [
+          0,
+          141,
+          1170,
+          258
+        ],
+        "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_07_header.png",
+        "sha256": "fc4d949d577709ec1b60a1676d9b9c631b0269136d30fc21095af88af5925a13",
+        "bytes": 5485,
+        "dimensions": [
+          1170,
+          117
+        ]
+      },
+      "weak_similarity_signal": {
+        "method": "корреляция 24×24 по яркости; слабый сигнал, не доказательство",
+        "best": [
+          {
+            "path": "avito_audit/item_pages/images/8296456393/07_thumb.jpg",
+            "similarity": 0.367,
+            "same_bytes": false
+          },
+          {
+            "path": "avito_audit/item_pages/images/8296456393/05_thumb.jpg",
+            "similarity": 0.247,
+            "same_bytes": false
+          },
+          {
+            "path": "avito_audit/item_pages/images/8296456393/03_thumb.jpg",
+            "similarity": 0.188,
+            "same_bytes": false
+          }
+        ]
+      }
+    },
+    {
+      "entry": "IMG_1185.png",
+      "entry_sha256": "19cef8fa142e9e6c65f2f8a9506060665c8b3229f1b30b9140a6cc143741d422",
+      "entry_bytes": 2132296,
+      "gallery_position_in_badge": 8,
+      "listing_id": 8296456393,
+      "visually_confirmed_saved_slot": 8,
+      "note_ru": "Коробки с часами на светлом столе: тот же кадр, что позиция № 8",
+      "photo_crop": {
+        "box": [
+          0,
+          258,
+          1170,
+          1902
+        ],
+        "why": "кадр галереи без статус-бара, заголовка, кнопок и адресной строки",
+        "stored": false,
+        "path": null,
+        "derived_sha256": "3f60addfcf3fd2c0e6f15649210bac97093b8c36c70ca568a31f9d3546c3eb61",
+        "derived_bytes": 1960960,
+        "dimensions": [
+          1170,
+          1644
+        ],
+        "not_stored_reason_ru": "в архиве уже есть крупная копия этого кадра 720×960, дубликат по содержимому не сохраняется"
+      },
+      "header_evidence_crop": {
+        "box": [
+          0,
+          141,
+          1170,
+          258
+        ],
+        "path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_08_header.png",
+        "sha256": "c816a03f2a07710cb97908e4b7c67ca1275f21945a876e8bec794e44c730ac70",
+        "bytes": 6153,
+        "dimensions": [
+          1170,
+          117
+        ]
+      },
+      "weak_similarity_signal": {
+        "method": "корреляция 24×24 по яркости; слабый сигнал, не доказательство",
+        "best": [
+          {
+            "path": "avito_audit/item_pages/images/8296456393/08_large.jpg",
+            "similarity": 0.756,
+            "same_bytes": false
+          },
+          {
+            "path": "avito_audit/item_pages/images/8296456393/08_thumb.jpg",
+            "similarity": 0.241,
+            "same_bytes": false
+          },
+          {
+            "path": "avito_audit/item_pages/images/8296456393/05_thumb.jpg",
+            "similarity": 0.176,
+            "same_bytes": false
+          }
+        ]
+      }
+    }
+  ],
+  "pdf_embedded_images": [
+    {
+      "pdf_entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой | Личные вещи | Авито (8296456393).pdf",
+      "embedded_name": "Im40.png",
+      "dimensions": [
+        335,
+        20
+      ],
+      "mode": "RGBA",
+      "bytes": 1452,
+      "sha256": "7687f0d58cd04e6be2668272539b63cbb09b93e270afcd000ea8c016aa636070",
+      "role": "not_classified",
+      "reason_ru": "Не классифицировано; не публикуется"
+    },
+    {
+      "pdf_entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой | Личные вещи | Авито (8296456393).pdf",
+      "embedded_name": "Im54.png",
+      "dimensions": [
+        338,
+        18
+      ],
+      "mode": "RGBA",
+      "bytes": 1332,
+      "sha256": "470514803e16829a8582d597468d4918d8e6aa24921e1c1fa771d13bb43cbaa6",
+      "role": "not_classified",
+      "reason_ru": "Не классифицировано; не публикуется"
+    },
+    {
+      "pdf_entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой | Личные вещи | Авито (8296456393).pdf",
+      "embedded_name": "Im56.png",
+      "dimensions": [
+        258,
+        25
+      ],
+      "mode": "RGBA",
+      "bytes": 1224,
+      "sha256": "1b6cbe5e293459434c859bfb03460cb50bb290de5848eae9763742e29e4b2896",
+      "role": "not_classified",
+      "reason_ru": "Не классифицировано; не публикуется"
+    },
+    {
+      "pdf_entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой | Личные вещи | Авито (8296456393).pdf",
+      "embedded_name": "Im71.png",
+      "dimensions": [
+        1500,
+        464
+      ],
+      "mode": "RGBA",
+      "bytes": 532626,
+      "sha256": "031009f54d09c8c05c4106852d8b78b7149921b3956177eb5a9bef4558f1a5f6",
+      "role": "advertisement",
+      "reason_ru": "Баннер «Настоящие скидки до 90% на Хватамбе», не фотография лота"
+    },
+    {
+      "pdf_entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой | Личные вещи | Авито (8296456393).pdf",
+      "embedded_name": "Im72.png",
+      "dimensions": [
+        720,
+        960
+      ],
+      "mode": "RGB",
+      "bytes": 677551,
+      "sha256": "5f46d939931e1ff4d0c62341386d13a8a41df56f3967a7b3a24a16dba72f6787",
+      "role": "gallery",
+      "reason_ru": "Крупный кадр лота на белом листе страницы; совпадает с позицией № 1 сохранённой галереи; не сохранён: кадр уже есть в сохранённых файлах объявления",
+      "gallery_position": 1,
+      "weak_similarity_signal": {
+        "method": "корреляция 24×24 по яркости; слабый сигнал, не доказательство",
+        "best": [
+          {
+            "path": "avito_audit/item_pages/images/8296456393/01_large.jpg",
+            "similarity": 1.0,
+            "same_bytes": false
+          },
+          {
+            "path": "avito_audit/item_pages/images/8296456393/02_large.jpg",
+            "similarity": 0.657,
+            "same_bytes": false
+          },
+          {
+            "path": "avito_audit/item_pages/images/8296456393/01_thumb.jpg",
+            "similarity": 0.198,
+            "same_bytes": false
+          }
+        ]
+      },
+      "stored_path": null,
+      "stored_sha256": null,
+      "stored_bytes": null
+    },
+    {
+      "pdf_entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой | Личные вещи | Авито (8296456393).pdf",
+      "embedded_name": "Im96.png",
+      "dimensions": [
+        349,
+        18
+      ],
+      "mode": "RGBA",
+      "bytes": 1385,
+      "sha256": "05274a5a2cb301de8bc0af3469845b9bd53d7d64c9f795384ab6152d56fce479",
+      "role": "not_classified",
+      "reason_ru": "Не классифицировано; не публикуется"
+    },
+    {
+      "pdf_entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой | Личные вещи | Авито (8296456393).pdf",
+      "embedded_name": "Im122.png",
+      "dimensions": [
+        390,
+        80
+      ],
+      "mode": "RGBA",
+      "bytes": 693,
+      "sha256": "5d4699f257fa2f4010156d0c1c007de8764f172d2368c95d6d3b6bb301da1a2b",
+      "role": "not_classified",
+      "reason_ru": "Не классифицировано; не публикуется"
+    },
+    {
+      "pdf_entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой | Личные вещи | Авито (8296456393).pdf",
+      "embedded_name": "Im123.png",
+      "dimensions": [
+        390,
+        104
+      ],
+      "mode": "RGBA",
+      "bytes": 1443,
+      "sha256": "13226dbbedcb9629f958f27c232735fa5889ea5d5ee32acd970ee5baf60dd533",
+      "role": "not_classified",
+      "reason_ru": "Не классифицировано; не публикуется"
+    },
+    {
+      "pdf_entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+      "embedded_name": "Im2.png",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGB",
+      "bytes": 3482,
+      "sha256": "738348f568686129e40b9153c8abac020c01b398339af0821a4e31a18e3416eb",
+      "role": "avatar",
+      "reason_ru": "Аватар аккаунта в шапке мобильной страницы, не товар"
+    },
+    {
+      "pdf_entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+      "embedded_name": "Im5.png",
+      "dimensions": [
+        150,
+        110
+      ],
+      "mode": "RGB",
+      "bytes": 23827,
+      "sha256": "2d2e9b417e8256e7ddbed67ede0777b57bb24976dbee2c8d9c820548f57198dc",
+      "role": "gallery_thumbnail",
+      "reason_ru": "Та же фотография лота в размере миниатюры 150×110 галереи объявления",
+      "gallery_position": 1,
+      "weak_similarity_signal": {
+        "method": "корреляция 24×24 по яркости; слабый сигнал, не доказательство",
+        "best": [
+          {
+            "path": "avito_audit/images/8350792227/01.jpg",
+            "similarity": 0.099,
+            "same_bytes": false
+          }
+        ]
+      }
+    },
+    {
+      "pdf_entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+      "embedded_name": "Im6.png",
+      "dimensions": [
+        550,
+        960
+      ],
+      "mode": "RGB",
+      "bytes": 369989,
+      "sha256": "c16a46553331c41bc0cbc4366176f59d99e3d6345849b6391e9e887f644d4431",
+      "role": "gallery",
+      "reason_ru": "Основное фото лота: упаковка Speck Presidio2 Pro для iPhone 15 Pro Max",
+      "gallery_position": 1,
+      "weak_similarity_signal": {
+        "method": "корреляция 24×24 по яркости; слабый сигнал, не доказательство",
+        "best": [
+          {
+            "path": "avito_audit/images/8350792227/01.jpg",
+            "similarity": 0.323,
+            "same_bytes": false
+          }
+        ]
+      },
+      "stored_path": "avito_audit/attachments_avitos/images/8350792227/page_print_photo_01.png",
+      "stored_sha256": "d9d09009040f5fa88447aea4fbf693bd3263ec38de556d8dc58c4e0c351d87e7",
+      "stored_bytes": 360171
+    },
+    {
+      "pdf_entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+      "embedded_name": "Im7.png",
+      "dimensions": [
+        432,
+        324
+      ],
+      "mode": "RGB",
+      "bytes": 215192,
+      "sha256": "bd1d615f46c47d1ca0f3fcbb7a22612b6d3f28214cbe16a3ad426380dc2ac662",
+      "role": "recommendation",
+      "reason_ru": "Блок «Похожие объявления» / «Вместе смотрят»: три чужих чехла"
+    },
+    {
+      "pdf_entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+      "embedded_name": "Im8.png",
+      "dimensions": [
+        243,
+        324
+      ],
+      "mode": "RGB",
+      "bytes": 105015,
+      "sha256": "d1cb57b3930711aa79b8492b61e7a05dc841b06ab183dae4ba8f29ee958fd68a",
+      "role": "recommendation",
+      "reason_ru": "Рекомендация: прозрачный чехол с MagSafe, другое объявление"
+    },
+    {
+      "pdf_entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+      "embedded_name": "Im9.png",
+      "dimensions": [
+        243,
+        324
+      ],
+      "mode": "RGB",
+      "bytes": 122652,
+      "sha256": "17218a10a953eaab7c2339544ab2bf018340b3abe709cd0150f6150aa7812801",
+      "role": "recommendation",
+      "reason_ru": "Рекомендация: два тёмных чехла, другое объявление"
+    },
+    {
+      "pdf_entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+      "embedded_name": "Im10.png",
+      "dimensions": [
+        243,
+        324
+      ],
+      "mode": "RGB",
+      "bytes": 85427,
+      "sha256": "34275ad226dd68ddab4cde3cabdbc58481f2410299fbe9266c5fbfafcd1c7837",
+      "role": "recommendation",
+      "reason_ru": "Рекомендация: чехол MAGSSORY, другое объявление"
+    },
+    {
+      "pdf_entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+      "embedded_name": "Im11.png",
+      "dimensions": [
+        243,
+        324
+      ],
+      "mode": "RGB",
+      "bytes": 94877,
+      "sha256": "b3710077eb1b46d3699732e33d110b84886d8c4de29fa2a0e8229d7559b14992",
+      "role": "recommendation",
+      "reason_ru": "Рекомендация: чехлы на бежевом фоне, другое объявление"
+    },
+    {
+      "pdf_entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+      "embedded_name": "Im12.png",
+      "dimensions": [
+        260,
+        195
+      ],
+      "mode": "RGB",
+      "bytes": 76524,
+      "sha256": "535bca79057d6d8ad2606b25359e4ed375c9b8b2d6d3fa1a4d185b4c0b963a6e",
+      "role": "recommendation",
+      "reason_ru": "Рекомендация: шесть разноцветных чехлов, другое объявление"
+    },
+    {
+      "pdf_entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+      "embedded_name": "Im13.png",
+      "dimensions": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "bytes": 1420,
+      "sha256": "8da91e72338b513d8348e60b8d3f75e3ffc605ba118ff8dfe704ef0c4fb0615a",
+      "role": "not_classified",
+      "reason_ru": "Не классифицировано; не публикуется"
+    },
+    {
+      "pdf_entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+      "embedded_name": "Im15.png",
+      "dimensions": [
+        900,
+        1800
+      ],
+      "mode": "RGBA",
+      "bytes": 209655,
+      "sha256": "da779fd4f0f34523cf6790066fcb38abe89ec3b8b8ad6503a998e67c8e813995",
+      "role": "advertisement",
+      "reason_ru": "Реклама «Альфа Банк. Кэшбэк до 50%»"
+    },
+    {
+      "pdf_entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+      "embedded_name": "Im16.png",
+      "dimensions": [
+        300,
+        600
+      ],
+      "mode": "RGBA",
+      "bytes": 2215,
+      "sha256": "f49a36e73743d18878a2d502ce77650896db2fafefda67bdb2bcbe01c1d221f3",
+      "role": "ui",
+      "reason_ru": "Пустая серая заглушка рекламного блока 300×600"
+    },
+    {
+      "pdf_entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+      "embedded_name": "Im17.png",
+      "dimensions": [
+        250,
+        237
+      ],
+      "mode": "RGBA",
+      "bytes": 88574,
+      "sha256": "191e7539cc1a5c9dc22012b7cb4993e825bcbd31d397c8d345f47c242fb51202",
+      "role": "advertisement",
+      "reason_ru": "Баннер «ХватАмба. До -90%»"
+    },
+    {
+      "pdf_entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+      "embedded_name": "Im18.png",
+      "dimensions": [
+        96,
+        96
+      ],
+      "mode": "RGB",
+      "bytes": 12847,
+      "sha256": "1486b6bcae1790ff1d7425f67c6ec8f0712fc6dc23d8a623a0077369cbf38218",
+      "role": "avatar",
+      "reason_ru": "Небольшой круглый аватар/иконка интерфейса 96×96"
+    },
+    {
+      "pdf_entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+      "embedded_name": "Im19.png",
+      "dimensions": [
+        284,
+        74
+      ],
+      "mode": "RGBA",
+      "bytes": 1598,
+      "sha256": "5352e69ce19d2a9fc2f503fc5fa21d6d0e301e79e6fc11f2f1180b6b29099b6a",
+      "role": "advertisement",
+      "reason_ru": "Рекламная плашка 284×74"
+    },
+    {
+      "role": "interface_glyph",
+      "reason_ru": "Текстовые фрагменты и иконки отрисованной страницы; не фотографии товара",
+      "count": 119,
+      "dimensions_max": [
+        350,
+        68
+      ],
+      "total_bytes": 67347,
+      "examples": [
+        "Im1.png",
+        "Im2.png",
+        "Im3.png"
+      ]
+    }
+  ],
+  "listings": [
+    {
+      "id": 8350792227,
+      "captured_from": "pdf_page_print",
+      "page_print_creation_date_utc": "2026-10-25T22:15:26Z",
+      "listing_number_text": "8350792227",
+      "listing_date_text": "8 октября в 22:19",
+      "views_text": "21 просмотр",
+      "today_views_text": "(+0 сегодня)",
+      "display_price_text": "1 116 ₽",
+      "old_price_text": "1 200 ₽",
+      "discount_text": "−7% на распродаже",
+      "bonus_text": "+24 бонуса",
+      "stock_status_text": "Товар зарезервирован",
+      "location_text": "с. Домодедово",
+      "breadcrumb_text": "Электроника › Телефоны › Чехлы и плёнки › Чехлы › Аксессуары",
+      "attributes_from_page": {
+        "Состояние": "Новое",
+        "Производитель чехла": "Speck",
+        "Подходит для: Производитель": "Apple",
+        "Подходит для: Модель": "iPhone 15 Pro Max"
+      },
+      "description_text": "Для Дениса",
+      "gallery_photos_saved_in_print": 1,
+      "evidence_assertions_checked": 14,
+      "pdf_embedded_gallery_images": [
+        {
+          "embedded_name": "Im5.png",
+          "role": "gallery_thumbnail",
+          "stored_path": null
+        },
+        {
+          "embedded_name": "Im6.png",
+          "role": "gallery",
+          "stored_path": "avito_audit/attachments_avitos/images/8350792227/page_print_photo_01.png"
+        }
+      ]
+    },
+    {
+      "id": 8296456393,
+      "captured_from": "pdf_page_print",
+      "page_print_creation_date_utc": "2026-10-25T22:11:16Z",
+      "listing_number_text": "8 296 456 393",
+      "listing_date_text": "10 октября в 13:44",
+      "views_text": "373 просмотра",
+      "display_price_text": "33 272 ₽",
+      "old_price_text": "35 777 ₽",
+      "discount_text": "−7% на распродаже",
+      "bonus_text": "+600 бонусов",
+      "stock_status_text": null,
+      "location_text": "Москва",
+      "gallery_badge_text": "1 из 9",
+      "gallery_position_count": 9,
+      "attributes_from_page": {
+        "Тип товара": "Наручные часы",
+        "Состояние": "Новое",
+        "Бренд": "Omega",
+        "Цвет корпуса": "Розовый",
+        "Цвет ремешка": "Розовый",
+        "Механизм": "Кварцевые",
+        "Для кого": "Унисекс",
+        "Тип ремешка": "Нейлоновый"
+      },
+      "evidence_assertions_checked": 9,
+      "pdf_embedded_gallery_images": [
+        {
+          "embedded_name": "Im72.png",
+          "role": "gallery",
+          "stored_path": null
+        }
+      ]
+    }
+  ],
+  "duplicate_report": {
+    "zip_entry_hashes_unique": true,
+    "entry_hashes_found_in_other_manus1_zips": [],
+    "note_ru": "Побайтовых совпадений между записями ZIP нет. Скриншоты и кадры страниц — новые файлы, но часть кадров содержательно повторяет уже сохранённые фотографии галереи (см. weak_similarity_signal и visually_confirmed_saved_slot), поэтому новыми ракурсами считаются только кадр № 4 часов."
+  },
+  "kept_files": 14,
+  "web_publication": {
+    "published_from_this_archive": [
+      "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_03.png",
+      "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_04.png",
+      "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_05.png",
+      "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_06.png",
+      "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_07.png",
+      "avito_audit/attachments_avitos/images/8350792227/page_print_photo_01.png"
+    ],
+    "excluded_from_publication": [
+      {
+        "entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой | Личные вещи | Авито (8296456393).pdf",
+        "embedded_name": "Im40.png",
+        "role": "not_classified",
+        "why": "Не классифицировано; не публикуется"
+      },
+      {
+        "entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой | Личные вещи | Авито (8296456393).pdf",
+        "embedded_name": "Im54.png",
+        "role": "not_classified",
+        "why": "Не классифицировано; не публикуется"
+      },
+      {
+        "entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой | Личные вещи | Авито (8296456393).pdf",
+        "embedded_name": "Im56.png",
+        "role": "not_classified",
+        "why": "Не классифицировано; не публикуется"
+      },
+      {
+        "entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой | Личные вещи | Авито (8296456393).pdf",
+        "embedded_name": "Im71.png",
+        "role": "advertisement",
+        "why": "Баннер «Настоящие скидки до 90% на Хватамбе», не фотография лота"
+      },
+      {
+        "entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой | Личные вещи | Авито (8296456393).pdf",
+        "embedded_name": "Im96.png",
+        "role": "not_classified",
+        "why": "Не классифицировано; не публикуется"
+      },
+      {
+        "entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой | Личные вещи | Авито (8296456393).pdf",
+        "embedded_name": "Im122.png",
+        "role": "not_classified",
+        "why": "Не классифицировано; не публикуется"
+      },
+      {
+        "entry": "Оригинальные часы Omega x Swatch MoonSwatch купить в Москве по низкой цене с доставкой | Личные вещи | Авито (8296456393).pdf",
+        "embedded_name": "Im123.png",
+        "role": "not_classified",
+        "why": "Не классифицировано; не публикуется"
+      },
+      {
+        "entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+        "embedded_name": "Im2.png",
+        "role": "avatar",
+        "why": "Аватар аккаунта в шапке мобильной страницы, не товар"
+      },
+      {
+        "entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+        "embedded_name": "Im7.png",
+        "role": "recommendation",
+        "why": "Блок «Похожие объявления» / «Вместе смотрят»: три чужих чехла"
+      },
+      {
+        "entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+        "embedded_name": "Im8.png",
+        "role": "recommendation",
+        "why": "Рекомендация: прозрачный чехол с MagSafe, другое объявление"
+      },
+      {
+        "entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+        "embedded_name": "Im9.png",
+        "role": "recommendation",
+        "why": "Рекомендация: два тёмных чехла, другое объявление"
+      },
+      {
+        "entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+        "embedded_name": "Im10.png",
+        "role": "recommendation",
+        "why": "Рекомендация: чехол MAGSSORY, другое объявление"
+      },
+      {
+        "entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+        "embedded_name": "Im11.png",
+        "role": "recommendation",
+        "why": "Рекомендация: чехлы на бежевом фоне, другое объявление"
+      },
+      {
+        "entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+        "embedded_name": "Im12.png",
+        "role": "recommendation",
+        "why": "Рекомендация: шесть разноцветных чехлов, другое объявление"
+      },
+      {
+        "entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+        "embedded_name": "Im13.png",
+        "role": "not_classified",
+        "why": "Не классифицировано; не публикуется"
+      },
+      {
+        "entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+        "embedded_name": "Im15.png",
+        "role": "advertisement",
+        "why": "Реклама «Альфа Банк. Кэшбэк до 50%»"
+      },
+      {
+        "entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+        "embedded_name": "Im16.png",
+        "role": "ui",
+        "why": "Пустая серая заглушка рекламного блока 300×600"
+      },
+      {
+        "entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+        "embedded_name": "Im17.png",
+        "role": "advertisement",
+        "why": "Баннер «ХватАмба. До -90%»"
+      },
+      {
+        "entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+        "embedded_name": "Im18.png",
+        "role": "avatar",
+        "why": "Небольшой круглый аватар/иконка интерфейса 96×96"
+      },
+      {
+        "entry": "Чехол на iPhone 15 pro max 2 шт купить в Домодедово по низкой цене с доставкой | Электроника | Авито (8350792227).pdf",
+        "embedded_name": "Im19.png",
+        "role": "advertisement",
+        "why": "Рекламная плашка 284×74"
+      }
+    ],
+    "not_published_from_zip": [
+      "исходные скриншоты целиком (полоса статуса iOS и кнопки Avito обрезаны)",
+      "PDF-печати страниц (содержат блок рекомендаций, рекламу и ссылки на сторонние сервисы)"
+    ]
+  }
+}

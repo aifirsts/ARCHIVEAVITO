@@ -1,6 +1,6 @@
 {
   "as_of": "2026-10-26",
-  "source": "Offline HTML snapshots from usaforyou/MANUS1/Авито 14.zip; live Avito pages blocked",
+  "source": "Offline profile snapshot from Авито 14.zip plus 13 individual HTML pages from PART1_HTMLS.zip and gallery JPEGs from PART_2.zip/PART3.zip in usaforyou/MANUS1; two supplementary ZIPs checked for duplicates; no live Avito verification",
   "price_status": "snapshot_only_unverified_live",
   "products": [
     {

@@ -266,12 +266,13 @@
     var cards = Array.prototype.slice.call(grid.querySelectorAll("[data-card]"));
     var search = document.getElementById("catalogue-search");
     var chips = Array.prototype.slice.call(document.querySelectorAll("[data-filter-category]"));
+    var tagChips = Array.prototype.slice.call(document.querySelectorAll("[data-filter-tag]"));
     var sortSelect = document.getElementById("catalogue-sort");
     var discountToggle = document.getElementById("filter-discount");
     var count = document.getElementById("result-count");
     var empty = document.getElementById("empty-state");
     var reset = document.getElementById("reset-filters");
-    var state = { query: "", category: "all", sort: "curated", discountOnly: false };
+    var state = { query: "", category: "all", tag: "", sort: "curated", discountOnly: false };
     var originalOrder = cards.slice();
 
     function normalise(value) {
@@ -280,6 +281,10 @@
 
     function matches(card) {
       if (state.category !== "all" && card.getAttribute("data-category") !== state.category) return false;
+      if (state.tag) {
+        var tags = (card.getAttribute("data-tags") || "").split(" ");
+        if (tags.indexOf(state.tag) === -1) return false;
+      }
       if (state.discountOnly && card.getAttribute("data-discount") !== "1") return false;
       if (!state.query) return true;
       var haystack = normalise(card.getAttribute("data-search"));
@@ -322,6 +327,7 @@
       var params = new URLSearchParams();
       if (state.query) params.set("q", state.query);
       if (state.category !== "all") params.set("category", state.category);
+      if (state.tag) params.set("tag", state.tag);
       if (state.sort !== "curated") params.set("sort", state.sort);
       if (state.discountOnly) params.set("discount", "1");
       var next = location.pathname + (params.toString() ? "?" + params.toString() : "") + location.hash;
@@ -359,6 +365,20 @@
       });
     });
 
+    tagChips.forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        var value = chip.getAttribute("data-filter-tag");
+        state.tag = state.tag === value ? "" : value;
+        tagChips.forEach(function (other) {
+          other.setAttribute(
+            "aria-pressed",
+            other.getAttribute("data-filter-tag") === state.tag ? "true" : "false"
+          );
+        });
+        update();
+      });
+    });
+
     if (sortSelect) {
       sortSelect.addEventListener("change", function () {
         state.sort = sortSelect.value;
@@ -375,12 +395,15 @@
 
     if (reset) {
       reset.addEventListener("click", function () {
-        state = { query: "", category: "all", sort: "curated", discountOnly: false };
+        state = { query: "", category: "all", tag: "", sort: "curated", discountOnly: false };
         if (search) search.value = "";
         if (sortSelect) sortSelect.value = "curated";
         if (discountToggle) discountToggle.checked = false;
         chips.forEach(function (chip) {
           chip.setAttribute("aria-pressed", chip.getAttribute("data-filter-category") === "all" ? "true" : "false");
+        });
+        tagChips.forEach(function (chip) {
+          chip.setAttribute("aria-pressed", "false");
         });
         update();
         if (search) search.focus();
@@ -398,6 +421,13 @@
       state.category = category;
       chips.forEach(function (chip) {
         chip.setAttribute("aria-pressed", chip.getAttribute("data-filter-category") === category ? "true" : "false");
+      });
+    }
+    var tag = params.get("tag");
+    if (tag) {
+      state.tag = tag;
+      tagChips.forEach(function (chip) {
+        chip.setAttribute("aria-pressed", chip.getAttribute("data-filter-tag") === tag ? "true" : "false");
       });
     }
     var sort = params.get("sort");

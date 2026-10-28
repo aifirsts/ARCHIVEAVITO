@@ -18,6 +18,8 @@ CATALOG = json.loads((ROOT / "catalog.json").read_text(encoding="utf-8"))
 LAYER = CATALOG["seller_messages_2026_10_28"]
 FEED = json.loads((ROOT / "handoff/storefront.json").read_text(encoding="utf-8"))
 PUBLIC = ROOT / "site" / "public"
+MANIFEST_PUBLISHED = json.loads((PUBLIC / "assets" / "images.json").read_text(encoding="utf-8"))
+PAGES = MANIFEST_PUBLISHED["product_pages"]
 
 EXPECTED_OFFERS = {
     "the-max-creme-48g": 11500,
@@ -95,25 +97,26 @@ class FwSiteTest(unittest.TestCase):
 
     def test_index_renders_offers_layer(self):
         index = (PUBLIC / "index.html").read_text(encoding="utf-8")
-        self.assertIn("Предложения продавца из сообщений от 28.10.2026", index)
+        self.assertIn("Цены из переписки с продавцом", index)
         self.assertIn("Это не архивные объявления", index)
+        self.assertIn("Прайс-лист · 28.10.2026", index)
         for price in ("11\u202f500\u00a0₽", "6\u202f800\u00a0₽", "4\u202f900\u00a0₽",
                       "10\u202f400\u00a0₽"):
             self.assertIn(price, index)
         self.assertIn("assets/img/seller-2026-10-28/sellermsg-01.jpg", index)
         self.assertIn("assets/img/seller-2026-10-28/sellermsg-03.jpg", index)
-        self.assertIn('href="item/8166255881.html"', index)
-        self.assertIn('href="item/8230842563.html"', index)
+        self.assertIn(f'href="{PAGES["8166255881"]}"', index)
+        self.assertIn(f'href="{PAGES["8230842563"]}"', index)
 
     def test_matched_products_show_fresh_price(self):
         for pid, fresh, archived in (("8166255881", "4\u202f900\u00a0₽", "5\u202f900\u00a0₽"),
                                      ("8230842563", "10\u202f400\u00a0₽", "12\u202f999\u00a0₽")):
-            page = (PUBLIC / "item" / f"{pid}.html").read_text(encoding="utf-8")
+            page = (PUBLIC / PAGES[pid]).read_text(encoding="utf-8")
             self.assertIn("Сообщение продавца · 28.10.2026", page)
             self.assertIn(fresh, page)
             self.assertIn(archived, page)
             self.assertIn("к архивной", page)
-        untouched = (PUBLIC / "item" / "7942405497.html").read_text(encoding="utf-8")
+        untouched = (PUBLIC / PAGES["7942405497"]).read_text(encoding="utf-8")
         self.assertNotIn("Сообщение продавца · 28.10.2026", untouched)
 
     def test_fresh_photos_published(self):

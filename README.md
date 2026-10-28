@@ -1,59 +1,110 @@
-# Beauty Supply — архивная витрина и аудит источников
+# Beauty Supply — витрина магазина и архивный аудит источников
 
-> GitHub Actions sync trigger: 2026-10-28 — запуск workflow для проверки и публикации сайта.
+**Сайт: [`site/public/`](site/public/index.html)** — готовый статический магазин-витрина на 18 страниц,
+150 фотографий, собственный дизайн, SEO-разметка, `sitemap.xml`, `robots.txt`, `404.html`.
+Публикуется на домене **[usaforru.shop](https://usaforru.shop)** (Porkbun Static Hosting).
 
-**Сайт магазина: [`site/public/`](site/public/index.html)** — собственная вёрстка, 16 страниц, 150 изображений, адаптивные карточки и доступная навигация.
+> Витрина продаёт не «в корзину», а через продавца: каждая карточка ведёт на конкретное объявление Avito,
+> где подтверждаются цена, наличие и комплектация. Онлайн-оплаты на сайте нет — это осознанное решение,
+> а не незаконченная функция.
 
-Витрина использует 14 товаров из архива профиля Avito: 53 фото-превью профиля, 74 миниатюры и 38 крупных JPEG из 13 отдельных карточек и 53 превью в профиле.
+## Что обновилось 28.10.2026
 
-**Статус данных:** владелец подтвердил в переписке, что профиль Avito и магазин принадлежат ему. Источники — снимки архивов и локальные подтверждённые файлы.
+| Область | Было | Стало |
+| --- | --- | --- |
+| Позиционирование | «архивный каталог, не магазин» | **витрина магазина**: hero, бренды, подбор по задаче, шаги покупки, FAQ |
+| Страницы | 16 | **18** (`index`, `podbor`, `sources`, `404` + 14 карточек) |
+| Адреса карточек | `item/7942405497.html` | `item/7942405497-hourglass-ambient-lighting-blush.html` — читаемые SEO-слаги |
+| Главная | таблица фактов аудита | hero + блок доверия + бренды + каталог + прайс продавца + подборки + FAQ |
+| Подбор | — | **`podbor.html`**: 5 сценариев (SPF, антивозрастной уход, тело, макияж, аксессуары) + сводная таблица цен |
+| Карточка товара | аудит-отчёт | покупной блок (цена, преимущества, CTA), **похожие лоты**, затем происхождение фото и ограничения |
+| SEO | title/description | canonical, OG/Twitter-карточка 1200×630, JSON-LD (`Store`, `Product`, `BreadcrumbList`, `FAQPage`), `sitemap.xml`, `robots.txt` |
+| Дизайн | архивная типографика | сохранена база + «магазинный» слой: hero-фото, trust-полоса, бренд-пилюли, теги, шаги, аккордеон FAQ, мини-карточки |
+| Публикация | не выполнялась | пошаговый runbook + `deploy/publish_porkbun.py` (FTPS) + workflow `publish-porkbun.yml` |
+| Тесты | 37 | **66 офлайн-проверок** + HTML5/a11y-валидация 18 страниц + headless-DOM прогон поиска, фильтров и галереи |
 
-**Слой 28.10.2026:** продавец прислал свежие цены (Max face cream 11 500 ₽, Max eye cream 6 800 ₽, SPF 30 мойсчерайзер 4 900 ₽, Biotech MD cream 10 400 ₽, Biotech MD serum 11 500 ₽).
+Подробный отчёт: [`SITE_UPDATES.md`](SITE_UPDATES.md). Публикация: [`deploy/README.md`](deploy/README.md).
 
-**Для разработчика:** контракт данных — [`handoff/README.md`](handoff/README.md) и [`handoff/storefront.json`](handoff/storefront.json); готовый сайт — [`site/public/`](site/public/index.html).
+## Структура сайта
 
-**[Финальный аудит и дальнейшие шаги](FINAL_AUDIT.md)** — сводная проверка всех восьми ZIP в `MANUS1` и готовности каталога.
+| Страница | Назначение |
+| --- | --- |
+| [`index.html`](site/public/index.html) | витрина: hero, доверие, бренды, каталог с поиском/фильтрами/тегами, прайс продавца 28.10, подборки, 3 шага покупки, FAQ |
+| [`podbor.html`](site/public/podbor.html) | пять подборок по задаче + сводная таблица «архивная цена / цена продавца / продавец» |
+| `item/<id>-<slug>.html` × 14 | карточка: галерея с источниками кадров, цена с датой, преимущества, CTA в Avito, похожие лоты, характеристики, бренд, происхождение фото, честные ограничения |
+| [`sources.html`](site/public/sources.html) | происхождение данных: 8 ZIP с SHA-256, слои 25.10 / 28.10, разделение слоёв, что не публикуется, домен и публикация |
+| [`404.html`](site/public/404.html) | страница ошибки с подборкой популярных лотов |
 
-## Публикация сайта
+## Данные
 
-Рабочий процесс [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) при пуше в `main` (или запуске вручную — `workflow_dispatch`) прогоняет проверки и публикует `site/public`.
+| Файл | Что внутри |
+| --- | --- |
+| [`catalog.json`](catalog.json) | 14 карточек: архивные цены, старые цены, ссылки Avito, характеристики, материалы производителей, свежие цены продавца |
+| [`handoff/storefront.json`](handoff/storefront.json) | пакет данных для сборки (генерируется `handoff/generate.py`, детерминированно) |
+| [`avito_audit/`](avito_audit/) | разборы восьми ZIP, извлечённые JPEG, PDF-печати, распознанные сообщения продавца |
+| [`official_assets/`](official_assets/) | 13 иллюстраций производителей + манифест SHA-256 |
+| `site/site_config.json` | бренд, домен, hero-тексты, FAQ, подборки — вся «маркетинговая» правка без Python |
+| `site/src/assets/hero.jpg`, `og-cover.jpg` | сгенерированные иллюстрации витрины (не фото товара) |
 
-**Статус на 28.10.2026: публикация не выполнена** — у аккаунта владельца репозитория Actions заблокирована биллинговая настройка, но сам workflow готов и запускается при пуше.
+## Сборка и проверки
 
-## Файлы
-
-- `site/` — **сайт**: `src/site.css`, `src/app.js`, `build.py`, собранный `public/`; см. [`site/README.md`](site/README.md).
-- [`catalog.json`](catalog.json) — 14 карточек (цены из снимка, локальные фото, ссылка Avito, расширенные характеристики, примечания к архивной валидации).
-- `avito_audit/attachments_fw_2026_10_28/` + [`avito_audit/ATTACHMENTS_FW_2026_10_28.md`](avito_audit/ATTACHMENTS_FW_2026_10_28.md) — разбор восьмого архива: 10 записей, хеши, свежие цены и фото.
-- `avito_audit/attachments_avitos/` + [`avito_audit/ATTACHMENTS_2026_10_25.md`](avito_audit/ATTACHMENTS_2026_10_25.md) — разбор седьмого архива: 10 записей, хеши, новые фото и печати страниц.
-- [`official_assets/`](official_assets/) — 13 локальных иллюстраций производителей (для 13 карточек); [`manifest.json`](official_assets/manifest.json) — реестр файлов и контрольных сумм.
-- [`avito_audit/images/`](avito_audit/images/) — 53 JPEG 208×208 из архивного HTML, разложены по ID объявления.
-- [`avito_audit/item_pages/`](avito_audit/item_pages/) — `data.json` с полным текстом продавца, характеристиками, двумя версиями описаний и разметкой карточек.
-- [`avito_audit/images_manifest.json`](avito_audit/images_manifest.json) — 55 ссылок на миниатюры с архивными путями и SHA-256 локальных файлов.
-- [`avito_audit/OFFICIAL_RESEARCH.md`](avito_audit/OFFICIAL_RESEARCH.md) — сопоставление всех 14 товаров с официальными страницами, оговорками по составу и брендам.
-- [`avito_audit/REPORT.md`](avito_audit/REPORT.md) — происхождение ZIP и архивный аудит; `products.csv` и `snapshot.json` — машиночитаемый реестр товаров.
-- `avito_audit/extract_images.py` — извлечение старых превью; `avito_audit/extract_item_pages.py` — извлечение новых страниц и JPEG по трём ZIP.
-
-## Локальный просмотр
+**Одна команда — все проверки (то же, что CI):**
 
 ```bash
-python handoff/generate.py
-python site/build.py
+bash scripts/verify.sh          # 9 групп проверок, код возврата 0 = всё зелёное
+bash scripts/verify.sh --offline   # без сети (пропускает html-validate и npm)
+```
+
+По шагам:
+
+```bash
+python -m pip install -r requirements-dev.txt   # Pillow
+python handoff/generate.py                      # пакет данных
+python site/build.py                            # пересобрать site/public
+python site/build.py --check                    # проверить, что сборка = источники
+python -m unittest discover -s tests -v         # 66 офлайн-тестов
+node --check site/src/app.js
+npx --yes html-validate@11 "site/public/**/*.html"   # HTML5 + доступность
+node site/tests/dom/dom_smoke.js                # поиск/фильтры/галерея в jsdom (нужен npm install в site/tests/dom)
+python3 deploy/publish_porkbun.py --dry-run     # план загрузки на Porkbun
+```
+
+Локальный просмотр:
+
+```bash
 cd site/public && python -m http.server 8080 --bind 0.0.0.0
 ```
 
-Откройте `http://localhost:8080/`. Для статического хостинга публикуйте **только `site/public`** (это делает `deploy.yml`), не корень репозитория.
+## Публикация на usaforru.shop
 
-Проверки:
+1. Porkbun → домен → **Website → Static Hosting → Starter**.
+2. Взять FTP-доступы из блока **FTP Credentials**.
+3. `export $(grep -v '^#' deploy/.env | xargs)` → `python deploy/publish_porkbun.py`.
+4. Проверить `https://usaforru.shop/`, `/sitemap.xml`, `/robots.txt` (чек-лист в [`deploy/README.md`](deploy/README.md)).
 
-```bash
-python -m unittest discover -s tests -v     # 47 офлайн-тестов (архив, пакет, сборка, ссылки, хеши, новый слой)
-node --check site/src/app.js
-python site/tests/browser_smoke.py          # Chromium: десктоп 1440×950 и мобильный 390×844
-```
+Альтернативы: панель Porkbun (File Browser) или **GitHub Connect** на ветку `main`, каталог `site/public`.
+Workflow [`.github/workflows/publish-porkbun.yml`](.github/workflows/publish-porkbun.yml) публикует по кнопке
+(нужны секреты `PORKBUN_FTP_HOST`, `PORKBUN_FTP_USER`, `PORKBUN_FTP_PASS`).
 
-Дополнительно: axe-core (0 нарушений на страницах × 2 ширины), сверка всех 150 опубликованных изображений по SHA-256 и контроль воспроизводимости сборки.
+> **GitHub Actions в этом аккаунте заблокированы биллингом:** задания падают за 2–3 секунды
+> (`steps: []`, раннер не выдан) — это ограничение аккаунта, а не ошибка кода. Все те же проверки
+> выполняются локально командой `bash scripts/verify.sh`; после включения Actions они пойдут в CI без правок.
 
-## Перед коммерческой публикацией
+## Что важно знать о данных
 
-Подтвердить у владельца каждого товара актуальное наличие, цену, состояние, состав, фото и возможность заказа; сам сайт не принимает оплату и не подтверждает статус товаров.
+- **Цены не текущие.** Архивный снимок `26.10.2026` + сообщения продавца `28.10.2026` (заявления продавца).
+  На каждой карточке обе цены подписаны; актуальную подтверждает продавец в Avito.
+- **Четыре слоя фото** не смешиваются: фото объявления, мобильные скриншоты `25.10.2026`, фото из переписки
+  `28.10.2026`, иллюстрации производителей. Источник подписан на каждом кадре.
+- **Известные пропуски:** у часов `8296456393` нет файла позиции № 9; у лота `8350792227` не сфотографирован
+  второй чехол и нет отдельной HTML-карточки. Отсутствующие файлы не подменяются чужими фото.
+- **Права:** иллюстрации брендов принадлежат правообладателям; владение магазином не означает разрешение
+  на их коммерческое использование. Перед промо-кампанией это нужно согласовать.
+- **Отзывы и персональные данные** из исходных HTML не публикуются.
+
+## Документы аудита (история)
+
+- [`SITE_UPDATES.md`](SITE_UPDATES.md) — что именно изменено 28.10.2026 и как проверено.
+- [`FINAL_AUDIT.md`](FINAL_AUDIT.md) — сводная проверка восьми ZIP из `usaforyou/MANUS1`.
+- [`REPOSITORY_AUDIT.md`](REPOSITORY_AUDIT.md) — повторная проверка репозитория (историческая таблица).
+- [`deploy/README.md`](deploy/README.md) — публикация, DNS, SSL, чек-лист, откат.

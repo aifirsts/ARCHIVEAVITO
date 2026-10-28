@@ -17,6 +17,7 @@ from __future__ import annotations
 import argparse
 import functools
 import http.server
+import json
 import socketserver
 import sys
 import threading
@@ -24,6 +25,13 @@ from pathlib import Path
 
 PUBLIC = Path(__file__).resolve().parents[1] / "public"
 FAILURES: list[str] = []
+
+
+def page_of(product_id: str) -> str:
+    """Public URL of a listing, resolved from the build manifest (SEO slugs)."""
+    manifest = json.loads((PUBLIC / "assets" / "images.json").read_text(encoding="utf-8"))
+    page = manifest["product_pages"][product_id]
+    return "/" + page
 
 
 def check(condition: bool, message: str) -> None:
@@ -120,8 +128,25 @@ def run(base: str, executable: str | None = None) -> None:
             check(page.eval_on_selector("#catalogue-search", "e => e.value") == "omega",
                   "запрос из шапки подставлен в поиск каталога")
 
+            # tag chips filter the grid without a page reload
+            page.click('[data-filter-tag="spf"]')
+            page.wait_for_timeout(150)
+            check(page.locator("[data-card]:visible").count() == 2, "тег «С SPF» → 2 товара")
+            page.click('[data-filter-tag="spf"]')
+            page.wait_for_timeout(150)
+            check(page.locator("[data-card]:visible").count() == 14, "повторный клик по тегу снимает фильтр")
+
+            check(page.locator(".hero__figure img").count() == 1, "на главной есть hero-изображение")
+            check(page.locator(".faq__item").count() >= 4, "на главной есть FAQ")
+            page.click(".faq__item summary")
+            check(page.evaluate("document.querySelector('.faq__item').open === true"), "FAQ раскрывается")
+
+            page.goto(f"{base}/podbor.html", wait_until="networkidle")
+            check(page.locator("[data-card]").count() == 14, "страница подбора показывает все 14 лотов")
+            check(page.locator("table").count() >= 1, "на странице подбора есть сводная таблица цен")
+
             for pid in ("8296456393", "8350792227"):
-                page.goto(f"{base}/item/{pid}.html", wait_until="networkidle")
+                page.goto(f"{base}{page_of(pid)}", wait_until="networkidle")
                 check(page.locator("[data-gallery-thumb]").count() >= 1, f"{pid}: галерея отрисована")
                 check(page.locator("a[href^='https://www.avito.ru/']").count() >= 1,
                       f"{pid}: есть ссылка на объявление Avito")
@@ -129,7 +154,7 @@ def run(base: str, executable: str | None = None) -> None:
                 check(page.evaluate("document.documentElement.scrollWidth <= window.innerWidth + 1"),
                       f"{pid}: нет горизонтальной прокрутки")
 
-            page.goto(f"{base}/item/8296456393.html", wait_until="networkidle")
+            page.goto(f"{base}{page_of('8296456393')}", wait_until="networkidle")
             page.keyboard.press("ArrowRight")
             page.keyboard.press("ArrowRight")
             page.keyboard.press("ArrowRight")
@@ -158,6 +183,9 @@ def run(base: str, executable: str | None = None) -> None:
             check("Attachments-Avitos.zip" in sources, "страница источников описывает новый архив")
             check("7d1eca79385ba06d702f0812eca8b5ee70990295295ec2b06442a28e33b5d6d0" in sources,
                   "на странице источников опубликован SHA-256 архива")
+
+            page.goto(f"{base}/404.html", wait_until="networkidle")
+            check("Такой страницы" in page.inner_text("body"), "страница 404 отдаёт понятный текст")
 
             real = [p for p in problems if "favicon" not in p]
             check(not real, f"нет ошибок консоли и сети ({len(real)} шт.)")

@@ -1,28 +1,49 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "generator": "site/build.py",
+  "brand": "Beauty Supply",
+  "site_url": "https://usaforru.shop",
   "data_source": "handoff/storefront.json",
   "archive_date": "2026-10-26",
   "status": "archived_research_not_live_inventory",
   "products": 14,
   "pages": [
     "index.html",
+    "podbor.html",
     "sources.html",
-    "item/7942405497.html",
-    "item/7942010246.html",
-    "item/7942160038.html",
-    "item/8102096652.html",
-    "item/8165981546.html",
-    "item/8166119490.html",
-    "item/8166255881.html",
-    "item/8166335454.html",
-    "item/8166674710.html",
-    "item/8230842563.html",
-    "item/7942108985.html",
-    "item/8165960870.html",
-    "item/8296456393.html",
-    "item/8350792227.html"
+    "404.html",
+    "item/7942405497-hourglass-ambient-lighting-blush.html",
+    "item/7942010246-charlotte-tilbury-pillow-talk-palette.html",
+    "item/7942160038-hourglass-curator-minimalist-palette.html",
+    "item/8102096652-speck-presidio2-pro-iphone-15-pro-max.html",
+    "item/8165981546-image-skincare-vol-u-lift-body-cream.html",
+    "item/8166119490-image-skincare-vol-u-lift-concentrate.html",
+    "item/8166255881-image-daily-prevention-spf-30.html",
+    "item/8166335454-image-vital-c-night-cream.html",
+    "item/8166674710-image-daily-prevention-spf-75.html",
+    "item/8230842563-image-md-biotech-longevity-creme.html",
+    "item/7942108985-hourglass-ambient-lighting-palette.html",
+    "item/8165960870-image-md-restoring-youth-serum.html",
+    "item/8296456393-swatch-omega-moonswatch-bioceramic.html",
+    "item/8350792227-speck-presidio2-pro-2-pack.html"
   ],
+  "product_pages": {
+    "7942405497": "item/7942405497-hourglass-ambient-lighting-blush.html",
+    "7942010246": "item/7942010246-charlotte-tilbury-pillow-talk-palette.html",
+    "7942160038": "item/7942160038-hourglass-curator-minimalist-palette.html",
+    "8102096652": "item/8102096652-speck-presidio2-pro-iphone-15-pro-max.html",
+    "8165981546": "item/8165981546-image-skincare-vol-u-lift-body-cream.html",
+    "8166119490": "item/8166119490-image-skincare-vol-u-lift-concentrate.html",
+    "8166255881": "item/8166255881-image-daily-prevention-spf-30.html",
+    "8166335454": "item/8166335454-image-vital-c-night-cream.html",
+    "8166674710": "item/8166674710-image-daily-prevention-spf-75.html",
+    "8230842563": "item/8230842563-image-md-biotech-longevity-creme.html",
+    "7942108985": "item/7942108985-hourglass-ambient-lighting-palette.html",
+    "8165960870": "item/8165960870-image-md-restoring-youth-serum.html",
+    "8296456393": "item/8296456393-swatch-omega-moonswatch-bioceramic.html",
+    "8350792227": "item/8350792227-speck-presidio2-pro-2-pack.html"
+  },
+  "sitemap": "sitemap.xml",
   "images": [
     {
       "public_path": "assets/img/7942010246/gallery-01.jpg",
@@ -1975,9 +1996,35 @@
       ]
     }
   ],
+  "site_assets": [
+    {
+      "public_path": "assets/hero.jpg",
+      "source_path": "site/src/assets/hero.jpg",
+      "source_sha256": "5e3c9cd3c5314cdf17647dba714ac965a25b086dba407fd8d3e9469e841cd048",
+      "published_sha256": "5e3c9cd3c5314cdf17647dba714ac965a25b086dba407fd8d3e9469e841cd048",
+      "bytes": 79215,
+      "transform": "copy",
+      "dimensions": [
+        880,
+        839
+      ]
+    },
+    {
+      "public_path": "assets/og-cover.jpg",
+      "source_path": "site/src/assets/og-cover.jpg",
+      "source_sha256": "01fbb48bea283b0a5099b28135bd641d5825711bf006f2a171488f45c7aacbef",
+      "published_sha256": "01fbb48bea283b0a5099b28135bd641d5825711bf006f2a171488f45c7aacbef",
+      "bytes": 77986,
+      "transform": "copy",
+      "dimensions": [
+        1200,
+        630
+      ]
+    }
+  ],
   "asset_versions": {
-    "site.css": "194eecb6a2",
-    "app.js": "41fa60f87b"
+    "site.css": "da86d14bca",
+    "app.js": "be41fbfc98"
   },
   "not_published": [
     "avito_audit/snapshot.json (содержит отзывы)",

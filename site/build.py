@@ -80,6 +80,19 @@ def rub(value) -> str:
     return f"{text}\u00a0₽"
 
 
+def plural_ru(count, one, few, many):
+    """Russian plural forms: 1 кадр, 2 кадра, 5 кадров, 11 кадров."""
+    n = abs(int(count)) % 100
+    if 11 <= n <= 14:
+        return many
+    n %= 10
+    if n == 1:
+        return one
+    if 2 <= n <= 4:
+        return few
+    return many
+
+
 def esc(value) -> str:
     return html.escape(str(value), quote=True)
 
@@ -519,6 +532,7 @@ def head(title: str, description: str, root: str, css_version: str, js_version: 
 </head>
 <body>
 <a class="skip-link" href="#main">Перейти к содержанию</a>
+<noscript><p class="noscript">JavaScript отключён: страницы полностью читаемы, но поиск, фильтры, сортировка и переключение кадров галереи не работают. Первый кадр каждой галереи показан статически; заказ — по ссылкам на Avito.</p></noscript>
 """
 
 
@@ -560,7 +574,7 @@ def footer(feed, products, root: str) -> str:
   <div class="wrap site-footer__grid">
     <div>
       <h2>Beauty Supply</h2>
-      <p>Историческая витрина {len(products)} объявлений магазина на Avito. Сайт не принимает оплату и не оформляет доставку:
+      <p>Историческая витрина {len(products)} {plural_ru(len(products), "объявление", "объявления", "объявлений")} магазина на Avito. Сайт не принимает оплату и не оформляет доставку:
       заказ и все условия — в объявлении у продавца.</p>
       <p><a href="{STORE_URL}" rel="noopener noreferrer nofollow">Профиль магазина на Avito ↗</a></p>
     </div>
@@ -780,9 +794,9 @@ def render_index(feed, products, fw_offers, css_version, js_version) -> str:
         Свежие цены от продавца из сообщений {FW_LAYER_LABEL} показаны отдельным слоем.</p>
       </div>
       <dl class="hero__stats">
-        <div><dt>{len(products)}</dt><dd>объявлений</dd></div>
-        <div><dt>{total_photos}</dt><dd>кадров в галереях</dd></div>
-        <div><dt>{archives}</dt><dd>архивных ZIP в аудите</dd></div>
+        <div><dt>{len(products)}</dt><dd>{plural_ru(len(products), "объявление", "объявления", "объявлений")}</dd></div>
+        <div><dt>{total_photos}</dt><dd>{plural_ru(total_photos, "кадр в галереях", "кадра в галереях", "кадров в галереях")}</dd></div>
+        <div><dt>{archives}</dt><dd>{plural_ru(archives, "архивный ZIP в аудите", "архивных ZIP в аудите", "архивных ZIP в аудите")}</dd></div>
       </dl>
     </div>
   </section>
@@ -877,7 +891,8 @@ def render_index(feed, products, fw_offers, css_version, js_version) -> str:
         head(
             "Beauty Supply — архивный каталог косметики и аксессуаров",
             f"Архивная витрина магазина Beauty Supply: {len(products)} объявлений Avito, "
-            f"{total_slides} позиций галерей, помеченные источники фото и архивные цены на 26.10.2026.",
+            f"{total_slides} {plural_ru(total_slides, 'позиция', 'позиции', 'позиций')} галерей, "f"помеченные источники фото, архивные цены на 26.10.2026 "
+            f"и свежие цены продавца из сообщений 28.10.2026.",
             "",
             css_version,
             js_version,
@@ -1018,6 +1033,32 @@ def render_product(product, products, feed, css_version, js_version) -> str:
 
     slides_count = len(product["slides"])
     pill_class = "pill" + (f" pill--{product['stock_kind']}" if product["stock_kind"] else "")
+    mobile_price = (
+        f'<span class="price price--fresh">{product["fresh_price_text"]}</span>\n'
+        f'      <span>продавец · {FW_LAYER_LABEL} · архив {product["price_text"]}</span>'
+        if product["fresh_price_text"]
+        else f'<span class="price">{product["price_text"]}</span>\n'
+        f'      <span>архив · {ARCHIVE_LABEL}</span>'
+    )
+    meta_description = (
+        f"{product['title']}: цена продавца {product['fresh_price_text']} из сообщения {FW_LAYER_LABEL}, "
+        f"архивная цена {product['price_text']} ({ARCHIVE_LABEL}), "
+        f"{product['photo_count']} {plural_ru(product['photo_count'], 'кадр', 'кадра', 'кадров')} галереи, "
+        "источники и ограничения данных."
+        if product["fresh_price_text"]
+        else f"{product['title']}: архивная цена {product['price_text']} на {ARCHIVE_LABEL}, "
+        f"{product['photo_count']} {plural_ru(product['photo_count'], 'кадр', 'кадра', 'кадров')} галереи, "
+        "источники и ограничения данных."
+    )
+    # First frame rendered server-side: with JS the gallery replaces it on load,
+    # without JS the page still shows the main photo instead of an empty stage.
+    first_slide = product["slides"][0] if product["slides"] else None
+    static_first_frame = (
+        f'<img class="gallery__frame" src="../{esc(first_slide["public_path"])}" alt="{esc(first_slide["alt"])}" '
+        f'width="{first_slide.get("width") or 700}" height="{first_slide.get("height") or 700}" decoding="async">'
+        if first_slide and not first_slide.get("missing")
+        else ""
+    )
     fresh_panel = ""
     if product["fresh_price_text"]:
         fresh_photo = ""
@@ -1051,7 +1092,7 @@ def render_product(product, products, feed, css_version, js_version) -> str:
 
     <div class="product">
       <section class="gallery" data-gallery aria-roledescription="галерея" aria-label="Фотографии товара">
-        <div class="gallery__stage" data-gallery-stage></div>
+        <div class="gallery__stage" data-gallery-stage>{static_first_frame}</div>
         <p class="gallery__caption">
           <span class="source-badge source-badge--listing" data-gallery-source>Фото объявления · архив</span>
           <span data-gallery-caption></span>
@@ -1177,8 +1218,7 @@ def render_product(product, products, feed, css_version, js_version) -> str:
 
   <div class="mobile-bar">
     <div class="mobile-bar__price">
-      <span class="price">{product["price_text"]}</span>
-      <span>архив · 26.10.2026</span>
+      {mobile_price}
     </div>
     <a class="button" href="{esc(product["avito_url"])}" rel="noopener noreferrer nofollow">Открыть на Avito ↗</a>
   </div>
@@ -1188,8 +1228,7 @@ def render_product(product, products, feed, css_version, js_version) -> str:
     return (
         head(
             f"{product['title']} — Beauty Supply (архив)",
-            f"{product['title']}: архивная цена {product['price_text']} на 26.10.2026, "
-            f"{product['photo_count']} кадров галереи, источники и ограничения данных.",
+            meta_description,
             "../",
             css_version,
             js_version,

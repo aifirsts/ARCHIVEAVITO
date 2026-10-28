@@ -1,8 +1,8 @@
 """The next-site data feed is deterministic, complete, and keeps sources separate."""
 import hashlib
 import json
-from pathlib import Path
 import unittest
+from pathlib import Path
 
 from handoff.generate import build_document, render
 
@@ -64,7 +64,7 @@ class HandoffTest(unittest.TestCase):
                 self.assertTrue(note["photo_path"].startswith(
                     "avito_audit/attachments_fw_2026_10_28/"))
         # The Power-C serum must not be merged with the archived Restoring Youth listing.
-        serum = [o for o in fw["offers"] if o["offer_id"] == "md-restoring-power-c-serum-30ml"][0]
+        serum = next(o for o in fw["offers"] if o["offer_id"] == "md-restoring-power-c-serum-30ml")
         self.assertIsNone(serum["matches_catalog_id"])
         self.assertIn("8165960870", serum["note_ru"])
 

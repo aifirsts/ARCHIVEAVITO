@@ -176,7 +176,7 @@ def extract_item(name, html_bytes, zip_date, assets):
     return {
         "id": item_id,
         "source": {"zip_file": "PART1_HTMLS.zip", "html_entry": name,
-                   "zip_entry_datetime_no_timezone": "%04d-%02d-%02dT%02d:%02d:%02d" % zip_date},
+                   "zip_entry_datetime_no_timezone": "{:04d}-{:02d}-{:02d}T{:02d}:{:02d}:{:02d}".format(*zip_date)},
         "seller_profile_id": PROFILE_ID,
         "title_as_saved": clean(item_title.get_text(" ", strip=True)),
         "item_url": offer["url"],

@@ -14,7 +14,9 @@
 
 ## Публикация сайта
 
-GitHub Pages включается рабочим процессом [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml): при пуше в `main` он прогоняет офлайн-тесты, собирает `site/build.py` и публикует **только `site/public`** как сайт GitHub Pages. Публичный адрес — `https://aifirsts.github.io/MATRIX2/`. Публиковать корень репозитория нельзя: в нём лежат исследовательские JSON, отзывы и исходные манифесты.
+Рабочий процесс [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) при пуше в `main` (или запуске вручную — `workflow_dispatch`) прогоняет офлайн-тесты, собирает `site/build.py` и публикует **только `site/public`** как сайт GitHub Pages. Публичный адрес после включения — `https://aifirsts.github.io/MATRIX2/`.
+
+**Статус на 28.10.2026: публикация не выполнена** — у аккаунта владельца репозитория Actions заблокирована биллингом («account is locked due to a billing issue»), а токену этой сессии недоступны API настроек репозитория и GitHub Pages (403 «Resource not accessible by integration»). Готовый сайт лежит в `site/public` (16 страниц, 150 изображений) и опубликовывается одной командой после разблокировки: переименовать ветку `MAIN2` в `main` (или просто сделать её основной) и запустить `deploy.yml` вручную либо пушем. Публиковать корень репозитория нельзя: в нём лежат исследовательские JSON, отзывы и исходные манифесты.
 
 ## Файлы
 

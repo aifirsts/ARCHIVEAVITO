@@ -65,7 +65,7 @@ def decode_message(data: bytes) -> str:
     objects = plist["$objects"]
     text = objects[1]
     if not isinstance(text, str):
-        raise ValueError("Unexpected plist payload")
+        raise TypeError("Unexpected plist payload")
     return text
 
 
@@ -95,7 +95,7 @@ def main() -> int:
         data = archive.read(entry)
         text = decode_message(data)
         (OUT_DIR / saved).write_text(text, encoding="utf-8")
-        header, _, body = text.partition("\n")
+        header, _, _rest = text.partition("\n")
         messages.append(
             {
                 "source_entry": entry,

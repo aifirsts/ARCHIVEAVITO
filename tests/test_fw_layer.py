@@ -77,7 +77,7 @@ class FwManifestTest(unittest.TestCase):
             ("8166255881", products["8166255881"]["seller_message_2026_10_28"]),
             ("8230842563", products["8230842563"]["seller_message_2026_10_28"]),
         ):
-            offer = [o for o in LAYER["offers"] if o["matches_catalog_id"] == pid][0]
+            offer = next(o for o in LAYER["offers"] if o["matches_catalog_id"] == pid)
             self.assertEqual(note["price_rub_claimed"], offer["price_rub_claimed"])
             self.assertEqual(note["price_quote_ru"], offer["price_quote_ru"])
         # No other product may carry the layer.

@@ -112,7 +112,7 @@ class Publisher:
 
     # Heavy PNG frames from the mobile screenshots are re-encoded for the web; the
     # source file and its hash stay recorded so the published derivative is traceable.
-    JPEG_KINDS = {"crop", "pageprint"}
+    JPEG_KINDS = ("crop", "pageprint")
     JPEG_QUALITY = 82
 
     def publish(self, product_id: str, kind: str, number: int, source_path: str) -> dict:
@@ -704,8 +704,10 @@ def render_index(feed, products, fw_offers, css_version, js_version) -> str:
     total_slides = sum(len(p["slides"]) for p in products)
     total_photos = sum(p["photo_count"] for p in products)
     chips = [
-        f'<button type="button" class="chip" data-filter-category="all" aria-pressed="true">'
-        f'Все<span class="chip__count">{len(products)}</span></button>'
+        (
+            f'<button type="button" class="chip" data-filter-category="all" aria-pressed="true">'
+            f'Все<span class="chip__count">{len(products)}</span></button>'
+        )
     ]
     for name, count in categories:
         chips.append(

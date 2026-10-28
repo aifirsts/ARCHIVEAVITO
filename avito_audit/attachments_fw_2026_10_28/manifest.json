@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "archive_name": "Attachments-Fw_ 27.10 avito.zip",
+  "source_repository": "usaforyou/MANUS1",
+  "source_commit": "68d7c1f7cb99d3f47a4159bf3ff93d80b194e8fe",
+  "source_commit_date_utc": "2026-10-28T13:03:40Z",
+  "archive_sha256": "216adc3cb760c13c5ea85da0a8cf0a5baf9ecb51748ec4619ad4c456bcbc349c",
+  "archive_bytes": 669505,
+  "entries_count": 10,
+  "verified_at": "2026-10-28",
+  "safety": {
+    "nested_archives": 0,
+    "html_or_js_entries": 0,
+    "pdf_entries": 0,
+    "notes": "Seven Apple binary plists decoded with stdlib plistlib; three JPEG photos copied byte-for-byte; nothing executed."
+  },
+  "messages": [
+    {
+      "source_entry": "text.txt",
+      "sha256": "8cb457d7f79f70accaa1c588f9024671e612a6f6ca01f86a52c82dfd2254f497",
+      "bytes": 425,
+      "format": "apple_binary_plist_nskeyedarchiver",
+      "decoded_file": "message_01.txt",
+      "sender_line": "Алина Зуева, [25 окт. 2026 в 17:18]",
+      "text": "Алина Зуева, [25 окт. 2026 в 17:18]\nПрофиль пользователя https://www.avito.ru/user/b2165ff5492372c90fab55f7223f9d3b/profile?src=sharing\n"
+    },
+    {
+      "source_entry": "text-1.txt",
+      "sha256": "c33a69c9778b01bd132f93eafeedf0bc2358ff289bde6ecc6203fdd1ef10d4c7",
+      "bytes": 296,
+      "format": "apple_binary_plist_nskeyedarchiver",
+      "decoded_file": "message_02.txt",
+      "sender_line": "Алина Зуева, [28 окт. 2026 в 13:51]",
+      "text": "Алина Зуева, [28 окт. 2026 в 13:51]\nMax face cream 11500р\nMax eye cream 6800р\n"
+    },
+    {
+      "source_entry": "text-2.txt",
+      "sha256": "32ef0227ecf3e5995da28d75d5e8e4acb16a172988464f9c60042299cc235af1",
+      "bytes": 1918,
+      "format": "apple_binary_plist_nskeyedarchiver",
+      "decoded_file": "message_03.txt",
+      "sender_line": "Алина Зуева, [28 окт. 2026 в 13:51]",
+      "text": "Алина Зуева, [28 окт. 2026 в 13:51]\n✨ IMAGE Skincare — The MAX Collection\nПрофессиональный уход с технологией растительных стволовых клеток, пептидами и антиоксидантами.\n\nThe MAX Eye Crème (15 мл) — крем для кожи вокруг глаз.\n• Помогает уменьшить видимость мелких морщин.\n• Увлажняет и повышает упругость кожи.\n• Помогает уменьшить признаки усталости и старения.\n\nThe MAX Crème (48 г) — омолаживающий крем для лица.\n• Способствует выработке коллагена и поддержанию упругости кожи.\n• Помогает разглаживать морщины и улучшать текстуру кожи.\n• Обеспечивает интенсивное увлажнение и антиоксидантную защиту.\n\nКому рекомендуется?\nЖенщинам при первых признаках старения, снижении упругости, сухости кожи и появлении морщин.\n\nКогда применять?\nЕжедневно утром и вечером после очищения кожи. Подходит для профилактического антивозрастного ухода и коррекции уже заметных возрастных изменений.\n"
+    },
+    {
+      "source_entry": "text-3.txt",
+      "sha256": "f99fb9bb616276118fb1a3c3fe00a7506c5caa57d48f1719d3ffab4dd1f07c4a",
+      "bytes": 325,
+      "format": "apple_binary_plist_nskeyedarchiver",
+      "decoded_file": "message_04.txt",
+      "sender_line": "Алина Зуева, [28 окт. 2026 в 13:51]",
+      "text": "Алина Зуева, [28 окт. 2026 в 13:51]\nSPF 30 мойсчерайзер (с тинтом и без тинта) 4900 р\n"
+    },
+    {
+      "source_entry": "text-4.txt",
+      "sha256": "30e2900bea671225705fdc6e0bdf9656fe3193f8b7132da4dcab0fc6d15fe998",
+      "bytes": 924,
+      "format": "apple_binary_plist_nskeyedarchiver",
+      "decoded_file": "message_05.txt",
+      "sender_line": "Алина Зуева, [28 окт. 2026 в 13:51]",
+      "text": "Алина Зуева, [28 окт. 2026 в 13:51]\n☀️ IMAGE Skincare — DAILY PREVENTION SPF 30\n\nМинеральная защита от солнца, увлажнение и профилактика фотостарения кожи в одном средстве!\n \nА вот эти минеральные мойсчерайзеры пушки-гонки💗 прекрасно увлажняют кожу, защищают от UV и придают коже благородный блеск, а если с тинтом, то еще и подстраивается под любой тон кожи 👍👍👍 и выравнивает ее.\n"
+    },
+    {
+      "source_entry": "text-5.txt",
+      "sha256": "dcad3b34139d701f6d3c6099cb8cce454190a824e41585e4f3dd6b69b6668bd6",
+      "bytes": 321,
+      "format": "apple_binary_plist_nskeyedarchiver",
+      "decoded_file": "message_06.txt",
+      "sender_line": "Алина Зуева, [28 окт. 2026 в 13:51]",
+      "text": "Алина Зуева, [28 окт. 2026 в 13:51]\nBiotech MD cream 10400р\nBiotech MD serum 11500р\n"
+    },
+    {
+      "source_entry": "text-6.txt",
+      "sha256": "6d184954cc76542b2e0093496ffd1fae2f0ebb6cf06051af931e6bc8360c1500",
+      "bytes": 3638,
+      "format": "apple_binary_plist_nskeyedarchiver",
+      "decoded_file": "message_07.txt",
+      "sender_line": "Алина Зуева, [28 окт. 2026 в 13:51]",
+      "text": "Алина Зуева, [28 окт. 2026 в 13:51]\n✨ IMAGE Skincare MD — профессиональный антивозрастной уход для восстановления, защиты и омоложения кожи.\n\n1. IMAGE MD Biotech Longevity Crème (50 г)\nКрем для поддержания молодости и упругости кожи.\nСодержит фирменный антиоксидантный комплекс XOSM™ и компоненты, направленные на поддержание защитного барьера кожи.\nОсновные преимущества:\nПомогает уменьшить видимость морщин.\nПоддерживает упругость и эластичность кожи.\nОбеспечивает увлажнение и питание.\nПомогает защищать кожу от окислительного стресса.\nУлучшает внешний вид и текстуру кожи.\nКому рекомендуется: при сухости, тусклом цвете лица, снижении упругости и появлении возрастных изменений. Подходит для профилактического антивозрастного ухода.\nПрименение: утром и вечером после сыворотки.\n2. IMAGE MD Restoring Power-C Serum (30 мл)\nАнтиоксидантная сыворотка с витамином C для сияния и восстановления кожи.\nСодержит витамин C, который участвует в синтезе коллагена и помогает защищать кожу от свободных радикалов.\nОсновные преимущества:\nПоддерживает естественный синтез коллагена.\nПомогает уменьшить выраженность пигментации.\nВыравнивает тон и улучшает сияние кожи.\nСпособствует уменьшению видимости мелких морщин.\nОбеспечивает антиоксидантную защиту.\nКому рекомендуется: при тусклом цвете лица, неровном тоне, признаках фотостарения, пигментации и снижении упругости кожи.\nПрименение: преимущественно утром после очищения, перед кремом и SPF.\nПочему эти два средства хорошо сочетаются?\nСыворотка с витамином C + антивозрастной крем обеспечивают комплексный уход: антиоксидантную защиту, увлажнение и поддержку упругости кожи.\nОни могут использоваться вместе для профилактики преждевременного старения и коррекции уже заметных возрастных изменений.\n"
+    }
+  ],
+  "photos": [
+    {
+      "source_entry": "image.",
+      "sha256": "9e0f5026fc005a7f61fc9ce10843aa2965253c38bff53432ff93cb0950f3d254",
+      "bytes": 218296,
+      "dimensions": [
+        960,
+        1280
+      ],
+      "format": "jpeg",
+      "saved_file": "seller_photo_01.jpg",
+      "classification": "seller_chat_photo"
+    },
+    {
+      "source_entry": "image-1.",
+      "sha256": "eb138e224c685538e63e07219e75c3f8144580d8e8bf1a80b6bb26d3f11e1443",
+      "bytes": 215236,
+      "dimensions": [
+        960,
+        1280
+      ],
+      "format": "jpeg",
+      "saved_file": "seller_photo_02.jpg",
+      "classification": "seller_chat_photo"
+    },
+    {
+      "source_entry": "image-2.",
+      "sha256": "02ca836471a0b941b693856c391a962d65b607f83a6d9a16c953d9e7cf15d408",
+      "bytes": 227164,
+      "dimensions": [
+        960,
+        1280
+      ],
+      "format": "jpeg",
+      "saved_file": "seller_photo_03.jpg",
+      "classification": "seller_chat_photo"
+    }
+  ],
+  "status": "seller_claims_2026_10_28_not_verified_live"
+}

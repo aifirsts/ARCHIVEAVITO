@@ -33,6 +33,12 @@ REPO_URL = "https://github.com/aifirsts/MATRIX2"
 SOURCE_REPO_URL = "https://github.com/usaforyou/MANUS1"
 ARCHIVE_LABEL = "26.10.2026"
 NEW_LAYER_LABEL = "25.10.2026"
+FW_LAYER_LABEL = "28.10.2026"
+FW_STATUS_TITLES = {
+    "new_offer_not_in_archived_catalog": "нет архивной карточки",
+    "fresh_price_for_archived_listing": "свежая цена для архивной карточки",
+    "not_merged_similar_archived_product_exists": "похожий товар в архиве не объединяется",
+}
 
 CATEGORY_TITLES = {
     "Красота и уход": "Косметика и уход",
@@ -165,6 +171,21 @@ def newest_layer(product):
     return product.get("supplemental_2026_10_25") or {}
 
 
+def fresh_layer(product):
+    """2026-10-28 seller-chat price layer, already validated by handoff/generate.py."""
+    return product.get("seller_message_2026_10_28") or None
+
+
+def price_delta(claimed, archived):
+    if not claimed or not archived:
+        return None
+    delta = claimed - archived
+    percent = round(delta / archived * 100)
+    sign = "+" if delta > 0 else "−"
+    value = f"{abs(delta):,}".replace(",", "\u202f")
+    return f"{sign}{value}\u00a0₽ ({sign}{abs(percent)}\u00a0%)"
+
+
 def dedupe(lines):
     """Keep the first occurrence of each limitation (case/spacing insensitive)."""
     seen, result = set(), []
@@ -184,9 +205,10 @@ DROPPED_LIMIT_MARKERS = (
 )
 
 
-def build_products(feed, attachments, publisher):
+def build_products(feed, attachments, publisher, fw_public):
     """Turn the handoff package into page view models."""
     by_id = {p["id"]: p for p in feed["products"]}
+    fw_photo_alts = {p["path"]: p["alt_ru"] for p in feed["seller_messages_2026_10_28"]["photos"]}
     captured = {str(item["id"]): item["page_print_creation_date_utc"] for item in attachments["listings"]}
     crops_by_position = {
         c["gallery_position_in_badge"]: c
@@ -376,6 +398,10 @@ def build_products(feed, attachments, publisher):
         price_text = rub(listing.get("price_rub"))
         old_price = listing.get("old_price_text")
         discount = listing.get("discount_text")
+        fresh = fresh_layer(product)
+        fresh_price_value = fresh["price_rub_claimed"] if fresh else None
+        fresh_price_text = rub(fresh_price_value) if fresh else None
+        fresh_delta = price_delta(fresh_price_value, listing.get("price_rub")) if fresh else None
         if page_print.get("stock_status_text"):
             stock = page_print["stock_status_text"]
             stock_kind = "warn"
@@ -415,6 +441,13 @@ def build_products(feed, attachments, publisher):
                 "slug": slug(title),
                 "price_text": price_text,
                 "price_value": listing.get("price_rub") or 0,
+                "fresh_price_text": fresh_price_text,
+                "fresh_price_value": fresh_price_value,
+                "fresh_delta": fresh_delta,
+                "fresh_quote": fresh["price_quote_ru"] if fresh else None,
+                "fresh_note": fresh["note_ru"] if fresh else None,
+                "fresh_photo": fw_public.get(fresh["photo_path"]) if fresh else None,
+                "fresh_photo_alt": fw_photo_alts.get(fresh["photo_path"]) if fresh else None,
                 "old_price": old_price,
                 "discount": discount,
                 "has_discount": bool(discount),
@@ -472,6 +505,11 @@ def head(title: str, description: str, root: str, css_version: str, js_version: 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(description)}">
+<meta property="og:title" content="{esc(title)}">
+<meta property="og:description" content="{esc(description)}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta name="twitter:card" content="summary">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#f7f3ec">
 <link rel="stylesheet" href="{root}assets/site.css?v={css_version}">
@@ -490,7 +528,7 @@ def header(active: str, root: str) -> str:
 
     return f"""<aside class="topline" aria-label="Статус архивных данных">
   <div class="wrap">
-    <span><strong>Архивная витрина</strong> · снимок данных 26.10.2026</span>
+    <span><strong>Архивная витрина</strong> · снимок 26.10.2026 + сообщения продавца 28.10.2026</span>
     <span>Цены и наличие не актуальны — уточняйте в объявлении Avito</span>
   </div>
 </aside>
@@ -580,6 +618,25 @@ def card(product) -> str:
     discount = (
         f'<span class="card__flag">{esc(product["discount"])} в архиве</span>' if product["has_discount"] else ""
     )
+    fresh_flag = (
+        f'<span class="card__flag card__flag--fresh">цена продавца · {FW_LAYER_LABEL}</span>'
+        if product["fresh_price_text"]
+        else ""
+    )
+    if product["fresh_price_text"]:
+        price_row = f"""<div class="card__price">
+        <span class="price price--fresh">{product["fresh_price_text"]}</span>
+        <span class="price-tag price-tag--fresh">продавец 28.10</span>
+        <span class="price price--muted">{product["price_text"]}</span>
+        <span class="price-tag">архив 26.10</span>
+      </div>
+      <p class="card__delta">{esc(product["fresh_delta"])} к архивной цене</p>"""
+    else:
+        price_row = f"""<div class="card__price">
+        <span class="price">{product["price_text"]}</span>
+        <span class="price-tag">архив</span>
+        {f'<span class="price--old">{esc(product["old_price"])}</span>' if product["old_price"] else ""}
+      </div>"""
     return f"""<li>
   <a class="card" href="item/{esc(product["id"])}.html"
      data-card data-id="{esc(product["id"])}"
@@ -590,15 +647,12 @@ def card(product) -> str:
      data-search="{esc(product["search"])}">
     {media}
       {discount}
+      {fresh_flag}
     </div>
     <div class="card__body">
       <span class="card__brand">{esc(product["brand"] or product["category_title"])}</span>
       <h2 class="card__title">{esc(product["title"])}</h2>
-      <div class="card__price">
-        <span class="price">{product["price_text"]}</span>
-        <span class="price-tag">архив</span>
-        {f'<span class="price--old">{esc(product["old_price"])}</span>' if product["old_price"] else ""}
-      </div>
+      {price_row}
       <div class="card__foot">
         <span>{esc(product["location"])}</span>
         <span>№ {esc(product["id"])}</span>
@@ -608,7 +662,40 @@ def card(product) -> str:
 </li>"""
 
 
-def render_index(feed, products, css_version, js_version) -> str:
+def build_fw_offers(feed, fw_public):
+    """View models for the 2026-10-28 seller-chat offers section."""
+    layer = feed["seller_messages_2026_10_28"]
+    alts = {p["path"]: p["alt_ru"] for p in layer["photos"]}
+    dims = {p["path"]: p.get("dimensions") or [960, 1280] for p in layer["photos"]}
+    offers = []
+    for offer in layer["offers"]:
+        photos = [
+            {
+                "src": fw_public[path],
+                "alt": alts.get(path, ""),
+                "width": dims.get(path, [960, 1280])[0],
+                "height": dims.get(path, [960, 1280])[1],
+            }
+            for path in offer["photo_paths"]
+        ]
+        offers.append(
+            {
+                "id": offer["offer_id"],
+                "title": offer["title_ru"],
+                "brand": offer["brand"],
+                "price_text": rub(offer["price_rub_claimed"]),
+                "quote": offer["price_quote_ru"],
+                "photos": photos,
+                "matches": offer["matches_catalog_id"],
+                "status": offer["status"],
+                "status_title": FW_STATUS_TITLES.get(offer["status"], offer["status"]),
+                "note": offer.get("note_ru") or offer.get("match_note_ru") or "",
+            }
+        )
+    return offers
+
+
+def render_index(feed, products, fw_offers, css_version, js_version) -> str:
     categories = []
     for name in CATEGORY_TITLES:
         count = sum(1 for p in products if p["category"] == name)
@@ -626,6 +713,59 @@ def render_index(feed, products, css_version, js_version) -> str:
             f'{esc(CATEGORY_TITLES[name])}<span class="chip__count">{count}</span></button>'
         )
     cards = "\n".join(card(p) for p in products)
+    offer_cards = []
+    for offer in fw_offers:
+        photos = ""
+        if offer["photos"]:
+            first = offer["photos"][0]
+            photos = (
+                f'<div class="offer__media"><img src="{esc(first["src"])}" alt="{esc(first["alt"])}" '
+                f'loading="lazy" decoding="async" width="{first["width"]}" height="{first["height"]}" data-watch>'
+                f'<span class="offer__photo-note">фото из сообщения · 28.10.2026</span></div>'
+            )
+        if offer["matches"]:
+            match = (
+                f'<a class="offer__link" href="item/{esc(offer["matches"])}.html">Свежая цена для архивной карточки '
+                f'№ {esc(offer["matches"])} →</a>'
+            )
+        else:
+            match = f'<span class="offer__link offer__link--muted">{esc(offer["status_title"])}</span>'
+        offer_cards.append(
+            f"""<article class="offer">
+  {photos}
+  <div class="offer__body">
+    <span class="card__brand">{esc(offer["brand"])}</span>
+    <h3 class="offer__title">{esc(offer["title"])}</h3>
+    <p class="offer__price"><span class="price price--fresh">{offer["price_text"]}</span>
+    <span class="price-tag price-tag--fresh">сообщение 28.10</span></p>
+    <blockquote class="offer__quote">«{esc(offer["quote"])}»</blockquote>
+    {match}
+    <p class="panel__note">{esc(offer["note"])}</p>
+  </div>
+</article>"""
+        )
+    offers_section = f"""
+  <section class="section" aria-labelledby="fresh-offers">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="section__index">Свежий слой · {FW_LAYER_LABEL}</span>
+        <h2 id="fresh-offers">Предложения продавца из сообщений от 28.10.2026</h2>
+      </div>
+      <div class="notice notice--sage" role="note">
+        <span class="notice__icon" aria-hidden="true">◆</span>
+        <div>
+          <p><strong>Это не архивные объявления.</strong> Цены прислал продавец в переписке 28.10.2026 (архив
+          «Attachments-Fw_ 27.10 avito.zip», 7 текстов и 3 фото). На Avito они не проверялись; наличие, комплектация
+          и подлинность экземпляров не подтверждены. Подписи на фото прочитаны машинным OCR и согласованы с текстом
+          сообщений.</p>
+        </div>
+      </div>
+      <div class="offers-grid">
+{chr(10).join(offer_cards)}
+      </div>
+    </div>
+  </section>
+"""
     archives = len(feed["source_archives_sha256"])
     body = f"""<main id="main">
   <section class="hero">
@@ -634,7 +774,8 @@ def render_index(feed, products, css_version, js_version) -> str:
         <p class="eyebrow">Витрина магазина · Москва и Домодедово</p>
         <h1>Архивный каталог <em>Beauty Supply</em></h1>
         <p class="hero__lead">Косметика, уход и аксессуары из {len(products)} объявлений магазина на Avito.
-        Каждая карточка собрана из сохранённых архивов и помечает источник каждого фото и каждой цены.</p>
+        Каждая карточка собрана из сохранённых архивов и помечает источник каждого фото и каждой цены.
+        Свежие цены от продавца из сообщений {FW_LAYER_LABEL} показаны отдельным слоем.</p>
       </div>
       <dl class="hero__stats">
         <div><dt>{len(products)}</dt><dd>объявлений</dd></div>
@@ -648,7 +789,8 @@ def render_index(feed, products, css_version, js_version) -> str:
     <div class="notice" role="note">
       <span class="notice__icon" aria-hidden="true">◆</span>
       <div>
-        <p><strong>Это архивная витрина, а не действующий магазин.</strong> Цены и наличие — снимок на 26.10.2026.
+        <p><strong>Это архивная витрина, а не действующий магазин.</strong> Цены и наличие — снимок на 26.10.2026;
+        отдельным слоем показаны цены из сообщений продавца от {FW_LAYER_LABEL} (заявления продавца, на Avito не проверены).
         {esc(PRICE_NOTE)}</p>
         <p>Кнопка «Открыть объявление на Avito» ведёт на страницу конкретного лота: там продавец подтверждает цену,
         комплектацию и способ получения. Онлайн-оплаты и обещаний доставки на этом сайте нет.</p>
@@ -699,13 +841,15 @@ def render_index(feed, products, css_version, js_version) -> str:
     </div>
   </section>
 
+  {offers_section}
+
   <section class="section" aria-labelledby="how">
     <div class="wrap">
       <div class="section__head">
         <span class="section__index">Как читать витрину</span>
-        <h2 id="how">Три уровня сведений, которые нельзя смешивать</h2>
+        <h2 id="how">Четыре уровня сведений, которые нельзя смешивать</h2>
       </div>
-      <div class="columns">
+      <div class="columns columns--four">
         <div class="panel">
           <h3>{source_badge("listing", "Фото объявления")}</h3>
           <p class="prose">Кадры галереи из сохранённых архивных страниц и профиля. Показываем, чей это кадр и какой он по счёту.</p>
@@ -713,6 +857,10 @@ def render_index(feed, products, css_version, js_version) -> str:
         <div class="panel">
           <h3>{source_badge("new", "Слой 25.10.2026")}</h3>
           <p class="prose">Мобильные скриншоты галереи и печати страниц из нового архива: восполнили кадр № 4 часов и фото лота «2 шт».</p>
+        </div>
+        <div class="panel">
+          <h3>{source_badge("fresh", "Сообщения 28.10.2026")}</h3>
+          <p class="prose">Свежие цены и фото от продавца из переписки. Это заявления продавца, а не проверенные данные объявлений.</p>
         </div>
         <div class="panel panel--maker">
           <h3>{source_badge("maker", "Производитель")}</h3>
@@ -868,6 +1016,27 @@ def render_product(product, products, feed, css_version, js_version) -> str:
 
     slides_count = len(product["slides"])
     pill_class = "pill" + (f" pill--{product['stock_kind']}" if product["stock_kind"] else "")
+    fresh_panel = ""
+    if product["fresh_price_text"]:
+        fresh_photo = ""
+        if product["fresh_photo"]:
+            fresh_photo = f"""<figure class="fresh-price__figure">
+          <img src="../{esc(product["fresh_photo"])}" alt="{esc(product["fresh_photo_alt"])}" loading="lazy" decoding="async" width="480" height="640" data-watch>
+          <figcaption>Фото из сообщения продавца от {FW_LAYER_LABEL} · не архивная фотография объявления</figcaption>
+        </figure>"""
+        fresh_panel = f"""<div class="fresh-price">
+          <p class="fresh-price__head">
+            <span class="source-badge source-badge--fresh">Сообщение продавца · {FW_LAYER_LABEL}</span>
+          </p>
+          <p class="fresh-price__row">
+            <span class="price price--fresh price--big">{product["fresh_price_text"]}</span>
+            <span class="pill pill--info">{esc(product["fresh_delta"])} к архивной</span>
+          </p>
+          <blockquote class="prose prose--quote">«{esc(product["fresh_quote"])}»</blockquote>
+          {fresh_photo}
+          <p class="panel__note">{esc(product["fresh_note"])} Цена из переписки с продавцом от {FW_LAYER_LABEL}:
+          на Avito она не проверялась, наличие и комплектация не подтверждены.</p>
+        </div>"""
     body = f"""<main id="main">
   <div class="wrap">
     <nav class="breadcrumb" aria-label="Хлебные крошки">
@@ -906,6 +1075,7 @@ def render_product(product, products, feed, css_version, js_version) -> str:
           {f'<span class="price-tag">{esc(product["discount"])}</span>' if product["discount"] else ""}
         </div>
         <p class="buybox__note">{esc(PRICE_NOTE)}</p>
+        {fresh_panel}
         <p class="pill-row">
           <span class="{pill_class}">{esc(product["stock"])}</span>
           <span class="pill__note">{esc(product["stock_caption"])}</span>
@@ -1028,7 +1198,7 @@ def render_product(product, products, feed, css_version, js_version) -> str:
     )
 
 
-def render_sources(feed, products, attachments, css_version, js_version) -> str:
+def render_sources(feed, products, attachments, fw, css_version, js_version) -> str:
     archive_rows = "".join(
         f"<tr><th scope=\"row\">{esc(name)}</th><td><code>{esc(value)}</code></td></tr>"
         for name, value in feed["source_archives_sha256"].items()
@@ -1057,7 +1227,7 @@ def render_sources(feed, products, attachments, css_version, js_version) -> str:
     </div>
 
     <h2>1. Архивные ZIP и контрольные суммы</h2>
-    <p>Семь архивов из <a href="{SOURCE_REPO_URL}" rel="noopener noreferrer">usaforyou/MANUS1</a>. ZIP-файлы и HTML из них
+    <p>Восемь архивов из <a href="{SOURCE_REPO_URL}" rel="noopener noreferrer">usaforyou/MANUS1</a>. ZIP-файлы и HTML из них
     в репозиторий сайта не копировались; HTML/JS из архивов не исполнялись.</p>
     <div class="table-wrap" role="region" aria-label="Архивы и их SHA-256" tabindex="0"><table>
       <caption class="visually-hidden">Архивы и их SHA-256</caption>
@@ -1084,7 +1254,26 @@ def render_sources(feed, products, attachments, css_version, js_version) -> str:
       поэтому в репозитории не дублируются; кадры 3, 5, 6, 7 добавлены в большем разрешении, кадр 4 — впервые.</li>
     </ul>
 
-    <h2>3. Как разделены сведения</h2>
+    <h2>3. Свежий архив Attachments-Fw_ 27.10 avito.zip (проверен 28.10.2026)</h2>
+    <ul>
+      <li>Источник: коммит <code>{esc(fw["source_commit"])}</code> от {esc(fw["source_commit_date_utc"])} (UTC);
+      файл {fw["bytes"]}&nbsp;байт, SHA-256 <code>{esc(fw["sha256"])}</code>.</li>
+      <li>Внутри {fw["entries"]} записей: 7 Apple-плist’ов (NSKeyedArchiver) с текстами сообщений продавца
+      и 3 JPEG-фото 960×1280. Вложенных архивов, HTML и JS нет; плist’ы разобраны стандартной библиотекой.</li>
+      <li><strong>Цены продавца от 28.10.2026 13:51:</strong> Max face cream — 11&nbsp;500&nbsp;₽; Max eye cream —
+      6&nbsp;800&nbsp;₽; SPF&nbsp;30 мойсчерайзер (с тинтом и без) — 4&nbsp;900&nbsp;₽; Biotech MD cream —
+      10&nbsp;400&nbsp;₽; Biotech MD serum — 11&nbsp;500&nbsp;₽.</li>
+      <li><strong>Сопоставление с каталогом:</strong> SPF-крем соответствует объявлению
+      <a href="item/8166255881.html">8166255881</a> (архив 5&nbsp;900&nbsp;₽ → 4&nbsp;900&nbsp;₽),
+      Biotech-крем — объявлению <a href="item/8230842563.html">8230842563</a> (архив 12&nbsp;999&nbsp;₽ →
+      10&nbsp;400&nbsp;₽). Сыворотка Power-C <em>не объединяется</em> с архивной «Restoring Youth Serum»
+      (<a href="item/8165960870.html">8165960870</a>) — это разные официальные продукты.</li>
+      <li>Сообщение от 25.10.2026 17:18 содержит ссылку на тот же профиль продавца
+      (<code>b2165ff5…</code>), что и архивный снимок. Подписи на трёх фото прочитаны машинным OCR
+      и согласованы с текстами сообщений; ZIP в репозиторий не копировался.</li>
+    </ul>
+
+    <h2>4. Как разделены сведения</h2>
     <div class="table-wrap" role="region" aria-label="Разделение слоёв данных" tabindex="0"><table>
       <thead><tr><th scope="col">Слой</th><th scope="col">Что это</th><th scope="col">Чего это не доказывает</th></tr></thead>
       <tbody>
@@ -1092,19 +1281,21 @@ def render_sources(feed, products, attachments, css_version, js_version) -> str:
         <td>Не подтверждает текущее состояние и комплектацию</td></tr>
         <tr><td>{source_badge("new", "Слой 25.10.2026")}</td><td>Мобильные скриншоты галереи и печати страниц</td>
         <td>Не подтверждает текущую цену и наличие; в печати статус «зарезервирован» относится к 25.10.2026</td></tr>
+        <tr><td>{source_badge("fresh", "Сообщения 28.10.2026")}</td><td>Цены и фото из переписки с продавцом</td>
+        <td>Заявление продавца вне Avito: цена, наличие и комплектация не проверены</td></tr>
         <tr><td>{source_badge("maker", "Производитель")}</td><td>Описания линеек, INCI, иллюстрации брендов</td>
         <td>Не фотография лота, не гарантия подлинности и не разрешение на коммерческое использование</td></tr>
       </tbody>
     </table></div>
 
-    <h2>4. Все 14 объявлений каталога</h2>
+    <h2>5. Все 14 объявлений каталога</h2>
     <div class="table-wrap" role="region" aria-label="Все объявления каталога" tabindex="0"><table>
       <thead><tr><th scope="col">Товар</th><th scope="col">ID</th><th scope="col">Категория</th>
       <th scope="col">Архивная цена</th><th scope="col">Кадров</th><th scope="col">Пропусков</th></tr></thead>
       <tbody>{product_rows}</tbody>
     </table></div>
 
-    <h2>5. Что не публикуется</h2>
+    <h2>6. Что не публикуется</h2>
     <ul>
       <li>Отзывы, имена покупателей и контактные данные из исходного HTML.</li>
       <li>Исходные HTML, JS, CSS и трекеры архивов, а также исследовательские JSON с отзывами: они вне веб-корня.</li>
@@ -1112,7 +1303,7 @@ def render_sources(feed, products, attachments, css_version, js_version) -> str:
       <li>Полосы статуса iOS с временем и зарядом устройства: из скриншотов вырезан только кадр галереи.</li>
     </ul>
 
-    <h2>6. Как купить</h2>
+    <h2>7. Как купить</h2>
     <p>Откройте объявление нужного товара на Avito и напишите продавцу. Уточните цену, состояние, комплектацию
     (особенно лот «2 шт» и набор коробок MoonSwatch), способ получения и сроки. Сайт не оформляет заказы и не
     принимает платежи.</p>
@@ -1124,7 +1315,7 @@ def render_sources(feed, products, attachments, css_version, js_version) -> str:
     return (
         head(
             "Источники и статус данных — Beauty Supply",
-            "Происхождение данных Beauty Supply: семь архивных ZIP, новый слой 25.10.2026, SHA-256, "
+            "Происхождение данных Beauty Supply: восемь архивных ZIP, слои 25.10.2026 и 28.10.2026, SHA-256, "
             "пропущенные фотографии и ограничения архива.",
             "",
             css_version,
@@ -1167,7 +1358,12 @@ def build(out: Path | None = None) -> dict:
 
     hashes: dict[str, str] = {}
     publisher = Publisher(out, hashes)
-    products = build_products(feed, attachments, publisher)
+    fw_public = {}
+    for number, photo in enumerate(feed["seller_messages_2026_10_28"]["photos"], 1):
+        record = publisher.publish("seller-2026-10-28", "sellermsg", number, photo["path"])
+        fw_public[photo["path"]] = record["public_path"]
+    products = build_products(feed, attachments, publisher, fw_public)
+    fw_offers = build_fw_offers(feed, fw_public)
 
     css_source = (SRC / "site.css").read_text(encoding="utf-8")
     js_source = (SRC / "app.js").read_text(encoding="utf-8")
@@ -1190,10 +1386,10 @@ def build(out: Path | None = None) -> dict:
     )
 
     (out / "index.html").write_text(
-        render_index(feed, products, css_version, js_version), encoding="utf-8"
+        render_index(feed, products, fw_offers, css_version, js_version), encoding="utf-8"
     )
     (out / "sources.html").write_text(
-        render_sources(feed, products, attachments, css_version, js_version), encoding="utf-8"
+        render_sources(feed, products, attachments, feed["seller_messages_2026_10_28"], css_version, js_version), encoding="utf-8"
     )
     for product in products:
         (out / "item" / f"{product['id']}.html").write_text(

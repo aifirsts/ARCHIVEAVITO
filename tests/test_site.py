@@ -17,6 +17,16 @@ PUBLIC = ROOT / "site" / "public"
 FEED = json.loads((ROOT / "handoff/storefront.json").read_text(encoding="utf-8"))
 IMAGES = json.loads((PUBLIC / "assets" / "images.json").read_text(encoding="utf-8"))
 PRODUCT_IDS = sorted(p["id"] for p in FEED["products"])
+PAGES = IMAGES["product_pages"]
+
+
+def page_of(product_id: str) -> Path:
+    """Public page path for a listing id (SEO slugs live in the build manifest)."""
+    return PUBLIC / PAGES[product_id]
+
+
+def product_page_text(product_id: str) -> str:
+    return page_text(page_of(product_id))
 
 
 class Refs(HTMLParser):
@@ -76,10 +86,16 @@ class SiteStructureTest(unittest.TestCase):
     def test_pages_exist_for_every_listing(self):
         self.assertTrue((PUBLIC / "index.html").is_file())
         self.assertTrue((PUBLIC / "sources.html").is_file())
-        pages = sorted(p.stem for p in (PUBLIC / "item").glob("*.html"))
-        self.assertEqual(pages, PRODUCT_IDS)
+        pages = sorted(p.name for p in (PUBLIC / "item").glob("*.html"))
+        self.assertEqual(pages, sorted(p.split("/")[-1] for p in PAGES.values()))
         self.assertEqual(IMAGES["products"], 14)
-        self.assertEqual(len(IMAGES["pages"]), 16)
+        self.assertEqual(len(IMAGES["pages"]), 18)
+        for required in ("podbor.html", "404.html", "robots.txt", "sitemap.xml", "CNAME"):
+            self.assertTrue((PUBLIC / required).is_file(), required)
+        # every slug must be unique and ASCII-only so the URLs stay shareable
+        for product_id, page in PAGES.items():
+            self.assertTrue(product_id in page)
+            self.assertEqual(page, page.encode("ascii", "ignore").decode())
 
     def test_catalogue_lists_all_cards_once(self):
         html = (PUBLIC / "index.html").read_text(encoding="utf-8")
@@ -106,7 +122,7 @@ class SiteStructureTest(unittest.TestCase):
             for img in parse(page).imgs:
                 self.assertIn("alt", img, f"{page.name}: <img> без alt — {img.get('src')}")
             # decorative gallery thumbnails may use empty alt, real photos may not
-        product = parse(PUBLIC / "item" / "8296456393.html")
+        product = parse(page_of("8296456393"))
         alts = [img.get("alt", "") for img in product.imgs]
         self.assertTrue(any("Оригинальные часы" in alt for alt in alts))
 
@@ -118,7 +134,7 @@ class SiteStructureTest(unittest.TestCase):
         self.assertIn('role="search"', index)
         self.assertIn('aria-pressed="true"', index)
         self.assertIn("<legend>Категория</legend>", index)
-        item = (PUBLIC / "item" / "8296456393.html").read_text(encoding="utf-8")
+        item = page_of("8296456393").read_text(encoding="utf-8")
         self.assertIn('aria-roledescription="галерея"', item)
         self.assertIn("<dialog", item)
         self.assertIn('data-gallery-thumb', item)
@@ -126,8 +142,9 @@ class SiteStructureTest(unittest.TestCase):
 
     def test_no_research_layer_in_web_root(self):
         published = {p.name for p in PUBLIC.iterdir()}
-        self.assertEqual(published, {"index.html", "sources.html", "item", "assets", "favicon.svg",
-                                     "favicon.ico", ".nojekyll"})
+        self.assertEqual(published, {"index.html", "podbor.html", "sources.html", "404.html", "item",
+                                     "assets", "favicon.svg", "favicon.ico", ".nojekyll",
+                                     "robots.txt", "sitemap.xml", "site.webmanifest", "CNAME"})
         for pattern in ("*.json", "*.zip", "*.md", "*.py"):
             for path in PUBLIC.rglob(pattern):
                 self.assertEqual(path.relative_to(PUBLIC).as_posix(), "assets/images.json")
@@ -136,7 +153,10 @@ class SiteStructureTest(unittest.TestCase):
         # reviews from the profile snapshot must not appear on the site
         snapshot = json.loads((ROOT / "avito_audit/snapshot.json").read_text(encoding="utf-8"))
         reviews = snapshot.get("reviews") or []
-        texts = [page_text(p) for p in (PUBLIC / "item").glob("*.html")] + [page_text(PUBLIC / "index.html")]
+        texts = [page_text(p) for p in (PUBLIC / "item").glob("*.html")] + [
+            page_text(PUBLIC / "index.html"),
+            page_text(PUBLIC / "podbor.html"),
+        ]
         for review in reviews:
             author = (review.get("author") or "").strip() if isinstance(review, dict) else ""
             if len(author) > 3:
@@ -145,26 +165,26 @@ class SiteStructureTest(unittest.TestCase):
 
     def test_prices_are_labelled_as_archive(self):
         for pid in PRODUCT_IDS:
-            text = page_text(PUBLIC / "item" / f"{pid}.html")
+            text = product_page_text(pid)
             self.assertIn("архив", text.lower(), pid)
             self.assertIn("не текущая", text, pid)
             feed_product = next(p for p in FEED["products"] if p["id"] == pid)
-            self.assertIn(feed_product["avito_url"], (PUBLIC / "item" / f"{pid}.html").read_text(encoding="utf-8"))
-            self.assertNotIn("<form action", (PUBLIC / "item" / f"{pid}.html").read_text(encoding="utf-8").lower())
+            self.assertIn(feed_product["avito_url"], page_of(pid).read_text(encoding="utf-8"))
+            self.assertNotIn("<form action", page_of(pid).read_text(encoding="utf-8").lower())
         for pid in PRODUCT_IDS:
-            text = page_text(PUBLIC / "item" / f"{pid}.html")
+            text = product_page_text(pid)
             for promise in ("оплатить картой", "оформить заказ", "доставка за", "в наличии — да"):
                 self.assertNotIn(promise, text.lower())
 
     def test_watch_missing_slot_and_case_limits_are_visible(self):
-        watches = page_text(PUBLIC / "item" / "8296456393.html")
+        watches = product_page_text("8296456393")
         self.assertIn("позиции № 9", watches)
         self.assertIn("9 фотографий", watches)
         self.assertIn("кадр 4", watches.lower())
-        case = page_text(PUBLIC / "item" / "8350792227.html")
+        case = product_page_text("8350792227")
         self.assertIn("Второй чехол", case)
         self.assertIn("8102096652", case)
-        self.assertNotIn("Speck Presidio2 Pro — iPhone 15 Pro Max (2 шт)", (PUBLIC / "item/8350792227.html").read_text(encoding="utf-8"))
+        self.assertNotIn("Speck Presidio2 Pro — iPhone 15 Pro Max (2 шт)", page_of("8350792227").read_text(encoding="utf-8"))
 
 
 class SiteAssetsTest(unittest.TestCase):

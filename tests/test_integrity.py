@@ -60,8 +60,10 @@ class RepositoryIntegrityTest(unittest.TestCase):
         self.assertEqual(expected_paths, set((ROOT / "avito_audit/images").glob("*/*.jpg")))
 
     def test_all_local_documentation_links_resolve(self):
+        # vendored/virtual-env trees are not part of the repository content
+        ignored = {".git", ".venv", "node_modules", "venv", "site-packages"}
         for file in ROOT.rglob("*.md"):
-            if ".git" in file.parts:
+            if ignored.intersection(file.parts):
                 continue
             for target in re.findall(r"(?<!\[)\[[^\]]+\]\(([^)]+)\)", file.read_text(encoding="utf-8")):
                 if not target.startswith(("http:", "https:", "mailto:", "#")):

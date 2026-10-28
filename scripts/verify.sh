@@ -49,8 +49,8 @@ else
   fail "handoff/storefront.json устарел: python handoff/generate.py && git diff"
 fi
 
-need "3/8 сборка сайта актуальна (site/public)"
-if "$PYTHON" site/build.py --check; then pass "site/public совпадает с источниками"
+need "3/8 сборки актуальны (site/public и зеркало docs/)"
+if "$PYTHON" site/build.py --check; then pass "site/public и docs/ совпадают с источниками"
 else fail "сборка устарела: python site/build.py"; fi
 
 need "4/8 офлайн-тесты"
@@ -77,7 +77,8 @@ need "6/8 разметка: HTML5 + доступность"
 if [ "$OFFLINE" = "1" ]; then
   skip "html-validate (офлайн-режим)"
 elif command -v npx >/dev/null 2>&1; then
-  if npx --yes html-validate@11 "site/public/**/*.html"; then pass "18 страниц без ошибок разметки"
+  if npx --yes html-validate@11 "site/public/**/*.html" && npx --yes html-validate@11 "docs/**/*.html"; then
+    pass "18 страниц сайта и 18 страниц зеркала без ошибок разметки"
   else fail "html-validate"; fi
 else
   skip "npx не установлен"
@@ -97,6 +98,12 @@ else
       pass "$(grep -c '  ok ' /tmp/dom_smoke.log) проверок поведения, 0 ошибок JS"
     else
       fail "dom_smoke (подробности: /tmp/dom_smoke.log)"; tail -15 /tmp/dom_smoke.log
+    fi
+    # the same markup served from a subdirectory, exactly like GitHub Pages
+    if SITE_DIR=docs SITE_ORIGIN=https://aifirsts.github.io/MATRIX2/ node site/tests/dom/dom_smoke.js >/tmp/dom_smoke_pages.log 2>&1; then
+      pass "$(grep -c '  ok ' /tmp/dom_smoke_pages.log) проверок зеркала в подкаталоге /MATRIX2/"
+    else
+      fail "dom_smoke зеркала (подробности: /tmp/dom_smoke_pages.log)"; tail -15 /tmp/dom_smoke_pages.log
     fi
   else
     skip "jsdom не установлен (npm install --prefix site/tests/dom)"

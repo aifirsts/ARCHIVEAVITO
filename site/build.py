@@ -21,14 +21,16 @@ import hashlib
 import html
 import json
 import shutil
+import struct
 import sys
 import tempfile
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import quote, urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = Path(__file__).resolve().parent / "src"
 OUT = Path(__file__).resolve().parent / "public"
+DOCS = ROOT / "docs"
 
 CONFIG = json.loads(
     (Path(__file__).resolve().parent / "site_config.json").read_text(encoding="utf-8")
@@ -37,6 +39,7 @@ BRAND = CONFIG["brand"]
 INITIALS = CONFIG["initials"]
 DOMAIN = CONFIG["domain"]
 SITE_URL = CONFIG["site_url"].rstrip("/")
+PAGES_URL = CONFIG.get("pages_url", "").rstrip("/")
 TAGLINE = CONFIG["tagline"]
 AREA = CONFIG["area_served"]
 
@@ -175,6 +178,54 @@ def esc(value) -> str:
 
 def sha(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def site_prefix(base_url: str = "") -> str:
+    """Path the build is mounted at: ``""`` for a domain root, ``"/MATRIX2"`` for project Pages.
+
+    Used only by ``404.html``: GitHub Pages answers unknown deep URLs with that
+    file while keeping the requested path, so its links must be absolute.
+    """
+    return urlparse(base_url or SITE_URL).path.rstrip("/")
+
+
+def favicon_ico(size: int = 32) -> bytes:
+    """A valid ICO file (32x32, 32-bit BMP payload) drawn without any dependency.
+
+    The old placeholder was six zero bytes — an ICO header with no images, which
+    browsers report as a decode error. Drawing the mark with a tiny bitmap font
+    keeps the build byte-for-byte reproducible on every Pillow version.
+    """
+    glyphs = {
+        "B": ("11110", "10001", "10001", "11110", "10001", "10001", "11110"),
+        "S": ("01111", "10000", "10000", "01110", "00001", "00001", "11110"),
+    }
+    scale, gap = 2, 4
+    cell_w = len(glyphs["B"][0]) * scale
+    width = cell_w * len(glyphs) + gap
+    height = len(glyphs["B"]) * scale
+    left, top = (size - width) // 2, (size - height) // 2
+    ink, paper = (26, 22, 19), (247, 243, 236)
+    pixels = [[ink] * size for _ in range(size)]
+    for index, letter in enumerate("BS"):
+        origin_x = left + index * (cell_w + gap)
+        for row, line in enumerate(glyphs[letter]):
+            for col, bit in enumerate(line):
+                if bit != "1":
+                    continue
+                for dy in range(scale):
+                    for dx in range(scale):
+                        pixels[top + row * scale + dy][origin_x + col * scale + dx] = paper
+    rows = b"".join(
+        b"".join(bytes((b, g, r, 255)) for (r, g, b) in pixels[y]) for y in reversed(range(size))
+    )
+    mask = b"\x00" * (4 * size)  # 1 bpp AND mask, 32-bit rows, fully opaque
+    header = struct.pack(
+        "<IiiHHIIiiII", 40, size, size * 2, 1, 32, 0, len(rows) + len(mask), 0, 0, 0, 0
+    )
+    payload = header + rows + mask
+    entry = struct.pack("<BBBBHHII", size % 256, size % 256, 0, 0, 1, 32, len(payload), 22)
+    return struct.pack("<HHH", 0, 1, 1) + entry + payload
 
 
 def clamp(text: str, limit: int) -> str:
@@ -1811,6 +1862,13 @@ def render_sources(feed, products, attachments, fw, css_version, js_version) -> 
         f"<td>{p['photo_count']}</td><td>{p['missing_count']}</td></tr>"
         for p in products
     )
+    mirror_note = ""
+    if PAGES_URL and SITE_URL == PAGES_URL:
+        mirror_note = (
+            f'\n      <li>Эта страница — зеркало витрины на GitHub Pages: '
+            f'<a href="{esc(PAGES_URL)}/">{esc(PAGES_URL)}/</a>. Собрана тем же <code>site/build.py</code>, '
+            "но с собственным каноническим адресом и без файла <code>CNAME</code>, чтобы не занимать домен магазина.</li>"
+        )
     body = f"""<main id="main" class="doc">
   <div class="wrap">
     <p class="eyebrow">Происхождение данных</p>
@@ -1908,7 +1966,7 @@ def render_sources(feed, products, attachments, fw, css_version, js_version) -> 
       <li>Домен <strong>{esc(DOMAIN)}</strong> зарегистрирован в Porkbun; для статического хостинга Porkbun
       каталог <code>site/public</code> загружается в корень сайта (FTP или GitHub Connect).</li>
       <li>Канонический адрес каждой страницы — <code>{esc(SITE_URL)}</code>; карта сайта
-      <a href="sitemap.xml">sitemap.xml</a>, правила обхода — <a href="robots.txt">robots.txt</a>.</li>
+      <a href="sitemap.xml">sitemap.xml</a>, правила обхода — <a href="robots.txt">robots.txt</a>.</li>{mirror_note}
       <li>Сайт не является публичной офертой. Цены и наличие подтверждает продавец в Avito.</li>
     </ul>
 
@@ -1936,8 +1994,15 @@ def render_sources(feed, products, attachments, fw, css_version, js_version) -> 
 
 
 def render_404(products, feed, css_version, js_version) -> str:
+    # A 404 page is served for *any* unknown path, including deep ones
+    # (/MATRIX2/item/gone/…), and the browser resolves relative links against
+    # that path. Every internal reference here is therefore absolute.
+    root = f"{site_prefix()}/"
     picks = products[:4]
-    cards = "".join(mini_card(p).replace('href="../', 'href="').replace('src="../', 'src="') for p in picks)
+    cards = "".join(
+        mini_card(p).replace('href="../', f'href="{root}').replace('src="../', f'src="{root}')
+        for p in picks
+    )
     body = f"""<main id="main">
   <section class="hero hero--compact">
     <div class="wrap">
@@ -1945,8 +2010,8 @@ def render_404(products, feed, css_version, js_version) -> str:
       <h1>Такой страницы <em>нет</em></h1>
       <p class="hero__lead">Возможно, ссылка устарела: адреса карточек изменились после обновления витрины.
       Вернитесь в каталог — там все {len(products)} лотов с фото и ценами.</p>
-      <p class="hero__actions"><a class="button" href="index.html">В каталог</a>
-      <a class="button button--ghost" href="index.html?q=SPF">Подбор с SPF</a></p>
+      <p class="hero__actions"><a class="button" href="{root}index.html">В каталог</a>
+      <a class="button button--ghost" href="{root}index.html?q=SPF">Подбор с SPF</a></p>
     </div>
   </section>
   <section class="section">
@@ -1964,15 +2029,15 @@ def render_404(products, feed, css_version, js_version) -> str:
         head(
             f"Страница не найдена — {BRAND}",
             "Такой страницы нет. Вернитесь в каталог косметики и аксессуаров Beauty Supply.",
-            "",
+            root,
             css_version,
             js_version,
             path="404.html",
             noindex=True,
         )
-        + header("404", "")
+        + header("404", root)
         + body
-        + footer(feed, products, "")
+        + footer(feed, products, root)
     ).replace("__JS_VERSION__", js_version)
 
 
@@ -2048,7 +2113,35 @@ def robots_txt() -> str:
     )
 
 
-def build(out: Path | None = None) -> dict:
+def build(out: Path | None = None, base_url: str | None = None, write_cname: bool = True) -> dict:
+    """Render the site into ``out`` for the canonical origin ``base_url``.
+
+    ``SITE_URL`` drives canonical links, Open Graph URLs, JSON-LD, the sitemap
+    and robots.txt, so a mirror hosted elsewhere (GitHub Pages) is built with
+    its own origin instead of borrowing the shop domain.
+    """
+    global SITE_URL
+    previous = SITE_URL
+    if base_url:
+        SITE_URL = base_url.rstrip("/")
+    try:
+        return _build(out, write_cname)
+    finally:
+        SITE_URL = previous
+
+
+def build_pages_mirror(target: Path | None = None) -> dict:
+    """Render the GitHub Pages copy into ``docs/`` (never carries a CNAME).
+
+    A ``CNAME`` file would make Pages claim the Porkbun domain, so the mirror
+    is built without it and with ``pages_url`` as its canonical origin.
+    """
+    if not PAGES_URL:
+        raise SystemExit("В site/site_config.json не задан pages_url — зеркало собрать некуда")
+    return build(target if target is not None else DOCS, base_url=PAGES_URL, write_cname=False)
+
+
+def _build(out: Path | None, write_cname: bool) -> dict:
     """Render the site into ``out`` (defaults to ``site/public``).
 
     The target directory is only removed after every input and dependency has
@@ -2088,22 +2181,26 @@ def build(out: Path | None = None) -> dict:
         f'text-anchor="middle">{esc(INITIALS)}</text></svg>'
     )
     (out / "favicon.svg").write_text(favicon, encoding="utf-8")
-    (out / "favicon.ico").write_bytes(b"\x00\x00\x01\x00\x00\x00")
+    (out / "favicon.ico").write_bytes(favicon_ico())
+    # Relative manifest URLs keep the installable app working both at a domain
+    # root and in a subdirectory (/MATRIX2/ on GitHub Pages project sites).
     manifest_web = {
         "name": f"{BRAND} — профессиональная косметика",
         "short_name": BRAND,
         "description": TAGLINE,
-        "start_url": "/",
+        "start_url": "./",
+        "scope": "./",
         "display": "standalone",
         "background_color": "#f7f3ec",
         "theme_color": "#1a1613",
         "lang": "ru",
-        "icons": [{"src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}],
+        "icons": [{"src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}],
     }
     (out / "site.webmanifest").write_text(
         json.dumps(manifest_web, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-    (out / "CNAME").write_text(DOMAIN + "\n", encoding="utf-8")
+    if write_cname:
+        (out / "CNAME").write_text(DOMAIN + "\n", encoding="utf-8")
     (out / "robots.txt").write_text(robots_txt(), encoding="utf-8")
     (out / "sitemap.xml").write_text(sitemap(products), encoding="utf-8")
     write_page(out, "404.html", render_404(products, feed, css_version, js_version))
@@ -2162,33 +2259,46 @@ def snapshot(directory: Path | None = None):
     }
 
 
+def check_builds() -> int:
+    """Fail when a committed tree (site/public or docs) differs from its sources."""
+    status = 0
+    for directory, builder in ((OUT, build), (DOCS, build_pages_mirror)):
+        label = directory.relative_to(ROOT).as_posix()
+        current = snapshot(directory)
+        if not current:
+            raise SystemExit(f"Сборки нет в {label}: сначала запустите python site/build.py")
+        # a check must never touch the published tree: build into a scratch dir
+        with tempfile.TemporaryDirectory() as tmp:
+            scratch = Path(tmp) / "mirror"
+            builder(scratch)
+            expected = snapshot(scratch)
+        if current == expected:
+            print(f"Сборка актуальна: {label} — {len(expected)} файлов")
+            continue
+        changed = sorted(set(current) ^ set(expected)) + [
+            key for key in current if key in expected and current[key] != expected[key]
+        ]
+        print(f"Сборка устарела ({label}), пересоберите сайт:", *changed[:10], sep="\n  ")
+        status = 1
+    return status
+
+
 def main(argv=None):
-    parser = argparse.ArgumentParser(description="Собрать публичный сайт в site/public")
+    parser = argparse.ArgumentParser(
+        description="Собрать витрину в site/public и зеркало для GitHub Pages в docs/"
+    )
     parser.add_argument(
         "--check",
         action="store_true",
-        help="не перезаписывать: проверить, что сохранённая сборка совпадает с источниками",
+        help="не перезаписывать: проверить, что обе сохранённые сборки совпадают с источниками",
     )
     args = parser.parse_args(argv)
     if args.check:
-        before = snapshot()
-        if not before:
-            raise SystemExit("Сборки нет: сначала запустите python site/build.py")
-        # a check must never touch the published tree: build into a scratch dir
-        with tempfile.TemporaryDirectory() as tmp:
-            build(Path(tmp) / "public")
-            after = snapshot(Path(tmp) / "public")
-        if before != after:
-            changed = sorted(set(before) ^ set(after)) + [
-                key for key in before if key in after and before[key] != after[key]
-            ]
-            print("Сборка устарела, пересоберите сайт:", *changed[:10], sep="\n  ")
-            return 1
-        print(f"Сборка актуальна: {len(after)} файлов")
-        return 0
+        return check_builds()
     manifest = build()
+    build_pages_mirror()
     print(f"Собрано страниц: {len(manifest['pages'])}, изображений: {len(manifest['images'])}")
-    print(f"Выход: {OUT.relative_to(ROOT)}")
+    print(f"Выход: {OUT.relative_to(ROOT)} (домен) и {DOCS.relative_to(ROOT)} (GitHub Pages)")
     return 0
 
 

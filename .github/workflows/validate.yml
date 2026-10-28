@@ -30,15 +30,21 @@ jobs:
         run: |
           python handoff/generate.py
           git diff --exit-code -- handoff/storefront.json
-      - name: Verify the public site is up to date with its sources
+      - name: Verify the public site and the Pages mirror are up to date
         run: |
           python site/build.py
-          git diff --exit-code -- site/public
+          git diff --exit-code -- site/public docs
       - name: Upload the built storefront
         uses: actions/upload-artifact@v4
         with:
           name: beauty-supply-site
           path: site/public
+          if-no-files-found: error
+      - name: Upload the GitHub Pages mirror
+        uses: actions/upload-artifact@v4
+        with:
+          name: beauty-supply-pages-mirror
+          path: docs
           if-no-files-found: error
 
   browser:
@@ -74,8 +80,11 @@ jobs:
       - name: Build the storefront
         run: python site/build.py
       - name: Validate markup (HTML5 + a11y) of every published page
-        run: npx --yes html-validate@11 "site/public/**/*.html"
+        run: |
+          npx --yes html-validate@11 "site/public/**/*.html"
+          npx --yes html-validate@11 "docs/**/*.html"
       - name: Headless DOM checks (search, filters, gallery, lightbox)
         run: |
           npm install --prefix site/tests/dom --no-audit --no-fund
           node site/tests/dom/dom_smoke.js
+          SITE_DIR=docs SITE_ORIGIN=https://aifirsts.github.io/MATRIX2/ node site/tests/dom/dom_smoke.js

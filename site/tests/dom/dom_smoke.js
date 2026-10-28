@@ -2,8 +2,9 @@
  *
  *   cd site/tests/dom && npm install && node dom_smoke.js
  *   node site/tests/dom/dom_smoke.js            # needs jsdom resolvable
+ *   SITE_DIR=docs SITE_ORIGIN=https://aifirsts.github.io/MATRIX2/ node dom_smoke.js
  *
- * Runs site/src/app.js against the real site/public markup in jsdom and checks
+ * Runs site/src/app.js against the real built markup in jsdom and checks
  * search, category/tag filters, sorting, the discount filter, URL state, the
  * product gallery (thumbnails, keyboard, missing slot, lightbox) and that no
  * page raises a JavaScript error. Exit code 1 on any failure.
@@ -15,9 +16,17 @@ const path = require("path");
 const { JSDOM, VirtualConsole } = require("jsdom");
 
 const ROOT = path.resolve(__dirname, "..", "..", "..");
-const PUBLIC = path.join(ROOT, "site", "public");
+// SITE_DIR/SITE_ORIGIN let the same checks run against the GitHub Pages mirror
+// (docs/), which differs only in its mount path and canonical origin.
+const PUBLIC = path.resolve(ROOT, process.env.SITE_DIR || path.join("site", "public"));
+const ORIGIN = process.env.SITE_ORIGIN || "https://usaforru.shop/";
+const MOUNT = new URL(ORIGIN).pathname.replace(/\/$/, "");
 const APP = fs.readFileSync(path.join(PUBLIC, "assets", "app.js"), "utf8");
 const MANIFEST = JSON.parse(fs.readFileSync(path.join(PUBLIC, "assets", "images.json"), "utf8"));
+
+function localPath(src) {
+  return src.startsWith(MOUNT + "/") ? src.slice(MOUNT.length + 1) : src;
+}
 
 let failures = 0;
 function check(condition, message) {
@@ -36,7 +45,7 @@ function load(pageRel, query = "") {
   virtualConsole.on("jsdomError", (error) => errors.push(String(error)));
   virtualConsole.on("error", (...args) => errors.push(args.join(" ")));
   const dom = new JSDOM(html, {
-    url: "https://usaforru.shop/" + pageRel + query,
+    url: ORIGIN + pageRel + query,
     runScripts: "outside-only",
     pretendToBeVisual: true,
     virtualConsole,
@@ -178,7 +187,7 @@ console.log("[404]");
   check(document.querySelectorAll(".mini").length === 4, "4 рекомендации на 404");
   const sources = [...document.querySelectorAll(".mini img")].map((img) => img.getAttribute("src"));
   check(
-    sources.every((src) => fs.existsSync(path.join(PUBLIC, src))),
+    sources.every((src) => fs.existsSync(path.join(PUBLIC, localPath(src)))),
     "картинки 404 ведут на существующие файлы"
   );
   check(errors.length === 0, "нет ошибок JS на 404" + (errors[0] ? ": " + errors[0] : ""));

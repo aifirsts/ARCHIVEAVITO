@@ -1,0 +1,2035 @@
+{
+  "schema_version": 2,
+  "generator": "site/build.py",
+  "brand": "Beauty Supply",
+  "site_url": "https://aifirsts.github.io/MATRIX2",
+  "data_source": "handoff/storefront.json",
+  "archive_date": "2026-10-26",
+  "status": "archived_research_not_live_inventory",
+  "products": 14,
+  "pages": [
+    "index.html",
+    "podbor.html",
+    "sources.html",
+    "404.html",
+    "item/7942405497-hourglass-ambient-lighting-blush.html",
+    "item/7942010246-charlotte-tilbury-pillow-talk-palette.html",
+    "item/7942160038-hourglass-curator-minimalist-palette.html",
+    "item/8102096652-speck-presidio2-pro-iphone-15-pro-max.html",
+    "item/8165981546-image-skincare-vol-u-lift-body-cream.html",
+    "item/8166119490-image-skincare-vol-u-lift-concentrate.html",
+    "item/8166255881-image-daily-prevention-spf-30.html",
+    "item/8166335454-image-vital-c-night-cream.html",
+    "item/8166674710-image-daily-prevention-spf-75.html",
+    "item/8230842563-image-md-biotech-longevity-creme.html",
+    "item/7942108985-hourglass-ambient-lighting-palette.html",
+    "item/8165960870-image-md-restoring-youth-serum.html",
+    "item/8296456393-swatch-omega-moonswatch-bioceramic.html",
+    "item/8350792227-speck-presidio2-pro-2-pack.html"
+  ],
+  "product_pages": {
+    "7942405497": "item/7942405497-hourglass-ambient-lighting-blush.html",
+    "7942010246": "item/7942010246-charlotte-tilbury-pillow-talk-palette.html",
+    "7942160038": "item/7942160038-hourglass-curator-minimalist-palette.html",
+    "8102096652": "item/8102096652-speck-presidio2-pro-iphone-15-pro-max.html",
+    "8165981546": "item/8165981546-image-skincare-vol-u-lift-body-cream.html",
+    "8166119490": "item/8166119490-image-skincare-vol-u-lift-concentrate.html",
+    "8166255881": "item/8166255881-image-daily-prevention-spf-30.html",
+    "8166335454": "item/8166335454-image-vital-c-night-cream.html",
+    "8166674710": "item/8166674710-image-daily-prevention-spf-75.html",
+    "8230842563": "item/8230842563-image-md-biotech-longevity-creme.html",
+    "7942108985": "item/7942108985-hourglass-ambient-lighting-palette.html",
+    "8165960870": "item/8165960870-image-md-restoring-youth-serum.html",
+    "8296456393": "item/8296456393-swatch-omega-moonswatch-bioceramic.html",
+    "8350792227": "item/8350792227-speck-presidio2-pro-2-pack.html"
+  },
+  "sitemap": "sitemap.xml",
+  "images": [
+    {
+      "public_path": "assets/img/7942010246/gallery-01.jpg",
+      "published_sha256": "da7c757a418b1649e869e6f047c889b77a2b0fa2866d80f2ff14c6270f4a9833",
+      "bytes": 80209,
+      "source_path": "avito_audit/item_pages/images/7942010246/01_large.jpg",
+      "source_sha256": "da7c757a418b1649e869e6f047c889b77a2b0fa2866d80f2ff14c6270f4a9833",
+      "source_bytes": 80209,
+      "transform": "copy",
+      "dimensions": [
+        700,
+        700
+      ]
+    },
+    {
+      "public_path": "assets/img/7942010246/gallery-02.jpg",
+      "published_sha256": "2ebfada8fdf7dfcf867dc214af284453099b983a48a374f8d8aa56ae59e02ebf",
+      "bytes": 97005,
+      "source_path": "avito_audit/item_pages/images/7942010246/02_large.jpg",
+      "source_sha256": "2ebfada8fdf7dfcf867dc214af284453099b983a48a374f8d8aa56ae59e02ebf",
+      "source_bytes": 97005,
+      "transform": "copy",
+      "dimensions": [
+        700,
+        700
+      ]
+    },
+    {
+      "public_path": "assets/img/7942010246/gallery-03.jpg",
+      "published_sha256": "90ba9d1fbe1e2be2b227f8f1df0bbbf055254ad13ceaf1eabe084c1bd64bc7a5",
+      "bytes": 4026,
+      "source_path": "avito_audit/item_pages/images/7942010246/03_thumb.jpg",
+      "source_sha256": "90ba9d1fbe1e2be2b227f8f1df0bbbf055254ad13ceaf1eabe084c1bd64bc7a5",
+      "source_bytes": 4026,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942010246/gallery-04.jpg",
+      "published_sha256": "ce98ed7703ae50bd730e46981202520575a84f7d6cacfa224ef57aef885e5f7f",
+      "bytes": 4759,
+      "source_path": "avito_audit/item_pages/images/7942010246/04_thumb.jpg",
+      "source_sha256": "ce98ed7703ae50bd730e46981202520575a84f7d6cacfa224ef57aef885e5f7f",
+      "source_bytes": 4759,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942010246/gallery-05.jpg",
+      "published_sha256": "f15fa7e2dfcab5f86a948c8a539ae3bb11d61c645eecaf10c960216a17791dee",
+      "bytes": 5519,
+      "source_path": "avito_audit/item_pages/images/7942010246/05_thumb.jpg",
+      "source_sha256": "f15fa7e2dfcab5f86a948c8a539ae3bb11d61c645eecaf10c960216a17791dee",
+      "source_bytes": 5519,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942010246/gallery-06.jpg",
+      "published_sha256": "5b9c436da4b2bb32fbd303f9347314dea430ee775debed8c88df5cf3230c5e82",
+      "bytes": 4287,
+      "source_path": "avito_audit/item_pages/images/7942010246/06_thumb.jpg",
+      "source_sha256": "5b9c436da4b2bb32fbd303f9347314dea430ee775debed8c88df5cf3230c5e82",
+      "source_bytes": 4287,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942010246/gallery-07.jpg",
+      "published_sha256": "fbcee0f3e122c3521ca51052f503bfe960d49e30546f684cd71abd7da9130635",
+      "bytes": 5154,
+      "source_path": "avito_audit/item_pages/images/7942010246/07_thumb.jpg",
+      "source_sha256": "fbcee0f3e122c3521ca51052f503bfe960d49e30546f684cd71abd7da9130635",
+      "source_bytes": 5154,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942010246/gallery-08.jpg",
+      "published_sha256": "ea449cf34b263200e3d9c3de0618ed0a3768ef019630837c92286ad71156db8a",
+      "bytes": 110863,
+      "source_path": "avito_audit/item_pages/images/7942010246/08_large.jpg",
+      "source_sha256": "ea449cf34b263200e3d9c3de0618ed0a3768ef019630837c92286ad71156db8a",
+      "source_bytes": 110863,
+      "transform": "copy",
+      "dimensions": [
+        720,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/7942010246/maker-01.png",
+      "published_sha256": "89e3cf403561f29e1c873a7da0cb5f355681975109aa85d066c4b183cd07db09",
+      "bytes": 330250,
+      "source_path": "official_assets/7942010246.png",
+      "source_sha256": "89e3cf403561f29e1c873a7da0cb5f355681975109aa85d066c4b183cd07db09",
+      "source_bytes": 330250,
+      "transform": "copy",
+      "dimensions": [
+        660,
+        660
+      ]
+    },
+    {
+      "public_path": "assets/img/7942010246/profile-01.jpg",
+      "published_sha256": "150b0e9a1e7d2212407851731637650b19c05526fc519aa1c84b47376b1926d5",
+      "bytes": 8771,
+      "source_path": "avito_audit/images/7942010246/01.jpg",
+      "source_sha256": "150b0e9a1e7d2212407851731637650b19c05526fc519aa1c84b47376b1926d5",
+      "source_bytes": 8771,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/7942010246/profile-02.jpg",
+      "published_sha256": "3d95274a866b9326c565ae06d67b55d43157a9a19573b457bee61d0595583977",
+      "bytes": 13581,
+      "source_path": "avito_audit/images/7942010246/02.jpg",
+      "source_sha256": "3d95274a866b9326c565ae06d67b55d43157a9a19573b457bee61d0595583977",
+      "source_bytes": 13581,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/7942010246/profile-03.jpg",
+      "published_sha256": "6a088cc5650a1c399f9de832285def5c055e8a377b9438347995dbc575b04486",
+      "bytes": 6123,
+      "source_path": "avito_audit/images/7942010246/03.jpg",
+      "source_sha256": "6a088cc5650a1c399f9de832285def5c055e8a377b9438347995dbc575b04486",
+      "source_bytes": 6123,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/7942010246/profile-04.jpg",
+      "published_sha256": "12d8fdba55f709a52a14920349912e89a106eb16cf0b425885c6d2361f9ea413",
+      "bytes": 8388,
+      "source_path": "avito_audit/images/7942010246/04.jpg",
+      "source_sha256": "12d8fdba55f709a52a14920349912e89a106eb16cf0b425885c6d2361f9ea413",
+      "source_bytes": 8388,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/7942010246/profile-05.jpg",
+      "published_sha256": "940f98609d62eefbd0b6be365330cc241160442e4fb3f70eb8f197da8bbfa1ca",
+      "bytes": 11097,
+      "source_path": "avito_audit/images/7942010246/05.jpg",
+      "source_sha256": "940f98609d62eefbd0b6be365330cc241160442e4fb3f70eb8f197da8bbfa1ca",
+      "source_bytes": 11097,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/7942108985/gallery-01.jpg",
+      "published_sha256": "df86bb6cc2e1790d3dab54f21d7d5f80d9d8fdbdf69d7b07c132ec19c28131d8",
+      "bytes": 77814,
+      "source_path": "avito_audit/item_pages/images/7942108985/01_large.jpg",
+      "source_sha256": "df86bb6cc2e1790d3dab54f21d7d5f80d9d8fdbdf69d7b07c132ec19c28131d8",
+      "source_bytes": 77814,
+      "transform": "copy",
+      "dimensions": [
+        700,
+        700
+      ]
+    },
+    {
+      "public_path": "assets/img/7942108985/gallery-02.jpg",
+      "published_sha256": "27617effb93760ba98bfe1cb0ff16630c0211473a986795c89a2eea307ee89ab",
+      "bytes": 85408,
+      "source_path": "avito_audit/item_pages/images/7942108985/02_large.jpg",
+      "source_sha256": "27617effb93760ba98bfe1cb0ff16630c0211473a986795c89a2eea307ee89ab",
+      "source_bytes": 85408,
+      "transform": "copy",
+      "dimensions": [
+        700,
+        700
+      ]
+    },
+    {
+      "public_path": "assets/img/7942108985/gallery-03.jpg",
+      "published_sha256": "37c7d1409b557feebe3fa8980b08eb7cc01f97df3e91b319d4b00554b3ae17ba",
+      "bytes": 3479,
+      "source_path": "avito_audit/item_pages/images/7942108985/03_thumb.jpg",
+      "source_sha256": "37c7d1409b557feebe3fa8980b08eb7cc01f97df3e91b319d4b00554b3ae17ba",
+      "source_bytes": 3479,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942108985/gallery-04.jpg",
+      "published_sha256": "919382d50fd2c96bcdabc594cdb12227028138a84d9ec41b26a28afa7a06a581",
+      "bytes": 6824,
+      "source_path": "avito_audit/item_pages/images/7942108985/04_thumb.jpg",
+      "source_sha256": "919382d50fd2c96bcdabc594cdb12227028138a84d9ec41b26a28afa7a06a581",
+      "source_bytes": 6824,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942108985/gallery-05.jpg",
+      "published_sha256": "7d62a9b678a18990a2494769e8b462406fa824095bc019fb21ba67e080a84ad7",
+      "bytes": 4914,
+      "source_path": "avito_audit/item_pages/images/7942108985/05_thumb.jpg",
+      "source_sha256": "7d62a9b678a18990a2494769e8b462406fa824095bc019fb21ba67e080a84ad7",
+      "source_bytes": 4914,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942108985/gallery-06.jpg",
+      "published_sha256": "e9f3acbdcd06efc36fc3b2e0736a9193acafb1013b561ffe5292d7b4b7d3fb36",
+      "bytes": 5482,
+      "source_path": "avito_audit/item_pages/images/7942108985/06_thumb.jpg",
+      "source_sha256": "e9f3acbdcd06efc36fc3b2e0736a9193acafb1013b561ffe5292d7b4b7d3fb36",
+      "source_bytes": 5482,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942108985/gallery-07.jpg",
+      "published_sha256": "ed5f59264f58a6bbef9dda0dcb38ab07883056e06c315e5dcde87715f03b4ef0",
+      "bytes": 6115,
+      "source_path": "avito_audit/item_pages/images/7942108985/07_thumb.jpg",
+      "source_sha256": "ed5f59264f58a6bbef9dda0dcb38ab07883056e06c315e5dcde87715f03b4ef0",
+      "source_bytes": 6115,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942108985/gallery-08.jpg",
+      "published_sha256": "6c7fd402491af76de65c0bc12e5aeace4d5d4bbeb0030b18086f2317ebf2ef84",
+      "bytes": 4646,
+      "source_path": "avito_audit/item_pages/images/7942108985/08_thumb.jpg",
+      "source_sha256": "6c7fd402491af76de65c0bc12e5aeace4d5d4bbeb0030b18086f2317ebf2ef84",
+      "source_bytes": 4646,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942108985/gallery-09.jpg",
+      "published_sha256": "b2962de1caa226cc0d9add17ba72974cc2fcae6f11dd1aa4cecc21f526a96115",
+      "bytes": 5753,
+      "source_path": "avito_audit/item_pages/images/7942108985/09_thumb.jpg",
+      "source_sha256": "b2962de1caa226cc0d9add17ba72974cc2fcae6f11dd1aa4cecc21f526a96115",
+      "source_bytes": 5753,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942108985/gallery-10.jpg",
+      "published_sha256": "8eb03501aaad7484fdcd408d8f5fcb8347f6b898571ff29e7f6970cf34881836",
+      "bytes": 93270,
+      "source_path": "avito_audit/item_pages/images/7942108985/10_large.jpg",
+      "source_sha256": "8eb03501aaad7484fdcd408d8f5fcb8347f6b898571ff29e7f6970cf34881836",
+      "source_bytes": 93270,
+      "transform": "copy",
+      "dimensions": [
+        720,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/7942108985/maker-01.png",
+      "published_sha256": "e04305a11706b9041f924ae893f3b5fb193d09d36a9ded395c426aec601f42be",
+      "bytes": 123869,
+      "source_path": "official_assets/7942108985.png",
+      "source_sha256": "e04305a11706b9041f924ae893f3b5fb193d09d36a9ded395c426aec601f42be",
+      "source_bytes": 123869,
+      "transform": "copy",
+      "dimensions": [
+        480,
+        480
+      ]
+    },
+    {
+      "public_path": "assets/img/7942108985/profile-01.jpg",
+      "published_sha256": "6c6efec4913d3ccf5e6ee26a5899a6d0daa17bcc66de7fde631b8c1cf0a83316",
+      "bytes": 7752,
+      "source_path": "avito_audit/images/7942108985/01.jpg",
+      "source_sha256": "6c6efec4913d3ccf5e6ee26a5899a6d0daa17bcc66de7fde631b8c1cf0a83316",
+      "source_bytes": 7752,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/7942108985/profile-02.jpg",
+      "published_sha256": "ead5d6cd45652a7db97def677429f192d6af0e99026566f2d6b875d526d43f80",
+      "bytes": 9758,
+      "source_path": "avito_audit/images/7942108985/02.jpg",
+      "source_sha256": "ead5d6cd45652a7db97def677429f192d6af0e99026566f2d6b875d526d43f80",
+      "source_bytes": 9758,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/7942108985/profile-03.jpg",
+      "published_sha256": "cf4f01788c78ca48e0c66983a343c6fcf89d0d4e0fd93932405d40a90c48a1fa",
+      "bytes": 5242,
+      "source_path": "avito_audit/images/7942108985/03.jpg",
+      "source_sha256": "cf4f01788c78ca48e0c66983a343c6fcf89d0d4e0fd93932405d40a90c48a1fa",
+      "source_bytes": 5242,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/7942108985/profile-04.jpg",
+      "published_sha256": "de3d18b347d9022a68fd1aeaa4148a453c17989d48b837b519e87ec7b4549c2f",
+      "bytes": 15650,
+      "source_path": "avito_audit/images/7942108985/04.jpg",
+      "source_sha256": "de3d18b347d9022a68fd1aeaa4148a453c17989d48b837b519e87ec7b4549c2f",
+      "source_bytes": 15650,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/7942108985/profile-05.jpg",
+      "published_sha256": "9fbef54d4d3495483098728dd00582df457f728aacf5c283dde656ae920879b1",
+      "bytes": 10118,
+      "source_path": "avito_audit/images/7942108985/05.jpg",
+      "source_sha256": "9fbef54d4d3495483098728dd00582df457f728aacf5c283dde656ae920879b1",
+      "source_bytes": 10118,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/7942160038/gallery-01.jpg",
+      "published_sha256": "2a05decc57587f3cd550b1324bdef78e70c3755d8094ba1a8677b9b83fe65c9c",
+      "bytes": 78046,
+      "source_path": "avito_audit/item_pages/images/7942160038/01_large.jpg",
+      "source_sha256": "2a05decc57587f3cd550b1324bdef78e70c3755d8094ba1a8677b9b83fe65c9c",
+      "source_bytes": 78046,
+      "transform": "copy",
+      "dimensions": [
+        700,
+        700
+      ]
+    },
+    {
+      "public_path": "assets/img/7942160038/gallery-02.jpg",
+      "published_sha256": "dbe3ccc0d24fba8ef84ffcb2c8e899956d68428f213624cf84b835a376ab6078",
+      "bytes": 96489,
+      "source_path": "avito_audit/item_pages/images/7942160038/02_large.jpg",
+      "source_sha256": "dbe3ccc0d24fba8ef84ffcb2c8e899956d68428f213624cf84b835a376ab6078",
+      "source_bytes": 96489,
+      "transform": "copy",
+      "dimensions": [
+        700,
+        700
+      ]
+    },
+    {
+      "public_path": "assets/img/7942160038/gallery-03.jpg",
+      "published_sha256": "ba4c52a6f6009b2d75aba6d10a094a36f96255c68a3678037573004ee9cb2880",
+      "bytes": 5314,
+      "source_path": "avito_audit/item_pages/images/7942160038/03_thumb.jpg",
+      "source_sha256": "ba4c52a6f6009b2d75aba6d10a094a36f96255c68a3678037573004ee9cb2880",
+      "source_bytes": 5314,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942160038/gallery-04.jpg",
+      "published_sha256": "69f797edae1f92f56e6140c4212ca6b67dfc6019e9f7016e971e82ba1469b2b3",
+      "bytes": 4372,
+      "source_path": "avito_audit/item_pages/images/7942160038/04_thumb.jpg",
+      "source_sha256": "69f797edae1f92f56e6140c4212ca6b67dfc6019e9f7016e971e82ba1469b2b3",
+      "source_bytes": 4372,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942160038/gallery-05.jpg",
+      "published_sha256": "432e9dfa4c0a39adac2e94454a4e19286c85835432242d470c7b6f26e35fdad3",
+      "bytes": 3002,
+      "source_path": "avito_audit/item_pages/images/7942160038/05_thumb.jpg",
+      "source_sha256": "432e9dfa4c0a39adac2e94454a4e19286c85835432242d470c7b6f26e35fdad3",
+      "source_bytes": 3002,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942160038/gallery-06.jpg",
+      "published_sha256": "27ca4deb5f3d92a6a1f167758669fe36592054c35e70935b2fcf7c78d73854e0",
+      "bytes": 4333,
+      "source_path": "avito_audit/item_pages/images/7942160038/06_thumb.jpg",
+      "source_sha256": "27ca4deb5f3d92a6a1f167758669fe36592054c35e70935b2fcf7c78d73854e0",
+      "source_bytes": 4333,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942160038/gallery-07.jpg",
+      "published_sha256": "428d7a0015f1a0f4590351d76c3fb3f726e79e29c0b4e9b610fab06dfaee3c24",
+      "bytes": 4432,
+      "source_path": "avito_audit/item_pages/images/7942160038/07_thumb.jpg",
+      "source_sha256": "428d7a0015f1a0f4590351d76c3fb3f726e79e29c0b4e9b610fab06dfaee3c24",
+      "source_bytes": 4432,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942160038/gallery-08.jpg",
+      "published_sha256": "7194c21d10859407e171315a0d796748db8fb2474a1a235c02c8eac0037ebc2c",
+      "bytes": 6349,
+      "source_path": "avito_audit/item_pages/images/7942160038/08_thumb.jpg",
+      "source_sha256": "7194c21d10859407e171315a0d796748db8fb2474a1a235c02c8eac0037ebc2c",
+      "source_bytes": 6349,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942160038/gallery-09.jpg",
+      "published_sha256": "edec2781715e933936b594477534f8844ab26694105e5c8c3ebb56c4e1761268",
+      "bytes": 5468,
+      "source_path": "avito_audit/item_pages/images/7942160038/09_thumb.jpg",
+      "source_sha256": "edec2781715e933936b594477534f8844ab26694105e5c8c3ebb56c4e1761268",
+      "source_bytes": 5468,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942160038/gallery-10.jpg",
+      "published_sha256": "25bcea02aa75715b80f54f0db04d5609c001c0011ad24148f7fd2ee669d8ad80",
+      "bytes": 101180,
+      "source_path": "avito_audit/item_pages/images/7942160038/10_large.jpg",
+      "source_sha256": "25bcea02aa75715b80f54f0db04d5609c001c0011ad24148f7fd2ee669d8ad80",
+      "source_bytes": 101180,
+      "transform": "copy",
+      "dimensions": [
+        720,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/7942160038/maker-01.png",
+      "published_sha256": "f85f426e5e2605641019ab703f5239fa81f5b274581cd01673217877b6c735ae",
+      "bytes": 102588,
+      "source_path": "official_assets/7942160038.png",
+      "source_sha256": "f85f426e5e2605641019ab703f5239fa81f5b274581cd01673217877b6c735ae",
+      "source_bytes": 102588,
+      "transform": "copy",
+      "dimensions": [
+        480,
+        480
+      ]
+    },
+    {
+      "public_path": "assets/img/7942160038/profile-01.jpg",
+      "published_sha256": "f30f988528bbb2f32ef1988cac3986ae3b37b800cf82c3544d112739d771e3c7",
+      "bytes": 8755,
+      "source_path": "avito_audit/images/7942160038/01.jpg",
+      "source_sha256": "f30f988528bbb2f32ef1988cac3986ae3b37b800cf82c3544d112739d771e3c7",
+      "source_bytes": 8755,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/7942160038/profile-02.jpg",
+      "published_sha256": "e30538d9ee28b3eecac806a62ac35f8042a0b83ee04e314e6bf7a085827e6120",
+      "bytes": 9605,
+      "source_path": "avito_audit/images/7942160038/02.jpg",
+      "source_sha256": "e30538d9ee28b3eecac806a62ac35f8042a0b83ee04e314e6bf7a085827e6120",
+      "source_bytes": 9605,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/7942160038/profile-03.jpg",
+      "published_sha256": "3cc5d81a75044aa5f0836a1def937edb933dda0f5195b1a14c86459f7828883e",
+      "bytes": 10821,
+      "source_path": "avito_audit/images/7942160038/03.jpg",
+      "source_sha256": "3cc5d81a75044aa5f0836a1def937edb933dda0f5195b1a14c86459f7828883e",
+      "source_bytes": 10821,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/7942160038/profile-04.jpg",
+      "published_sha256": "e737c1e8c52fac908012301037bddb6644c2ad372f19f4d9d17e662d695c419e",
+      "bytes": 10492,
+      "source_path": "avito_audit/images/7942160038/04.jpg",
+      "source_sha256": "e737c1e8c52fac908012301037bddb6644c2ad372f19f4d9d17e662d695c419e",
+      "source_bytes": 10492,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/7942160038/profile-05.jpg",
+      "published_sha256": "887854df3d85c41cdff2878ca37c6a52d89695f4e9aa26a9d2abdd1c3c138bd3",
+      "bytes": 7529,
+      "source_path": "avito_audit/images/7942160038/05.jpg",
+      "source_sha256": "887854df3d85c41cdff2878ca37c6a52d89695f4e9aa26a9d2abdd1c3c138bd3",
+      "source_bytes": 7529,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/7942405497/gallery-01.jpg",
+      "published_sha256": "6ee224c6698a745271e05abc14e1ac5ede114f65b0cdb1d88285ffe28b6a387f",
+      "bytes": 117105,
+      "source_path": "avito_audit/item_pages/images/7942405497/01_large.jpg",
+      "source_sha256": "6ee224c6698a745271e05abc14e1ac5ede114f65b0cdb1d88285ffe28b6a387f",
+      "source_bytes": 117105,
+      "transform": "copy",
+      "dimensions": [
+        700,
+        700
+      ]
+    },
+    {
+      "public_path": "assets/img/7942405497/gallery-02.jpg",
+      "published_sha256": "688a1c102e8bff2fb1fa33d63425cc770f6832736f3334ce70b33ca3e5a0d98b",
+      "bytes": 50238,
+      "source_path": "avito_audit/item_pages/images/7942405497/02_large.jpg",
+      "source_sha256": "688a1c102e8bff2fb1fa33d63425cc770f6832736f3334ce70b33ca3e5a0d98b",
+      "source_bytes": 50238,
+      "transform": "copy",
+      "dimensions": [
+        700,
+        700
+      ]
+    },
+    {
+      "public_path": "assets/img/7942405497/gallery-03.jpg",
+      "published_sha256": "d994938f96cfd13838d83c6de5b6d5efa15c5356247b759ec899a0571cfc6a14",
+      "bytes": 4952,
+      "source_path": "avito_audit/item_pages/images/7942405497/03_thumb.jpg",
+      "source_sha256": "d994938f96cfd13838d83c6de5b6d5efa15c5356247b759ec899a0571cfc6a14",
+      "source_bytes": 4952,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942405497/gallery-04.jpg",
+      "published_sha256": "84db16dfb0e932f690f2b5262be7a2ceff1432a69e33744dc7d31a97d004f9f7",
+      "bytes": 4823,
+      "source_path": "avito_audit/item_pages/images/7942405497/04_thumb.jpg",
+      "source_sha256": "84db16dfb0e932f690f2b5262be7a2ceff1432a69e33744dc7d31a97d004f9f7",
+      "source_bytes": 4823,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942405497/gallery-05.jpg",
+      "published_sha256": "93af0a2abd99a0dd273cdc4d2f4ba59542166cfad98c814b2a9e1d4653a9b799",
+      "bytes": 5009,
+      "source_path": "avito_audit/item_pages/images/7942405497/05_thumb.jpg",
+      "source_sha256": "93af0a2abd99a0dd273cdc4d2f4ba59542166cfad98c814b2a9e1d4653a9b799",
+      "source_bytes": 5009,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942405497/gallery-06.jpg",
+      "published_sha256": "94a50f5ca6f202f154b0c339dfbdd4248d915f5c7b3216511505dd4291ed9d0d",
+      "bytes": 6011,
+      "source_path": "avito_audit/item_pages/images/7942405497/06_thumb.jpg",
+      "source_sha256": "94a50f5ca6f202f154b0c339dfbdd4248d915f5c7b3216511505dd4291ed9d0d",
+      "source_bytes": 6011,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942405497/gallery-07.jpg",
+      "published_sha256": "abdba6a8d425ea7bff2a39778c9bf9b01e35821bea9477930df0c2042010ea1f",
+      "bytes": 6166,
+      "source_path": "avito_audit/item_pages/images/7942405497/07_thumb.jpg",
+      "source_sha256": "abdba6a8d425ea7bff2a39778c9bf9b01e35821bea9477930df0c2042010ea1f",
+      "source_bytes": 6166,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942405497/gallery-08.jpg",
+      "published_sha256": "d060cd925838f2a1d5eb45d7689e9bea220f0a013842e2879865e199c176134d",
+      "bytes": 5115,
+      "source_path": "avito_audit/item_pages/images/7942405497/08_thumb.jpg",
+      "source_sha256": "d060cd925838f2a1d5eb45d7689e9bea220f0a013842e2879865e199c176134d",
+      "source_bytes": 5115,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942405497/gallery-09.jpg",
+      "published_sha256": "6ced593a85666b57b5c2323c6e8a7deec2074c9632fd132de7585948f4d80c8f",
+      "bytes": 5551,
+      "source_path": "avito_audit/item_pages/images/7942405497/09_thumb.jpg",
+      "source_sha256": "6ced593a85666b57b5c2323c6e8a7deec2074c9632fd132de7585948f4d80c8f",
+      "source_bytes": 5551,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/7942405497/gallery-10.jpg",
+      "published_sha256": "cde805e0766970a32f52c6935f1c9c00ffdfa9d928fcc78f3495d8c9c0238f32",
+      "bytes": 100776,
+      "source_path": "avito_audit/item_pages/images/7942405497/10_large.jpg",
+      "source_sha256": "cde805e0766970a32f52c6935f1c9c00ffdfa9d928fcc78f3495d8c9c0238f32",
+      "source_bytes": 100776,
+      "transform": "copy",
+      "dimensions": [
+        720,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/7942405497/maker-01.png",
+      "published_sha256": "696b39a4436233aedfd8c5868ec028f99bb738ae142532be712a738442c1c5d4",
+      "bytes": 115672,
+      "source_path": "official_assets/7942405497.png",
+      "source_sha256": "696b39a4436233aedfd8c5868ec028f99bb738ae142532be712a738442c1c5d4",
+      "source_bytes": 115672,
+      "transform": "copy",
+      "dimensions": [
+        480,
+        480
+      ]
+    },
+    {
+      "public_path": "assets/img/7942405497/profile-01.jpg",
+      "published_sha256": "5a251641769d5251a938c59f2553b0e5f4c51a661c6aa7ddead000f29fc6eae5",
+      "bytes": 14124,
+      "source_path": "avito_audit/images/7942405497/01.jpg",
+      "source_sha256": "5a251641769d5251a938c59f2553b0e5f4c51a661c6aa7ddead000f29fc6eae5",
+      "source_bytes": 14124,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/7942405497/profile-02.jpg",
+      "published_sha256": "f7dda5e02b9fefefb9c0f81279525a818c5bcae62b8aa205b45563bdcefa14c1",
+      "bytes": 7657,
+      "source_path": "avito_audit/images/7942405497/02.jpg",
+      "source_sha256": "f7dda5e02b9fefefb9c0f81279525a818c5bcae62b8aa205b45563bdcefa14c1",
+      "source_bytes": 7657,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/7942405497/profile-03.jpg",
+      "published_sha256": "db791ff9ad5195b2591ce8407a3b729a79927e9bce5b6c460244500e4f64e50b",
+      "bytes": 11858,
+      "source_path": "avito_audit/images/7942405497/03.jpg",
+      "source_sha256": "db791ff9ad5195b2591ce8407a3b729a79927e9bce5b6c460244500e4f64e50b",
+      "source_bytes": 11858,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/7942405497/profile-04.jpg",
+      "published_sha256": "47dd20a0a9f1537fa640273870d85788cf8ec651cfe4675b6fbeb076a9f83503",
+      "bytes": 8954,
+      "source_path": "avito_audit/images/7942405497/04.jpg",
+      "source_sha256": "47dd20a0a9f1537fa640273870d85788cf8ec651cfe4675b6fbeb076a9f83503",
+      "source_bytes": 8954,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/7942405497/profile-05.jpg",
+      "published_sha256": "0a136989d48c98b77a893ae34533410eb681e2db3381c173d1750a5bf18d3fc3",
+      "bytes": 9675,
+      "source_path": "avito_audit/images/7942405497/05.jpg",
+      "source_sha256": "0a136989d48c98b77a893ae34533410eb681e2db3381c173d1750a5bf18d3fc3",
+      "source_bytes": 9675,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8102096652/gallery-01.jpg",
+      "published_sha256": "9938cd5c832c973cbb589d0a531605de80e11f3436a808cfac7a7365c8e3a749",
+      "bytes": 132445,
+      "source_path": "avito_audit/item_pages/images/8102096652/01_large.jpg",
+      "source_sha256": "9938cd5c832c973cbb589d0a531605de80e11f3436a808cfac7a7365c8e3a749",
+      "source_bytes": 132445,
+      "transform": "copy",
+      "dimensions": [
+        720,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/8102096652/gallery-02.jpg",
+      "published_sha256": "28326ce4426c41dca6aaf60d9483f20a7a661a9358a762b88239c91ea7d3bf15",
+      "bytes": 86707,
+      "source_path": "avito_audit/item_pages/images/8102096652/02_large.jpg",
+      "source_sha256": "28326ce4426c41dca6aaf60d9483f20a7a661a9358a762b88239c91ea7d3bf15",
+      "source_bytes": 86707,
+      "transform": "copy",
+      "dimensions": [
+        720,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/8102096652/gallery-03.jpg",
+      "published_sha256": "f06f56344aabef6a6cb5b88c79b6b99b9a6591589d0336cd5e8f5f1222126033",
+      "bytes": 89316,
+      "source_path": "avito_audit/item_pages/images/8102096652/03_large.jpg",
+      "source_sha256": "f06f56344aabef6a6cb5b88c79b6b99b9a6591589d0336cd5e8f5f1222126033",
+      "source_bytes": 89316,
+      "transform": "copy",
+      "dimensions": [
+        720,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/8102096652/maker-01.jpg",
+      "published_sha256": "647a95fd8d36d78b995156abea3cf7e2b48d1cec173f8d4241c1b68bcc3a411c",
+      "bytes": 70441,
+      "source_path": "official_assets/8102096652.jpg",
+      "source_sha256": "647a95fd8d36d78b995156abea3cf7e2b48d1cec173f8d4241c1b68bcc3a411c",
+      "source_bytes": 70441,
+      "transform": "copy",
+      "dimensions": [
+        1400,
+        1400
+      ]
+    },
+    {
+      "public_path": "assets/img/8102096652/profile-01.jpg",
+      "published_sha256": "34125e256d1dd964f2751ab9399ec669122a3cfd9b9071ec65419a6286fb43de",
+      "bytes": 13710,
+      "source_path": "avito_audit/images/8102096652/01.jpg",
+      "source_sha256": "34125e256d1dd964f2751ab9399ec669122a3cfd9b9071ec65419a6286fb43de",
+      "source_bytes": 13710,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8102096652/profile-02.jpg",
+      "published_sha256": "e3feaaa3f13de26541b35fd348dd143b8f8a35a883b80cd7a5dcdb01a7895904",
+      "bytes": 10864,
+      "source_path": "avito_audit/images/8102096652/02.jpg",
+      "source_sha256": "e3feaaa3f13de26541b35fd348dd143b8f8a35a883b80cd7a5dcdb01a7895904",
+      "source_bytes": 10864,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8102096652/profile-03.jpg",
+      "published_sha256": "06a7d647bd03f894348439cc94311c78dab5977ce9fc5d38e6d18d464766ea10",
+      "bytes": 10263,
+      "source_path": "avito_audit/images/8102096652/03.jpg",
+      "source_sha256": "06a7d647bd03f894348439cc94311c78dab5977ce9fc5d38e6d18d464766ea10",
+      "source_bytes": 10263,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8165960870/gallery-01.jpg",
+      "published_sha256": "8c2652dd8a6fd7edac628216dec00dd1ea8e44d9670a1b460b12dae06e69db6b",
+      "bytes": 13895,
+      "source_path": "avito_audit/item_pages/images/8165960870/01_large.jpg",
+      "source_sha256": "8c2652dd8a6fd7edac628216dec00dd1ea8e44d9670a1b460b12dae06e69db6b",
+      "source_bytes": 13895,
+      "transform": "copy",
+      "dimensions": [
+        400,
+        400
+      ]
+    },
+    {
+      "public_path": "assets/img/8165960870/gallery-02.jpg",
+      "published_sha256": "411be5038af40cdac70386d3e284f9cbc1ab94846541141a0c5758f670e9e5af",
+      "bytes": 10940,
+      "source_path": "avito_audit/item_pages/images/8165960870/02_large.jpg",
+      "source_sha256": "411be5038af40cdac70386d3e284f9cbc1ab94846541141a0c5758f670e9e5af",
+      "source_bytes": 10940,
+      "transform": "copy",
+      "dimensions": [
+        400,
+        400
+      ]
+    },
+    {
+      "public_path": "assets/img/8165960870/gallery-03.jpg",
+      "published_sha256": "b4d6a3b853e55536713da13ea79c1b3626e647f7f9c94424b9c13468d9a07d97",
+      "bytes": 2663,
+      "source_path": "avito_audit/item_pages/images/8165960870/03_thumb.jpg",
+      "source_sha256": "b4d6a3b853e55536713da13ea79c1b3626e647f7f9c94424b9c13468d9a07d97",
+      "source_bytes": 2663,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/8165960870/gallery-04.jpg",
+      "published_sha256": "9899425ef88c7a1a8564258e73898d2226b51821da4d3758ee7b5802ad936fc6",
+      "bytes": 4893,
+      "source_path": "avito_audit/item_pages/images/8165960870/04_thumb.jpg",
+      "source_sha256": "9899425ef88c7a1a8564258e73898d2226b51821da4d3758ee7b5802ad936fc6",
+      "source_bytes": 4893,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/8165960870/gallery-05.jpg",
+      "published_sha256": "0ccfaf28e51c69db77f06367f0913527c8fcecefb904d9857b288becafb8c55d",
+      "bytes": 124894,
+      "source_path": "avito_audit/item_pages/images/8165960870/05_large.jpg",
+      "source_sha256": "0ccfaf28e51c69db77f06367f0913527c8fcecefb904d9857b288becafb8c55d",
+      "source_bytes": 124894,
+      "transform": "copy",
+      "dimensions": [
+        870,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/8165960870/maker-01.jpg",
+      "published_sha256": "c22efd2f93506b1fa35c9f24e816296dec5c30b5342d6fc793cf9d4767dd3a8e",
+      "bytes": 54187,
+      "source_path": "official_assets/8165960870.jpg",
+      "source_sha256": "c22efd2f93506b1fa35c9f24e816296dec5c30b5342d6fc793cf9d4767dd3a8e",
+      "source_bytes": 54187,
+      "transform": "copy",
+      "dimensions": [
+        1600,
+        1600
+      ]
+    },
+    {
+      "public_path": "assets/img/8165960870/profile-01.jpg",
+      "published_sha256": "23fbf59b0ff191bf0445a9409b07cd6eb67c065b28a6d87e5e677677daa2911a",
+      "bytes": 5061,
+      "source_path": "avito_audit/images/8165960870/01.jpg",
+      "source_sha256": "23fbf59b0ff191bf0445a9409b07cd6eb67c065b28a6d87e5e677677daa2911a",
+      "source_bytes": 5061,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8165960870/profile-02.jpg",
+      "published_sha256": "eb4edce6004d9783a17786e09bff838f50cd0b345b0e8c49fd50497f9555a77c",
+      "bytes": 4341,
+      "source_path": "avito_audit/images/8165960870/02.jpg",
+      "source_sha256": "eb4edce6004d9783a17786e09bff838f50cd0b345b0e8c49fd50497f9555a77c",
+      "source_bytes": 4341,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8165960870/profile-03.jpg",
+      "published_sha256": "72e24565bc0719cfe4ce2d73b0b406f4ed9c84d271d33eb9a617d7a484d6d9a1",
+      "bytes": 5753,
+      "source_path": "avito_audit/images/8165960870/03.jpg",
+      "source_sha256": "72e24565bc0719cfe4ce2d73b0b406f4ed9c84d271d33eb9a617d7a484d6d9a1",
+      "source_bytes": 5753,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8165960870/profile-04.jpg",
+      "published_sha256": "eb4b6e0c50599dc1c97cdca90d19ef047379019dddb327452c5f8d4a1254a577",
+      "bytes": 9747,
+      "source_path": "avito_audit/images/8165960870/04.jpg",
+      "source_sha256": "eb4b6e0c50599dc1c97cdca90d19ef047379019dddb327452c5f8d4a1254a577",
+      "source_bytes": 9747,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8165960870/profile-05.jpg",
+      "published_sha256": "822d3d8100000326c13dc478d7b870e696338817f4f7850b16f25f4b86e71d8d",
+      "bytes": 10343,
+      "source_path": "avito_audit/images/8165960870/05.jpg",
+      "source_sha256": "822d3d8100000326c13dc478d7b870e696338817f4f7850b16f25f4b86e71d8d",
+      "source_bytes": 10343,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8165981546/gallery-01.jpg",
+      "published_sha256": "08c9efc055a74d36e971dbe5005361515a0d8e0cd6e1f90bd253387299dada12",
+      "bytes": 70474,
+      "source_path": "avito_audit/item_pages/images/8165981546/01_large.jpg",
+      "source_sha256": "08c9efc055a74d36e971dbe5005361515a0d8e0cd6e1f90bd253387299dada12",
+      "source_bytes": 70474,
+      "transform": "copy",
+      "dimensions": [
+        720,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/8165981546/gallery-02.jpg",
+      "published_sha256": "e9c3ebd7335f0fec1a4f781ee7ad8111323e8bde4ac4168ab49b3be92169ba41",
+      "bytes": 91163,
+      "source_path": "avito_audit/item_pages/images/8165981546/02_large.jpg",
+      "source_sha256": "e9c3ebd7335f0fec1a4f781ee7ad8111323e8bde4ac4168ab49b3be92169ba41",
+      "source_bytes": 91163,
+      "transform": "copy",
+      "dimensions": [
+        720,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/8165981546/gallery-03.jpg",
+      "published_sha256": "512847cedb43c6412b90b37616f5142dc72ba2a0193db2c2cc683e76593cd8a0",
+      "bytes": 4414,
+      "source_path": "avito_audit/item_pages/images/8165981546/03_thumb.jpg",
+      "source_sha256": "512847cedb43c6412b90b37616f5142dc72ba2a0193db2c2cc683e76593cd8a0",
+      "source_bytes": 4414,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/8165981546/gallery-04.jpg",
+      "published_sha256": "493adf669e33b6d3cdea0f47768829238bb891e0fc3e5a16d42e409bad5bcf72",
+      "bytes": 4977,
+      "source_path": "avito_audit/item_pages/images/8165981546/04_thumb.jpg",
+      "source_sha256": "493adf669e33b6d3cdea0f47768829238bb891e0fc3e5a16d42e409bad5bcf72",
+      "source_bytes": 4977,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/8165981546/gallery-05.jpg",
+      "published_sha256": "93b9ed467377d042012c59821b339a93b5b04b994693d2fd5ae2b9dc0652a578",
+      "bytes": 67304,
+      "source_path": "avito_audit/item_pages/images/8165981546/05_large.jpg",
+      "source_sha256": "93b9ed467377d042012c59821b339a93b5b04b994693d2fd5ae2b9dc0652a578",
+      "source_bytes": 67304,
+      "transform": "copy",
+      "dimensions": [
+        960,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/8165981546/maker-01.jpg",
+      "published_sha256": "c542ea87bb00501d65b685c876b123cb33d6774ca2c5c06d71b635ea3b7f00f3",
+      "bytes": 203067,
+      "source_path": "official_assets/8165981546.jpg",
+      "source_sha256": "c542ea87bb00501d65b685c876b123cb33d6774ca2c5c06d71b635ea3b7f00f3",
+      "source_bytes": 203067,
+      "transform": "copy",
+      "dimensions": [
+        1600,
+        1600
+      ]
+    },
+    {
+      "public_path": "assets/img/8165981546/profile-01.jpg",
+      "published_sha256": "f457705210109974a47877a5f72d743aadaa9eb5e647d24d20e9058eff309d9f",
+      "bytes": 8481,
+      "source_path": "avito_audit/images/8165981546/01.jpg",
+      "source_sha256": "f457705210109974a47877a5f72d743aadaa9eb5e647d24d20e9058eff309d9f",
+      "source_bytes": 8481,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8165981546/profile-02.jpg",
+      "published_sha256": "44a3c57999927c59ab3adab94933b7bfad9c7245f0662bddd5454e746b661eb1",
+      "bytes": 8943,
+      "source_path": "avito_audit/images/8165981546/02.jpg",
+      "source_sha256": "44a3c57999927c59ab3adab94933b7bfad9c7245f0662bddd5454e746b661eb1",
+      "source_bytes": 8943,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8165981546/profile-03.jpg",
+      "published_sha256": "c11b4dca115188c4cadfc92a91a55f2c2e1241ca79887cef78c81a6f0d3a29a5",
+      "bytes": 9141,
+      "source_path": "avito_audit/images/8165981546/03.jpg",
+      "source_sha256": "c11b4dca115188c4cadfc92a91a55f2c2e1241ca79887cef78c81a6f0d3a29a5",
+      "source_bytes": 9141,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8165981546/profile-04.jpg",
+      "published_sha256": "85a6387ad3fc36c99991d494a54ef20b521b614234649a5e51bd4aced9353927",
+      "bytes": 8041,
+      "source_path": "avito_audit/images/8165981546/04.jpg",
+      "source_sha256": "85a6387ad3fc36c99991d494a54ef20b521b614234649a5e51bd4aced9353927",
+      "source_bytes": 8041,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8165981546/profile-05.jpg",
+      "published_sha256": "526d5391e6e7e04fec933080593bc9ed90c5c6bd34ddf917671634027147403c",
+      "bytes": 5827,
+      "source_path": "avito_audit/images/8165981546/05.jpg",
+      "source_sha256": "526d5391e6e7e04fec933080593bc9ed90c5c6bd34ddf917671634027147403c",
+      "source_bytes": 5827,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8166119490/gallery-01.jpg",
+      "published_sha256": "66c60db1d33b7994d6aa3798b2ae447c14103763ff70c89e168f5220ea7b099f",
+      "bytes": 110121,
+      "source_path": "avito_audit/item_pages/images/8166119490/01_large.jpg",
+      "source_sha256": "66c60db1d33b7994d6aa3798b2ae447c14103763ff70c89e168f5220ea7b099f",
+      "source_bytes": 110121,
+      "transform": "copy",
+      "dimensions": [
+        720,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/8166119490/gallery-02.jpg",
+      "published_sha256": "41b5f80b8f3f3a32aa8423d754835d2d1b7b71e7652e50f036544eb0e187c0fa",
+      "bytes": 92135,
+      "source_path": "avito_audit/item_pages/images/8166119490/02_large.jpg",
+      "source_sha256": "41b5f80b8f3f3a32aa8423d754835d2d1b7b71e7652e50f036544eb0e187c0fa",
+      "source_bytes": 92135,
+      "transform": "copy",
+      "dimensions": [
+        720,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/8166119490/gallery-03.jpg",
+      "published_sha256": "e8d2a7ef8eeaa7a5acec6515b4bbcf4ee22e54c1bc89afb5ff4c361fa74d0276",
+      "bytes": 4875,
+      "source_path": "avito_audit/item_pages/images/8166119490/03_thumb.jpg",
+      "source_sha256": "e8d2a7ef8eeaa7a5acec6515b4bbcf4ee22e54c1bc89afb5ff4c361fa74d0276",
+      "source_bytes": 4875,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/8166119490/gallery-04.jpg",
+      "published_sha256": "985336a600db8e287a474a7f833596b6cd0c2e922a52c5da48ed2876ff2c9ce2",
+      "bytes": 3538,
+      "source_path": "avito_audit/item_pages/images/8166119490/04_thumb.jpg",
+      "source_sha256": "985336a600db8e287a474a7f833596b6cd0c2e922a52c5da48ed2876ff2c9ce2",
+      "source_bytes": 3538,
+      "transform": "copy",
+      "dimensions": [
+        150,
+        110
+      ]
+    },
+    {
+      "public_path": "assets/img/8166119490/gallery-05.jpg",
+      "published_sha256": "2fcbf52b63d3e9d3a82e1ee53501a357bed9971483876cfa653af13e77587fe7",
+      "bytes": 126219,
+      "source_path": "avito_audit/item_pages/images/8166119490/05_large.jpg",
+      "source_sha256": "2fcbf52b63d3e9d3a82e1ee53501a357bed9971483876cfa653af13e77587fe7",
+      "source_bytes": 126219,
+      "transform": "copy",
+      "dimensions": [
+        900,
+        954
+      ]
+    },
+    {
+      "public_path": "assets/img/8166119490/maker-01.jpg",
+      "published_sha256": "12d9f5fa25b057976f154292a26f3a201ec3f4b97af2e8ee1337112dba6fc472",
+      "bytes": 105141,
+      "source_path": "official_assets/8166119490.jpg",
+      "source_sha256": "12d9f5fa25b057976f154292a26f3a201ec3f4b97af2e8ee1337112dba6fc472",
+      "source_bytes": 105141,
+      "transform": "copy",
+      "dimensions": [
+        1600,
+        1600
+      ]
+    },
+    {
+      "public_path": "assets/img/8166119490/profile-01.jpg",
+      "published_sha256": "7f6534c642a9de9577a4974abf943108996719535a9373b3c80ffa290625be03",
+      "bytes": 12210,
+      "source_path": "avito_audit/images/8166119490/01.jpg",
+      "source_sha256": "7f6534c642a9de9577a4974abf943108996719535a9373b3c80ffa290625be03",
+      "source_bytes": 12210,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8166119490/profile-02.jpg",
+      "published_sha256": "d087121fc8a6616011005c924c5e4107b11e449aa9346156a40cb0cc0a6cf35d",
+      "bytes": 8764,
+      "source_path": "avito_audit/images/8166119490/02.jpg",
+      "source_sha256": "d087121fc8a6616011005c924c5e4107b11e449aa9346156a40cb0cc0a6cf35d",
+      "source_bytes": 8764,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8166119490/profile-03.jpg",
+      "published_sha256": "58bd16ec26579e189abfadeb44bb652ac82431bacb886327ef4858539154e281",
+      "bytes": 9246,
+      "source_path": "avito_audit/images/8166119490/03.jpg",
+      "source_sha256": "58bd16ec26579e189abfadeb44bb652ac82431bacb886327ef4858539154e281",
+      "source_bytes": 9246,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8166119490/profile-04.jpg",
+      "published_sha256": "b9876cf068bfb734e72d981ac475c9d95b5c9a81ccb4c6759ab214bd7e88f3af",
+      "bytes": 7539,
+      "source_path": "avito_audit/images/8166119490/04.jpg",
+      "source_sha256": "b9876cf068bfb734e72d981ac475c9d95b5c9a81ccb4c6759ab214bd7e88f3af",
+      "source_bytes": 7539,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8166119490/profile-05.jpg",
+      "published_sha256": "e1053a4e865c4de28b1ac17965ba30425c574d3cf1b571075b751c6afdf75a8e",
+      "bytes": 8996,
+      "source_path": "avito_audit/images/8166119490/05.jpg",
+      "source_sha256": "e1053a4e865c4de28b1ac17965ba30425c574d3cf1b571075b751c6afdf75a8e",
+      "source_bytes": 8996,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8166255881/gallery-01.jpg",
+      "published_sha256": "880924ae09669eac0dcde319bd312cb7f49d792dbe2df76bc607266119f3acfb",
+      "bytes": 74137,
+      "source_path": "avito_audit/item_pages/images/8166255881/01_large.jpg",
+      "source_sha256": "880924ae09669eac0dcde319bd312cb7f49d792dbe2df76bc607266119f3acfb",
+      "source_bytes": 74137,
+      "transform": "copy",
+      "dimensions": [
+        720,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/8166255881/gallery-02.jpg",
+      "published_sha256": "d361e618ef8e772b0f18d9a52283523d80ab1477afba19ffe0d009d7ae85783a",
+      "bytes": 105589,
+      "source_path": "avito_audit/item_pages/images/8166255881/02_large.jpg",
+      "source_sha256": "d361e618ef8e772b0f18d9a52283523d80ab1477afba19ffe0d009d7ae85783a",
+      "source_bytes": 105589,
+      "transform": "copy",
+      "dimensions": [
+        720,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/8166255881/maker-01.jpg",
+      "published_sha256": "3b8cc9e3819a53c0206e9d7f39e4e0ce867aa7747081324a9fd90bde6133ce80",
+      "bytes": 78474,
+      "source_path": "official_assets/8166255881.jpg",
+      "source_sha256": "3b8cc9e3819a53c0206e9d7f39e4e0ce867aa7747081324a9fd90bde6133ce80",
+      "source_bytes": 78474,
+      "transform": "copy",
+      "dimensions": [
+        1600,
+        1600
+      ]
+    },
+    {
+      "public_path": "assets/img/8166255881/profile-01.jpg",
+      "published_sha256": "1e6a51ce41c70bc0275211780a57b20bc401c67606c43f647762e2b7ff419e23",
+      "bytes": 7264,
+      "source_path": "avito_audit/images/8166255881/01.jpg",
+      "source_sha256": "1e6a51ce41c70bc0275211780a57b20bc401c67606c43f647762e2b7ff419e23",
+      "source_bytes": 7264,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8166255881/profile-02.jpg",
+      "published_sha256": "f7c38171a680a9e183042eb37b63254a0e10469d1ee7c3167dfbfdbf61cad258",
+      "bytes": 7999,
+      "source_path": "avito_audit/images/8166255881/02.jpg",
+      "source_sha256": "f7c38171a680a9e183042eb37b63254a0e10469d1ee7c3167dfbfdbf61cad258",
+      "source_bytes": 7999,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8166335454/gallery-01.jpg",
+      "published_sha256": "c2649f4973783292859c74a8db08ea267e97439eda4b860083589c17fd37e848",
+      "bytes": 86518,
+      "source_path": "avito_audit/item_pages/images/8166335454/01_large.jpg",
+      "source_sha256": "c2649f4973783292859c74a8db08ea267e97439eda4b860083589c17fd37e848",
+      "source_bytes": 86518,
+      "transform": "copy",
+      "dimensions": [
+        790,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/8166335454/gallery-02.jpg",
+      "published_sha256": "5cf03a09c44b071a0f75d98878a1c929b1646ee82793a5242cd23f9834f8c2d0",
+      "bytes": 83426,
+      "source_path": "avito_audit/item_pages/images/8166335454/02_large.jpg",
+      "source_sha256": "5cf03a09c44b071a0f75d98878a1c929b1646ee82793a5242cd23f9834f8c2d0",
+      "source_bytes": 83426,
+      "transform": "copy",
+      "dimensions": [
+        720,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/8166335454/gallery-03.jpg",
+      "published_sha256": "9d33dffc8a90a558a509f538fa1d08948a50a1f60a2f24005f069d5cf2cf9d8c",
+      "bytes": 135982,
+      "source_path": "avito_audit/item_pages/images/8166335454/03_large.jpg",
+      "source_sha256": "9d33dffc8a90a558a509f538fa1d08948a50a1f60a2f24005f069d5cf2cf9d8c",
+      "source_bytes": 135982,
+      "transform": "copy",
+      "dimensions": [
+        720,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/8166335454/maker-01.jpg",
+      "published_sha256": "f81ace5c20094b083f83d2bd98cb2737e86a9b7b8ff24e4e0f63c85231b7df62",
+      "bytes": 74767,
+      "source_path": "official_assets/8166335454.jpg",
+      "source_sha256": "f81ace5c20094b083f83d2bd98cb2737e86a9b7b8ff24e4e0f63c85231b7df62",
+      "source_bytes": 74767,
+      "transform": "copy",
+      "dimensions": [
+        1200,
+        1200
+      ]
+    },
+    {
+      "public_path": "assets/img/8166335454/profile-01.jpg",
+      "published_sha256": "f713d63c0ea896901733f576db4e47e5c1ebd67a2df27394960b5f4a634554a9",
+      "bytes": 9202,
+      "source_path": "avito_audit/images/8166335454/01.jpg",
+      "source_sha256": "f713d63c0ea896901733f576db4e47e5c1ebd67a2df27394960b5f4a634554a9",
+      "source_bytes": 9202,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8166335454/profile-02.jpg",
+      "published_sha256": "fcb37587bcdba4196d61342abdf83782ba77fb7654590cacfd21baa13a542015",
+      "bytes": 9331,
+      "source_path": "avito_audit/images/8166335454/02.jpg",
+      "source_sha256": "fcb37587bcdba4196d61342abdf83782ba77fb7654590cacfd21baa13a542015",
+      "source_bytes": 9331,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8166335454/profile-03.jpg",
+      "published_sha256": "30ee60eaad8c8a99190f1aeab63520f07f0880b2511887f284101d79a817811b",
+      "bytes": 12898,
+      "source_path": "avito_audit/images/8166335454/03.jpg",
+      "source_sha256": "30ee60eaad8c8a99190f1aeab63520f07f0880b2511887f284101d79a817811b",
+      "source_bytes": 12898,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8166674710/gallery-01.jpg",
+      "published_sha256": "1a0ed8cf78588cba733fe479e71076b8744feac1a5cc6900716231ea54ebd054",
+      "bytes": 82736,
+      "source_path": "avito_audit/item_pages/images/8166674710/01_large.jpg",
+      "source_sha256": "1a0ed8cf78588cba733fe479e71076b8744feac1a5cc6900716231ea54ebd054",
+      "source_bytes": 82736,
+      "transform": "copy",
+      "dimensions": [
+        965,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/8166674710/gallery-02.jpg",
+      "published_sha256": "a21a442421471ee9314b7251ef8ee1cfa6759882f2ffbe11985a70d72b49f1b9",
+      "bytes": 73107,
+      "source_path": "avito_audit/item_pages/images/8166674710/02_large.jpg",
+      "source_sha256": "a21a442421471ee9314b7251ef8ee1cfa6759882f2ffbe11985a70d72b49f1b9",
+      "source_bytes": 73107,
+      "transform": "copy",
+      "dimensions": [
+        720,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/8166674710/gallery-03.jpg",
+      "published_sha256": "7b087d19646049c79a0eeff119d2d249754ce1dd233ef820e07c35d59586b05a",
+      "bytes": 112439,
+      "source_path": "avito_audit/item_pages/images/8166674710/03_large.jpg",
+      "source_sha256": "7b087d19646049c79a0eeff119d2d249754ce1dd233ef820e07c35d59586b05a",
+      "source_bytes": 112439,
+      "transform": "copy",
+      "dimensions": [
+        720,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/8166674710/maker-01.jpg",
+      "published_sha256": "4ce2b8abfb48e097a3cdeb5ed10b4f6a0be9d12258d3587757a4f094e26438b7",
+      "bytes": 81595,
+      "source_path": "official_assets/8166674710.jpg",
+      "source_sha256": "4ce2b8abfb48e097a3cdeb5ed10b4f6a0be9d12258d3587757a4f094e26438b7",
+      "source_bytes": 81595,
+      "transform": "copy",
+      "dimensions": [
+        1600,
+        1600
+      ]
+    },
+    {
+      "public_path": "assets/img/8166674710/profile-01.jpg",
+      "published_sha256": "50693f9b10232b3d744a8205925d77fd9ac626d7c0557baf3343d2bdcb6dea72",
+      "bytes": 7135,
+      "source_path": "avito_audit/images/8166674710/01.jpg",
+      "source_sha256": "50693f9b10232b3d744a8205925d77fd9ac626d7c0557baf3343d2bdcb6dea72",
+      "source_bytes": 7135,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8166674710/profile-02.jpg",
+      "published_sha256": "6b52595e82f90eb4998152cbaf4ec8c659b56d4a5295df9b83b7bc66e30690ea",
+      "bytes": 9212,
+      "source_path": "avito_audit/images/8166674710/02.jpg",
+      "source_sha256": "6b52595e82f90eb4998152cbaf4ec8c659b56d4a5295df9b83b7bc66e30690ea",
+      "source_bytes": 9212,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8166674710/profile-03.jpg",
+      "published_sha256": "6c7d5b6ff3ffe182a37eff4ab921a4536b1e2d3b9708170669e226d868b4bc20",
+      "bytes": 10430,
+      "source_path": "avito_audit/images/8166674710/03.jpg",
+      "source_sha256": "6c7d5b6ff3ffe182a37eff4ab921a4536b1e2d3b9708170669e226d868b4bc20",
+      "source_bytes": 10430,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8230842563/gallery-01.jpg",
+      "published_sha256": "b1a96451b5cf90807f5aa83590707f376254ca6549411af2810d386b456dcae2",
+      "bytes": 120099,
+      "source_path": "avito_audit/item_pages/images/8230842563/01_large.jpg",
+      "source_sha256": "b1a96451b5cf90807f5aa83590707f376254ca6549411af2810d386b456dcae2",
+      "source_bytes": 120099,
+      "transform": "copy",
+      "dimensions": [
+        792,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/8230842563/gallery-02.jpg",
+      "published_sha256": "05d29d0ad6288510052dca550e34b60767618d23afca4096267a9a90b50d0956",
+      "bytes": 125889,
+      "source_path": "avito_audit/item_pages/images/8230842563/02_large.jpg",
+      "source_sha256": "05d29d0ad6288510052dca550e34b60767618d23afca4096267a9a90b50d0956",
+      "source_bytes": 125889,
+      "transform": "copy",
+      "dimensions": [
+        720,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/8230842563/gallery-03.jpg",
+      "published_sha256": "e5b8d95b1702a79c3ec9968308e6e1580f763500384a35ea2ce9537811e63bb9",
+      "bytes": 123326,
+      "source_path": "avito_audit/item_pages/images/8230842563/03_large.jpg",
+      "source_sha256": "e5b8d95b1702a79c3ec9968308e6e1580f763500384a35ea2ce9537811e63bb9",
+      "source_bytes": 123326,
+      "transform": "copy",
+      "dimensions": [
+        720,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/8230842563/maker-01.jpg",
+      "published_sha256": "f35ee3fe84b044d65be13d747310a0cfac3621c01ba8bd0686782d02419bf969",
+      "bytes": 54831,
+      "source_path": "official_assets/8230842563.jpg",
+      "source_sha256": "f35ee3fe84b044d65be13d747310a0cfac3621c01ba8bd0686782d02419bf969",
+      "source_bytes": 54831,
+      "transform": "copy",
+      "dimensions": [
+        1800,
+        1800
+      ]
+    },
+    {
+      "public_path": "assets/img/8230842563/profile-01.jpg",
+      "published_sha256": "4853ece61b267fcd4487442caa8c75356a664c6cff162ff85e37e6d8f922a585",
+      "bytes": 8489,
+      "source_path": "avito_audit/images/8230842563/01.jpg",
+      "source_sha256": "4853ece61b267fcd4487442caa8c75356a664c6cff162ff85e37e6d8f922a585",
+      "source_bytes": 8489,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8230842563/profile-02.jpg",
+      "published_sha256": "bcbbec98ce90c20f801387736652b6942933856fe9c4033c2d0ddaaced402159",
+      "bytes": 10601,
+      "source_path": "avito_audit/images/8230842563/02.jpg",
+      "source_sha256": "bcbbec98ce90c20f801387736652b6942933856fe9c4033c2d0ddaaced402159",
+      "source_bytes": 10601,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8230842563/profile-03.jpg",
+      "published_sha256": "cf70eb20b41388c4cd0c4bb5a568a48a59ecae1c24d8407cc4766287e6123699",
+      "bytes": 10120,
+      "source_path": "avito_audit/images/8230842563/03.jpg",
+      "source_sha256": "cf70eb20b41388c4cd0c4bb5a568a48a59ecae1c24d8407cc4766287e6123699",
+      "source_bytes": 10120,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8296456393/badge-03.png",
+      "published_sha256": "7eb2f019d7fb3bc2002ab03abf6a6c6be30b7f90d61e38cef3557aef06d75767",
+      "bytes": 5786,
+      "source_path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_03_header.png",
+      "source_sha256": "7eb2f019d7fb3bc2002ab03abf6a6c6be30b7f90d61e38cef3557aef06d75767",
+      "source_bytes": 5786,
+      "transform": "copy",
+      "dimensions": [
+        1170,
+        117
+      ]
+    },
+    {
+      "public_path": "assets/img/8296456393/badge-04.png",
+      "published_sha256": "19b7fe820641c5ab27fa47d15643ba24b58c6099eba53838df3e5eecbd5572cc",
+      "bytes": 5436,
+      "source_path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_04_header.png",
+      "source_sha256": "19b7fe820641c5ab27fa47d15643ba24b58c6099eba53838df3e5eecbd5572cc",
+      "source_bytes": 5436,
+      "transform": "copy",
+      "dimensions": [
+        1170,
+        117
+      ]
+    },
+    {
+      "public_path": "assets/img/8296456393/badge-05.png",
+      "published_sha256": "0f5e670c0bde25b5ca6956e8cc0e8c8af8abbe793e3cd3a3a3a7268dd8092760",
+      "bytes": 5721,
+      "source_path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_05_header.png",
+      "source_sha256": "0f5e670c0bde25b5ca6956e8cc0e8c8af8abbe793e3cd3a3a3a7268dd8092760",
+      "source_bytes": 5721,
+      "transform": "copy",
+      "dimensions": [
+        1170,
+        117
+      ]
+    },
+    {
+      "public_path": "assets/img/8296456393/badge-06.png",
+      "published_sha256": "b0658fde6592625ed71347f28c4907e3bdb1b28468f6c898f5a73d41b311ddbb",
+      "bytes": 6147,
+      "source_path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_06_header.png",
+      "source_sha256": "b0658fde6592625ed71347f28c4907e3bdb1b28468f6c898f5a73d41b311ddbb",
+      "source_bytes": 6147,
+      "transform": "copy",
+      "dimensions": [
+        1170,
+        117
+      ]
+    },
+    {
+      "public_path": "assets/img/8296456393/badge-07.png",
+      "published_sha256": "fc4d949d577709ec1b60a1676d9b9c631b0269136d30fc21095af88af5925a13",
+      "bytes": 5485,
+      "source_path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_07_header.png",
+      "source_sha256": "fc4d949d577709ec1b60a1676d9b9c631b0269136d30fc21095af88af5925a13",
+      "source_bytes": 5485,
+      "transform": "copy",
+      "dimensions": [
+        1170,
+        117
+      ]
+    },
+    {
+      "public_path": "assets/img/8296456393/crop-03.jpg",
+      "published_sha256": "df8710d847a8908c72a4a6bad234dafe709dc3651ff2d96d5d0073a0cc8f03b2",
+      "bytes": 217194,
+      "source_path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_03.png",
+      "source_sha256": "ebd37c8c25f22eb11eb94ed42585d63f52fc9d5d68ccf199371223d56713efd6",
+      "source_bytes": 1594894,
+      "transform": "png->jpeg q82",
+      "dimensions": [
+        1170,
+        1644
+      ]
+    },
+    {
+      "public_path": "assets/img/8296456393/crop-04.jpg",
+      "published_sha256": "4cd3682bbddf8c5ca1683119747fa950ddbcc4a3a66170325e81b83ba7d43382",
+      "bytes": 202241,
+      "source_path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_04.png",
+      "source_sha256": "6d1d1618a3cf61ed89c3a14dcfc95c45b82ae08aa3404076229cff7869d3d36e",
+      "source_bytes": 1431743,
+      "transform": "png->jpeg q82",
+      "dimensions": [
+        1170,
+        1644
+      ]
+    },
+    {
+      "public_path": "assets/img/8296456393/crop-05.jpg",
+      "published_sha256": "0b65823f4149d5e4e74de5b0f8664543ef0e1651f0812e3f58726cac1eee5585",
+      "bytes": 136923,
+      "source_path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_05.png",
+      "source_sha256": "5bd5e0f4be8c60128e21f9c80f0f044599cc6b400dff3006b476dbc4e5d4527b",
+      "source_bytes": 909457,
+      "transform": "png->jpeg q82",
+      "dimensions": [
+        1170,
+        1644
+      ]
+    },
+    {
+      "public_path": "assets/img/8296456393/crop-06.jpg",
+      "published_sha256": "7ed9b0af25a17f6695a6320947faabcaa9214687794babf220636ef6da150a96",
+      "bytes": 96669,
+      "source_path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_06.png",
+      "source_sha256": "7f79ec5f331f8eaee96aee3c09d79594355ceb3df3ae0124e0d4f2bcb1ebbd7b",
+      "source_bytes": 595353,
+      "transform": "png->jpeg q82",
+      "dimensions": [
+        1170,
+        1644
+      ]
+    },
+    {
+      "public_path": "assets/img/8296456393/crop-07.jpg",
+      "published_sha256": "c4f41a323ce67c792266b7700a7acd987e16bcc143326d603815c9fa63e0b736",
+      "bytes": 111672,
+      "source_path": "avito_audit/attachments_avitos/images/8296456393/mobile_gallery_07.png",
+      "source_sha256": "f95f98d85182846cede51f1c17d9fca960c19ccd843e9453895f9d12502ff95d",
+      "source_bytes": 700757,
+      "transform": "png->jpeg q82",
+      "dimensions": [
+        1170,
+        1644
+      ]
+    },
+    {
+      "public_path": "assets/img/8296456393/gallery-01.jpg",
+      "published_sha256": "20c08b0215f354539ddf904555e809631967459f38182480609e5c1d39652ce0",
+      "bytes": 107789,
+      "source_path": "avito_audit/item_pages/images/8296456393/01_large.jpg",
+      "source_sha256": "20c08b0215f354539ddf904555e809631967459f38182480609e5c1d39652ce0",
+      "source_bytes": 107789,
+      "transform": "copy",
+      "dimensions": [
+        720,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/8296456393/gallery-02.jpg",
+      "published_sha256": "30bde4c149d4608403555383733319a697d95b00b88b60dfd2c1bb526dd479f2",
+      "bytes": 130334,
+      "source_path": "avito_audit/item_pages/images/8296456393/02_large.jpg",
+      "source_sha256": "30bde4c149d4608403555383733319a697d95b00b88b60dfd2c1bb526dd479f2",
+      "source_bytes": 130334,
+      "transform": "copy",
+      "dimensions": [
+        720,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/8296456393/gallery-08.jpg",
+      "published_sha256": "a3b212c7aca74d43155f363826c7f3e6139117032689c547d5bb5d62ccc744bf",
+      "bytes": 158274,
+      "source_path": "avito_audit/item_pages/images/8296456393/08_large.jpg",
+      "source_sha256": "a3b212c7aca74d43155f363826c7f3e6139117032689c547d5bb5d62ccc744bf",
+      "source_bytes": 158274,
+      "transform": "copy",
+      "dimensions": [
+        720,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/8296456393/profile-01.jpg",
+      "published_sha256": "e48d166fe13f888b5773da970d781ccdb35c77fd9de9510998ababe7630cad6e",
+      "bytes": 9838,
+      "source_path": "avito_audit/images/8296456393/01.jpg",
+      "source_sha256": "e48d166fe13f888b5773da970d781ccdb35c77fd9de9510998ababe7630cad6e",
+      "source_bytes": 9838,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8296456393/profile-02.jpg",
+      "published_sha256": "99599923e4c25000c19e4e6c8e04eded8e87cf6cea8a32faa988ac27d448d64e",
+      "bytes": 12027,
+      "source_path": "avito_audit/images/8296456393/02.jpg",
+      "source_sha256": "99599923e4c25000c19e4e6c8e04eded8e87cf6cea8a32faa988ac27d448d64e",
+      "source_bytes": 12027,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8296456393/profile-03.jpg",
+      "published_sha256": "2794a25cd623b20d7e25efd2be30a35ca7bb9187e635fe59976084ca6c5cc7e8",
+      "bytes": 10338,
+      "source_path": "avito_audit/images/8296456393/03.jpg",
+      "source_sha256": "2794a25cd623b20d7e25efd2be30a35ca7bb9187e635fe59976084ca6c5cc7e8",
+      "source_bytes": 10338,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/8350792227/maker-01.jpg",
+      "published_sha256": "647a95fd8d36d78b995156abea3cf7e2b48d1cec173f8d4241c1b68bcc3a411c",
+      "bytes": 70441,
+      "source_path": "official_assets/8350792227.jpg",
+      "source_sha256": "647a95fd8d36d78b995156abea3cf7e2b48d1cec173f8d4241c1b68bcc3a411c",
+      "source_bytes": 70441,
+      "transform": "copy",
+      "dimensions": [
+        1400,
+        1400
+      ]
+    },
+    {
+      "public_path": "assets/img/8350792227/pageprint-01.jpg",
+      "published_sha256": "260f6b5665cd2f31e9d2d95a2bb58fa633259fbf00229c98c0ed43cff12ff9b3",
+      "bytes": 53691,
+      "source_path": "avito_audit/attachments_avitos/images/8350792227/page_print_photo_01.png",
+      "source_sha256": "d9d09009040f5fa88447aea4fbf693bd3263ec38de556d8dc58c4e0c351d87e7",
+      "source_bytes": 360171,
+      "transform": "png->jpeg q82",
+      "dimensions": [
+        550,
+        960
+      ]
+    },
+    {
+      "public_path": "assets/img/8350792227/profile-01.jpg",
+      "published_sha256": "65004dbe6bb32d587acd302d77c78d7ea7970be088e9bce715b1f77c9a9d8151",
+      "bytes": 9852,
+      "source_path": "avito_audit/images/8350792227/01.jpg",
+      "source_sha256": "65004dbe6bb32d587acd302d77c78d7ea7970be088e9bce715b1f77c9a9d8151",
+      "source_bytes": 9852,
+      "transform": "copy",
+      "dimensions": [
+        208,
+        208
+      ]
+    },
+    {
+      "public_path": "assets/img/seller-2026-10-28/sellermsg-01.jpg",
+      "published_sha256": "9e0f5026fc005a7f61fc9ce10843aa2965253c38bff53432ff93cb0950f3d254",
+      "bytes": 218296,
+      "source_path": "avito_audit/attachments_fw_2026_10_28/seller_photo_01.jpg",
+      "source_sha256": "9e0f5026fc005a7f61fc9ce10843aa2965253c38bff53432ff93cb0950f3d254",
+      "source_bytes": 218296,
+      "transform": "copy",
+      "dimensions": [
+        960,
+        1280
+      ]
+    },
+    {
+      "public_path": "assets/img/seller-2026-10-28/sellermsg-02.jpg",
+      "published_sha256": "eb138e224c685538e63e07219e75c3f8144580d8e8bf1a80b6bb26d3f11e1443",
+      "bytes": 215236,
+      "source_path": "avito_audit/attachments_fw_2026_10_28/seller_photo_02.jpg",
+      "source_sha256": "eb138e224c685538e63e07219e75c3f8144580d8e8bf1a80b6bb26d3f11e1443",
+      "source_bytes": 215236,
+      "transform": "copy",
+      "dimensions": [
+        960,
+        1280
+      ]
+    },
+    {
+      "public_path": "assets/img/seller-2026-10-28/sellermsg-03.jpg",
+      "published_sha256": "02ca836471a0b941b693856c391a962d65b607f83a6d9a16c953d9e7cf15d408",
+      "bytes": 227164,
+      "source_path": "avito_audit/attachments_fw_2026_10_28/seller_photo_03.jpg",
+      "source_sha256": "02ca836471a0b941b693856c391a962d65b607f83a6d9a16c953d9e7cf15d408",
+      "source_bytes": 227164,
+      "transform": "copy",
+      "dimensions": [
+        960,
+        1280
+      ]
+    }
+  ],
+  "site_assets": [
+    {
+      "public_path": "assets/hero.jpg",
+      "source_path": "site/src/assets/hero.jpg",
+      "source_sha256": "5e3c9cd3c5314cdf17647dba714ac965a25b086dba407fd8d3e9469e841cd048",
+      "published_sha256": "5e3c9cd3c5314cdf17647dba714ac965a25b086dba407fd8d3e9469e841cd048",
+      "bytes": 79215,
+      "transform": "copy",
+      "dimensions": [
+        880,
+        839
+      ]
+    },
+    {
+      "public_path": "assets/og-cover.jpg",
+      "source_path": "site/src/assets/og-cover.jpg",
+      "source_sha256": "01fbb48bea283b0a5099b28135bd641d5825711bf006f2a171488f45c7aacbef",
+      "published_sha256": "01fbb48bea283b0a5099b28135bd641d5825711bf006f2a171488f45c7aacbef",
+      "bytes": 77986,
+      "transform": "copy",
+      "dimensions": [
+        1200,
+        630
+      ]
+    }
+  ],
+  "asset_versions": {
+    "site.css": "da86d14bca",
+    "app.js": "be41fbfc98"
+  },
+  "not_published": [
+    "avito_audit/snapshot.json (содержит отзывы)",
+    "avito_audit/item_pages/data.json (исследовательский JSON)",
+    "исходные ZIP, HTML, JS и CSS архивов",
+    "полные скриншоты с полосой статуса iOS"
+  ]
+}

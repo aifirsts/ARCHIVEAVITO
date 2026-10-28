@@ -115,7 +115,10 @@ class SiteStructureTest(unittest.TestCase):
                 if not target or target.startswith(("http://", "https://", "mailto:", "data:", "#")):
                     continue
                 base = target.split("#")[0].split("?")[0]
-                self.assertTrue((page.parent / base).resolve().exists(), f"{page.name}: {target}")
+                # 404.html is served for any unknown path, so it links absolutely
+                # to the site root; every other page uses page-relative links.
+                anchor = PUBLIC if base.startswith("/") else page.parent
+                self.assertTrue((anchor / base.lstrip("/")).resolve().exists(), f"{page.name}: {target}")
 
     def test_images_have_alt_text(self):
         for page in sorted(PUBLIC.rglob("*.html")):
@@ -373,8 +376,13 @@ class SeoAndTechnicalTest(unittest.TestCase):
         self.assertIn("Allow: /", robots)
         self.assertEqual((PUBLIC / "CNAME").read_text(encoding="utf-8").strip(), "usaforru.shop")
         manifest = json.loads((PUBLIC / "site.webmanifest").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["start_url"], "/")
+        # relative, so the manifest also works when the site lives in a subdirectory
+        self.assertEqual(manifest["start_url"], "./")
+        self.assertEqual(manifest["scope"], "./")
+        self.assertEqual(manifest["icons"][0]["src"], "favicon.svg")
         self.assertEqual(manifest["lang"], "ru")
+        # a placeholder header without an image is not a real icon
+        self.assertEqual((PUBLIC / "favicon.ico").read_bytes()[:6], b"\x00\x00\x01\x00\x01\x00")
         self.assertTrue((PUBLIC / "assets" / "og-cover.jpg").is_file())
         self.assertTrue((PUBLIC / "assets" / "hero.jpg").is_file())
 

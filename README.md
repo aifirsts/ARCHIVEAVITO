@@ -2,7 +2,12 @@
 
 **Сайт: [`site/public/`](site/public/index.html)** — готовый статический магазин-витрина на 18 страниц,
 150 фотографий, собственный дизайн, SEO-разметка, `sitemap.xml`, `robots.txt`, `404.html`.
-Публикуется на домене **[usaforru.shop](https://usaforru.shop)** (Porkbun Static Hosting).
+Основной адрес — **[usaforru.shop](https://usaforru.shop)** (Porkbun Static Hosting).
+
+**Живое зеркало: [aifirsts.github.io/MATRIX2](https://aifirsts.github.io/MATRIX2/)** — тот же сайт,
+собранный в каталог [`docs/`](docs/index.html) и опубликованный через **GitHub Pages**
+(ветка `main`, папка `/docs`, HTTPS). Зеркало отличается только каноническими адресами и
+отсутствием `CNAME`, чтобы не перехватывать домен магазина.
 
 > Витрина продаёт не «в корзину», а через продавца: каждая карточка ведёт на конкретное объявление Avito,
 > где подтверждаются цена, наличие и комплектация. Онлайн-оплаты на сайте нет — это осознанное решение,
@@ -20,8 +25,8 @@
 | Карточка товара | аудит-отчёт | покупной блок (цена, преимущества, CTA), **похожие лоты**, затем происхождение фото и ограничения |
 | SEO | title/description | canonical, OG/Twitter-карточка 1200×630, JSON-LD (`Store`, `Product`, `BreadcrumbList`, `FAQPage`), `sitemap.xml`, `robots.txt` |
 | Дизайн | архивная типографика | сохранена база + «магазинный» слой: hero-фото, trust-полоса, бренд-пилюли, теги, шаги, аккордеон FAQ, мини-карточки |
-| Публикация | не выполнялась | пошаговый runbook + `deploy/publish_porkbun.py` (FTPS) + workflow `publish-porkbun.yml` |
-| Тесты | 37 | **66 офлайн-проверок** + HTML5/a11y-валидация 18 страниц + headless-DOM прогон поиска, фильтров и галереи |
+| Публикация | не выполнялась | GitHub Pages из `docs/` (живое зеркало) + пошаговый runbook и `deploy/publish_porkbun.py` (FTPS) для домена |
+| Тесты | 37 | **74 офлайн-проверки** + HTML5/a11y-валидация 18 страниц сайта и 18 страниц зеркала + headless-DOM прогон поиска, фильтров и галереи в двух раскладках |
 
 Подробный отчёт: [`SITE_UPDATES.md`](SITE_UPDATES.md). Публикация: [`deploy/README.md`](deploy/README.md).
 
@@ -60,12 +65,13 @@ bash scripts/verify.sh --offline   # без сети (пропускает html-
 ```bash
 python -m pip install -r requirements-dev.txt   # Pillow
 python handoff/generate.py                      # пакет данных
-python site/build.py                            # пересобрать site/public
-python site/build.py --check                    # проверить, что сборка = источники
-python -m unittest discover -s tests -v         # 66 офлайн-тестов
+python site/build.py                            # пересобрать site/public и зеркало docs/
+python site/build.py --check                    # проверить, что обе сборки = источники
+python -m unittest discover -s tests -v         # 74 офлайн-теста
 node --check site/src/app.js
-npx --yes html-validate@11 "site/public/**/*.html"   # HTML5 + доступность
+npx --yes html-validate@11 "site/public/**/*.html" "docs/**/*.html"   # HTML5 + доступность
 node site/tests/dom/dom_smoke.js                # поиск/фильтры/галерея в jsdom (нужен npm install в site/tests/dom)
+SITE_DIR=docs SITE_ORIGIN=https://aifirsts.github.io/MATRIX2/ node site/tests/dom/dom_smoke.js   # то же для зеркала
 python3 deploy/publish_porkbun.py --dry-run     # план загрузки на Porkbun
 ```
 
@@ -75,7 +81,35 @@ python3 deploy/publish_porkbun.py --dry-run     # план загрузки на
 cd site/public && python -m http.server 8080 --bind 0.0.0.0
 ```
 
-## Публикация на usaforru.shop
+## Публикация
+
+### GitHub Pages (живое зеркало, работает сейчас)
+
+Pages отдаёт каталог [`docs/`](docs/index.html) ветки `main`: настройка
+**Settings → Pages → Source: Deploy from a branch, Branch: `main`, Folder: `/docs`**.
+Никаких секретов и workflow не нужно — GitHub собирает статику своим внутренним сборщиком.
+
+```bash
+python site/build.py        # собирает site/public и docs/ одновременно
+bash scripts/verify.sh      # 8 групп проверок, включая зеркало
+git add docs && git commit -m "Rebuild Pages mirror" && git push origin main
+```
+
+Адрес зеркала задаётся в [`site/site_config.json`](site/site_config.json) полем `pages_url`
+(по умолчанию `https://aifirsts.github.io/MATRIX2`). При смене имени репозитория или переходе
+на `*.github.io` достаточно поменять это поле и пересобрать — canonical, Open Graph, JSON-LD,
+`sitemap.xml` и `robots.txt` зеркала обновятся сами.
+
+Особенности зеркала:
+
+- собирается с `pages_url` как каноническим адресом, а не с доменом магазина;
+- **не содержит `CNAME`**: иначе GitHub Pages попытался бы забрать `usaforru.shop` у Porkbun;
+- все внутренние ссылки относительные, поэтому сайт работает в подкаталоге `/MATRIX2/`;
+- `404.html` ссылается на абсолютные пути с префиксом (`/MATRIX2/...`), потому что Pages отдаёт
+  эту страницу для любого несуществующего глубокого URL, сохраняя путь в адресной строке;
+- манифест (`site.webmanifest`) использует относительные `start_url` и `scope`.
+
+### Домен usaforru.shop (Porkbun)
 
 1. Porkbun → домен → **Website → Static Hosting → Starter**.
 2. Взять FTP-доступы из блока **FTP Credentials**.
@@ -87,8 +121,10 @@ Workflow [`.github/workflows/publish-porkbun.yml`](.github/workflows/publish-por
 (нужны секреты `PORKBUN_FTP_HOST`, `PORKBUN_FTP_USER`, `PORKBUN_FTP_PASS`).
 
 > **GitHub Actions в этом аккаунте заблокированы биллингом:** задания падают за 2–3 секунды
-> (`steps: []`, раннер не выдан) — это ограничение аккаунта, а не ошибка кода. Все те же проверки
-> выполняются локально командой `bash scripts/verify.sh`; после включения Actions они пойдут в CI без правок.
+> (`steps: []`, раннер не выдан) — это ограничение аккаунта, а не ошибка кода. Поэтому публикация
+> Pages идёт не через Actions, а из закоммиченного каталога `docs/` (внутренний сборщик GitHub
+> работает без раннеров). Все проверки выполняются локально командой `bash scripts/verify.sh`;
+> после включения Actions они пойдут в CI без правок, включая сверку `docs/` со сборкой.
 
 ## Что важно знать о данных
 

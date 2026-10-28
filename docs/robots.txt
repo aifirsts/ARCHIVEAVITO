@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /assets/images.json
+
+Sitemap: https://aifirsts.github.io/MATRIX2/sitemap.xml

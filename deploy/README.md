@@ -11,9 +11,22 @@
 
 ## 0. GitHub Pages (зеркало, работает без Actions)
 
-Pages настроен на **Settings → Pages → Deploy from a branch → `main` / `/docs`**.
+Pages должен быть настроен на **Settings → Pages → Deploy from a branch → `main` / `/docs`**.
 Публикует внутренний сборщик GitHub — он не требует раннеров, поэтому блокировка
 GitHub Actions в аккаунте на него не влияет.
+
+Проверить текущий источник:
+
+```bash
+gh api repos/aifirsts/MATRIX2/pages --jq '.source.branch + " " + .source.path + " " + .status'
+```
+
+Если в ответе `main /`, значит источник всё ещё корень ветки: зеркало доступно по
+`https://aifirsts.github.io/MATRIX2/docs/` (и вместе с ним публикуется весь репозиторий —
+`catalog.json`, `avito_audit/`, `handoff/`). Переключение на `/docs` закрывает лишние файлы
+и переносит витрину на корневой адрес. Токен GitHub App, которым работает автоматизация,
+не имеет права менять настройки Pages (`403 Resource not accessible by integration`),
+поэтому это делается в веб-интерфейсе один раз.
 
 ```bash
 python -m pip install -r requirements-dev.txt

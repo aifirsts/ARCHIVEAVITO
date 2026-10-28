@@ -48,6 +48,15 @@
 
 ## Сборка и проверки
 
+**Одна команда — все проверки (то же, что CI):**
+
+```bash
+bash scripts/verify.sh          # 9 групп проверок, код возврата 0 = всё зелёное
+bash scripts/verify.sh --offline   # без сети (пропускает html-validate и npm)
+```
+
+По шагам:
+
 ```bash
 python -m pip install -r requirements-dev.txt   # Pillow
 python handoff/generate.py                      # пакет данных
@@ -76,6 +85,10 @@ cd site/public && python -m http.server 8080 --bind 0.0.0.0
 Альтернативы: панель Porkbun (File Browser) или **GitHub Connect** на ветку `main`, каталог `site/public`.
 Workflow [`.github/workflows/publish-porkbun.yml`](.github/workflows/publish-porkbun.yml) публикует по кнопке
 (нужны секреты `PORKBUN_FTP_HOST`, `PORKBUN_FTP_USER`, `PORKBUN_FTP_PASS`).
+
+> **GitHub Actions в этом аккаунте заблокированы биллингом:** задания падают за 2–3 секунды
+> (`steps: []`, раннер не выдан) — это ограничение аккаунта, а не ошибка кода. Все те же проверки
+> выполняются локально командой `bash scripts/verify.sh`; после включения Actions они пойдут в CI без правок.
 
 ## Что важно знать о данных
 

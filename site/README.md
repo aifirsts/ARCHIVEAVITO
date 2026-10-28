@@ -62,6 +62,8 @@ cd site/public && python -m http.server 8080 --bind 0.0.0.0
 ## Проверки
 
 ```bash
+bash scripts/verify.sh                           # всё сразу: сборка, тесты, HTML5/a11y, DOM, план публикации
+```
 python -m unittest discover -s tests -v          # 66 офлайн-теста: архив, пакет, сборка, ссылки, хеши, SEO, подборки
 node --check site/src/app.js
 npx --yes html-validate@11 "site/public/**/*.html"    # HTML5 + a11y, 18 страниц, 0 ошибок

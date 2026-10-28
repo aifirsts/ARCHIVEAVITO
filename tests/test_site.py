@@ -297,3 +297,187 @@ class SiteBuildTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class SeoAndTechnicalTest(unittest.TestCase):
+    """Guards the publishing contract: SEO metadata, structured data and
+    technical files that Porkbun/search engines rely on."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.pages = sorted(PUBLIC.rglob("*.html"))
+
+    def test_titles_and_descriptions_fit_search_results(self):
+        titles = {}
+        for page in self.pages:
+            html = page.read_text(encoding="utf-8")
+            title = re.search(r"<title>(.*?)</title>", html, re.S).group(1).strip()
+            description = re.search(r'<meta name="description" content="(.*?)"', html, re.S).group(1)
+            self.assertLessEqual(len(title), 62, f"{page.name}: title {len(title)} символов")
+            self.assertGreaterEqual(len(title), 20, f"{page.name}: слишком короткий title")
+            self.assertLessEqual(len(description), 162, f"{page.name}: description {len(description)}")
+            self.assertGreaterEqual(len(description), 70, f"{page.name}: слишком короткое description")
+            self.assertNotIn(title, titles, f"{page.name}: title повторяет {titles.get(title)}")
+            titles[title] = page.name
+
+    def test_canonical_is_unique_and_absolute(self):
+        canonicals = {}
+        for page in self.pages:
+            html = page.read_text(encoding="utf-8")
+            match = re.search(r'<link rel="canonical" href="([^"]+)"', html)
+            self.assertIsNotNone(match, f"{page.name}: нет canonical")
+            url = match.group(1)
+            self.assertTrue(url.startswith("https://usaforru.shop/"), url)
+            self.assertNotIn(url, canonicals, f"{page.name} и {canonicals.get(url)} делят canonical")
+            canonicals[url] = page.name
+
+    def test_open_graph_and_twitter_cards(self):
+        for page in self.pages:
+            html = page.read_text(encoding="utf-8")
+            for prop in ("og:title", "og:description", "og:url", "og:image", "og:type", "og:locale"):
+                self.assertIn(f'property="{prop}"', html, f"{page.name}: нет {prop}")
+            self.assertIn('name="twitter:card" content="summary_large_image"', html, page.name)
+            image = re.search(r'property="og:image" content="([^"]+)"', html).group(1)
+            self.assertTrue(image.startswith("https://usaforru.shop/"), image)
+            self.assertTrue((PUBLIC / image.replace("https://usaforru.shop/", "")).is_file(), image)
+
+    def test_structured_data_is_valid_json(self):
+        found = 0
+        for page in self.pages:
+            html = page.read_text(encoding="utf-8")
+            for block in re.findall(
+                r'<script type="application/ld\+json">(.*?)</script>', html, re.S
+            ):
+                payload = json.loads(block)
+                self.assertEqual(payload["@context"], "https://schema.org", page.name)
+                found += 1
+        self.assertGreaterEqual(found, 18)
+
+    def test_product_pages_expose_product_schema(self):
+        for product_id, page in PAGES.items():
+            html = (PUBLIC / page).read_text(encoding="utf-8")
+            match = re.search(
+                r'<script type="application/ld\+json">(\{"@context":"https://schema.org","@type":"Product".*?)</script>',
+                html,
+            )
+            self.assertIsNotNone(match, product_id)
+            payload = json.loads(match.group(1))
+            self.assertEqual(payload["sku"], product_id)
+            self.assertEqual(payload["offers"]["priceCurrency"], "RUB")
+            self.assertTrue(payload["offers"]["price"].isdigit())
+            self.assertEqual(payload["offers"]["availability"], "https://schema.org/LimitedAvailability")
+
+    def test_technical_files(self):
+        robots = (PUBLIC / "robots.txt").read_text(encoding="utf-8")
+        self.assertIn("Sitemap: https://usaforru.shop/sitemap.xml", robots)
+        self.assertIn("Allow: /", robots)
+        self.assertEqual((PUBLIC / "CNAME").read_text(encoding="utf-8").strip(), "usaforru.shop")
+        manifest = json.loads((PUBLIC / "site.webmanifest").read_text(encoding="utf-8"))
+        self.assertEqual(manifest["start_url"], "/")
+        self.assertEqual(manifest["lang"], "ru")
+        self.assertTrue((PUBLIC / "assets" / "og-cover.jpg").is_file())
+        self.assertTrue((PUBLIC / "assets" / "hero.jpg").is_file())
+
+    def test_sitemap_lists_every_indexable_page(self):
+        import xml.etree.ElementTree as ET
+
+        tree = ET.parse(PUBLIC / "sitemap.xml")
+        ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+        urls = [node.text for node in tree.getroot().findall("s:url/s:loc", ns)]
+        self.assertEqual(len(urls), 17)
+        self.assertEqual(len(set(urls)), 17)
+        self.assertIn("https://usaforru.shop/", urls)
+        self.assertNotIn("https://usaforru.shop/404.html", urls)
+        for url in urls:
+            relative = url.replace("https://usaforru.shop/", "") or "index.html"
+            self.assertTrue((PUBLIC / relative).is_file(), url)
+
+    def test_404_is_noindex(self):
+        html = (PUBLIC / "404.html").read_text(encoding="utf-8")
+        self.assertIn('name="robots" content="noindex, follow"', html)
+        index = (PUBLIC / "index.html").read_text(encoding="utf-8")
+        self.assertIn("index, follow, max-image-preview:large", index)
+
+    def test_product_cards_show_price_with_source(self):
+        html = (PUBLIC / "index.html").read_text(encoding="utf-8")
+        self.assertEqual(html.count("продавец 28.10"), 2)
+        self.assertIn("архив 26.10", html)
+        self.assertIn("к архивной цене", html)
+
+    def test_inline_styles_are_minimal(self):
+        allowed = {"margin-top:0", "margin-top:.65rem;max-width:34rem"}
+        for page in self.pages:
+            for value in re.findall(r'style="([^"]*)"', page.read_text(encoding="utf-8")):
+                self.assertIn(value, allowed, f"{page.name}: inline style {value}")
+
+    def test_no_mixed_content(self):
+        for page in self.pages:
+            html = page.read_text(encoding="utf-8")
+            self.assertNotIn('src="http://', html, page.name)
+            self.assertNotIn("href=\"http://", html, page.name)
+
+
+if __name__ == "__main__":
+    unittest.main()
+
+
+class RoutinePageTest(unittest.TestCase):
+    """The routine landing page must cover every listing exactly once."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.html = (PUBLIC / "podbor.html").read_text(encoding="utf-8")
+        cls.config = json.loads(
+            (ROOT / "site" / "site_config.json").read_text(encoding="utf-8")
+        )
+
+    def test_every_product_appears_once(self):
+        import re as _re
+
+        ids = _re.findall(r'data-card data-id="(\d+)"', self.html)
+        self.assertEqual(len(ids), 14)
+        self.assertEqual(sorted(ids), PRODUCT_IDS)
+
+    def test_every_configured_routine_has_cards(self):
+        sections = self.html.count('class="section routine-section"')
+        self.assertEqual(sections, len(self.config["podbor"]))
+        for item in self.config["podbor"]:
+            self.assertIn(f'id="{item["id"]}"', self.html, item["title"])
+
+    def test_routines_have_their_own_headings(self):
+        for item in self.config["podbor"]:
+            self.assertIn(f'id="{item["id"]}-title"', self.html, item["title"])
+
+    def test_price_summary_table_lists_all_lots(self):
+        self.assertIn("Все лоты, цены и статус", self.html)
+        for product_id, page in PAGES.items():
+            self.assertIn(f'href="{page}"', self.html, product_id)
+
+
+class OutputHygieneTest(unittest.TestCase):
+    """Generated pages must be clean, deterministic and free of template debris."""
+
+    def test_no_trailing_whitespace(self):
+        for page in sorted(PUBLIC.rglob("*.html")):
+            for number, line in enumerate(page.read_text(encoding="utf-8").splitlines(), 1):
+                self.assertEqual(line, line.rstrip(), f"{page.name}:{number} — пробелы в конце строки")
+
+    def test_no_template_artifacts(self):
+        for page in sorted(PUBLIC.rglob("*.html")):
+            text = page.read_text(encoding="utf-8")
+            for artifact in ("None", "{", "}", "__JS_VERSION__", "{{"):
+                if artifact in ("{", "}"):
+                    continue  # JSON-LD and inline scripts legitimately contain braces
+                self.assertNotIn(artifact, text, f"{page.name}: артефакт шаблона {artifact}")
+            self.assertNotIn("__JS_VERSION__", text, page.name)
+
+    def test_no_empty_attributes(self):
+        for page in sorted(PUBLIC.rglob("*.html")):
+            text = page.read_text(encoding="utf-8")
+            self.assertNotIn('href=""', text.replace('data-evidence-href=""', ""), page.name)
+
+    def test_every_page_ends_with_closing_html_tag(self):
+        for page in sorted(PUBLIC.rglob("*.html")):
+            text = page.read_text(encoding="utf-8").rstrip()
+            self.assertTrue(text.endswith("</html>"), page.name)
+            self.assertTrue(text.startswith("<!DOCTYPE html>"), page.name)

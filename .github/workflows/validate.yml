@@ -58,3 +58,24 @@ jobs:
         run: python site/build.py
       - name: Desktop and mobile smoke test in Chromium
         run: python site/tests/browser_smoke.py
+
+  markup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install build dependencies
+        run: python -m pip install --upgrade pip && python -m pip install -r requirements-dev.txt
+      - name: Build the storefront
+        run: python site/build.py
+      - name: Validate markup (HTML5 + a11y) of every published page
+        run: npx --yes html-validate@11 "site/public/**/*.html"
+      - name: Headless DOM checks (search, filters, gallery, lightbox)
+        run: |
+          npm install --prefix site/tests/dom --no-audit --no-fund
+          node site/tests/dom/dom_smoke.js

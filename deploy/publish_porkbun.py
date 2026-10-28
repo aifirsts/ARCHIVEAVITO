@@ -124,10 +124,6 @@ def main(argv=None) -> int:
             remote_dir = "/".join([args.remote.strip("/")] + rel.split("/")[:-1]).strip("/")
             ensure_remote_dir(ftp, remote_dir)
             target = ("/" + remote_dir + "/" + path.name) if remote_dir else "/" + path.name
-            if path.suffix.lower() in {".html", ".css", ".js", ".xml", ".txt", ".webmanifest", ".json", ".svg"}:
-                mode = "ascii" if path.suffix.lower() == ".txt" else "binary"
-            else:
-                mode = "binary"
             with path.open("rb") as handle:
                 ftp.storbinary(f"STOR {target}", handle)
             uploaded += 1

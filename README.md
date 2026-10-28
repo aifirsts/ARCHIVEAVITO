@@ -21,7 +21,7 @@
 | SEO | title/description | canonical, OG/Twitter-карточка 1200×630, JSON-LD (`Store`, `Product`, `BreadcrumbList`, `FAQPage`), `sitemap.xml`, `robots.txt` |
 | Дизайн | архивная типографика | сохранена база + «магазинный» слой: hero-фото, trust-полоса, бренд-пилюли, теги, шаги, аккордеон FAQ, мини-карточки |
 | Публикация | не выполнялась | пошаговый runbook + `deploy/publish_porkbun.py` (FTPS) + workflow `publish-porkbun.yml` |
-| Тесты | 37 | **47 офлайн-проверок**, синхронизированы с новой структурой страниц |
+| Тесты | 37 | **66 офлайн-проверок** + HTML5/a11y-валидация 18 страниц + headless-DOM прогон поиска, фильтров и галереи |
 
 Подробный отчёт: [`SITE_UPDATES.md`](SITE_UPDATES.md). Публикация: [`deploy/README.md`](deploy/README.md).
 
@@ -53,8 +53,10 @@ python -m pip install -r requirements-dev.txt   # Pillow
 python handoff/generate.py                      # пакет данных
 python site/build.py                            # пересобрать site/public
 python site/build.py --check                    # проверить, что сборка = источники
-python -m unittest discover -s tests -v         # 47 офлайн-тестов
+python -m unittest discover -s tests -v         # 66 офлайн-тестов
 node --check site/src/app.js
+npx --yes html-validate@11 "site/public/**/*.html"   # HTML5 + доступность
+node site/tests/dom/dom_smoke.js                # поиск/фильтры/галерея в jsdom (нужен npm install в site/tests/dom)
 python3 deploy/publish_porkbun.py --dry-run     # план загрузки на Porkbun
 ```
 

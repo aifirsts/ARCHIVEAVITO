@@ -19,6 +19,7 @@
 | `site/build.py` | генератор: каталог, подбор, карточки, страница источников, 404, sitemap, robots, манифест |
 | `site/public/` | **готовый статический сайт** (единственный веб-корень) |
 | `site/tests/browser_smoke.py` | smoke-тест в Chromium (десктоп 1440×950 и мобильный 390×844) |
+| `site/tests/dom/dom_smoke.js` | headless-DOM прогон в jsdom: поиск, фильтры, теги, сортировка, URL-состояние, галерея, лайтбокс, 404 — без браузера |
 
 Тяжёлые PNG из нового архива (5 кадров галереи + фото из PDF-печати) перекодируются в JPEG q82:
 публичный каталог занимает ~7,7 МБ вместо 12 МБ. В `assets/images.json` у каждого файла указаны
@@ -61,15 +62,17 @@ cd site/public && python -m http.server 8080 --bind 0.0.0.0
 ## Проверки
 
 ```bash
-python -m unittest discover -s tests -v          # 47 офлайн-тестов: архив, пакет данных, сборка, ссылки, хеши, слой 28.10
+python -m unittest discover -s tests -v          # 66 офлайн-теста: архив, пакет, сборка, ссылки, хеши, SEO, подборки
 node --check site/src/app.js
+npx --yes html-validate@11 "site/public/**/*.html"    # HTML5 + a11y, 18 страниц, 0 ошибок
+(cd site/tests/dom && npm install) && node site/tests/dom/dom_smoke.js   # поиск, фильтры, галерея, лайтбокс
 python -m pip install playwright && python -m playwright install chromium
-python site/tests/browser_smoke.py               # проверки в браузере, 0 ошибок консоли
+python site/tests/browser_smoke.py               # проверки в реальном браузере, 0 ошибок консоли
 ```
 
 CI (`.github/workflows/validate.yml`) прогоняет офлайн-тесты, проверяет детерминированность пакета и
-сборки (`git diff --exit-code -- site/public`), собирает сайт как артефакт и отдельным job запускает
-браузерный тест. Публикация на хостинг — `.github/workflows/publish-porkbun.yml` (по кнопке).
+сборки (`git diff --exit-code -- site/public`), собирает сайт как артефакт, запускает браузерный тест, а в
+job `markup` — валидацию HTML5/a11y всех страниц и headless-DOM прогон. Публикация на хостинг — `.github/workflows/publish-porkbun.yml` (по кнопке).
 
 ## Публикация
 

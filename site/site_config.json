@@ -10,17 +10,35 @@
   "contact_note": "Связь и оформление заказа — в объявлении на Avito или в переписке с продавцом.",
   "whatsapp_or_telegram": "",
   "nav": [
-    {"href": "index.html", "label": "Каталог", "key": "catalogue"},
-    {"href": "podbor.html", "label": "Подбор по задаче", "key": "podbor"},
-    {"href": "sources.html", "label": "Источники и статус", "key": "sources"}
+    {
+      "href": "index.html",
+      "label": "Каталог",
+      "key": "catalogue"
+    },
+    {
+      "href": "podbor.html",
+      "label": "Подбор по задаче",
+      "key": "podbor"
+    },
+    {
+      "href": "sources.html",
+      "label": "Источники и статус",
+      "key": "sources"
+    }
   ],
   "hero": {
     "eyebrow": "Профессиональный уход · Москва и Домодедово",
     "title_before": "Косметика с полки салона —",
     "title_em": "без наценки бутика",
     "lead": "Hourglass, Charlotte Tilbury, IMAGE Skincare и IMAGE MD из личных архивов продавца. Пять брендов, 14 лотов, каждая фотография с указанием источника, а цена — с датой, на которую она верна.",
-    "primary_cta": {"label": "Смотреть каталог", "href": "#catalogue"},
-    "secondary_cta": {"label": "Написать продавцу", "href": "https://www.avito.ru/user/b2165ff5492372c90fab55f7223f9d3b/profile/items/all"}
+    "primary_cta": {
+      "label": "Смотреть каталог",
+      "href": "#catalogue"
+    },
+    "secondary_cta": {
+      "label": "Написать продавцу",
+      "href": "https://www.avito.ru/user/b2165ff5492372c90fab55f7223f9d3b/profile/items/all"
+    }
   },
   "faq": [
     {
@@ -67,7 +85,7 @@
       "id": "body",
       "title": "Уход за телом и лифтинг",
       "lead": "Протоколы VOL.U.LIFT для тела: плотность, тонус и увлажнение. Два формата — крем для тела и концентрат.",
-      "filter": "volulift",
+      "filter": "body",
       "note": "В архиве цены 8 500 ₽ и 12 900 ₽; актуальные уточняйте у продавца."
     },
     {

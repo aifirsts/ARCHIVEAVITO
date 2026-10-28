@@ -177,6 +177,17 @@ def sha(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def clamp(text: str, limit: int) -> str:
+    """Trim a meta description to a search-engine friendly length, on a word boundary."""
+    text = " ".join(str(text).split())
+    if len(text) <= limit:
+        return text
+    cut = text[: limit - 1]
+    if " " in cut:
+        cut = cut[: cut.rfind(" ")]
+    return cut.rstrip(" ,.;:—-") + "…"
+
+
 def slug(text: str) -> str:
     table = str.maketrans(
         "абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ ",
@@ -672,7 +683,7 @@ def head(
         ld = structured
     else:
         ld = jsonld(structured)
-    return f"""<!doctype html>
+    return f"""<!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="utf-8">
@@ -797,7 +808,9 @@ def shell(page_html: str, root: str, js_version: str, feed, products) -> str:
 def lightbox() -> str:
     return """<dialog class="lightbox" id="lightbox" aria-label="Просмотр фотографии">
   <div class="lightbox__inner">
-    <img data-lightbox-image src="" alt="">
+    <!-- placeholder pixel: the dialog is closed on load, JS swaps in the real frame -->
+    <img data-lightbox-image src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+         alt="" width="1200" height="900">
     <div class="lightbox__bar">
       <p class="lightbox__caption" data-lightbox-caption></p>
       <button type="button" class="icon-button lightbox__close" data-lightbox-close aria-label="Закрыть просмотр">✕</button>
@@ -1014,7 +1027,7 @@ def catalogue_block(products) -> str:
         {"".join(chips)}
       </fieldset>
       <div class="controls__meta">
-        <label class="toggle" for="filter-discount">
+        <label class="toggle">
           <input id="filter-discount" type="checkbox"> только с архивной скидкой
         </label>
         <label class="visually-hidden" for="catalogue-sort">Сортировка</label>
@@ -1251,9 +1264,12 @@ def render_index(feed, products, fw_public, hero_art, css_version, js_version) -
     )
     return (
         head(
-            f"{BRAND} — профессиональная косметика и уход в Москве | {DOMAIN}",
-            "Hourglass, Charlotte Tilbury, IMAGE Skincare, IMAGE MD, чехлы Speck и часы MoonSwatch: "
-            "14 лотов с фото из архивов, ценами с датой и ссылкой на продавца в Avito.",
+            f"{BRAND} — витрина косметики и ухода в Москве",
+            clamp(
+                "Hourglass, Charlotte Tilbury, IMAGE Skincare и IMAGE MD, чехлы Speck, часы MoonSwatch: "
+                "14 лотов с фото, ценами с датой и ссылкой на продавца в Avito.",
+                158,
+            ),
             "",
             css_version,
             js_version,
@@ -1267,6 +1283,7 @@ def render_index(feed, products, fw_public, hero_art, css_version, js_version) -
 
 
 def thumbs_block(product) -> str:
+    """Gallery thumbnails: one button per archive position, missing slots included."""
     thumbs = []
     for position, slide in enumerate(product["slides"], 1):
         if slide.get("missing"):
@@ -1277,20 +1294,24 @@ def thumbs_block(product) -> str:
                 <span aria-hidden="true">позиция<br>{position}<br>нет фото</span>
                 <span class="visually-hidden">Позиция {position}: фотографии нет в архиве. Нажмите, чтобы прочитать причину.</span></button>"""
             )
-        else:
-            thumbs.append(
-                f"""<button type="button" class="thumb" data-gallery-thumb
+            continue
+        evidence = ""
+        if slide.get("evidence_href"):
+            evidence = (
+                f' data-evidence-href="../{esc(slide["evidence_href"])}"'
+                f' data-evidence-label="{esc(slide.get("evidence_label", ""))}"'
+            )
+        thumbs.append(
+            f"""<button type="button" class="thumb" data-gallery-thumb
                 data-src="../{esc(slide["public_path"])}" data-alt="{esc(slide["alt"])}"
                 data-caption="{esc(slide["caption"])}" data-source="{esc(slide["source"])}"
-                data-source-kind="{esc(slide["source_kind"])}"
-                data-evidence-href="{esc(("../" + slide["evidence_href"]) if slide.get("evidence_href") else "")}"
-                data-evidence-label="{esc(slide.get("evidence_label", ""))}"
+                data-source-kind="{esc(slide["source_kind"])}"{evidence}
                 data-tall="{1 if slide.get("tall") else 0}"
                 data-w="{slide.get("width") or 0}" data-h="{slide.get("height") or 0}"
                 aria-label="Показать кадр {position}: {esc(slide["alt"])}" aria-current="false">
                 <img src="../{esc(slide["public_path"])}" alt="" loading="lazy" decoding="async" width="80" height="80" data-watch>
               </button>"""
-            )
+        )
     return "".join(thumbs)
 
 
@@ -1399,8 +1420,8 @@ def render_product(product, products, feed, css_version, js_version) -> str:
           </p>
           <blockquote class="prose prose--quote">«{esc(product["fresh_quote"])}»</blockquote>
           {fresh_photo}
-          <p class="panel__note">{esc(product["fresh_note"])} Цена из переписки с продавцом от {FW_LAYER_LABEL}:
-          на Avito она не проверялась, наличие и комплектация не подтверждены.</p>
+          <p class="panel__note">{esc(product["fresh_note"])} На Avito эта цена не проверялась;
+          наличие и комплектация не подтверждены — уточняйте у продавца.</p>
         </div>"""
 
     limits = "".join(f"<li>{esc(line)}</li>" for line in product["limits"])
@@ -1664,16 +1685,14 @@ def render_product(product, products, feed, css_version, js_version) -> str:
 {product_ld}
 {breadcrumb_ld}
 """
-    meta_description = (
-        f"{product['brand']} {product['short_title']}: {sale_price} ({sale_label})"
-        + (f", архивная цена {product['price_text']} на {ARCHIVE_LABEL}" if product["fresh_price_text"] else "")
-        + ". "
-        f"{product['photo_count']} фото, характеристики, состав и ссылка на объявление продавца в Avito. "
-        f"Цена с датой, архивные ограничения указаны честно."
+    meta_description = clamp(
+        f"{product['brand']} {product['short_title']}: {sale_price} ({sale_label}). "
+        f"{product['photo_count']} фото, характеристики, состав и ссылка на объявление продавца в Avito.",
+        158,
     )
     return (
         head(
-            f"{product['brand']} {product['short_title']} — купить в Москве | {BRAND}",
+            f"{product['short_title']} — купить в Москве",
             meta_description,
             "../",
             css_version,
@@ -1688,10 +1707,15 @@ def render_product(product, products, feed, css_version, js_version) -> str:
 
 def render_podbor(products, feed, css_version, js_version) -> str:
     blocks = []
+    covered = set()
     for item in CONFIG["podbor"]:
         matching = [p for p in products if item["filter"] in p["tags"]]
         if not matching:
-            continue
+            raise SystemExit(
+                f"Подборка «{item['title']}» (filter={item['filter']}) не находит ни одного товара: "
+                "проверьте ROUTINE_TAGS и site/site_config.json"
+            )
+        covered.update(p["id"] for p in matching)
         cards = "\n".join(card(p) for p in matching)
         blocks.append(
             f"""  <section class="section routine-section" id="{esc(item["id"])}" aria-labelledby="{esc(item["id"])}-title">
@@ -1714,6 +1738,9 @@ def render_podbor(products, feed, css_version, js_version) -> str:
         f"<td>{esc(p['price_text'])}</td><td>{esc(p['fresh_price_text'] or '—')}</td></tr>"
         for p in sorted(products, key=lambda x: x["order"])
     )
+    missing = [p["id"] for p in products if p["id"] not in covered]
+    if missing:
+        raise SystemExit(f"Товары вне подборок: {', '.join(missing)} — добавьте тег в ROUTINE_TAGS")
     body = f"""<main id="main">
   <section class="hero hero--compact">
     <div class="wrap">
@@ -1756,9 +1783,12 @@ def render_podbor(products, feed, css_version, js_version) -> str:
 """
     return (
         head(
-            f"Подбор косметики по задаче — SPF, антивозрастной уход, тело, макияж | {BRAND}",
-            "Пять подборок профессиональной косметики: минеральные SPF, IMAGE MD, VOL.U.LIFT, Hourglass и "
-            "Charlotte Tilbury, аксессуары и часы. Цены с датой и ссылкой на продавца.",
+            "Подбор косметики: SPF, антивозрастной уход, тело, макияж",
+            clamp(
+                "Пять подборок профессиональной косметики: минеральные SPF, IMAGE MD, VOL.U.LIFT, Hourglass, "
+                "Charlotte Tilbury, аксессуары и часы. Цены с датой.",
+                158,
+            ),
             "",
             css_version,
             js_version,
@@ -1889,8 +1919,11 @@ def render_sources(feed, products, attachments, fw, css_version, js_version) -> 
     return (
         head(
             f"Источники и статус данных — {BRAND}",
-            f"Происхождение данных {BRAND}: восемь архивных ZIP, слои {NEW_LAYER_LABEL} и {FW_LAYER_LABEL}, "
-            "SHA-256, пропущенные фотографии и ограничения архива.",
+            clamp(
+                f"Происхождение данных {BRAND}: восемь архивных ZIP, слои {NEW_LAYER_LABEL} и "
+                f"{FW_LAYER_LABEL}, SHA-256, пропущенные фотографии и ограничения архива.",
+                158,
+            ),
             "",
             css_version,
             js_version,
@@ -1930,7 +1963,7 @@ def render_404(products, feed, css_version, js_version) -> str:
     return (
         head(
             f"Страница не найдена — {BRAND}",
-            "Страница не найдена. Вернитесь в каталог профессиональной косметики и аксессуаров.",
+            "Такой страницы нет. Вернитесь в каталог косметики и аксессуаров Beauty Supply.",
             "",
             css_version,
             js_version,
@@ -1956,6 +1989,12 @@ def require_pillow():
             "Для сборки нужен Pillow (перекодирование тяжёлых PNG в JPEG): "
             "python -m pip install -r requirements-dev.txt"
         ) from error
+
+
+def write_page(out: Path, relative: str, markup: str) -> None:
+    """Write a page with trailing whitespace trimmed (deterministic, clean diffs)."""
+    cleaned = "\n".join(line.rstrip() for line in markup.splitlines()) + "\n"
+    (out / relative).write_text(cleaned, encoding="utf-8")
 
 
 def publish_own(out: Path, source_path: str, public_name: str) -> dict:
@@ -2067,23 +2106,16 @@ def build(out: Path | None = None) -> dict:
     (out / "CNAME").write_text(DOMAIN + "\n", encoding="utf-8")
     (out / "robots.txt").write_text(robots_txt(), encoding="utf-8")
     (out / "sitemap.xml").write_text(sitemap(products), encoding="utf-8")
-    (out / "404.html").write_text(
-        render_404(products, feed, css_version, js_version), encoding="utf-8"
-    )
-    (out / "index.html").write_text(
-        render_index(feed, products, fw_public, hero_art, css_version, js_version), encoding="utf-8"
-    )
-    (out / "podbor.html").write_text(
-        render_podbor(products, feed, css_version, js_version), encoding="utf-8"
-    )
-    (out / "sources.html").write_text(
+    write_page(out, "404.html", render_404(products, feed, css_version, js_version))
+    write_page(out, "index.html", render_index(feed, products, fw_public, hero_art, css_version, js_version))
+    write_page(out, "podbor.html", render_podbor(products, feed, css_version, js_version))
+    write_page(
+        out,
+        "sources.html",
         render_sources(feed, products, attachments, feed["seller_messages_2026_10_28"], css_version, js_version),
-        encoding="utf-8",
     )
     for product in products:
-        (out / product["page"]).write_text(
-            render_product(product, products, feed, css_version, js_version), encoding="utf-8"
-        )
+        write_page(out, product["page"], render_product(product, products, feed, css_version, js_version))
 
     pages = (
         ["index.html", "podbor.html", "sources.html", "404.html"]

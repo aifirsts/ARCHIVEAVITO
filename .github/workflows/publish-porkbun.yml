@@ -45,7 +45,7 @@ jobs:
       - name: Smoke-check the live site
         run: |
           for path in / /sitemap.xml /robots.txt /podbor.html /sources.html; do
-            code=$(curl -s -o /dev/null -w "%{http_code}" "https://usaforru.shop${path}")
+            code=$(curl -s -o /dev/null -w "%{http_code}" --retry 5 --retry-delay 10 --retry-all-errors --max-time 30 "https://usaforru.shop${path}")
             echo "${path} -> ${code}"
             test "$code" = "200"
           done

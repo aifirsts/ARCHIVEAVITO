@@ -75,21 +75,32 @@
   (`product_pages`), проверяют новые адреса, состав веб-корня (включая `robots.txt`, `sitemap.xml`,
   `CNAME`), уникальность и ASCII-слагов.
 - `site/tests/browser_smoke.py` — новые проверки: тег-фильтр, hero, FAQ, страница подбора, 404.
-- Итог: **47 офлайн-тестов зелёные** (`python -m unittest discover -s tests`), `node --check` чистый,
-  сборка детерминирована (`site/build.py --check`).
+- Добавлены тесты `SeoAndTechnicalTest` (длина title/description, уникальность canonical, OG/Twitter,
+  валидность JSON-LD, `sitemap.xml`, `robots.txt`, `CNAME`, `site.webmanifest`, noindex у 404,
+  запрет inline-стилей и mixed content) и `RoutinePageTest` (все 14 лотов ровно по одному разу на
+  `podbor.html`, каждая подборка непустая).
+- Добавлены **headless-DOM проверки** `site/tests/dom/dom_smoke.js` (jsdom, без браузера): поиск,
+  категории, теги, сортировка, скидочный фильтр, состояние из URL, сброс, галерея (миниатюры,
+  клавиатура, пропуск № 9, лайтбокс) и отсутствие JS-ошибок на всех 18 страницах.
+- Добавлена **HTML5 + a11y валидация** (`html-validate`, конфиг `.htmlvalidate.json`): 18 страниц, 0 ошибок.
+- Итог: **66 офлайн-тестов зелёные** (`python -m unittest discover -s tests`), `node --check` чистый,
+  сборка детерминирована (`site/build.py --check`), html-validate 0 ошибок, DOM-прогон без ошибок.
 
 ## 2. Как проверено
 
 | Проверка | Результат |
 | --- | --- |
-| `python -m unittest discover -s tests` | 47 тестов, OK (2 skip: Pillow/браузерные зависимости) |
+| `python -m unittest discover -s tests` | 66 тестов, OK (2 skip: Pillow/браузерные зависимости) |
+| `npx html-validate` (recommended + a11y) | 18 страниц, **0 ошибок, 0 предупреждений** |
+| `node site/tests/dom/dom_smoke.js` | 34 проверки поведения, **0 ошибок JS на 18 страницах** |
+| Проверка CSS парсером (css-tree) | 365 правил, **0 ошибок парсинга**, 0 дублей и пустых правил |
 | `python site/build.py --check` | «Сборка актуальна: 180 файлов» |
 | `node --check site/src/app.js` | без ошибок |
 | SHA-256 всех 150 изображений | совпадают с манифестом и исходниками |
 | Внутренние ссылки всех страниц | разрешаются (тест `test_local_links_and_assets_resolve`) |
 | `deploy/publish_porkbun.py --dry-run` | 180 файлов, 7,74 МБ, состав корректный |
 | YAML workflow-файлов | парсится без ошибок |
-| Браузерный smoke-тест | требует Chromium; в этой сессии CDN Playwright недоступен, тест обновлён и запускается в CI (job `browser`) |
+| Браузерный smoke-тест | требует Chromium; в этой сессии CDN Playwright недоступен, тест обновлён и запускается в CI (job `browser`); его логика продублирована headless-DOM прогоном (job `markup`) |
 
 ## 3. Что осталось за рамками (и почему)
 
@@ -114,3 +125,23 @@
 5. Подключить аналитику только после согласия владельца (cookie-баннер для РФ/ЕС не нужен при
    беcкуки-аналитике, но политику конфиденциальности стоит добавить).
 6. Согласовать использование изображений брендов или заменить их на фото продавца.
+
+## 5. Финальная проверка перед merge (28.10.2026)
+
+Найдено и исправлено:
+
+| # | Проблема | Где | Исправление |
+| --- | --- | --- | --- |
+| 1 | Подборка «Уход за телом» не отрисовывалась: в `site_config.json` фильтр `volulift`, а тег товара `body` — 2 лота (VOL.U.LIFT) выпадали из `podbor.html` (было 12 карточек вместо 14) | `site/site_config.json`, `site/build.py` | фильтр приведён к `body`; сборка теперь **падает с ошибкой**, если подборка пустая или товар не попал ни в одну подборку |
+| 2 | Title до 85 символов и description до 250 — обрезаются в выдаче | `site/build.py` | title ≤ 62, description ≤ 158 (`clamp()`), уникальность проверяется тестом |
+| 3 | `<img>` лайтбокса с пустым `src=""` (невалидно, лишний запрос страницы) | `site/build.py` | прозрачный data-URI плейсхолдер + `width/height` |
+| 4 | `<!doctype html>` в нижнем регистре (ошибка html-validate) | `site/build.py` | `<!DOCTYPE html>` |
+| 5 | Избыточный `for` у label, обёртывающего checkbox | `site/build.py` | атрибут убран |
+| 6 | Пустые `data-evidence-href=""` в разметке галереи | `site/build.py` | атрибуты не рендерятся, если данных нет |
+| 7 | Повтор «цены из переписки 28.10.2026» дважды в одном абзаце | `site/build.py` | текст сокращён |
+| 8 | Мёртвый код (`mode = ...`) в загрузчике | `deploy/publish_porkbun.py` | удалён |
+| 9 | Smoke-шаг CI падал бы при первом деплое (SSL не готов) | `.github/workflows/publish-porkbun.yml` | `curl --retry 5 --retry-delay 10 --retry-all-errors` |
+| 10 | `test_all_local_documentation_links_resolve` падал из-за `.venv` в рабочем каталоге | `tests/test_integrity.py` | служебные каталоги исключены |
+
+Итоговое состояние: 66 офлайн-тестов OK, html-validate — 0 ошибок, DOM-прогон — 0 ошибок JS,
+`site/build.py --check` — сборка актуальна (180 файлов, 7,7 МБ), CSS — 0 ошибок парсинга.

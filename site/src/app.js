@@ -325,7 +325,14 @@
       if (state.sort !== "curated") params.set("sort", state.sort);
       if (state.discountOnly) params.set("discount", "1");
       var next = location.pathname + (params.toString() ? "?" + params.toString() : "") + location.hash;
-      history.replaceState(null, "", next);
+      // file:// pages have a null origin: replaceState with a URL throws there,
+      // and a broken search must never kill the catalogue. Shareable URLs only
+      // work when the site is served over http(s) anyway.
+      try {
+        history.replaceState(null, "", next);
+      } catch (error) {
+        /* noop — filters still applied to the DOM above */
+      }
     }
 
     if (search) {

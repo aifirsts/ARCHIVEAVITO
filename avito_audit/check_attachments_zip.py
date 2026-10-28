@@ -333,7 +333,7 @@ def audit_archive(path: Path):
                     "bytes": info.file_size,
                     "compressed_bytes": info.compress_size,
                     "sha256": sha256(archive.read(info)),
-                    "zip_datetime": "%04d-%02d-%02dT%02d:%02d:%02d" % info.date_time,
+                    "zip_datetime": "{:04d}-{:02d}-{:02d}T{:02d}:{:02d}:{:02d}".format(*info.date_time),
                     "kind": kind,
                 }
             )
@@ -367,8 +367,6 @@ def main(argv=None):
     expected_names = set(SCREENSHOT_POSITIONS) | set(page_prints.values())
     unexpected = sorted(set(by_name) - expected_names)
     missing = sorted(expected_names - set(by_name))
-    pdf_entry_by_id = {listing_id: name for listing_id, name in page_prints.items()}
-
     IMAGES.mkdir(parents=True, exist_ok=True)
     for stale in sorted(IMAGES.rglob("*.png")):
         stale.unlink()

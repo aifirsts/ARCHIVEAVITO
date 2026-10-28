@@ -169,7 +169,7 @@ class SiteStructureTest(unittest.TestCase):
 
 class SiteAssetsTest(unittest.TestCase):
     def test_every_published_image_hash_matches(self):
-        self.assertEqual(len(IMAGES["images"]), 147)
+        self.assertEqual(len(IMAGES["images"]), 150)
         for record in IMAGES["images"]:
             path = PUBLIC / record["public_path"]
             self.assertTrue(path.is_file(), record["public_path"])
@@ -216,7 +216,7 @@ class SiteAssetsTest(unittest.TestCase):
                 self.assertLessEqual(record["bytes"], record["source_bytes"])
         # 5 screenshot frames and the page-print photo are re-encoded for the web,
         # every other published image is a byte-identical copy of its source
-        self.assertEqual(transforms, {"copy": 141, "png->jpeg q82": 6})
+        self.assertEqual(transforms, {"copy": 144, "png->jpeg q82": 6})
 
     def test_no_duplicate_images_in_public_tree(self):
         hashes = {}

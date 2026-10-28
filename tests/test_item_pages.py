@@ -1,8 +1,8 @@
 """Offline provenance and completeness checks for the three additional item-page ZIPs."""
 import hashlib
 import json
-from pathlib import Path
 import unittest
+from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 ITEM_PAGES = json.loads((ROOT / "avito_audit/item_pages/data.json").read_text(encoding="utf-8"))

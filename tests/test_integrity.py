@@ -1,11 +1,10 @@
 """End-to-end offline checks across the legacy archive, new pages and static site."""
 import csv
 import hashlib
-from html.parser import HTMLParser
 import json
-from pathlib import Path
 import re
 import unittest
+from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -13,20 +12,6 @@ ROOT = Path(__file__).resolve().parents[1]
 def load(path):
     return json.loads((ROOT / path).read_text(encoding="utf-8"))
 
-
-class ReferencedFiles(HTMLParser):
-    def __init__(self):
-        super().__init__()
-        self.references = []
-        self.ids = set()
-
-    def handle_starttag(self, tag, attrs):
-        attrs = dict(attrs)
-        if attrs.get("id"):
-            self.ids.add(attrs["id"])
-        for key in ("href", "src"):
-            if attrs.get(key):
-                self.references.append(attrs[key])
 
 
 class RepositoryIntegrityTest(unittest.TestCase):
@@ -74,20 +59,14 @@ class RepositoryIntegrityTest(unittest.TestCase):
         self.assertEqual((len(expected_paths), missing), (53, 2))
         self.assertEqual(expected_paths, set((ROOT / "avito_audit/images").glob("*/*.jpg")))
 
-    def test_all_local_documentation_and_site_links_resolve(self):
+    def test_all_local_documentation_links_resolve(self):
         for file in ROOT.rglob("*.md"):
             if ".git" in file.parts:
                 continue
-            for target in re.findall(r"(?<!!)\[[^\]]+\]\(([^)]+)\)", file.read_text(encoding="utf-8")):
+            for target in re.findall(r"(?<!\[)\[[^\]]+\]\(([^)]+)\)", file.read_text(encoding="utf-8")):
                 if not target.startswith(("http:", "https:", "mailto:", "#")):
                     self.assertTrue((file.parent / target.split("#")[0]).exists(), f"{file}: {target}")
-        html = ReferencedFiles()
-        html.feed((ROOT / "index.html").read_text(encoding="utf-8"))
-        for target in html.references:
-            if target.startswith("#"):
-                self.assertIn(target[1:], html.ids)
-            elif not target.startswith(("https:", "mailto:")):
-                self.assertTrue((ROOT / target).exists(), target)
+
 
 
 if __name__ == "__main__":

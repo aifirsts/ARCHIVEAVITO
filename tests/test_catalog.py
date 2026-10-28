@@ -1,8 +1,8 @@
 """Offline checks for the archival catalog and manufacturer-image provenance."""
 import hashlib
 import json
-from pathlib import Path
 import unittest
+from pathlib import Path
 from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]

@@ -52,10 +52,10 @@ def run(base: str, executable: str | None = None) -> None:
             context = browser.new_context(viewport=viewport, locale="ru-RU")
             page = context.new_page()
             problems: list[str] = []
-            page.on("console", lambda m: problems.append(f"console.{m.type}: {m.text}")
+            page.on("console", lambda m, sink=problems: sink.append(f"console.{m.type}: {m.text}")
                     if m.type == "error" else None)
-            page.on("pageerror", lambda e: problems.append(f"pageerror: {e}"))
-            page.on("requestfailed", lambda r: problems.append(f"requestfailed: {r.url}"))
+            page.on("pageerror", lambda e, sink=problems: sink.append(f"pageerror: {e}"))
+            page.on("requestfailed", lambda r, sink=problems: sink.append(f"requestfailed: {r.url}"))
 
             page.goto(f"{base}/index.html", wait_until="networkidle")
             check(page.locator("[data-card]").count() == 14, "на главной 14 карточек")

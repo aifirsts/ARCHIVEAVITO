@@ -38,7 +38,7 @@ cd site/public && python -m http.server 8080 --bind 0.0.0.0
 ## Проверки
 
 ```bash
-python -m unittest discover -s tests -v          # 37 офлайн-тестов: архив, пакет данных, сборка, ссылки, хеши
+python -m unittest discover -s tests -v          # 47 офлайн-тестов: архив, пакет данных, сборка, ссылки, хеши, слой 28.10
 node --check site/src/app.js
 python -m pip install playwright && python -m playwright install chromium
 python site/tests/browser_smoke.py               # ~40 проверок в браузере, 0 ошибок консоли

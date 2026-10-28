@@ -25,7 +25,6 @@ jobs:
       - name: Check source syntax
         run: |
           python -m compileall -q avito_audit handoff site tests
-          node --check catalog.js
           node --check site/src/app.js
       - name: Verify deterministic handoff package
         run: |

@@ -47,6 +47,38 @@ def catalog_supplemental(catalog):
             yield {"id": int(item["id"]), **note}
 
 
+def fw_photo_assets(layer, fw):
+    """Validated photo records for the 2026-10-28 seller-message layer.
+
+    Every photo path/hash in the curated catalog layer must match the
+    mechanical manifest produced by ``avito_audit/check_fw_zip.py``.
+    """
+    by_entry = {photo["source_entry"]: photo for photo in fw["photos"]}
+    photos = []
+    for photo in layer["photos"]:
+        mech = by_entry.get(photo["source_entry"])
+        require(mech is not None, f"FW layer photo not in manifest: {photo['source_entry']}")
+        record = asset(photo["path"], mech["sha256"], mech["bytes"], mech["dimensions"])
+        record.update(
+            {
+                "source_entry": photo["source_entry"],
+                "alt_ru": photo["alt_ru"],
+                "ocr_labels": photo["ocr_labels"],
+                "linked_offer_ids": photo["linked_offer_ids"],
+                "ocr_note_ru": photo["ocr_note_ru"],
+            }
+        )
+        photos.append(record)
+    by_entry = {m["source_entry"]: m for m in fw["messages"]}
+    for offer in layer["offers"]:
+        for photo_path in offer["photo_paths"]:
+            require(any(p["path"] == photo_path for p in photos), f"Offer photo missing: {photo_path}")
+        for key in ("price_message_file", "description_message_file"):
+            require(offer[key] in by_entry, f"Offer message file missing: {offer.get(key)}")
+            require(by_entry[offer[key]]["sha256"] is not None, f"Offer message not hashed: {offer.get(key)}")
+    return photos
+
+
 def supplemental_media(attachments, listing_id):
     """New dated layer from Attachments-Avitos.zip (mobile screenshots + page prints).
 
@@ -101,6 +133,12 @@ def build_document():
     official = read_json("official_assets/manifest.json")
     attachments = read_json("avito_audit/attachments_avitos/manifest.json")
     annotations = read_json("avito_audit/attachments_avitos/manifest.json")
+    fw = read_json("avito_audit/attachments_fw_2026_10_28/manifest.json")
+    fw_layer = catalog["seller_messages_2026_10_28"]
+    require(fw_layer["zip_sha256"] == fw["archive_sha256"] and fw_layer["zip_bytes"] == fw["archive_bytes"],
+            "FW layer does not match the audited ZIP")
+    require(fw_layer["source_commit"] == fw["source_commit"], "FW layer commit mismatch")
+    fw_photos = fw_photo_assets(fw_layer, fw)
     by_page = {p["id"]: p for p in pages["items"]}
     by_profile = {p["id"]: p for p in profile["items"]}
     by_official = {p["avito_id"]: p for p in official["items"]}
@@ -203,10 +241,27 @@ def build_document():
                 "page_print_photo_2026_10_25": page_photo,
             },
             "supplemental_2026_10_25": supplemental.get(int(id_)) if id_.isdigit() else supplemental.get(id_),
+            "seller_message_2026_10_28": item.get("seller_message_2026_10_28"),
             "manufacturer_research": item["official"],
         })
     require(sum(len(p["media"]["listing_gallery"]) for p in products) == 75, "Gallery count changed")
     require(sum(len(p["media"]["profile_previews"]) for p in products) == 53, "Profile image count changed")
+    fw_price_updates = {}
+    for product in products:
+        note = product.get("seller_message_2026_10_28")
+        if not note:
+            continue
+        offer = [o for o in fw_layer["offers"] if o["matches_catalog_id"] == product["id"]]
+        require(len(offer) == 1, f"FW offer must match exactly one listing: {product['id']}")
+        require(offer[0]["price_rub_claimed"] == note["price_rub_claimed"] and
+                offer[0]["price_quote_ru"] == note["price_quote_ru"],
+                f"FW price mismatch between layer and product: {product['id']}")
+        require(any(p["path"] == note["photo_path"] for p in fw_photos), "FW product photo missing")
+        fw_price_updates[product["id"]] = {
+            "price_rub_claimed": note["price_rub_claimed"],
+            "archived_price_rub": product["archived_listing"]["price_rub"],
+        }
+    require(set(fw_price_updates) == {"8166255881", "8230842563"}, "FW price updates must cover exactly two listings")
     return {
         "schema_version": 1,
         "status": "archived_research_not_live_inventory",
@@ -236,6 +291,20 @@ def build_document():
             }
         },
         "owner_note": "Store owner confirmed ownership in conversation; inventory, prices, authenticity, and image rights not independently reverified.",
+        "seller_messages_2026_10_28": {
+            "source_zip": fw_layer["source_zip"],
+            "sha256": fw["archive_sha256"],
+            "bytes": fw["archive_bytes"],
+            "source_commit": fw["source_commit"],
+            "source_commit_date_utc": fw["source_commit_date_utc"],
+            "manifest": "avito_audit/attachments_fw_2026_10_28/manifest.json",
+            "entries": fw["entries_count"],
+            "status": fw["status"],
+            "what_it_is_ru": fw_layer["what_it_is_ru"],
+            "photos": fw_photos,
+            "offers": fw_layer["offers"],
+            "price_updates_for_catalog": fw_price_updates,
+        },
         "paths_relative_to": "repository_root",
         "products": products,
     }

@@ -1934,11 +1934,50 @@
         208,
         208
       ]
+    },
+    {
+      "public_path": "assets/img/seller-2026-10-28/sellermsg-01.jpg",
+      "published_sha256": "9e0f5026fc005a7f61fc9ce10843aa2965253c38bff53432ff93cb0950f3d254",
+      "bytes": 218296,
+      "source_path": "avito_audit/attachments_fw_2026_10_28/seller_photo_01.jpg",
+      "source_sha256": "9e0f5026fc005a7f61fc9ce10843aa2965253c38bff53432ff93cb0950f3d254",
+      "source_bytes": 218296,
+      "transform": "copy",
+      "dimensions": [
+        960,
+        1280
+      ]
+    },
+    {
+      "public_path": "assets/img/seller-2026-10-28/sellermsg-02.jpg",
+      "published_sha256": "eb138e224c685538e63e07219e75c3f8144580d8e8bf1a80b6bb26d3f11e1443",
+      "bytes": 215236,
+      "source_path": "avito_audit/attachments_fw_2026_10_28/seller_photo_02.jpg",
+      "source_sha256": "eb138e224c685538e63e07219e75c3f8144580d8e8bf1a80b6bb26d3f11e1443",
+      "source_bytes": 215236,
+      "transform": "copy",
+      "dimensions": [
+        960,
+        1280
+      ]
+    },
+    {
+      "public_path": "assets/img/seller-2026-10-28/sellermsg-03.jpg",
+      "published_sha256": "02ca836471a0b941b693856c391a962d65b607f83a6d9a16c953d9e7cf15d408",
+      "bytes": 227164,
+      "source_path": "avito_audit/attachments_fw_2026_10_28/seller_photo_03.jpg",
+      "source_sha256": "02ca836471a0b941b693856c391a962d65b607f83a6d9a16c953d9e7cf15d408",
+      "source_bytes": 227164,
+      "transform": "copy",
+      "dimensions": [
+        960,
+        1280
+      ]
     }
   ],
   "asset_versions": {
-    "site.css": "94f5d0c505",
-    "app.js": "b867dfeb11"
+    "site.css": "194eecb6a2",
+    "app.js": "41fa60f87b"
   },
   "not_published": [
     "avito_audit/snapshot.json (содержит отзывы)",

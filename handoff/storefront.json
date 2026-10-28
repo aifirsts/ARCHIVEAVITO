@@ -11,7 +11,8 @@
     "PART3.zip": "6d02edbd36bb96f4f1f68bc79543e51e520c97ccf91ec861dabce83aa2ae1477",
     "ДОЗАГРУЗКА.zip": "2a6904ac34d8db42e6bf9f1c07f33d2d366180f1e3fa01c0db420c69dd522a8f",
     "Чехол_ЧАСЫ _ Авито (8102096652)_files.zip": "a9a19b6918bb18d2cdf87519b57507b93324ee701ee4ea050dd689be341e4fd5",
-    "Attachments-Avitos.zip": "7d1eca79385ba06d702f0812eca8b5ee70990295295ec2b06442a28e33b5d6d0"
+    "Attachments-Avitos.zip": "7d1eca79385ba06d702f0812eca8b5ee70990295295ec2b06442a28e33b5d6d0",
+    "Attachments-Fw_ 27.10 avito.zip": "216adc3cb760c13c5ea85da0a8cf0a5baf9ecb51748ec4619ad4c456bcbc349c"
   },
   "seller_profile_from_archive": {
     "id": "b2165ff5492372c90fab55f7223f9d3b",
@@ -34,6 +35,181 @@
     }
   },
   "owner_note": "Store owner confirmed ownership in conversation; inventory, prices, authenticity, and image rights not independently reverified.",
+  "seller_messages_2026_10_28": {
+    "source_zip": "Attachments-Fw_ 27.10 avito.zip",
+    "sha256": "216adc3cb760c13c5ea85da0a8cf0a5baf9ecb51748ec4619ad4c456bcbc349c",
+    "bytes": 669505,
+    "source_commit": "68d7c1f7cb99d3f47a4159bf3ff93d80b194e8fe",
+    "source_commit_date_utc": "2026-10-28T13:03:40Z",
+    "manifest": "avito_audit/attachments_fw_2026_10_28/manifest.json",
+    "entries": 10,
+    "status": "seller_claims_2026_10_28_not_verified_live",
+    "what_it_is_ru": "Восьмой исходный ZIP: семь Apple-плist’ов (NSKeyedArchiver) с текстами сообщений продавца и три JPEG-фото 960×1280. Сообщения от 28.10.2026 13:51 содержат актуальные цены продавца по пяти средствам IMAGE Skincare и описания линеек; сообщение от 25.10.2026 — ссылку на тот же профиль Avito (b2165ff5…), что и архивный снимок. Это заявления продавца в переписке, а не проверенные данные объявлений.",
+    "photos": [
+      {
+        "path": "avito_audit/attachments_fw_2026_10_28/seller_photo_01.jpg",
+        "sha256": "9e0f5026fc005a7f61fc9ce10843aa2965253c38bff53432ff93cb0950f3d254",
+        "bytes": 218296,
+        "dimensions": [
+          960,
+          1280
+        ],
+        "source_entry": "image.",
+        "alt_ru": "Фото из сообщения продавца 28.10.2026: средства IMAGE the MAX — глазной крем creme contour des yeux 15 мл и крем для лица the MAX creme 48 г",
+        "ocr_labels": [
+          "IMAGE SKINCARE",
+          "the MAX eye creme",
+          "creme contour des yeux",
+          "with plant stem cell technology",
+          "the MAX creme",
+          "0.5 fl oz/15 ml",
+          "Net wt. 1.7 oz/48 g"
+        ],
+        "linked_offer_ids": [
+          "the-max-creme-48g",
+          "the-max-eye-creme-15ml"
+        ],
+        "ocr_note_ru": "Подписи прочитаны машинным OCR (RapidOCR) и согласуются с названиями в тексте сообщений; это не подтверждение подлинности экземпляров."
+      },
+      {
+        "path": "avito_audit/attachments_fw_2026_10_28/seller_photo_02.jpg",
+        "sha256": "eb138e224c685538e63e07219e75c3f8144580d8e8bf1a80b6bb26d3f11e1443",
+        "bytes": 215236,
+        "dimensions": [
+          960,
+          1280
+        ],
+        "source_entry": "image-1.",
+        "alt_ru": "Фото из сообщения продавца 28.10.2026: IMAGE DAILY PREVENTION — минеральный тинтированный и минеральный увлажняющий кремы SPF 30, Net wt. 2.6 oz/73 г",
+        "ocr_labels": [
+          "IMAGE DAILY PREVENTION",
+          "pure mineral tinted moisturizer",
+          "pure mineral hydrating moisturizer",
+          "BROAD SPECTRUM SPF 30 SUNSCREEN",
+          "water resistant (40/80 minutes)",
+          "PATENT PENDING",
+          "Net wt. 2.6 oz/73 g"
+        ],
+        "linked_offer_ids": [
+          "daily-prevention-spf30"
+        ],
+        "ocr_note_ru": "На фото видны оба варианта — с тинтом и без; в сообщении цена 4 900 ₽ указана для обоих."
+      },
+      {
+        "path": "avito_audit/attachments_fw_2026_10_28/seller_photo_03.jpg",
+        "sha256": "02ca836471a0b941b693856c391a962d65b607f83a6d9a16c953d9e7cf15d408",
+        "bytes": 227164,
+        "dimensions": [
+          960,
+          1280
+        ],
+        "source_entry": "image-2.",
+        "alt_ru": "Фото из сообщения продавца 28.10.2026: IMAGE MD restoring power-c serum 30 мл и biotech longevity creme 50 г",
+        "ocr_labels": [
+          "IMAGE CLINICAL SKINCARE MD",
+          "restoring power-c serum",
+          "serum energisant a la vitamine C",
+          "biotech longevity creme",
+          "XOSM",
+          "PATENT PENDING",
+          "1 fl oz/30 mL",
+          "Net wt. 1.7 oz/50 g"
+        ],
+        "linked_offer_ids": [
+          "md-biotech-longevity-creme-50g",
+          "md-restoring-power-c-serum-30ml"
+        ],
+        "ocr_note_ru": "На фото видны оба средства MD из сообщения с ценами от 28.10.2026."
+      }
+    ],
+    "offers": [
+      {
+        "offer_id": "the-max-creme-48g",
+        "title_ru": "The MAX Crème — крем для лица, 48 г",
+        "brand": "IMAGE Skincare",
+        "price_rub_claimed": 11500,
+        "price_quote_ru": "Max face cream 11500р",
+        "price_message_file": "text-1.txt",
+        "description_message_file": "text-2.txt",
+        "photo_paths": [
+          "avito_audit/attachments_fw_2026_10_28/seller_photo_01.jpg"
+        ],
+        "matches_catalog_id": null,
+        "status": "new_offer_not_in_archived_catalog",
+        "note_ru": "В 14 архивных объявлениях этого средства нет. Новое предложение продавца от 28.10.2026 без архивной карточки Avito."
+      },
+      {
+        "offer_id": "the-max-eye-creme-15ml",
+        "title_ru": "The MAX Eye Crème — крем для кожи вокруг глаз, 15 мл",
+        "brand": "IMAGE Skincare",
+        "price_rub_claimed": 6800,
+        "price_quote_ru": "Max eye cream 6800р",
+        "price_message_file": "text-1.txt",
+        "description_message_file": "text-2.txt",
+        "photo_paths": [
+          "avito_audit/attachments_fw_2026_10_28/seller_photo_01.jpg"
+        ],
+        "matches_catalog_id": null,
+        "status": "new_offer_not_in_archived_catalog",
+        "note_ru": "Глазного крема в архивных объявлениях нет. Новое предложение продавца от 28.10.2026."
+      },
+      {
+        "offer_id": "daily-prevention-spf30",
+        "title_ru": "DAILY PREVENTION SPF 30 — минеральный увлажняющий крем, с тинтом и без",
+        "brand": "IMAGE Skincare",
+        "price_rub_claimed": 4900,
+        "price_quote_ru": "SPF 30 мойсчерайзер (с тинтом и без тинта) 4900 р",
+        "price_message_file": "text-3.txt",
+        "description_message_file": "text-4.txt",
+        "photo_paths": [
+          "avito_audit/attachments_fw_2026_10_28/seller_photo_02.jpg"
+        ],
+        "matches_catalog_id": "8166255881",
+        "status": "fresh_price_for_archived_listing",
+        "match_note_ru": "Совпадает с архивным объявлением 8166255881 «Увлажняющий дневной крем SPF 30 daily prevention» (архивная цена 5 900 ₽): название линии и описание в сообщении повторяют текст объявления."
+      },
+      {
+        "offer_id": "md-biotech-longevity-creme-50g",
+        "title_ru": "IMAGE MD Biotech Longevity Crème — крем, 50 г",
+        "brand": "IMAGE Skincare",
+        "price_rub_claimed": 10400,
+        "price_quote_ru": "Biotech MD cream 10400р",
+        "price_message_file": "text-5.txt",
+        "description_message_file": "text-6.txt",
+        "photo_paths": [
+          "avito_audit/attachments_fw_2026_10_28/seller_photo_03.jpg"
+        ],
+        "matches_catalog_id": "8230842563",
+        "status": "fresh_price_for_archived_listing",
+        "match_note_ru": "Совпадает с архивным объявлением 8230842563 «Image MD biotech крем» (архивная цена 12 999 ₽)."
+      },
+      {
+        "offer_id": "md-restoring-power-c-serum-30ml",
+        "title_ru": "IMAGE MD Restoring Power-C Serum — сыворотка с витамином C, 30 мл",
+        "brand": "IMAGE Skincare",
+        "price_rub_claimed": 11500,
+        "price_quote_ru": "Biotech MD serum 11500р",
+        "price_message_file": "text-5.txt",
+        "description_message_file": "text-6.txt",
+        "photo_paths": [
+          "avito_audit/attachments_fw_2026_10_28/seller_photo_03.jpg"
+        ],
+        "matches_catalog_id": null,
+        "status": "not_merged_similar_archived_product_exists",
+        "note_ru": "В архиве есть сыворотка 8165960870 «Сыворотка молодости image MD restoring youth serum», но это другой официальный продукт линейки (Restoring Youth, а не Restoring Power-C). Объявления не объединяются: совпадение бренда и категории не доказывает, что это один товар."
+      }
+    ],
+    "price_updates_for_catalog": {
+      "8166255881": {
+        "price_rub_claimed": 4900,
+        "archived_price_rub": 5900
+      },
+      "8230842563": {
+        "price_rub_claimed": 10400,
+        "archived_price_rub": 12999
+      }
+    }
+  },
   "paths_relative_to": "repository_root",
   "products": [
     {
@@ -317,6 +493,7 @@
         "page_print_photo_2026_10_25": null
       },
       "supplemental_2026_10_25": null,
+      "seller_message_2026_10_28": null,
       "manufacturer_research": {
         "brand": "Hourglass",
         "name": "Ambient Lighting Blush — Mood Exposure",
@@ -592,6 +769,7 @@
         "page_print_photo_2026_10_25": null
       },
       "supplemental_2026_10_25": null,
+      "seller_message_2026_10_28": null,
       "manufacturer_research": {
         "brand": "Charlotte Tilbury",
         "name": "Luxury Palette in Pillow Talk",
@@ -899,6 +1077,7 @@
         "page_print_photo_2026_10_25": null
       },
       "supplemental_2026_10_25": null,
+      "seller_message_2026_10_28": null,
       "manufacturer_research": {
         "brand": "Hourglass",
         "name": "Curator Eyeshadow Palette — Minimalist",
@@ -1076,6 +1255,7 @@
         "page_print_photo_2026_10_25": null
       },
       "supplemental_2026_10_25": null,
+      "seller_message_2026_10_28": null,
       "manufacturer_research": {
         "brand": "Speck",
         "name": "Presidio2 Pro MagSafe with ClickLock — iPhone 15 Pro Max",
@@ -1297,6 +1477,7 @@
         "page_print_photo_2026_10_25": null
       },
       "supplemental_2026_10_25": null,
+      "seller_message_2026_10_28": null,
       "manufacturer_research": {
         "brand": "IMAGE Skincare",
         "name": "VOL.U.LIFT BODY GLP-1/GIP sculpt + firm treatment complex",
@@ -1528,6 +1709,7 @@
         "page_print_photo_2026_10_25": null
       },
       "supplemental_2026_10_25": null,
+      "seller_message_2026_10_28": null,
       "manufacturer_research": {
         "brand": "IMAGE Skincare",
         "name": "VOL.U.LIFT GLP-1 4D skin rebound complex",
@@ -1671,6 +1853,14 @@
         "page_print_photo_2026_10_25": null
       },
       "supplemental_2026_10_25": null,
+      "seller_message_2026_10_28": {
+        "price_rub_claimed": 4900,
+        "price_quote_ru": "SPF 30 мойсчерайзер (с тинтом и без тинта) 4900 р",
+        "price_message_file": "text-3.txt",
+        "description_message_file": "text-4.txt",
+        "photo_path": "avito_audit/attachments_fw_2026_10_28/seller_photo_02.jpg",
+        "note_ru": "Цена продавца из сообщения 28.10.2026; архивная цена 26.10.2026 — 5 900 ₽. На фото из сообщения видны оба варианта (с тинтом и без)."
+      },
       "manufacturer_research": {
         "brand": "IMAGE Skincare",
         "name": "DAILY PREVENTION pure mineral hydrating moisturizer SPF 30",
@@ -1851,6 +2041,7 @@
         "page_print_photo_2026_10_25": null
       },
       "supplemental_2026_10_25": null,
+      "seller_message_2026_10_28": null,
       "manufacturer_research": {
         "brand": "IMAGE Skincare",
         "name": "VITAL C hydrating repair crème",
@@ -2025,6 +2216,7 @@
         "page_print_photo_2026_10_25": null
       },
       "supplemental_2026_10_25": null,
+      "seller_message_2026_10_28": null,
       "manufacturer_research": {
         "brand": "IMAGE Skincare",
         "name": "DAILY PREVENTION advanced smartblend mineral moisturizer SPF 75",
@@ -2200,6 +2392,14 @@
         "page_print_photo_2026_10_25": null
       },
       "supplemental_2026_10_25": null,
+      "seller_message_2026_10_28": {
+        "price_rub_claimed": 10400,
+        "price_quote_ru": "Biotech MD cream 10400р",
+        "price_message_file": "text-5.txt",
+        "description_message_file": "text-6.txt",
+        "photo_path": "avito_audit/attachments_fw_2026_10_28/seller_photo_03.jpg",
+        "note_ru": "Цена продавца из сообщения 28.10.2026; архивная цена 26.10.2026 — 12 999 ₽."
+      },
       "manufacturer_research": {
         "brand": "IMAGE Skincare",
         "name": "IMAGE MD biotech longevity creme",
@@ -2508,6 +2708,7 @@
         "page_print_photo_2026_10_25": null
       },
       "supplemental_2026_10_25": null,
+      "seller_message_2026_10_28": null,
       "manufacturer_research": {
         "brand": "Hourglass",
         "name": "Ambient Lighting Palette",
@@ -2736,6 +2937,7 @@
         "page_print_photo_2026_10_25": null
       },
       "supplemental_2026_10_25": null,
+      "seller_message_2026_10_28": null,
       "manufacturer_research": {
         "brand": "IMAGE Skincare",
         "name": "IMAGE MD restoring youth serum",
@@ -3214,6 +3416,7 @@
           "подлинность экземпляров"
         ]
       },
+      "seller_message_2026_10_28": null,
       "manufacturer_research": {
         "brand": "Swatch / OMEGA x Swatch",
         "name": "Bioceramic MoonSwatch Collection",
@@ -3356,6 +3559,7 @@
         },
         "new_status_fact_ru": "Печать 25.10.2026 показывает «Товар зарезервирован» — это датированный факт того снимка, а не текущее наличие."
       },
+      "seller_message_2026_10_28": null,
       "manufacturer_research": {
         "brand": "Speck",
         "name": "Presidio2 Pro MagSafe with ClickLock — iPhone 15 Pro Max",

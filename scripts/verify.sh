@@ -6,7 +6,7 @@
 #
 # Код возврата 0 — всё зелёное. Любая проваленная проверка печатается как FAIL
 # и даёт ненулевой код возврата.
-set -u
+set -u -o pipefail
 
 OFFLINE=0
 [ "${1:-}" = "--offline" ] && OFFLINE=1
@@ -25,6 +25,11 @@ need() {
 
 PYTHON=${PYTHON:-python3}
 [ -x .venv/bin/python ] && PYTHON=.venv/bin/python
+
+if ! command -v "$PYTHON" >/dev/null 2>&1; then
+  printf 'python не найден: %s\nУкажите интерпретатор: PYTHON=/путь/к/python bash scripts/verify.sh\n' "$PYTHON" >&2
+  exit 2
+fi
 
 need "1/8 python и Pillow"
 if "$PYTHON" - <<'PY'
@@ -49,8 +54,14 @@ if "$PYTHON" site/build.py --check; then pass "site/public совпадает с
 else fail "сборка устарела: python site/build.py"; fi
 
 need "4/8 офлайн-тесты"
-if "$PYTHON" -m unittest discover -s tests 2>&1 | tail -3; then pass "unittest пройден"
-else fail "unittest"; fi
+# вывод в файл, а не в конвейер: статус конвейера — это статус tail, а не тестов
+if "$PYTHON" -m unittest discover -s tests >/tmp/unittest.log 2>&1; then
+  tail -3 /tmp/unittest.log
+  pass "$(grep -oE 'Ran [0-9]+ tests?' /tmp/unittest.log | tail -1) OK"
+else
+  fail "unittest (подробности: /tmp/unittest.log)"
+  tail -20 /tmp/unittest.log
+fi
 
 need "5/8 синтаксис исходников"
 if "$PYTHON" -m compileall -q avito_audit handoff site tests deploy; then pass "python компилируется"
